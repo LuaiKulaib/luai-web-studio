@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0B0B0C" />
+  <title>كروم برو | CHROME PRO — مركز حماية وزينة سيارات بالرياض</title>
+
+  <!-- Google Fonts: Tajawal (Arabic) + Orbitron (Futuristic / Numbers / Logo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Custom Stylesheet (Dark Automotive Premium) -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════
+       FILM GRAIN
+  ══════════════════════════════════ -->
+  <div id="grain"></div>
+
+  <!-- ══════════════════════════════════
+       0. TOP STICKY PROMO ANNOUNCEMENT BAR
+  ══════════════════════════════════ -->
+  <aside class="promo-bar" id="promo-bar" aria-label="إعلان العرض الموسمي">
+    <div class="container promo-inner">
+      <div class="promo-left">
+        <span class="promo-badge">🔥 عرض محدود</span>
+        <span class="promo-text">خصم 20% على باقة الحماية الفضية والذهبية + تقسيط 4 دفعات بدون فوائد عبر تابي وتمارا!</span>
+      </div>
+      <div class="promo-right">
+        <a href="https://wa.me/966500000000?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D8%A9%20%D9%85%D9%86%20%D8%AE%D8%B5%D9%85%20%D8%A7%D9%84%D9%80%2020%25%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%A7%D9%82%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AD%D9%85%D8%A7%D9%8A%D8%A9." target="_blank" class="promo-cta">
+          <span>احجز العرض الآن</span>
+          <span>↖</span>
+        </a>
+        <button class="promo-close-btn" id="promo-close" aria-label="إغلاق الإعلان">✕</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════
+       NAVBAR (مع دعم الـ ScrollSpy والتنقل المحسن)
+  ══════════════════════════════════ -->
+  <nav id="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-logo">CHROME<span class="o">PRO</span></a>
+
+      <ul class="nav-links" id="car-nav-links">
+        <li><a href="#services" class="car-nav-link">الخدمات</a></li>
+        <li><a href="#calculator" class="car-nav-link">حاسبة الأسعار</a></li>
+        <li><a href="#packages" class="car-nav-link">الباقات</a></li>
+        <li><a href="#process" class="car-nav-link">كيف نشتغل</a></li>
+        <li><a href="#before-after" class="car-nav-link">قبل وبعد</a></li>
+        <li><a href="#gallery" class="car-nav-link">المعرض</a></li>
+        <li><a href="#reviews" class="car-nav-link">التقييمات</a></li>
+        <li><a href="#faq" class="car-nav-link">الأسئلة الشائعة</a></li>
+        <li><a href="#location" class="car-nav-link">الموقع</a></li>
+      </ul>
+
+      <div class="nav-end">
+        <a href="https://wa.me/966500000000" target="_blank" class="btn btn--wa btn--sm">
+          <span>واتساب فوري</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.667-.698c.974.53 1.997.817 3.123.818h.005c3.179 0 5.765-2.587 5.766-5.767.001-3.18-2.585-5.766-5.765-5.766zm0 10.42c-.991 0-1.961-.266-2.808-.768l-.201-.119-1.583.415.422-1.543-.131-.208c-.551-.876-.842-1.895-.841-2.942.001-2.903 2.364-5.266 5.268-5.266 2.903 0 5.265 2.363 5.265 5.266 0 2.904-2.362 5.267-5.265 5.267z"/>
+          </svg>
+        </a>
+
+        <!-- Hamburger Button -->
+        <button class="ham" id="car-ham-btn" aria-label="القائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="nav-drawer" id="car-nav-drawer">
+    <a href="#services">الخدمات المعتمدة</a>
+    <a href="#calculator">حاسبة الأسعار التفاعلية</a>
+    <a href="#packages">الباقات والأسعار</a>
+    <a href="#process">خطوات العمل الأربعة</a>
+    <a href="#before-after">مقارنة قبل وبعد</a>
+    <a href="#gallery">معرض السيارات المنفذة</a>
+    <a href="#reviews">تقييمات وآراء العملاء</a>
+    <a href="#faq">الأسئلة الشائعة</a>
+    <a href="#location">موقع المركز وساعات العمل</a>
+    <a href="https://wa.me/966500000000" target="_blank" style="color:var(--accent); font-weight:800;">تواصل معنا عبر واتساب ↗</a>
+  </div>
+
+  <!-- ══════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════ -->
+  <header id="hero">
+    <!-- Visual Real Photography Background -->
+    <div class="hero-bg"></div>
+
+    <div class="container hero-inner">
+      <div class="kicker">المركز الرائد لحماية السيارات الفاخرة بالرياض</div>
+      
+      <h1 class="hero-title">
+        احمِ سيارتك بأقوى<br />
+        <span>دروع الحماية</span> في المملكة
+      </h1>
+
+      <p class="hero-sub">
+        أفلام حماية PPF ذاتية الالتئام، نانو سيراميك 10H، وعوازل حرارية معتمدة.
+        نحافظ على بريق وكالة سيارتك مع ضمان رسمي يصل إلى 10 سنوات.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#calculator" class="btn btn--primary btn--lg">
+          <span>احسب تكلفة حماية سيارتك</span>
+          <span>↖</span>
+        </a>
+        <a href="#before-after" class="btn btn--ghost btn--lg">
+          <span>شاهد نتائج قبل وبعد</span>
+        </a>
+      </div>
+
+      <!-- Trust Badges Summary Bar -->
+      <div class="hero-badges">
+        <div class="badge-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span>خامات حماية وتظليل أصلية 100%</span>
+        </div>
+        <div class="badge-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <span>ضمان رسمي حتى 10 سنوات</span>
+        </div>
+        <div class="badge-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>كابينة تركيب معقمة ومفلترة</span>
+        </div>
+        <div class="badge-item">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          <span>تقسيط تابي وتمارا بدون فوائد</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════
+       TRUST PILLARS RIBBON
+  ══════════════════════════════════ -->
+  <section id="trust-ribbon">
+    <div class="container">
+      <div class="trust-grid" id="trust-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       INFINITE BRAND PARTNERS MARQUEE
+  ══════════════════════════════════ -->
+  <div class="marquee-wrap" id="marquee-wrapper">
+    <div class="marquee-track" id="brands-marquee">
+      <!-- Rendered by app.js -->
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       SERVICES SECTION
+  ══════════════════════════════════ -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">خدماتنا المعتمدة</div>
+        <h2 class="stitle">حلول حماية وتجميل متكاملة<br /><span>بأعلى المعايير العالمية</span></h2>
+        <p class="sdesc">نستخدم خامات أصلية من كبرى الشركات العالمية مع ضمان رسمي وفحص دوري مجاني لضمان راحة بالك التامة.</p>
+      </div>
+
+      <div class="services-grid" id="services-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       INTERACTIVE PRICING ESTIMATOR CALCULATOR
+  ══════════════════════════════════ -->
+  <section id="calculator" class="section section--alt">
+    <div class="container">
+      <div class="section-header" style="text-align: center;">
+        <div class="kicker">آلة حاسبة تفاعلية</div>
+        <h2 class="stitle">احسب تكلفة حماية <span>سيارتك فوراً</span></h2>
+        <p class="sdesc" style="margin-inline: auto;">اختر نوع سيارتك والخدمة المطلوبة لمعرفة التقدير المالي والمدة والضمان وحجز الباكيج عبر واتساب بنقرة واحدة.</p>
+      </div>
+
+      <div class="calc-card">
+        <div class="calc-config-side">
+          <!-- Step 1: Car Type -->
+          <div class="calc-group">
+            <label class="calc-label">١. اختر فئة سيارتك:</label>
+            <div class="calc-car-types" id="calc-cars">
+              <!-- Rendered by app.js -->
+            </div>
+          </div>
+
+          <!-- Step 2: Service Selection -->
+          <div class="calc-group" style="margin-top: 24px;">
+            <label class="calc-label">٢. اختر الخدمة أو الباكيج المطلوب:</label>
+            <div class="calc-services-list" id="calc-services">
+              <!-- Rendered by app.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Result Box Side -->
+        <div class="calc-result-side" id="calc-result-box">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       PACKAGES & PRICING TABLE (3 TIERS)
+  ══════════════════════════════════ -->
+  <section id="packages" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">الباقات الأكثر شمولاً</div>
+        <h2 class="stitle">باقات الحماية المتكاملة<br /><span>اختر ما يناسب سيارتك وميزانيتك</span></h2>
+        <p class="sdesc">باقات مخصصة تمنحك أقصى قيمة مقابل السعر مع إمكانية التقسيط المريح على 4 دفعات بدون أي هامش ربح.</p>
+      </div>
+
+      <div class="packages-grid" id="packages-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       HOW WE WORK (PROCESS) - 4 REAL STEPS
+  ══════════════════════════════════ -->
+  <section id="process" class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">دقة العمل والاحترافية</div>
+        <h2 class="stitle">كيف نشتغل على <span>سيارتك؟</span></h2>
+        <p class="sdesc">٤ خطوات دقيقة نتبعها في بيئة معقمة ومفلترة لضمان أعلى جودة تركيب تدوم لسنوات طويلة دون فقاعات أو عيوب.</p>
+      </div>
+
+      <div class="process-interactive-wrap" id="process-interactive">
+        <!-- Rendered by app.js with matched photos and progress timer -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       BEFORE / AFTER INTERACTIVE COMPARISON
+  ══════════════════════════════════ -->
+  <section id="before-after" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">النتائج تتحدث عن نفسها</div>
+        <h2 class="stitle">شاهد الفرق بنفسك:<br /><span>قبل وبعد تنفيذ كروم برو</span></h2>
+        <p class="sdesc">اسحب الخط التفاعلي لمقارنة دقة المعالجة وإزالة الخدوش ولمعان النانو سيراميك على طلاء السيارات الفاخرة.</p>
+      </div>
+
+      <!-- Categories Tabs -->
+      <div class="ba-tabs-row" id="ba-tabs">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="ba-grid" id="ba-showcase">
+        <!-- Visual Comparison Box with Attached Dynamic Floating Badges -->
+        <div class="ba-viewer">
+          <div class="ba-frame ba-stage" id="ba-stage">
+            <div class="ba-side ba-after">
+              <img id="ba-after-img" src="assets/images/ba-ceramic-after.jpg" alt="بعد المعالجة" class="ba-img ba-img--after" />
+            </div>
+            
+            <div class="ba-side ba-before ba-before-layer" id="ba-before-layer">
+              <img id="ba-before-img" src="assets/images/ba-ceramic-before.jpg" alt="قبل المعالجة" class="ba-img ba-img--before" />
+            </div>
+
+            <!-- Attached Floating Labels (Clamped) -->
+            <div class="ba-attached-label label-before ba-label-before" id="ba-label-before">قبل المعالجة</div>
+            <div class="ba-attached-label label-after ba-label-after" id="ba-label-after">بعد المعالجة ✨</div>
+
+            <!-- Drag Handle with Pulse Glow -->
+            <div class="ba-handle" id="ba-handle" aria-label="اسحب للمقارنة">
+              <div class="ba-handle-line"></div>
+              <div class="ba-handle-circle">
+                <span class="ba-arrow">◄</span>
+                <span class="ba-arrow">►</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Auto-Tour Controls -->
+          <div class="ba-controls-bar">
+            <span class="ba-status-text">
+              <span class="pulse-dot"></span>
+              <span id="ba-status-msg">الشريط يتحرك تلقائياً — اسحب يدويًا في أي وقت أو اضغط لإيقافه مؤقتاً</span>
+            </span>
+            <button class="btn btn--ghost btn--sm" id="ba-toggle-tour-btn" type="button">
+              <span>إيقاف الحركة مؤقتاً ⏸</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Details Info Box -->
+        <div class="ba-info-box" id="ba-info-panel">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       CATEGORIZED REAL WORK GALLERY & REELS TRIGGER
+  ══════════════════════════════════ -->
+  <section id="gallery" class="section section--alt">
+    <div class="container">
+      <div class="gallery-header-row">
+        <div>
+          <div class="kicker">معرض الإنجازات</div>
+          <h2 class="stitle">سيارات عملائنا في <span>الرياض</span></h2>
+          <p class="sdesc">تصفح صور السيارات التي تم حمايتها وتجهيزها داخل كبائن كروم برو بأعلى مستويات الإتقان.</p>
+        </div>
+
+        <!-- Reels / Video Button Trigger -->
+        <button class="btn btn--primary js-open-reel" type="button" style="align-self: flex-start;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+          <span>شاهد اختبار الصلابة بالفيديو 🎬</span>
+        </button>
+      </div>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="gallery-tabs-row" id="gallery-tabs">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Rendered by app.js with Zoom Lightbox -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       STATS & NUMBERS
+  ══════════════════════════════════ -->
+  <section id="stats" class="section">
+    <div class="container">
+      <div class="stats-grid" id="stats-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       REVIEWS & CUSTOMER SATISFACTION
+  ══════════════════════════════════ -->
+  <section id="reviews" class="section section--alt">
+    <div class="container">
+      <div class="reviews-header-block">
+        <div class="score-display">
+          <span class="score-num">4.9</span>
+          <div class="score-meta">
+            <div class="stars">★★★★★</div>
+            <span class="score-sub">متوسط التقييم العام بناءً على +850 مراجعة على خرائط جوجل</span>
+          </div>
+        </div>
+
+        <div class="score-btn">
+          <a href="https://maps.google.com" target="_blank" class="btn btn--ghost btn--sm">
+            <span>شاهد كل التقييمات على خرائط جوجل ↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="reviews-grid" id="reviews-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FAQ ACCORDION SECTION
+  ══════════════════════════════════ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header" style="text-align: center;">
+        <div class="kicker">إجابات شفافة وموثوقة</div>
+        <h2 class="stitle">الأسئلة الأكثر شيوعاً<br /><span>قبل أن تحجز موعدك</span></h2>
+        <p class="sdesc" style="margin-inline: auto;">جمعنا لك أكثر الاستفسارات تكراراً حول خامات الـ PPF، النانو سيراميك، فترة الضمان، وكيفية العناية بسيارتك.</p>
+      </div>
+
+      <div class="faq-accordion-wrap" id="faq-accordion">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       LOCATION & TIMING SECTION
+  ══════════════════════════════════ -->
+  <section id="location" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">الموقع وساعات العمل</div>
+        <h2 class="stitle">حي الملك فهد، <span>الرياض</span></h2>
+        <p class="sdesc">تفضل بزيارتنا لمعاينة وفحص طلاء سيارتك بجهاز السماكة الرقمي مجاناً دون أي التزام.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-info">
+          <!-- Address -->
+          <div class="info-block">
+            <span class="info-label">العنوان</span>
+            <p class="info-text">طريق العروبة، تقاطع الملك فهد، حي الملك فهد، الرياض ١٢٢٧٤، المملكة العربية السعودية</p>
+            <a href="https://maps.google.com/?q=Riyadh+Saudi+Arabia" target="_blank" class="btn btn--primary btn--sm" style="margin-top: 10px; width: fit-content;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>افتح الاتجاهات المباشرة في خرائط Google ↗</span>
+            </a>
+          </div>
+
+          <!-- Phone & WhatsApp -->
+          <div class="info-block">
+            <span class="info-label">الهاتف والحجز الفوري</span>
+            <span class="info-phone">+966 50 000 0000</span>
+            <a href="https://wa.me/966500000000" target="_blank" class="btn btn--wa btn--sm" style="margin-top: 8px; width: fit-content;">
+              <span>محادثة واتساب مباشرة للحجز</span>
+            </a>
+          </div>
+
+          <!-- Hours -->
+          <div class="info-block">
+            <span class="info-label">ساعات العمل</span>
+            <ul class="hours-list">
+              <li>
+                <span>السبت – الخميس</span>
+                <span class="time">8:00 ص – 2:00 ص</span>
+              </li>
+              <li>
+                <span>الجمعة</span>
+                <span class="time">1:00 م – 2:00 ص</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Google Map Iframe with Dark Automotive Filter -->
+        <div class="map-wrap">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115983.82470716493!2d46.60228308871638!3d24.71355171701557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2ssa!4v1714500000000!5m2!1sar!2ssa" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="موقع المركز على خريطة الرياض">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FINAL CTA SECTION
+  ══════════════════════════════════ -->
+  <section id="cta-section" class="section section--alt">
+    <div class="container">
+      <div class="kicker">احجز موعدك اليوم</div>
+      <h2 class="cta-title">جاهز تحمي <span>سيارتك؟</span></h2>
+      <p class="cta-sub">أرسل لنا موديل سيارتك والخدمة المطلوبة وسنرد عليك بعرض سعر تفصيلي وكود خصم 20% خلال دقائق معدودة.</p>
+      <a href="https://wa.me/966500000000" target="_blank" class="btn btn--primary btn--lg">
+        <span>تواصل معنا على واتساب مباشرة</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.667-.698c.974.53 1.997.817 3.123.818h.005c3.179 0 5.765-2.587 5.766-5.767.001-3.18-2.585-5.766-5.765-5.766zm0 10.42c-.991 0-1.961-.266-2.808-.768l-.201-.119-1.583.415.422-1.543-.131-.208c-.551-.876-.842-1.895-.841-2.942.001-2.903 2.364-5.266 5.268-5.266 2.903 0 5.265 2.363 5.265 5.266 0 2.904-2.362 5.267-5.265 5.267z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="logo">CHROME<span>PRO</span></div>
+          <p>مركز العناية الشاملة وحماية وتفصيل السيارات — الرياض</p>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="#services">الخدمات</a></li>
+          <li><a href="#calculator">الحاسبة</a></li>
+          <li><a href="#packages">الباقات</a></li>
+          <li><a href="#process">كيف نشتغل</a></li>
+          <li><a href="#before-after">قبل وبعد</a></li>
+          <li><a href="#gallery">المعرض</a></li>
+          <li><a href="#reviews">التقييمات</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+          <li><a href="#location">الموقع</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-copy">
+        © ٢٠٢٦ كروم برو | CHROME PRO — الرياض · جميع الحقوق محفوظة
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       SMART EXPANDABLE SPEED-DIAL CONTACT FAB
+  ══════════════════════════════════ -->
+  <!-- Backdrop Dimmer Overlay -->
+  <div class="dial-backdrop" id="dial-backdrop" aria-hidden="true"></div>
+
+  <div class="smart-speed-dial" id="speed-dial-wrap">
+    <!-- Main Mother FAB Button (Always anchored at bottom right) -->
+    <button type="button" class="dial-main-btn" id="dial-main-btn" aria-label="خيارات التواصل السريع" aria-expanded="false" aria-haspopup="true">
+      <div class="dial-pulse-ring"></div>
+      <div class="dial-icons-wrap">
+        <svg class="dial-icon-open" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <svg class="dial-icon-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+    </button>
+
+    <!-- Floating Actions Container (Elevates upward only when active) -->
+    <div class="dial-actions" id="dial-actions" role="menu" aria-hidden="true">
+      <!-- WhatsApp Option -->
+      <a href="https://wa.me/966500000000" target="_blank" class="dial-item dial-wa" role="menuitem" aria-label="واتساب مباشر">
+        <span class="dial-tooltip">محادثة واتساب</span>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.667-.698c.974.53 1.997.817 3.123.818h.005c3.179 0 5.765-2.587 5.766-5.767.001-3.18-2.585-5.766-5.765-5.766zm0 10.42c-.991 0-1.961-.266-2.808-.768l-.201-.119-1.583.415.422-1.543-.131-.208c-.551-.876-.842-1.895-.841-2.942.001-2.903 2.364-5.266 5.268-5.266 2.903 0 5.265 2.363 5.265 5.266 0 2.904-2.362 5.267-5.265 5.267z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram Option -->
+      <a href="https://instagram.com" target="_blank" class="dial-item dial-ig" role="menuitem" aria-label="حساب انستجرام">
+        <span class="dial-tooltip">معرض أعمال إنستغرام</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+
+      <!-- Direct Phone Call Option -->
+      <a href="tel:920000000" class="dial-item dial-call" role="menuitem" aria-label="اتصال هاتفي">
+        <span class="dial-tooltip">اتصال مباشر 920000000</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </a>
+
+      <!-- Location / Branch Map -->
+      <a href="#contact" class="dial-item dial-map" role="menuitem" aria-label="موقع المركز على الخريطة">
+        <span class="dial-tooltip">موقع المركز والورشة</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Speech bubble prompt -->
+    <div class="smart-wa-bubble" id="wa-bubble">
+      <span class="online-indicator"></span>
+      <div class="bubble-text">
+        <strong>مستشارك الفني متصل 🚗</strong>
+        <span>تواصل معنا لاستشارة وفحص مجاني لسيارتك</span>
+      </div>
+      <button class="bubble-close" id="bubble-close" aria-label="إغلاق التنبيه">✕</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       FULLSCREEN IMAGE LIGHTBOX WITH CAROUSEL ARROWS
+  ══════════════════════════════════ -->
+  <div class="lightbox-modal" id="gallery-lightbox">
+    <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+    <div class="lightbox-dialog">
+      <button class="lightbox-close" id="lightbox-close" aria-label="إغلاق المعاينة">✕</button>
+      <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="الصورة السابقة">‹</button>
+      <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="الصورة التالية">›</button>
+
+      <div class="lightbox-content-box">
+        <div class="lightbox-img-frame">
+          <img id="lightbox-img" src="" alt="معاينة الصورة" />
+        </div>
+        <div class="lightbox-meta-panel">
+          <div>
+            <span class="lightbox-cat-badge" id="lightbox-cat"></span>
+            <h3 class="lightbox-title" id="lightbox-title"></h3>
+            <p class="lightbox-sub" id="lightbox-sub"></p>
+          </div>
+          <a href="#" target="_blank" class="btn btn--primary btn--sm" id="lightbox-whatsapp">
+            <span>اطلب مثل هذا الشغل عبر واتساب</span>
+            <span>↖</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       REELS / VIDEO SHORTS LIGHTWEIGHT MODAL
+  ══════════════════════════════════ -->
+  <div class="modal-overlay" id="reels-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="إغلاق">✕</button>
+      <div class="modal-video-wrap">
+        <div class="video-loader" id="video-loader">
+          <div class="video-spinner"></div>
+        </div>
+        <video id="modal-video" controls playsinline></video>
+      </div>
+      <div class="modal-footer">
+        <div>
+          <span class="modal-sub" id="modal-video-tag" style="color:var(--accent); font-weight:700;"></span>
+          <h4 class="modal-title" id="modal-video-title"></h4>
+        </div>
+        <a href="https://wa.me/966500000000" target="_blank" class="btn btn--primary btn--sm">
+          <span>احجز تجربة فحص لسيارتك</span>
+          <span>↖</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       SCRIPTS (Data -> Animation -> App)
+  ══════════════════════════════════ -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>

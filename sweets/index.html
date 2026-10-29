@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>حلويات وآيسكريم البطريق | Penguin Ice Cream & Custom Cakes — الموقع الرسمي والتطبيق</title>
+  <meta name="description" content="حمّل تطبيق حلويات وآيسكريم البطريق لسرعة الحجز المسبق وتخصيص كيكات المناسبات ومتابعة جاهزية طلبك والاستلام من الفرع فوراً دون انتظار." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/App_ico.png" />
+
+  <!-- Google Fonts: Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════
+       0. TOP STICKY PROMO BAR
+  ══════════════════════════════════ -->
+  <aside class="promo-bar" id="promo-bar" aria-label="عرض الترحيب بالتطبيق">
+    <div class="container promo-inner">
+      <div class="promo-left">
+        <span class="promo-badge">تطبيق البطريق الرسمي 🐧</span>
+        <span class="promo-text">احجز كيكتك وحلاك المفضل مسبقاً عبر التطبيق واستلمه فوراً من أقرب فرع دون أي انتظار أو طوابير!</span>
+      </div>
+      <div class="promo-right">
+        <a href="#download" class="promo-cta">حمّل التطبيق الآن ↖</a>
+        <button class="promo-close" id="promo-close" aria-label="إغلاق الإعلان">✕</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════
+       NAVBAR (مع أزرار تنقل بارزة وتفاعلية)
+  ══════════════════════════════════ -->
+  <nav id="nav">
+    <div class="container nav-inner">
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-brand" aria-label="الرئيسية - حلويات وآيسكريم البطريق">
+        <img src="assets/images/Penguin_ico.png" alt="شعار البطريق" class="logo-ico" />
+        <div class="nav-brand-text">
+          <img src="assets/images/Penguin_ar_text.png" alt="البطريق" class="text-ar" />
+          <img src="assets/images/Penguin_en_text.png" alt="Penguin Ice Cream & Custom Cakes" class="text-en" />
+        </div>
+      </a>
+
+      <!-- أزرار التنقل العلوية البارزة (Interactive Pill Navigation Buttons) -->
+      <nav class="nav-pills-wrapper" aria-label="أزرار التنقل الرئيسية">
+        <ul class="nav-links" id="main-nav-links">
+          <li>
+            <a href="#features" class="nav-btn-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              <span>المميزات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#how-to-order" class="nav-btn-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>كيف تطلب</span>
+            </a>
+          </li>
+          <li>
+            <a href="#menu-preview" class="nav-btn-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <span>نظرة عالمنيو</span>
+            </a>
+          </li>
+          <li>
+            <a href="#reviews" class="nav-btn-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>التقييمات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#locations" class="nav-btn-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>الفروع والخريطة</span>
+            </a>
+          </li>
+          <li>
+            <a href="#faq" class="nav-btn-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              <span>الأسئلة الشائعة</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="https://wa.me/967777777777" target="_blank" class="btn btn--ghost nav-wa-btn" title="تواصل عبر واتساب">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#25D366">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.667-.698c.974.53 1.997.817 3.123.818h.005c3.179 0 5.765-2.587 5.766-5.767.001-3.18-2.585-5.766-5.765-5.766zm0 10.42c-.991 0-1.961-.266-2.808-.768l-.201-.119-1.583.415.422-1.543-.131-.208c-.551-.876-.842-1.895-.841-2.942.001-2.903 2.364-5.266 5.268-5.266 2.903 0 5.265 2.363 5.265 5.266 0 2.904-2.362 5.267-5.265 5.267z"/>
+          </svg>
+          <span>واتساب</span>
+        </a>
+        <a href="#download" class="btn btn--primary nav-cta-btn">
+          <span>تحميل التطبيق</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="ham" id="ham-btn" aria-label="فتح قائمة التنقل">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="nav-drawer" id="nav-drawer">
+      <div class="drawer-header">
+        <span class="drawer-title">أقسام الموقع والتطبيق 🐧</span>
+        <button class="drawer-close" id="drawer-close" aria-label="إغلاق القائمة">✕</button>
+      </div>
+      <div class="drawer-links">
+        <a href="#features" class="drawer-link">
+          <span class="icon">✨</span>
+          <span>مميزات التطبيق الحصرية</span>
+        </a>
+        <a href="#how-to-order" class="drawer-link">
+          <span class="icon">⚡</span>
+          <span>كيف تطلب في ٣ خطوات</span>
+        </a>
+        <a href="#menu-preview" class="drawer-link">
+          <span class="icon">🎂</span>
+          <span>نظرة على أصناف المعمل والمنيو</span>
+        </a>
+        <a href="#reviews" class="drawer-link">
+          <span class="icon">⭐</span>
+          <span>تقييمات وآراء العملاء</span>
+        </a>
+        <a href="#locations" class="drawer-link">
+          <span class="icon">📍</span>
+          <span>الفروع وساعات العمل وصالات التذوق</span>
+        </a>
+        <a href="#faq" class="drawer-link">
+          <span class="icon">❓</span>
+          <span>الأسئلة الشائعة والأجوبة</span>
+        </a>
+      </div>
+      <div class="drawer-footer">
+        <a href="#download" class="btn btn--primary btn--full">
+          <span>حمّل التطبيق الآن مجاناً 📲</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════
+       1. HERO SECTION
+  ══════════════════════════════════ -->
+  <section id="hero">
+    <!-- Floating Sprinkles Background Decor -->
+    <div class="sprinkles-decor" aria-hidden="true">
+      <div class="sprinkle sprinkle--pink s1"></div>
+      <div class="sprinkle sprinkle--blue s2"></div>
+      <div class="sprinkle sprinkle--cream s3"></div>
+      <div class="sprinkle sprinkle--pink s4"></div>
+      <div class="sprinkle sprinkle--blue s5"></div>
+      <div class="sprinkle sprinkle--white s6"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Hero Text & CTA -->
+        <div class="hero-content">
+          <div class="hero-rating-badge">
+            <span class="stars">★★★★★</span>
+            <strong>4.9</strong>
+            <span>· أكثر من ١٥,٠٠٠ تقييم موثق على المتاجر</span>
+          </div>
+
+          <h1 class="hero-title">
+            حلا يبهج لحظاتك..<br />
+            <span class="accent-pink">بلمسة واحدة</span> من <span class="accent-blue">هاتفك!</span>
+          </h1>
+
+          <p class="hero-sub">
+            التطبيق الرسمي لـ <strong>حلويات وآيسكريم البطريق</strong>. صمّم كيكات مناسباتك بالاسم والصورة، تذوق ألذ جيلاتو طبيعي، وتابع حالة تجهيز طلبك لحظة بلحظة لتستلمه جاهزاً وطازجاً من الفرع دون أي انتظار.
+          </p>
+
+          <div class="hero-download-group">
+            <div class="store-buttons-row">
+              <!-- Google Play Button -->
+              <a href="https://play.google.com" target="_blank" class="btn--store js-play-store" title="تحميل من متجر جوجل بلاي">
+                <svg class="store-icon" viewBox="0 0 512 512">
+                  <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+                </svg>
+                <div>
+                  <span class="store-sub">احصل عليه من</span>
+                  <span class="store-main">Google Play</span>
+                </div>
+              </a>
+
+              <!-- App Store Button -->
+              <a href="https://apps.apple.com" target="_blank" class="btn--store js-app-store" title="تحميل من متجر آبل">
+                <svg class="store-icon" viewBox="0 0 384 512">
+                  <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-14 69.5-34.3z"/>
+                </svg>
+                <div>
+                  <span class="store-sub">متوفر على</span>
+                  <span class="store-main">App Store</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Deep Link Trigger & Quick APK -->
+            <div class="hero-extra-actions">
+              <button class="deep-link-hint js-deep-link" type="button">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                </svg>
+                <span>هل التطبيق مثبت لديك؟ انقر لفتحه مباشرة ⚡</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3D Smartphone Mockup (Interactive Screen Switcher + Glass Glare) -->
+        <div class="hero-phone-wrap">
+          
+          <!-- Floating Badge Top -->
+          <div class="float-badge float-badge--top">
+            <div class="float-badge-icon pink">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <div class="float-badge-text">
+              <strong>استلام فوري من الفرع</strong>
+              <span>تجاوز الطوابير واستلم طلبك مبرداً ⚡</span>
+            </div>
+          </div>
+
+          <!-- Smartphone Shell with Dynamic Glare Overlay -->
+          <div class="phone-card" id="interactive-phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen-glare"></div>
+            <div class="phone-screen">
+              <img id="phone-screen-img" src="assets/images/app-screen-splash.png" alt="شاشة تطبيق البطريق" class="phone-screen-img" />
+            </div>
+
+            <!-- Switcher Tabs inside Mockup (3 Real Screens) -->
+            <div class="phone-tabs-bar">
+              <button class="phone-tab-btn active" data-screen="splash" type="button">
+                <span>🍦 البداية</span>
+              </button>
+              <button class="phone-tab-btn" data-screen="login" type="button">
+                <span>🔐 الدخول</span>
+              </button>
+              <button class="phone-tab-btn" data-screen="cake" type="button">
+                <span>🎂 استوديو الكيك</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Floating Badge Bottom -->
+          <div class="float-badge float-badge--bottom">
+            <div class="float-badge-icon blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <div class="float-badge-text">
+              <strong>استوديو الكيك المخصص</strong>
+              <span>صمم كيكتك بنكهتك واسمك 🎂</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       2. TRUST PILLARS
+  ══════════════════════════════════ -->
+  <section id="trust" class="section section--alt">
+    <div class="container">
+      <div class="trust-grid" id="trust-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       3. APP FEATURES SECTION
+  ══════════════════════════════════ -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">مزايا تطبيق البطريق</div>
+        <h2 class="stitle">لماذا تطلب عبر <span>تطبيق البطريق؟</span></h2>
+        <p class="sdesc">صممنا التطبيق ليكون رفيقك في كل احتفال ولحظة حلوة، مع أدوات حصرية تجعل طلب الكيك والآيسكريم تجربة ممتعة وسهلة.</p>
+      </div>
+
+      <div class="features-grid" id="features-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       4. HOW TO ORDER (3 SIMPLE STEPS WITH FLOW CONNECTOR)
+  ══════════════════════════════════ -->
+  <section id="how-to-order" class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">بساطة وسرعة قياسية</div>
+        <h2 class="stitle">كيف تطلب حلاك <span>في ٣ خطوات فقط؟</span></h2>
+        <p class="sdesc">من تحميل التطبيق وحجز أصنافك المفضلة وحتى استلامها جاهزة وطازجة من الفرع دون أي انتظار.</p>
+      </div>
+
+      <!-- Process Visual Connector -->
+      <div class="steps-flow-container">
+        <div class="steps-grid" id="steps-grid">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       5. SNEAK PEEK MENU SHOWCASE (WITH FILTER TABS)
+  ══════════════════════════════════ -->
+  <section id="menu-preview" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">نظرة على المعمل</div>
+        <h2 class="stitle">ماذا ينتظرك <span>داخل التطبيق؟</span></h2>
+        <p class="sdesc">لمحة من أشهر ابتكارات "البطريق" من كيكات المناسبات الملكية، جيلاتو الآيسكريم الطبيعي، وبوكسات الجمعات.</p>
+      </div>
+
+      <!-- Menu Filter Tabs -->
+      <div class="menu-filter-bar" id="menu-filter-bar" role="tablist" aria-label="تصنيفات المنيو">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       6. REVIEWS & APP STORE RATINGS
+  ══════════════════════════════════ -->
+  <section id="reviews" class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">ثقة عملائنا</div>
+        <h2 class="stitle">ماذا يقول عشاق <span>البطريق؟</span></h2>
+      </div>
+
+      <!-- App Score & Breakdown Banner -->
+      <div class="reviews-score-banner">
+        <div class="score-main-col">
+          <div class="score-badge-huge">4.9</div>
+          <div>
+            <div class="score-stars-line">★★★★★</div>
+            <div class="score-text-block">
+              <strong>متوسط التقييم العام على Google Play و App Store</strong>
+              <span>مبني على أكثر من ١٥,٤٨٠ تقييم حقيقي وموثق</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Star Bars Distribution -->
+        <div class="score-bars-col" id="score-bars-col">
+          <div class="star-bar-row">
+            <span>5 نجوم</span>
+            <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+            <span class="pct">92%</span>
+          </div>
+          <div class="star-bar-row">
+            <span>4 نجوم</span>
+            <div class="progress-track"><div class="progress-fill" style="width: 6%;"></div></div>
+            <span class="pct">6%</span>
+          </div>
+          <div class="star-bar-row">
+            <span>3 نجوم</span>
+            <div class="progress-track"><div class="progress-fill" style="width: 1.5%;"></div></div>
+            <span class="pct">1.5%</span>
+          </div>
+        </div>
+
+        <a href="#download" class="btn btn--primary score-cta-btn">
+          <span>انضم لآلاف العملاء السعداء</span>
+          <span>↖</span>
+        </a>
+      </div>
+
+      <div class="reviews-grid" id="reviews-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       7. LOCATIONS, BRANCHES & MAP
+  ══════════════════════════════════ -->
+  <section id="locations" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">فروعنا وصالات التذوق</div>
+        <h2 class="stitle">تفضل بزيارتنا أو احجز <span>طلبك مسبقاً عبر التطبيق</span></h2>
+        <p class="sdesc">فروعنا مجهزة بصالات تذوق مكيفة ومخصصة للعائلات والأفراد لتجربة أحدث نكهات الآيسكريم.</p>
+      </div>
+
+      <div class="locations-layout">
+        <!-- Branches Info Cards -->
+        <div class="locations-list" id="locations-list">
+          <!-- Rendered by app.js -->
+        </div>
+
+        <!-- Google Map Iframe with Dynamic Switcher -->
+        <div class="map-container-wrap">
+          <div class="map-active-badge" id="map-active-badge">
+            <span class="live-dot"></span>
+            <span id="map-branch-name">الفرع الرئيسي — شارع حدة</span>
+          </div>
+          <iframe 
+            id="google-map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3847.6749870198533!2d44.19515!3d15.33418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDIwJzAzLjAiTiA0NMKwMTEnNDIuNSJF!5e0!3m2!1sar!2s!4v1714500000000!5m2!1sar!2s" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="موقع فروع حلويات وآيسكريم البطريق">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       8. FAQ SECTION (Accordion)
+  ══════════════════════════════════ -->
+  <section id="faq" class="section section--alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="kicker">إجابات شفافة وسريعة</div>
+        <h2 class="stitle">الأسئلة الأكثر شيوعاً <span>عن التطبيق والحجز المسبق</span></h2>
+        <p class="sdesc">كل ما تود معرفته حول الحجز المسبق، استوديو تخصيص الكيك، ومواعيد الاستلام السريع من الفروع.</p>
+      </div>
+
+      <div class="faq-wrap" id="faq-wrap">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       9. FINAL DOWNLOAD CTA BANNER
+  ══════════════════════════════════ -->
+  <section id="download" class="section">
+    <div class="container">
+      <div class="download-banner-card">
+        
+        <div class="download-text">
+          <h2>حمل التطبيق الآن واصنع <span>لحظاتك الحلوة!</span></h2>
+          <p>متوفر مجاناً على أجهزة آيفون وأندرويد. سجّل حسابك اليوم واستمتع بسرعة الحجز المسبق لكيكات المناسبات والجيلاتو الطبيعي واستلامها دون انتظار.</p>
+          
+          <div class="store-buttons-row">
+            <!-- Google Play -->
+            <a href="https://play.google.com" target="_blank" class="btn--store js-play-store">
+              <svg class="store-icon" viewBox="0 0 512 512">
+                <path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+              </svg>
+              <div>
+                <span class="store-sub">تنزيل من</span>
+                <span class="store-main">Google Play</span>
+              </div>
+            </a>
+
+            <!-- App Store -->
+            <a href="https://apps.apple.com" target="_blank" class="btn--store js-app-store">
+              <svg class="store-icon" viewBox="0 0 384 512">
+                <path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 52.3-14 69.5-34.3z"/>
+              </svg>
+              <div>
+                <span class="store-sub">تنزيل من</span>
+                <span class="store-main">App Store</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Deep link direct prompt -->
+          <button class="deep-link-hint js-deep-link" style="margin-top: 14px;" type="button">
+            <span>📲 انقر هنا لفتح التطبيق مباشرة إذا كان مثبتاً في جهازك</span>
+          </button>
+        </div>
+
+        <!-- High-res QR Code Card with Direct Download trigger -->
+        <div class="qr-code-box">
+          <div class="qr-code-img">
+            <svg width="130" height="130" viewBox="0 0 24 24" fill="none" stroke="#0E335C" stroke-width="1.8">
+              <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+              <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+              <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+              <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+              <circle cx="6.5" cy="6.5" r="1.5" fill="#E63973"/>
+              <circle cx="17.5" cy="6.5" r="1.5" fill="#29A8DF"/>
+              <circle cx="6.5" cy="17.5" r="1.5" fill="#29A8DF"/>
+              <path d="M10 10h4v4h-4z" fill="#0E335C"/>
+              <path d="M17 17h4v4h-4z" fill="#E63973"/>
+            </svg>
+          </div>
+          <strong>امسح للتحميل الفوري 📷</strong>
+          <span>وجّه كاميرا هاتفك لتحميل التطبيق مباشرة</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       10. FOOTER
+  ══════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <img src="assets/images/Penguin_ico.png" alt="البطريق" />
+          <div>
+            <h4>حلويات وآيسكريم البطريق</h4>
+            <p>Penguin Ice Cream & Custom Cakes — جميع الحقوق محفوظة © ٢٠٢٦</p>
+          </div>
+        </div>
+
+        <!-- Footer Navigation Links -->
+        <ul class="footer-nav">
+          <li><a href="#features">المميزات</a></li>
+          <li><a href="#how-to-order">كيف تطلب</a></li>
+          <li><a href="#menu-preview">المنيو</a></li>
+          <li><a href="#reviews">التقييمات</a></li>
+          <li><a href="#locations">الفروع</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+          <li><a href="#download">تحميل التطبيق</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        تطبيق حلويات البطريق للكيكات المخصصة والجيلاتو الطبيعي · صمم لسرعة الحجز والاستلام الفوري من الفروع دون انتظار
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       11. SMART EXPANDABLE SPEED-DIAL CONTACT FAB
+  ══════════════════════════════════ -->
+  <!-- Backdrop Dimmer Overlay -->
+  <div class="dial-backdrop" id="dial-backdrop" aria-hidden="true"></div>
+
+  <div class="smart-speed-dial" id="speed-dial-wrap">
+    <!-- Main Mother FAB Button (Always anchored at bottom right) -->
+    <button type="button" class="dial-main-btn" id="dial-main-btn" aria-label="خيارات التواصل" aria-expanded="false" aria-haspopup="true">
+      <div class="dial-pulse-ring"></div>
+      <div class="dial-icons-wrap">
+        <!-- Default State: Chat Icon -->
+        <svg class="dial-icon-open" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <!-- Active State: Close X Icon -->
+        <svg class="dial-icon-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+    </button>
+
+    <!-- Floating Actions Container (Elevates upward only when active) -->
+    <div class="dial-actions" id="dial-actions" role="menu" aria-hidden="true">
+      <!-- WhatsApp Option -->
+      <a href="https://wa.me/967777777777?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AD%D8%AC%D8%B2%20%D9%83%D9%8A%D9%83%D8%A9%20%D8%A3%D9%88%20%D8%B7%D9%84%D8%A8%20%D9%85%D9%86%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%A7%D9%84%D8%A8%D8%B7%D8%B1%D9%8A%D9%82." target="_blank" class="dial-item dial-wa" role="menuitem" aria-label="واتساب">
+        <span class="dial-tooltip">محادثة واتساب</span>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.667-.698c.974.53 1.997.817 3.123.818h.005c3.179 0 5.765-2.587 5.766-5.767.001-3.18-2.585-5.766-5.765-5.766zm0 10.42c-.991 0-1.961-.266-2.808-.768l-.201-.119-1.583.415.422-1.543-.131-.208c-.551-.876-.842-1.895-.841-2.942.001-2.903 2.364-5.266 5.268-5.266 2.903 0 5.265 2.363 5.265 5.266 0 2.904-2.362 5.267-5.265 5.267z"/>
+        </svg>
+      </a>
+
+      <!-- Instagram Option -->
+      <a href="https://instagram.com/penguin_sweets" target="_blank" class="dial-item dial-ig" role="menuitem" aria-label="انستجرام">
+        <span class="dial-tooltip">تابعنا على إنستغرام</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+
+      <!-- Direct Phone Call Option -->
+      <a href="tel:+967777777777" class="dial-item dial-call" role="menuitem" aria-label="اتصال هاتفي">
+        <span class="dial-tooltip">اتصال مباشر</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </a>
+
+      <!-- Branch Location Option -->
+      <a href="#locations" class="dial-item dial-map" role="menuitem" aria-label="مواقع الفروع">
+        <span class="dial-tooltip">مواقع الفروع</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Speech bubble prompt -->
+    <div class="smart-wa-bubble" id="smart-wa-bubble">
+      <span class="online-dot"></span>
+      <div class="bubble-text">
+        <strong>فريق خدمة عملاء البطريق متصل 🐧</strong>
+        <span>تواصل معنا فوراً لأي طلب أو استفسار</span>
+      </div>
+      <button class="bubble-close-btn" id="bubble-close" aria-label="إغلاق التنبيه">✕</button>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       SCRIPTS (Data -> App)
+  ══════════════════════════════════ -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>

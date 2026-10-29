@@ -1,0 +1,4 @@
+# Ignore development backup folder
+"نماذج صفحات هبوط/"
+.DS_Store
+Thumbs.db
