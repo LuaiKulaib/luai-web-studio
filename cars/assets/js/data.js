@@ -9,7 +9,7 @@ const DATA = {
     badge: 'عرض خاص',
     text: 'خصم 20% على باقة الحماية الفضية والذهبية + تقسيط 4 دفعات بدون فوائد عبر تابي وتمارا!',
     linkText: 'احجز العرض الآن',
-    linkUrl: 'https://wa.me/966500000000?text=' + encodeURIComponent('السلام عليكم، أود الاستفادة من العرض الموسمي لخصم 20% على باقات الحماية.')
+    linkUrl: 'https://wa.me/967782259937?text=' + encodeURIComponent('السلام عليكم، أود الاستفادة من العرض الموسمي لخصم 20% على باقات الحماية.')
   },
 
   // Brand Partners & Trust Highlights (Pure SVG Icons)

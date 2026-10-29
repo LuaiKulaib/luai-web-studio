@@ -155,7 +155,7 @@ function renderServices() {
         </span>
       </div>
 
-      <a href="https://wa.me/966500000000?text=${encodeURIComponent('السلام عليكم، أود الاستفسار وحجز موعد لخدمة: ' + s.title)}" target="_blank" class="srv-link">
+      <a href="https://wa.me/967782259937?text=${encodeURIComponent('السلام عليكم، أود الاستفسار وحجز موعد لخدمة: ' + s.title)}" target="_blank" class="srv-link">
         <span>${s.link}</span>
         <span class="arrow">↖</span>
       </a>
@@ -237,7 +237,7 @@ function renderPricingCalculator() {
         </div>
       </div>
 
-      <a href="https://wa.me/966500000000?text=${waText}" target="_blank" class="btn btn--primary btn--lg" style="width: 100%; justify-content: center;">
+      <a href="https://wa.me/967782259937?text=${waText}" target="_blank" class="btn btn--primary btn--lg" style="width: 100%; justify-content: center;">
         <span>احجز هذا الباكيج عبر واتساب بضغطة واحدة</span>
         <span>↖</span>
       </a>
@@ -300,7 +300,7 @@ function renderPackages() {
         </ul>
       </div>
 
-      <a href="https://wa.me/966500000000?text=${encodeURIComponent('السلام عليكم، أرغب في حجز ' + p.name + ' لسيارتي.')}" target="_blank" class="btn ${p.featured ? 'btn--primary' : 'btn--ghost'}" style="width: 100%; justify-content: center;">
+      <a href="https://wa.me/967782259937?text=${encodeURIComponent('السلام عليكم، أرغب في حجز ' + p.name + ' لسيارتي.')}" target="_blank" class="btn ${p.featured ? 'btn--primary' : 'btn--ghost'}" style="width: 100%; justify-content: center;">
         <span>احجز هذه الباقة الآن</span>
         <span>↖</span>
       </a>
@@ -552,7 +552,7 @@ function loadBeforeAfterCase(c) {
         </div>
       </div>
 
-      <a href="https://wa.me/966500000000?text=${encodeURIComponent('السلام عليكم، أرغب في حجز خدمة مماثلة لـ ' + c.title)}" target="_blank" class="btn btn--primary" style="width: 100%; justify-content: center;">
+      <a href="https://wa.me/967782259937?text=${encodeURIComponent('السلام عليكم، أرغب في حجز خدمة مماثلة لـ ' + c.title)}" target="_blank" class="btn btn--primary" style="width: 100%; justify-content: center;">
         <span>احجز هذه الخدمة لسيارتك</span>
         <span>↖</span>
       </a>
@@ -641,7 +641,7 @@ function openLightboxByIndex(idx) {
   if (subEl) subEl.textContent = item.sub || 'تنفيذ مركز كروم برو بالرياض';
   if (catEl) catEl.textContent = getCategoryName(item.category);
   if (ctaEl) {
-    ctaEl.href = `https://wa.me/966500000000?text=${encodeURIComponent('السلام عليكم، أعجبني هذا الشغل في المعرض (' + item.label + ') وأرغب بحجز موعد لسيارتي.')}`;
+    ctaEl.href = `https://wa.me/967782259937?text=${encodeURIComponent('السلام عليكم، أعجبني هذا الشغل في المعرض (' + item.label + ') وأرغب بحجز موعد لسيارتي.')}`;
   }
 
   modal.classList.add('active');
