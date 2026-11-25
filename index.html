@@ -212,8 +212,14 @@
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(min(330px, 100%), 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 28px;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     .card {
@@ -290,6 +296,12 @@
       background: rgba(200, 141, 50, 0.22);
       color: #fbbf24;
       border: 1px solid rgba(226, 171, 82, 0.42);
+    }
+
+    .badge-ye {
+      background: rgba(56, 189, 248, 0.2);
+      color: #7dd3fc;
+      border: 1px solid rgba(56, 189, 248, 0.4);
     }
 
     .card-body {
@@ -381,6 +393,16 @@
 
     .btn-homeware:hover {
       box-shadow: 0 8px 24px rgba(16, 185, 129, 0.45);
+      transform: translateY(-2px);
+    }
+
+    .btn-ye {
+      background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+      box-shadow: 0 4px 16px rgba(2, 132, 199, 0.3);
+    }
+
+    .btn-ye:hover {
+      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.5);
       transform: translateY(-2px);
     }
 
@@ -637,17 +659,17 @@
           </div>
         </article>
 
-        <!-- Card 3: Wholesale Homeware (B2B) -->
+        <!-- Card 3: Wholesale Homeware (B2B - GCC/Corporate) -->
         <article class="card">
           <div class="card-preview">
-            <span class="card-category-badge badge-homeware">تجارة الجملة B2B والمنزلية</span>
+            <span class="card-category-badge badge-homeware">جملة وتوريد — النمط الخليجي</span>
             <img src="homeware/assets/images/hero-showroom.jpg" alt="نموذج صفحة هبوط لتاجر أدوات منزلية بالجملة — دار الأواني" />
             <div class="card-preview-overlay"></div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">دار الأواني — تجارة الأدوات المنزلية بالجملة</h3>
+            <h3 class="card-title">دار الأواني — توريد الأدوات المنزلية (B2B)</h3>
             <p class="card-desc">
-              صفحة هبوط احترافية مصممة خصيصاً لمستوردي وموزعي الأدوات المنزلية وأواني المطبخ. تضم كتالوج كراتين تفاعلي مع البحث والتصفية، سلة تسعيرة جملة ذكية ترسل للواتساب، وحاسبة أرباح التاجر والشرائح.
+              صفحة هبوط موجهة لمستوردي وموزعي الخليج والمعارض الكبيرة. تضم كتالوج كراتين بأسعار شرائحية، سلة تسعيرة ذكية، وحاسبة أرباح التاجر وهامش الربح التقديري.
             </p>
             <div class="card-features-list">
               <span class="feature-tag">حاسبة ربح وشرائح الجملة</span>
@@ -657,6 +679,33 @@
             </div>
             <div class="card-actions">
               <a href="homeware/index.html" class="btn-preview btn-homeware">
+                <span>معاينة النموذج الحي</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Yemeni Wholesale Homeware Merchant -->
+        <article class="card">
+          <div class="card-preview">
+            <span class="card-category-badge badge-ye">تاجر جملة يمني — حي شعوب</span>
+            <img src="homeware-ye/assets/images/cat-cookware.jpg" alt="نموذج صفحة هبوط لتاجر أدوات منزلية بالجملة بالنمط اليمني" />
+            <div class="card-preview-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">معرض الصقر — جملة الأدوات المنزلية (اليمن)</h3>
+            <p class="card-desc">
+              نموذج عملي وواقعي مصمم على غرار محلات الجملة في حي شعوب بصنعاء. يركز على البيع بالدرزن والكرتون، الترحيل اليومي للمحافظات، وكشف طلبية مباشر عبر الواتساب دون تعقيد حاسبات.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-tag">بيع بالدرزن والكرتون</span>
+              <span class="feature-tag">كشف طلبية للواتساب</span>
+              <span class="feature-tag">الترحيل لجميع المحافظات</span>
+              <span class="feature-tag">واجهة نهارية سريعة</span>
+            </div>
+            <div class="card-actions">
+              <a href="homeware-ye/index.html" class="btn-preview btn-ye">
                 <span>معاينة النموذج الحي</span>
                 <span>↗</span>
               </a>
