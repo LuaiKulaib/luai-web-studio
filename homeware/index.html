@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دار الأواني للتجارة والجملة | توريد الأدوات المنزلية وأواني الضيافة بأسعار المصنع</title>
+  <meta name="description" content="الموزع المعتمد لتوريد الأدوات المنزلية، قدور الجرانيت، الترامس، البورسلين، والبلاستيكات بالجملة للمحلات والهايبرماركت بأعلى هامش ربح وتوصيل سريع." />
+
+  <!-- Google Fonts: Tajawal & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════
+       0. TOP STICKY B2B PROMO BAR
+  ══════════════════════════════════ -->
+  <aside class="promo-bar" id="promo-bar" aria-label="عرض تجار الجملة">
+    <div class="container promo-inner">
+      <div class="promo-left">
+        <span class="promo-badge">توريد الجملة 2026 📦</span>
+        <span class="promo-text">شحن مجاني للطلبات فوق 5,000 ر.س + خصومات شرائحية فورية تصل إلى 18% إضافية لأصحاب المعارض والمحلات!</span>
+      </div>
+      <div class="promo-right">
+        <a href="#calculator" class="promo-cta">احسب هامش ربحك ↖</a>
+        <button type="button" class="promo-close" id="promo-close" aria-label="إغلاق الشريط">✕</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════
+       1. NAVBAR & MOBILE DRAWER
+  ══════════════════════════════════ -->
+  <header class="site-header" id="nav">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="دار الأواني للتجارة والجملة">
+        <div class="brand-emblem">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <path d="M9 22V12h6v10"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <strong>دار الأواني للتجارة</strong>
+          <span>DAR AL-AWANI WHOLESALE</span>
+        </div>
+      </a>
+
+      <nav class="nav-links-wrap" aria-label="التنقل الرئيسي">
+        <ul class="nav-links">
+          <li><a href="#catalog" class="nav-link">كتالوج الجملة</a></li>
+          <li><a href="#calculator" class="nav-link">حاسبة الأرباح</a></li>
+          <li><a href="#packages" class="nav-link">باقات التأسيس</a></li>
+          <li><a href="#process" class="nav-link">آلية التوريد</a></li>
+          <li><a href="#reviews" class="nav-link">شركاء النجاح</a></li>
+          <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn--outline-gold quote-trigger-btn" id="open-quote-drawer" aria-label="فتح سلة تسعيرة الجملة">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>طلبية الجملة</span>
+          <span class="cart-badge" id="nav-cart-count">0</span>
+        </button>
+
+        <a href="https://wa.me/967782259937?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D9%83%D8%AA%D8%A7%D9%84%D9%88%D8%AC%20%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AC%D9%85%D9%84%D8%A9%20PDF%20%D9%84%D9%84%D8%A3%D8%AF%D9%88%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D9%86%D8%B2%D9%84%D9%8A%D8%A9." target="_blank" class="btn btn--primary nav-wa-cta">
+          <span>كتالوج الأسعار</span>
+          <span>↖</span>
+        </a>
+
+        <button type="button" class="ham" id="ham-btn" aria-label="فتح القائمة">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+      <div class="drawer-header">
+        <strong>قائمة دار الأواني للجملة</strong>
+        <button type="button" class="drawer-close" id="drawer-close" aria-label="إغلاق القائمة">✕</button>
+      </div>
+      <div class="drawer-links">
+        <a href="#catalog" class="drawer-link"><span>📦</span> كتالوج الأصناف وأسعار الكرتون</a>
+        <a href="#calculator" class="drawer-link"><span>📊</span> حاسبة أرباح التاجر والشرائح</a>
+        <a href="#packages" class="drawer-link"><span>🏪</span> باقات تأسيس وتجهيز المعارض</a>
+        <a href="#process" class="drawer-link"><span>🚛</span> آلية الاستيراد والشحن المضمون</a>
+        <a href="#reviews" class="drawer-link"><span>⭐</span> آراء وتقييمات التجار</a>
+        <a href="#faq" class="drawer-link"><span>❓</span> الأسئلة الشائعة وضمان الكسر</a>
+        <a href="#location" class="drawer-link"><span>📍</span> صالة العرض والمستودعات</a>
+      </div>
+      <div class="drawer-footer">
+        <a href="https://wa.me/967782259937" target="_blank" class="btn btn--primary btn--full">
+          <span>تواصل مع مبيعات الجملة عبر واتساب</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════
+       2. HERO SECTION
+  ══════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-grid">
+      <!-- Right Content (RTL) -->
+      <div class="hero-content">
+        <div class="hero-pill">
+          <span class="pill-dot"></span>
+          <span>توريد مباشر من المصنع · فواتير ضريبية إلكترونية</span>
+        </div>
+
+        <h1 class="hero-title">
+          توريد الأدوات المنزلية وأواني الضيافة <span class="gold-text">بأسعار المصنع مباشرة</span>
+        </h1>
+
+        <p class="hero-desc">
+          شريكك التجاري الموثوق لتزويد المحلات، السوبرماركت، الفنادق، والمتاجر الإلكترونية بأحدث أطقم الجرانيت والترامس والبورسلين وحافظات الطعام بهوامش ربح تصل إلى <strong>75%</strong> وشحن آمن خلال 48 ساعة.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#catalog" class="btn btn--gold btn--lg">
+            <span>تصفح أسعار الجملة والكرتون</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+          <a href="#calculator" class="btn btn--glass btn--lg">
+            <span>احسب أرباح متجرك</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>+1,450</strong>
+            <span>صنف متوفر بالمستودع</span>
+          </div>
+          <div class="stat-item">
+            <strong>40% - 75%</strong>
+            <span>صافي هامش ربح التاجر</span>
+          </div>
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>تعويض فوري ضد الكسر</span>
+          </div>
+          <div class="stat-item">
+            <strong>24 - 48 س</strong>
+            <span>تجهيز وشحن سريع</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left Visual Showcase -->
+      <div class="hero-visual">
+        <div class="showroom-frame">
+          <img src="assets/images/hero-showroom.jpg" alt="صالة عرض دار الأواني لتجارة الأدوات المنزلية بالجملة" class="showroom-img" />
+          <div class="showroom-overlay"></div>
+          <div class="showroom-badge-top">
+            <span class="live-dot"></span>
+            <span>صالة عرض الجملة المركزية · تحميل فوري</span>
+          </div>
+          <div class="showroom-floating-card">
+            <div class="floating-card-icon">🏷️</div>
+            <div>
+              <strong>تسهيلات خاصة لطلبات الافتتاح والتجار</strong>
+              <p>خصم إضافي تلقائي <strong>6% إلى 18%</strong> حسب حجم الفاتورة + ملف صور احترافي مجاناً.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       3. STANDARDS & ORIGIN MARQUEE
+  ══════════════════════════════════ -->
+  <section class="marquee-section" aria-label="معايير الجودة والخامات المعتمدة">
+    <div class="marquee-track" id="standards-marquee"></div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       4. INTERACTIVE WHOLESALE CATALOG
+  ══════════════════════════════════ -->
+  <section class="section section--light" id="catalog">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">كتالوج الجملة الفوري</span>
+        <h2>أكثر الأصناف مبيعاً ودوراناً في السوق</h2>
+        <p>أسعار شفافة للكرتون والحبة مع توضيح هامش الربح المقترح للتاجر. أضف الكراتين لطلبية التسعيرة للحصول على خصم الكميات التلقائي.</p>
+      </div>
+
+      <!-- Filter & Search Controls -->
+      <div class="catalog-controls">
+        <div class="category-tabs" id="category-tabs" role="tablist"></div>
+        <div class="catalog-search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" id="catalog-search" placeholder="ابحث باسم الصنف أو كود المنتج (مثال: جرانيت، ترمس)..." aria-label="البحث في الكتالوج" />
+        </div>
+      </div>
+
+      <!-- Live Products Grid -->
+      <div class="products-grid" id="products-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       5. INTERACTIVE PROFIT & ORDER CALCULATOR
+  ══════════════════════════════════ -->
+  <section class="section section--emerald" id="calculator">
+    <div class="container">
+      <div class="section-head section-head--light">
+        <span class="section-tag section-tag--gold">أداة التاجر الذكية</span>
+        <h2>حاسبة أرباح الجملة وخصم الكميات</h2>
+        <p>خطط لمشتريات متجرك بدقة، واكتشف الشريحة السعرية التي ستحصل عليها وصافي الربح المتوقع عند إعادة البيع.</p>
+      </div>
+
+      <div class="calc-card">
+        <!-- Calculator Inputs -->
+        <div class="calc-inputs">
+          <div class="calc-group">
+            <label class="calc-label">١. اختر تصنيف نشاطك التجاري:</label>
+            <div class="biz-pills" id="calc-biz-type">
+              <button type="button" class="biz-pill active" data-biz="متجر إلكتروني / ناشئ" data-suggested-budget="4500">متجر إلكتروني / ناشئ</button>
+              <button type="button" class="biz-pill" data-biz="محل أدوات منزلية" data-suggested-budget="12500">محل أدوات منزلية</button>
+              <button type="button" class="biz-pill" data-biz="سوبرماركت / تخفيضات" data-suggested-budget="22000">سوبرماركت / تخفيضات</button>
+              <button type="button" class="biz-pill" data-biz="موزع / تموين فنادق" data-suggested-budget="40000">موزع / تموين فنادق</button>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <div class="calc-label-row">
+              <label for="budget-slider" class="calc-label">٢. ميزانية الشراء الأساسية (قبل خصم الشريحة):</label>
+              <strong class="budget-display" id="budget-display">12,500 ر.س</strong>
+            </div>
+            <input type="range" id="budget-slider" min="1500" max="60000" step="500" value="12500" class="range-slider" />
+            <div class="range-scale">
+              <span>1,500 ر.س (الحد الأدنى)</span>
+              <span>10,000 ر.س (-12%)</span>
+              <span>25,000 ر.س (-18%)</span>
+              <span>60,000 ر.س</span>
+            </div>
+          </div>
+
+          <div class="calc-group">
+            <label class="calc-label">٣. متوسط هامش الربح في منطقة بيعك:</label>
+            <div class="margin-pills" id="calc-margin-pills">
+              <button type="button" class="margin-pill" data-margin="0.40">سعر منافس جداً (40%)</button>
+              <button type="button" class="margin-pill active" data-margin="0.55">متوسط السوق (55%)</button>
+              <button type="button" class="margin-pill" data-margin="0.72">أصناف مميزة وموسمية (72%)</button>
+            </div>
+          </div>
+
+          <div class="calc-tier-notice" id="calc-tier-notice">
+            🏆 أنت مؤهل حالياً لـ: <strong>شريحة المعارض والهايبرماركت (خصم إضافي 12% + شحن مجاني)</strong>
+          </div>
+        </div>
+
+        <!-- Calculator Live Results -->
+        <div class="calc-results">
+          <div class="calc-results-head">
+            <span>ملخص الجدوى المالية المتوقعة</span>
+            <span class="calc-live-badge">تحديث فوري ⚡</span>
+          </div>
+
+          <div class="calc-metrics">
+            <div class="metric-row">
+              <span>تكلفة الفاتورة بعد خصم الشريحة:</span>
+              <strong id="res-net-cost">11,000 ر.س</strong>
+            </div>
+            <div class="metric-row">
+              <span>قيمة التوفير والخصم الفوري:</span>
+              <strong class="text-gold" id="res-discount-saved">1,500 ر.س (12%)</strong>
+            </div>
+            <div class="metric-row">
+              <span>حالة التوصيل والشحن:</span>
+              <strong class="text-emerald" id="res-shipping">مجاني بالكامل 🚛</strong>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-row">
+              <span>إجمالي قيمة البضاعة بسعر التجزئة:</span>
+              <strong id="res-resale-total">19,375 ر.س</strong>
+            </div>
+            <div class="metric-profit-box">
+              <span>صافي ربحك المتوقع (تقديرياً):</span>
+              <strong id="res-net-profit">+8,375 ر.س</strong>
+              <small id="res-roi-percent">عائد إجمالي ~76% على رأس المال بعد خصم الشريحة</small>
+            </div>
+          </div>
+
+          <a href="#" target="_blank" class="btn btn--gold btn--full btn--lg" id="calc-whatsapp-btn">
+            <span>اطلب تشكيلة بهذه الميزانية عبر واتساب</span>
+            <span>↖</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       6. TURNKEY B2B STORE PACKAGES
+  ══════════════════════════════════ -->
+  <section class="section section--cream" id="packages">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">تجهيز المتاجر والمعارض</span>
+        <h2>باقات التأسيس والتوريد المتكاملة</h2>
+        <p>سواء كنت تفتتح محلك الأول أو تدير سلسلة فروع، جهزنا لك باقات مدروسة تضمن دوران رأس المال بسرعة من الأسبوع الأول.</p>
+      </div>
+
+      <div class="packages-grid" id="packages-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       7. SUPPLY CHAIN PROCESS & WAREHOUSE
+  ══════════════════════════════════ -->
+  <section class="section section--light" id="process">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">لماذا يعتمد التجار علينا؟</span>
+        <h2>منظومة توريد متكاملة تحمي أرباحك ومخزونك</h2>
+        <p>من خطوط الإنتاج العالمية حتى باب مستودعك، بنينا سلسلة إمداد تلغي مخاطر التلف وتأخير الشحن.</p>
+      </div>
+
+      <div class="process-grid" id="process-grid"></div>
+
+      <div class="warehouse-banner">
+        <div class="warehouse-img-wrap">
+          <img src="assets/images/warehouse-logistics.jpg" alt="مستودعات دار الأواني للتوزيع والتغليف التجاري" />
+        </div>
+        <div class="warehouse-content">
+          <span class="wh-badge">قدرة تخزينية وتوزيع مستمر 🏭</span>
+          <h3>مستودعات مجهزة بأكثر من 12,000 متر مربع لدعم مخزونك طوال العام</h3>
+          <p>
+            نضمن عدم انقطاع الأصناف الأكثر مبيعاً عن رفوف محلك خاصة في مواسم الذروة والأعياد وشهر رمضان، مع خدمة تجهيز الطلبيات خلال 4 ساعات عمل وإصدار باركود متوافق مع كافة أنظمة الكاشير.
+          </p>
+          <div class="wh-perks">
+            <span>✓ تغليف فوم خماسي الطبقات ضد الكسر</span>
+            <span>✓ فحص جودة قبل الشحن</span>
+            <span>✓ إمكانية الحجز من الحاويات القادمة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       8. MERCHANT REVIEWS
+  ══════════════════════════════════ -->
+  <section class="section section--cream" id="reviews">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">ثقة شركائنا</span>
+        <h2>شهادات أصحاب المحلات والموزعين</h2>
+        <p>نعتز بشراكات ممتدة لسنوات مع أكثر من 680 محل ومعرض أدوات منزلية وسوبرماركت.</p>
+      </div>
+
+      <div class="reviews-grid" id="reviews-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       9. B2B FAQ ACCORDION
+  ══════════════════════════════════ -->
+  <section class="section section--light" id="faq">
+    <div class="container container--narrow">
+      <div class="section-head">
+        <span class="section-tag">إجابات واضحة للتجار</span>
+        <h2>الأسئلة الشائعة حول التوريد والشحن</h2>
+        <p>كل ما تحتاج معرفته حول الحد الأدنى، الفواتير الضريبية، وضمان سلامة البضاعة.</p>
+      </div>
+
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       10. SHOWROOM LOCATION & B2B SALES DESK
+  ══════════════════════════════════ -->
+  <section class="section section--emerald" id="location">
+    <div class="container">
+      <div class="location-card">
+        <div class="location-info">
+          <span class="section-tag section-tag--gold">الزيارة والمعاينة الميدانية</span>
+          <h2>تفضل بزيارة صالة عرض الجملة المركزية</h2>
+          <p>يمكنك الحضور لمعاينة جميع الخامات والأطقم على أرض الواقع والاتفاق مباشرة مع مدير مبيعات الجملة.</p>
+
+          <div class="info-list">
+            <div class="info-row">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>عنوان المستودع وصالة العرض</strong>
+                <span>المنطقة التجارية والصناعية المركزية — بوابة المستودعات رقم (٤)</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">🕒</div>
+              <div>
+                <strong>ساعات استقبال التجار والشحن</strong>
+                <span>السبت – الخميس: 8:00 صباحاً حتى 9:30 مساءً (تحميل فوري)</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong>الخط المباشر لمبيعات الجملة والواتساب</strong>
+                <span dir="ltr" style="display:inline-block; font-weight:800; color:var(--gold-light);">+967 782 259 937</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-ctas">
+            <a href="https://wa.me/967782259937?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D9%85%D9%88%D8%B9%D8%AF%20%D9%84%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9%20%D8%B5%D8%A7%D9%84%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9%20%D9%84%D9%85%D8%B9%D8%A7%D9%8A%D9%86%D8%A9%20%D8%A8%D8%B6%D8%A7%D8%B9%D8%A9%20%D8%A7%D9%84%D8%AC%D9%85%D9%84%D8%A9." target="_blank" class="btn btn--gold btn--lg">
+              <span>تواصل مع مدير المبيعات عبر واتساب</span>
+              <span>↖</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="location-visual">
+          <div class="map-mock">
+            <div class="map-grid-bg"></div>
+            <div class="map-pin-pulse">
+              <div class="pin-core">🏬</div>
+            </div>
+            <div class="map-card-overlay">
+              <strong>مستودعات دار الأواني المركزية</strong>
+              <span>مواقف مخصصة لشاحنات النقل والتجار</span>
+              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%B3%D9%84%20%D9%84%D9%8A%20%D9%85%D9%88%D9%82%D8%B9%20%D8%B5%D8%A7%D9%84%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B1%D8%B6%20%D9%88%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%AF%D8%B9%20%D8%B9%D9%84%D9%89%20Google%20Maps" target="_blank" class="btn btn--sm btn--emerald">اطلب اللوكيشن على واتساب ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       11. FOOTER
+  ══════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <strong>دار الأواني للتجارة والجملة</strong>
+          <p>المستورد والموزع المباشر للأدوات المنزلية، أواني الطهي، الترامس، ومستلزمات المطبخ للمتاجر والمعارض.</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#catalog">كتالوج الجملة</a></li>
+          <li><a href="#calculator">حاسبة الأرباح</a></li>
+          <li><a href="#packages">باقات التأسيس</a></li>
+          <li><a href="#process">منظومة التوريد</a></li>
+          <li><a href="#faq">الأسئلة الشائعة</a></li>
+          <li><a href="#location">المستودع والموقع</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© ٢٠٢٦ دار الأواني للتجارة والجملة | نموذج صفحة هبوط B2B متكامل</span>
+        <span dir="ltr">+967 782 259 937</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       INTERACTIVE WHOLESALE QUOTE DRAWER (SLIDE-OVER CART)
+  ══════════════════════════════════ -->
+  <div class="drawer-backdrop" id="quote-backdrop" aria-hidden="true"></div>
+  <aside class="quote-drawer" id="quote-drawer" aria-hidden="true" aria-label="سلة تسعيرة الجملة">
+    <div class="qd-header">
+      <div>
+        <h3>سلة تسعيرة الجملة 📦</h3>
+        <span id="qd-subtitle">اختر الكراتين لإرسال الطلبية والحصول على خصم الكميات</span>
+      </div>
+      <button type="button" class="qd-close" id="close-quote-drawer" aria-label="إغلاق السلة">✕</button>
+    </div>
+
+    <div class="qd-body" id="qd-items-list"></div>
+
+    <div class="qd-footer" id="qd-footer">
+      <div class="qd-tier-bar" id="qd-tier-bar"></div>
+      <div class="qd-summary-row">
+        <span>إجمالي الكراتين:</span>
+        <strong id="qd-total-cartons">0 كرتون</strong>
+      </div>
+      <div class="qd-summary-row">
+        <span>القيمة قبل الخصم:</span>
+        <strong id="qd-subtotal">0 ر.س</strong>
+      </div>
+      <div class="qd-summary-row qd-discount-row">
+        <span>خصم الشريحة المطبق:</span>
+        <strong id="qd-discount">0 ر.س</strong>
+      </div>
+      <div class="qd-summary-row qd-total-row">
+        <span>الصافي النهائي للتاجر:</span>
+        <strong id="qd-net-total">0 ر.س</strong>
+      </div>
+      <div class="qd-profit-pill" id="qd-profit-pill">
+        ربحك التقديري عند إعادة البيع: <strong>+0 ر.س</strong>
+      </div>
+
+      <button type="button" class="btn btn--gold btn--full btn--lg" id="send-quote-wa">
+        <span>إرسال قائمة الطلبية إلى مبيعات واتساب</span>
+        <span>↖</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ══════════════════════════════════
+       PRODUCT SPECS & TIERED PRICING MODAL
+  ══════════════════════════════════ -->
+  <div class="modal-overlay" id="product-modal" aria-hidden="true">
+    <div class="modal-backdrop" id="product-modal-backdrop"></div>
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="product-modal-close" aria-label="إغلاق">✕</button>
+      <div class="modal-grid">
+        <div class="modal-img-col">
+          <img id="pm-img" src="" alt="" />
+          <span class="pm-sku" id="pm-sku"></span>
+        </div>
+        <div class="modal-info-col">
+          <span class="pm-cat" id="pm-cat"></span>
+          <h3 id="pm-title"></h3>
+          <p id="pm-desc"></p>
+
+          <div class="pm-specs">
+            <div><span>التعبئة:</span> <strong id="pm-packing"></strong></div>
+            <div><span>الوزن:</span> <strong id="pm-weight"></strong></div>
+            <div><span>الخامة:</span> <strong id="pm-material"></strong></div>
+          </div>
+
+          <div class="pm-tiers">
+            <h4>شرائح أسعار الكرتون لهذا الصنف:</h4>
+            <div class="pm-tiers-grid">
+              <div class="tier-cell">
+                <span>1 – 4 كراتين</span>
+                <strong id="pm-t1"></strong>
+              </div>
+              <div class="tier-cell">
+                <span>5 – 19 كرتون</span>
+                <strong id="pm-t5"></strong>
+              </div>
+              <div class="tier-cell tier-best">
+                <span>20+ كرتون</span>
+                <strong id="pm-t20"></strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="pm-actions">
+            <button type="button" class="btn btn--gold btn--lg" id="pm-add-carton">
+              <span>+ أضف كرتون لطلبية التسعيرة</span>
+            </button>
+            <a href="#" target="_blank" class="btn btn--outline" id="pm-wa-direct">استفسار فوري واتساب</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       SMART EXPANDABLE SPEED-DIAL FAB (Compact & Bottom-Anchored)
+  ══════════════════════════════════ -->
+  <div class="dial-backdrop" id="dial-backdrop" aria-hidden="true"></div>
+
+  <div class="smart-speed-dial" id="speed-dial-wrap">
+    <!-- Mother FAB (Compact at bottom-right, reveals actions ONLY when clicked) -->
+    <button type="button" class="dial-main-btn" id="dial-main-btn" aria-label="تواصل الجملة السريع" aria-expanded="false" aria-haspopup="true">
+      <div class="dial-pulse-ring"></div>
+      <div class="dial-icons-wrap">
+        <svg class="dial-icon-open" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+        </svg>
+        <svg class="dial-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+    </button>
+
+    <!-- Actions (Elevated upwards strictly upon click) -->
+    <div class="dial-actions" id="dial-actions" role="menu" aria-hidden="true">
+      <a href="https://wa.me/967782259937?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1%20%D8%A7%D9%84%D8%AC%D9%85%D9%84%D8%A9." target="_blank" class="dial-item dial-wa" role="menuitem">
+        <span class="dial-tooltip">مبيعات الجملة واتساب</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.667-.698c.974.53 1.997.817 3.123.818h.005c3.179 0 5.765-2.587 5.766-5.767.001-3.18-2.585-5.766-5.765-5.766zm0 10.42c-.991 0-1.961-.266-2.808-.768l-.201-.119-1.583.415.422-1.543-.131-.208c-.551-.876-.842-1.895-.841-2.942.001-2.903 2.364-5.266 5.268-5.266 2.903 0 5.265 2.363 5.265 5.266 0 2.904-2.362 5.267-5.265 5.267z"/>
+        </svg>
+      </a>
+
+      <a href="tel:+967782259937" class="dial-item dial-call" role="menuitem">
+        <span class="dial-tooltip">اتصال هاتفي مباشر</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+      </a>
+
+      <button type="button" class="dial-item dial-cart" id="dial-open-cart" role="menuitem">
+        <span class="dial-tooltip">عرض سلة التسعيرة</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+      </button>
+
+      <a href="#location" class="dial-item dial-map" role="menuitem">
+        <span class="dial-tooltip">موقع المستودع</span>
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Compact Bubble Prompt -->
+    <div class="smart-wa-bubble" id="wa-bubble">
+      <span class="online-indicator"></span>
+      <div class="bubble-text">
+        <strong>مندوب مبيعات الجملة متصل 📦</strong>
+        <span>اطلب قائمة الأسعار أو تسعيرة لمتجرك الآن</span>
+      </div>
+      <button type="button" class="bubble-close" id="bubble-close" aria-label="إغلاق">✕</button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+
+</body>
+</html>
