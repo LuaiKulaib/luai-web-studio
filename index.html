@@ -288,6 +288,7 @@
     .badge-ye { background: rgba(56, 189, 248, 0.20); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.4); }
     .badge-solar { background: rgba(245, 158, 11, 0.20); color: #FCD34D; border: 1px solid rgba(245, 158, 11, 0.4); }
     .badge-dental { background: rgba(13, 148, 136, 0.18); color: #5EEAD4; border: 1px solid rgba(13, 148, 136, 0.4); }
+    .badge-honey { background: rgba(217, 119, 6, 0.22); color: #FDE68A; border: 1px solid rgba(245, 158, 11, 0.45); }
 
     .card-body {
       padding: 24px;
@@ -332,6 +333,9 @@
     .btn-sweets { background: linear-gradient(135deg, #E63973 0%, #c2185b 100%); }
     .btn-homeware { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
     .btn-ye { background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); }
+    .btn-solar { background: linear-gradient(135deg, #0369A1 0%, #0EA5E9 100%); }
+    .btn-dental { background: linear-gradient(135deg, #0D9488 0%, #14B8A6 100%); }
+    .btn-honey { background: linear-gradient(135deg, #92400E 0%, #D97706 100%); }
     .btn-preview:hover { transform: translateY(-2px); filter: brightness(1.08); }
 
     .btn-order-similar {
@@ -483,7 +487,7 @@
             <button type="button" class="filter-pill" data-filter="wholesale">تجارة وجملة B2B</button>
             <button type="button" class="filter-pill" data-filter="retail">متاجر وخدمات</button>
           </div>
-          <span class="results-count" id="results-count">يعرض ٤ نماذج جاهزة</span>
+          <span class="results-count" id="results-count">يعرض ٧ نماذج جاهزة</span>
         </div>
       </div>
     </div>
@@ -606,31 +610,80 @@
           </div>
         </article>
 
-        <!-- ===== CARD: Solar Energy ===== -->
-        <article class="card" data-tags="yemen" data-keywords="طاقة شمسية بطاريات انفرتر لوح شمسي غطاسة زراعية كهرباء منظومة صنعاء">
-          <div class="card-image-wrap">
-            <img src="solar/assets/images/hero.jpg" alt="منظومة طاقة شمسية — اليمن" loading="lazy">
-            <div class="card-image-overlay">
-              <span class="card-category-badge badge-solar">طاقة شمسية · اليمن</span>
-            </div>
+        <!-- Model 5: Solar Energy -->
+        <article class="card" data-tags="yemen retail" data-keywords="طاقة شمسية بطاريات انفرتر لوح شمسي غطاسة زراعية كهرباء منظومة صنعاء">
+          <div class="card-preview">
+            <span class="card-category-badge badge-solar">طاقة شمسية · اليمن</span>
+            <img src="solar/assets/images/hero.jpg" alt="منظومة طاقة شمسية — اليمن" loading="lazy" />
+            <div class="card-preview-overlay"></div>
           </div>
           <div class="card-body">
-            <div class="card-info">
-              <h3 class="card-title">الشمس للطاقة المتجددة</h3>
-              <p class="card-desc">منظومات سكنية وزراعية وتجارية — كفالة 5 سنوات، تركيب احترافي في صنعاء وعموم المحافظات.</p>
-              <div class="card-tags">
-                <span class="tag">طاقة شمسية</span>
-                <span class="tag">غطاسة زراعية</span>
-                <span class="tag">تركيب وكفالة</span>
-                <span class="tag">السوق اليمني</span>
-              </div>
+            <h3 class="card-title">الشمس للطاقة المتجددة</h3>
+            <p class="card-desc">منظومات سكنية وزراعية وتجارية — كفالة 5 سنوات، تركيب احترافي في صنعاء وعموم المحافظات.</p>
+            <div class="card-features-list">
+              <span class="feature-tag">طاقة شمسية</span>
+              <span class="feature-tag">غطاسة زراعية</span>
+              <span class="feature-tag">تركيب وكفالة</span>
+              <span class="feature-tag">السوق اليمني</span>
             </div>
             <div class="card-actions">
-              <a href="solar/index.html" class="btn-preview btn-sweets" style="background:linear-gradient(135deg,#0369A1,#0EA5E9);">
+              <a href="solar/index.html" class="btn-preview btn-solar">
                 <span>معاينة النموذج الحي</span>
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
               </a>
               <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%B7%D8%A7%D9%82%D8%A9%20%D8%B4%D9%85%D8%B3%D9%8A%D8%A9)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model 6: Dental Clinic -->
+        <article class="card" data-tags="yemen gulf retail" data-keywords="عيادة أسنان تبييض زراعة تقويم قشور أطفال صنعاء طبيب ابتسامة">
+          <div class="card-preview">
+            <span class="card-category-badge badge-dental">صحة وطب · عيادة</span>
+            <img src="dental/assets/images/hero.jpg" alt="عيادة ابتسامة لطب الأسنان" loading="lazy" />
+            <div class="card-preview-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">عيادة ابتسامة — طب وتجميل الأسنان</h3>
+            <p class="card-desc">تبييض، قشور، زراعة، تقويم — كشف أول مجاني مع أشعة ثلاثية الأبعاد وحجز سريع عبر واتساب.</p>
+            <div class="card-features-list">
+              <span class="feature-tag">زراعة أسنان</span>
+              <span class="feature-tag">تبييض ليزر</span>
+              <span class="feature-tag">ملف الأطباء</span>
+              <span class="feature-tag">كشف مجاني</span>
+            </div>
+            <div class="card-actions">
+              <a href="dental/index.html" class="btn-preview btn-dental">
+                <span>معاينة النموذج الحي</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A3%D8%B3%D9%86%D8%A7%D9%86)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model 7: Yemeni Honey & Coffee -->
+        <article class="card" data-tags="yemen gulf retail wholesale" data-keywords="عسل سدر حضرمي دوعني بن يمني قهوة تمور هدايا شحن الخليج دار السدر">
+          <div class="card-preview">
+            <span class="card-category-badge badge-honey">عسل وبن · اليمن والخليج</span>
+            <img src="honey/assets/images/hero.jpg" alt="دار السدر للعسل اليمني والبن الأصيل" loading="lazy" />
+            <div class="card-preview-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">دار السدر — عسل السدر والبن اليمني</h3>
+            <p class="card-desc">عسل سدر دوعني وحضرمي وبن يمني أصيل — شهادات مخبرية، تغليف هدايا فاخر، وشحن مباشر لدول الخليج.</p>
+            <div class="card-features-list">
+              <span class="feature-tag">عسل سدر أصيل</span>
+              <span class="feature-tag">بن أرابيكا يمني</span>
+              <span class="feature-tag">تغليف هدايا</span>
+              <span class="feature-tag">شحن الخليج</span>
+            </div>
+            <div class="card-actions">
+              <a href="honey/index.html" class="btn-preview btn-honey">
+                <span>معاينة النموذج الحي</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B3%D9%84%20%D9%88%D8%A7%D9%84%D8%A8%D9%86)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
             </div>
           </div>
         </article>
@@ -657,10 +710,10 @@
           <strong>عيادات الأسنان والمراكز الطبية</strong>
           <p>النموذج جاهز ومتاح الآن — <a href="dental/index.html" style="color:#0D9488;font-weight:700;">معاينة النموذج</a></p>
         </div>
-        <div class="roadmap-item">
-          <span class="roadmap-tag">المرحلة القادمة · تجارة</span>
+        <div class="roadmap-item" style="border-color:rgba(217,119,6,.4);background:rgba(217,119,6,.06);">
+          <span class="roadmap-tag" style="background:rgba(217,119,6,.18);color:#FDE68A;border-color:rgba(217,119,6,.4);">✓ مكتمل · تجارة</span>
           <strong>تجار العسل اليمني والبن والتمور</strong>
-          <p>عرض الأصناف والأوزان، تغليف الهدايا، والشحن المباشر لدول الخليج.</p>
+          <p>النموذج جاهز ومتاح الآن — <a href="honey/index.html" style="color:#F59E0B;font-weight:700;">معاينة النموذج</a></p>
         </div>
         <div class="roadmap-item">
           <span class="roadmap-tag">المرحلة القادمة · مطاعم</span>
