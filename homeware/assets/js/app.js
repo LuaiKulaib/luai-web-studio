@@ -267,7 +267,7 @@
     if (entries.length === 0) {
       qdItemsList.innerHTML = `
         <div class="qd-empty">
-          <div style="font-size:2.4rem; margin-bottom:10px;">📦</div>
+          <div style="margin-bottom:10px; color:var(--emerald-deep); display:flex; justify-content:center;"><svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></div>
           <strong>سلة التسعيرة فارغة حالياً</strong>
           <p style="font-size:0.86rem; margin-top:6px;">تصفح كتالوج الجملة وأضف الكراتين لحساب شريحة الخصم الخاصة بك وإرسالها مباشرة عبر واتساب.</p>
         </div>
@@ -310,7 +310,7 @@
     const netTotal = subtotal - discountAmount;
     const estProfit = Math.max(0, totalRetailValue - netTotal);
 
-    if (qdTierBar) qdTierBar.textContent = `🏆 ${tier.label}`;
+    if (qdTierBar) qdTierBar.textContent = tier.label;
     if (qdTotalCartons) qdTotalCartons.textContent = `${totalCartons} كرتون`;
     if (qdSubtotal) qdSubtotal.textContent = `${fmt(subtotal)} ${WHOLESALE_CONFIG.currency}`;
     if (qdDiscount) qdDiscount.textContent = discountAmount > 0 ? `− ${fmt(discountAmount)} ${WHOLESALE_CONFIG.currency} (${Math.round(tier.discount * 100)}%)` : '0 ر.س';
@@ -433,13 +433,13 @@
     const tierNotice = document.getElementById('calc-tier-notice');
     if (tierNotice) {
       tierNotice.innerHTML = grossBudget >= 5000
-        ? `🏆 أنت مؤهل حالياً لـ: <strong>${tier.label}</strong>`
-        : `💡 أضف <strong>${fmt(5000 - grossBudget)} ر.س</strong> للوصول للشحن المجاني + خصم 6% إضافي!`;
+        ? `أنت مؤهل حالياً لـ: <strong>${tier.label}</strong>`
+        : `أضف <strong>${fmt(5000 - grossBudget)} ر.س</strong> للوصول للشحن المجاني + خصم 6% إضافي!`;
     }
 
     document.getElementById('res-net-cost').textContent = `${fmt(netCost)} ر.س`;
     document.getElementById('res-discount-saved').textContent = saved > 0 ? `${fmt(saved)} ر.س (${Math.round(tier.discount * 100)}%)` : '0 ر.س (شريحة أساسية)';
-    document.getElementById('res-shipping').textContent = freeShip ? 'مجاني بالكامل 🚛' : 'شحن اقتصادي موحد (95 ر.س)';
+    document.getElementById('res-shipping').textContent = freeShip ? 'مجاني بالكامل' : 'شحن اقتصادي موحد (95 ر.س)';
     document.getElementById('res-shipping').className = freeShip ? 'text-emerald' : 'text-gold';
     document.getElementById('res-resale-total').textContent = `${fmt(resaleValue)} ر.س`;
     document.getElementById('res-net-profit').textContent = `+${fmt(netProfit)} ر.س`;

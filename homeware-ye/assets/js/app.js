@@ -205,7 +205,7 @@
     if (entries.length === 0) {
       odListEl.innerHTML = `
         <div class="od-empty">
-          <div style="font-size:2.2rem; margin-bottom:8px;">📋</div>
+          <div style="margin-bottom:10px; color:var(--navy); display:flex; justify-content:center;"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></div>
           <strong>كشف الطلبية فارغ حالياً</strong>
           <p style="font-size:0.84rem; margin-top:6px;">أضف الأصناف التي ترغب بالسؤال عن سعرها أو طلبها من الكتالوج، ثم أرسل الكشف بضغطة واحدة إلى واتساب المعرض.</p>
         </div>
@@ -285,7 +285,8 @@
 
   const govBadges = document.getElementById('gov-badges');
   if (govBadges && YE_DATA.governorates) {
-    govBadges.innerHTML = YE_DATA.governorates.map((g) => `<span class="gov-badge">🚛 ${g}</span>`).join('');
+    const truckSvg = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:5px;"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>';
+    govBadges.innerHTML = YE_DATA.governorates.map((g) => `<span class="gov-badge">${truckSvg}${g}</span>`).join('');
   }
 
   const faqList = document.getElementById('faq-list');
