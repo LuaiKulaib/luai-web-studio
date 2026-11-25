@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>معرض أعمال صفحات الهبوط الاحترافية | Professional Landing Pages Showcase</title>
-  <meta name="description" content="نماذج صفحات هبوط تجارية عصرية مصممة لزيادة المبيعات وتحويل الزوار لعملاء حقيقيين. أداء فائق وتصميم تفاعلي مدروس." />
+  <title>لؤي ويب ستوديو | Luai Web Studio — معرض صفحات الهبوط والمواقع التجارية</title>
+  <meta name="description" content="استوديو متخصص في تصميم وتطوير صفحات الهبوط الاحترافية والمتاجر ومواقع الشركات للأسواق اليمنية والخليجية. تصفح النماذج الحية واختر ما يناسب نشاطك." />
 
   <!-- Google Fonts: Tajawal & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,216 +12,229 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
 
   <style>
-    /* ── 1. Variables & Global Reset ──────────────────────────── */
     :root {
-      --bg: #090A0F;
-      --bg-card: rgba(18, 20, 29, 0.7);
-      --bg-card-hover: rgba(24, 27, 40, 0.85);
+      --bg: #080A0F;
+      --bg-card: rgba(17, 20, 30, 0.78);
+      --bg-card-hover: rgba(24, 28, 42, 0.92);
       --border: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(99, 102, 241, 0.4);
+      --border-hover: rgba(99, 102, 241, 0.45);
       --accent: #6366F1;
-      --accent-glow: rgba(99, 102, 241, 0.25);
-      --accent-car: #FF6B00;
-      --accent-sweets: #E63973;
+      --accent-light: #818CF8;
       --text: #F8FAFC;
       --text-muted: #94A3B8;
       --radius: 20px;
       --radius-sm: 12px;
       --font-ar: 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
       --font-en: 'Outfit', sans-serif;
-      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
     body {
       background-color: var(--bg);
-      background-image: 
-        radial-gradient(circle at 15% 15%, rgba(99, 102, 241, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 65%, rgba(230, 57, 115, 0.06) 0%, transparent 45%),
-        radial-gradient(circle at 50% 90%, rgba(255, 107, 0, 0.05) 0%, transparent 40%);
+      background-image:
+        radial-gradient(circle at 12% 14%, rgba(99, 102, 241, 0.10) 0%, transparent 40%),
+        radial-gradient(circle at 86% 60%, rgba(16, 185, 129, 0.06) 0%, transparent 42%),
+        radial-gradient(circle at 50% 92%, rgba(255, 107, 0, 0.05) 0%, transparent 40%);
       background-attachment: fixed;
       color: var(--text);
       font-family: var(--font-ar);
       line-height: 1.6;
-      overflow-x: hidden;
+      overflow-x: clip;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
     }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    a { text-decoration: none; color: inherit; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
 
     .container {
       width: 100%;
-      max-width: 1200px;
+      max-width: 1220px;
       margin-inline: auto;
-      padding-inline: 24px;
+      padding-inline: 22px;
     }
 
-    /* ── 2. Top Header ────────────────────────────────────────── */
+    /* ── Header ── */
     header {
-      padding: 24px 0;
+      padding: 18px 0;
       border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(12px);
+      backdrop-filter: blur(14px);
       position: sticky;
       top: 0;
       z-index: 50;
-      background: rgba(9, 10, 15, 0.75);
+      background: rgba(8, 10, 15, 0.84);
     }
-
     .header-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
     }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
+    .brand { display: flex; align-items: center; gap: 12px; }
     .brand-icon {
       width: 42px;
       height: 42px;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--accent) 0%, #a855f7 100%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 15px var(--accent-glow);
-    }
-
-    .brand-icon svg {
-      width: 24px;
-      height: 24px;
+      background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+      display: grid;
+      place-items: center;
       color: #fff;
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+      flex-shrink: 0;
     }
-
-    .brand-text h1 {
-      font-size: 18px;
-      font-weight: 800;
-      letter-spacing: -0.01em;
-    }
-
+    .brand-text h1 { font-size: 18px; font-weight: 800; line-height: 1.2; }
     .brand-text span {
-      font-size: 12px;
-      color: var(--text-muted);
+      font-family: var(--font-en);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-light);
       display: block;
     }
-
     .header-cta {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 8px 18px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 10px 18px;
       border-radius: 99px;
       font-size: 14px;
       font-weight: 700;
       transition: var(--transition);
+      white-space: nowrap;
     }
-
     .header-cta:hover {
       background: var(--accent);
       border-color: var(--accent);
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px var(--accent-glow);
     }
 
-    /* ── 3. Hero Section ──────────────────────────────────────── */
+    /* ── Hero ── */
     .hero {
-      padding: clamp(50px, 8vw, 85px) 0 40px;
+      padding: 64px 0 42px;
       text-align: center;
-      position: relative;
     }
-
     .hero-badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(99, 102, 241, 0.1);
-      border: 1px solid rgba(99, 102, 241, 0.25);
       padding: 6px 16px;
       border-radius: 99px;
-      font-size: 13.5px;
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.3);
+      color: #a5b4fc;
+      font-size: 13px;
       font-weight: 700;
-      color: #818cf8;
       margin-bottom: 20px;
     }
-
     .pulse-dot {
       width: 8px;
       height: 8px;
-      background: #818cf8;
       border-radius: 50%;
-      box-shadow: 0 0 10px #818cf8;
-      animation: pulse 2s infinite;
+      background: #10B981;
+      box-shadow: 0 0 10px #10B981;
     }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(1.3); }
-    }
-
     .hero-title {
-      font-size: clamp(32px, 6vw, 56px);
+      font-size: clamp(28px, 4.6vw, 48px);
       font-weight: 900;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      margin-bottom: 18px;
-      max-width: 850px;
-      margin-inline: auto;
+      line-height: 1.24;
+      margin-bottom: 16px;
     }
-
     .hero-title span {
-      background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+      background: linear-gradient(135deg, #a5b4fc 0%, #34d399 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-
-    .hero-desc {
-      font-size: clamp(15px, 2vw, 18px);
+    .hero-subtitle {
+      font-size: clamp(15px, 1.8vw, 17.5px);
       color: var(--text-muted);
-      max-width: 650px;
+      max-width: 680px;
       margin-inline: auto;
-      margin-bottom: 35px;
-      line-height: 1.7;
+      margin-bottom: 34px;
     }
 
-    /* ── 4. Showcase Cards Grid ───────────────────────────────── */
-    .showcase {
-      padding: 20px 0 80px;
-      flex: 1;
+    /* ── Smart Search & Filter Bar ── */
+    .explorer-bar {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      backdrop-filter: blur(14px);
+    }
+    .search-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1.5px solid rgba(255, 255, 255, 0.10);
+      border-radius: 12px;
+      padding: 11px 16px;
+      transition: var(--transition);
+    }
+    .search-row:focus-within {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.07);
+    }
+    .search-row svg { color: var(--text-muted); flex-shrink: 0; }
+    .search-row input {
+      width: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 15px;
+    }
+    .search-row input::placeholder { color: #64748b; }
+
+    .filter-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-pill {
+      padding: 7px 14px;
+      border-radius: 99px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+      font-size: 13.5px;
+      font-weight: 700;
+      transition: var(--transition);
+    }
+    .filter-pill:hover { border-color: rgba(255,255,255,0.25); color: #fff; }
+    .filter-pill.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .results-count {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
     }
 
+    /* ── Cards Grid ── */
+    .showcase { padding-bottom: 70px; }
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 28px;
     }
-
-    @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
     .card {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -231,108 +244,59 @@
       flex-direction: column;
       transition: var(--transition);
       backdrop-filter: blur(16px);
-      position: relative;
     }
-
     .card:hover {
-      transform: translateY(-8px);
+      transform: translateY(-6px);
       border-color: var(--border-hover);
-      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.42);
       background: var(--bg-card-hover);
     }
-
     .card-preview {
       position: relative;
       width: 100%;
-      height: 250px;
+      height: 245px;
       overflow: hidden;
       background: #0f1118;
     }
-
     .card-preview img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: center center;
-      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
     }
-
-    .card:hover .card-preview img {
-      transform: scale(1.06);
-    }
-
+    .card:hover .card-preview img { transform: scale(1.05); }
     .card-preview-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(18, 20, 29, 0.95) 0%, rgba(18, 20, 29, 0.2) 60%, transparent 100%);
+      background: linear-gradient(to top, rgba(17, 20, 30, 0.94) 0%, rgba(17, 20, 30, 0.15) 60%, transparent 100%);
     }
-
     .card-category-badge {
       position: absolute;
-      top: 16px;
-      right: 16px;
-      padding: 6px 14px;
+      top: 14px;
+      right: 14px;
+      padding: 5px 13px;
       border-radius: 99px;
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 800;
-      letter-spacing: 0.02em;
       backdrop-filter: blur(10px);
       z-index: 2;
     }
-
-    .badge-car {
-      background: rgba(255, 107, 0, 0.18);
-      color: #ff9a3d;
-      border: 1px solid rgba(255, 107, 0, 0.35);
-    }
-
-    .badge-sweets {
-      background: rgba(230, 57, 115, 0.18);
-      color: #f472b6;
-      border: 1px solid rgba(230, 57, 115, 0.35);
-    }
-
-    .badge-homeware {
-      background: rgba(200, 141, 50, 0.22);
-      color: #fbbf24;
-      border: 1px solid rgba(226, 171, 82, 0.42);
-    }
-
-    .badge-ye {
-      background: rgba(56, 189, 248, 0.2);
-      color: #7dd3fc;
-      border: 1px solid rgba(56, 189, 248, 0.4);
-    }
+    .badge-car { background: rgba(255, 107, 0, 0.20); color: #ff9a3d; border: 1px solid rgba(255, 107, 0, 0.4); }
+    .badge-sweets { background: rgba(230, 57, 115, 0.20); color: #f472b6; border: 1px solid rgba(230, 57, 115, 0.4); }
+    .badge-homeware { background: rgba(200, 141, 50, 0.22); color: #fbbf24; border: 1px solid rgba(226, 171, 82, 0.42); }
+    .badge-ye { background: rgba(56, 189, 248, 0.20); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.4); }
 
     .card-body {
-      padding: 26px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
       flex: 1;
     }
+    .card-title { font-size: 20.5px; font-weight: 800; margin-bottom: 8px; }
+    .card-desc { font-size: 14px; color: var(--text-muted); line-height: 1.65; margin-bottom: 18px; flex: 1; }
 
-    .card-title {
-      font-size: 22px;
-      font-weight: 800;
-      margin-bottom: 10px;
-      color: var(--text);
-    }
-
-    .card-desc {
-      font-size: 14.5px;
-      color: var(--text-muted);
-      line-height: 1.65;
-      margin-bottom: 22px;
-      flex: 1;
-    }
-
-    .card-features-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 24px;
-    }
-
+    .card-features-list { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 20px; }
     .feature-tag {
       font-size: 12px;
       font-weight: 600;
@@ -342,307 +306,287 @@
       border-radius: 6px;
       color: #cbd5e1;
     }
-
     .card-actions {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       padding-top: 16px;
       border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
-
     .btn-preview {
       flex: 1;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      padding: 12px 20px;
+      padding: 11px 16px;
       border-radius: var(--radius-sm);
       font-weight: 800;
-      font-size: 14.5px;
+      font-size: 14px;
       color: #fff;
       transition: var(--transition);
-      cursor: pointer;
     }
+    .btn-car { background: linear-gradient(135deg, #FF6B00 0%, #e05d00 100%); }
+    .btn-sweets { background: linear-gradient(135deg, #E63973 0%, #c2185b 100%); }
+    .btn-homeware { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
+    .btn-ye { background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); }
+    .btn-preview:hover { transform: translateY(-2px); filter: brightness(1.08); }
 
-    .btn-car {
-      background: linear-gradient(135deg, var(--accent-car) 0%, #e05d00 100%);
-      box-shadow: 0 4px 16px rgba(255, 107, 0, 0.3);
+    .btn-order-similar {
+      padding: 11px 14px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #e2e8f0;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: var(--transition);
     }
+    .btn-order-similar:hover { background: rgba(255, 255, 255, 0.12); border-color: #fff; }
 
-    .btn-car:hover {
-      box-shadow: 0 8px 24px rgba(255, 107, 0, 0.5);
-      transform: translateY(-2px);
-    }
-
-    .btn-sweets {
-      background: linear-gradient(135deg, var(--accent-sweets) 0%, #c2185b 100%);
-      box-shadow: 0 4px 16px rgba(230, 57, 115, 0.3);
-    }
-
-    .btn-sweets:hover {
-      box-shadow: 0 8px 24px rgba(230, 57, 115, 0.5);
-      transform: translateY(-2px);
-    }
-
-    .btn-homeware {
-      background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-      box-shadow: 0 4px 16px rgba(16, 185, 129, 0.28);
-    }
-
-    .btn-homeware:hover {
-      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.45);
-      transform: translateY(-2px);
-    }
-
-    .btn-ye {
-      background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
-      box-shadow: 0 4px 16px rgba(2, 132, 199, 0.3);
-    }
-
-    .btn-ye:hover {
-      box-shadow: 0 8px 24px rgba(2, 132, 199, 0.5);
-      transform: translateY(-2px);
-    }
-
-    /* ── 5. Value Props Section ──────────────────────────────── */
-    .value-props {
-      padding: 50px 0;
-      background: rgba(255, 255, 255, 0.015);
+    /* ── Upcoming Roadmap Section ── */
+    .roadmap-section {
+      padding: 40px 0 64px;
       border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      margin-bottom: 60px;
     }
-
-    .props-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-    }
-
-    .prop-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-    }
-
-    .prop-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      background: rgba(99, 102, 241, 0.1);
-      border: 1px solid rgba(99, 102, 241, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      color: #818cf8;
-    }
-
-    .prop-text h4 {
-      font-size: 16px;
-      font-weight: 800;
-      margin-bottom: 4px;
-    }
-
-    .prop-text p {
-      font-size: 13.5px;
-      color: var(--text-muted);
-      line-height: 1.5;
-    }
-
-    /* ── 6. Bottom CTA Contact Banner ────────────────────────── */
-    .contact-cta {
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.1) 100%);
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      border-radius: var(--radius);
-      padding: clamp(36px, 6vw, 60px) 30px;
+    .roadmap-head {
       text-align: center;
-      margin-bottom: 80px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .contact-cta h2 {
-      font-size: clamp(24px, 4vw, 36px);
-      font-weight: 900;
-      margin-bottom: 14px;
-    }
-
-    .contact-cta p {
-      font-size: 16px;
-      color: #cbd5e1;
-      max-width: 600px;
-      margin-inline: auto;
       margin-bottom: 30px;
     }
+    .roadmap-head h3 { font-size: 24px; font-weight: 900; margin-bottom: 8px; }
+    .roadmap-head p { color: var(--text-muted); font-size: 14.5px; }
 
+    .roadmap-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .roadmap-item {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px dashed rgba(255, 255, 255, 0.14);
+      border-radius: 14px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .roadmap-tag {
+      align-self: flex-start;
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent-light);
+      background: rgba(99, 102, 241, 0.14);
+      padding: 2px 10px;
+      border-radius: 99px;
+    }
+    .roadmap-item strong { font-size: 15.5px; color: #f1f5f9; }
+    .roadmap-item p { font-size: 13px; color: var(--text-muted); }
+
+    /* ── Bottom CTA ── */
+    .contact-cta {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.16) 0%, rgba(16, 185, 129, 0.10) 100%);
+      border: 1px solid rgba(99, 102, 241, 0.32);
+      border-radius: var(--radius);
+      padding: clamp(32px, 5vw, 54px) 26px;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .contact-cta h2 { font-size: clamp(22px, 3.6vw, 32px); font-weight: 900; margin-bottom: 12px; }
+    .contact-cta p { font-size: 15.5px; color: #cbd5e1; max-width: 600px; margin: 0 auto 24px; }
     .contact-btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: #25D366;
+      background: #16A34A;
       color: #fff;
-      font-size: 16px;
+      font-size: 15.5px;
       font-weight: 800;
-      padding: 14px 32px;
+      padding: 14px 28px;
       border-radius: 99px;
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
       transition: var(--transition);
     }
+    .contact-btn:hover { background: #15803D; transform: translateY(-2px); }
 
-    .contact-btn:hover {
-      background: #20BA5A;
-      transform: translateY(-3px) scale(1.02);
-      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
-    }
-
-    /* ── 7. Footer ────────────────────────────────────────────── */
     footer {
       border-top: 1px solid var(--border);
-      padding: 30px 0;
+      padding: 26px 0;
       text-align: center;
-      font-size: 13.5px;
       color: var(--text-muted);
+      font-size: 13.5px;
+      margin-top: auto;
     }
 
-    /* ── 8. Responsive Adjustments ────────────────────────────── */
+    @media (max-width: 900px) {
+      .roadmap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
     @media (max-width: 768px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-      .card-preview {
-        height: 220px;
-      }
-      .header-cta span {
-        display: none;
-      }
+      .grid, .roadmap-grid { grid-template-columns: 1fr; }
+      .header-cta { padding: 8px 14px; font-size: 13px; }
+      .brand-text h1 { font-size: 16px; }
+      .card-actions { flex-direction: column; }
+      .btn-preview, .btn-order-similar { width: 100%; text-align: center; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Top Bar -->
   <header>
     <div class="container header-inner">
       <div class="brand">
         <div class="brand-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
             <polyline points="2 17 12 22 22 17"></polyline>
             <polyline points="2 12 12 17 22 12"></polyline>
           </svg>
         </div>
         <div class="brand-text">
-          <h1>معرض صفحات الهبوط</h1>
-          <span>Professional Landing Pages Hub</span>
+          <h1>لؤي ويب ستوديو</h1>
+          <span>Luai Web Studio</span>
         </div>
       </div>
 
-      <a href="https://wa.me/967782259937?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%B4%D8%A7%D9%87%D8%AF%D8%AA%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%D9%83%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B5%D9%81%D8%AD%D8%A9%20%D9%87%D8%A8%D9%88%D8%B7%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A." target="_blank" class="header-cta">
-        <span>اطلب صفحتك الآن</span>
-        <span>↗</span>
+      <a href="https://wa.me/967782259937?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%B4%D8%A7%D9%87%D8%AF%D8%AA%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%D9%83%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B5%D9%81%D8%AD%D8%A9%20%D9%87%D8%A8%D9%88%D8%B7%20%D8%A3%D9%88%20%D9%85%D9%88%D9%82%D8%B9%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A." target="_blank" class="header-cta">
+        <span>اطلب تصميم موقعك الآن</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
       </a>
     </div>
   </header>
 
-  <!-- Hero Intro -->
   <section class="hero">
     <div class="container">
       <div class="hero-badge">
         <span class="pulse-dot"></span>
-        <span>جاهز لاستقبال مشاريع جديدة</span>
+        <span>متاح لتنفيذ صفحات الهبوط والمتاجر ومواقع الشركات</span>
       </div>
       <h2 class="hero-title">
-        صفحات هبوط مبنية <span>لتحويل الزوار</span> إلى عملاء حقيقيين
+        حلول ويب مصممة <span>لجذب العملاء ومضاعفة مبيعاتك</span>
       </h2>
-      <p class="hero-desc">
-        تصفح أحدث نماذج صفحات الهبوط التفاعلية المخصصة لمختلف المجالات التجارية. تصميم متجاوب فائق السرعة، تجربة مستخدم سلسة، وهندسة واجهات مدروسة لزيادة المبيعات.
+      <p class="hero-subtitle">
+        ابحث وتصفح النماذج الحية المصممة خصيصاً للأسواق اليمنية والخليجية، وجرب تجربة المستخدم بنفسك قبل أن نخصصها بالكامل لهوية نشاطك التجاري.
       </p>
-    </div>
-  </section>
 
-  <!-- Value Propositions Banner -->
-  <section class="value-props">
-    <div class="container">
-      <div class="props-grid">
-        <div class="prop-item">
-          <div class="prop-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-          </div>
-          <div class="prop-text">
-            <h4>سرعة تحميل فائقة</h4>
-            <p>أكواد نظيفة ومحسنة لمحركات البحث وسرعة استجابة فورية 100%.</p>
-          </div>
+      <!-- Search & Filter Bar -->
+      <div class="explorer-bar">
+        <div class="search-row">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="search" id="studio-search" placeholder="ابحث عن نموذج مناسب لنشاطك (مثال: أدوات منزلية، سيارات، حلويات، جملة، مطعم...)" />
         </div>
-
-        <div class="prop-item">
-          <div class="prop-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        <div class="filter-row">
+          <div class="filter-pills" id="studio-filters">
+            <button type="button" class="filter-pill active" data-filter="all">كافة النماذج</button>
+            <button type="button" class="filter-pill" data-filter="yemen">السوق اليمني</button>
+            <button type="button" class="filter-pill" data-filter="gulf">السوق الخليجي</button>
+            <button type="button" class="filter-pill" data-filter="wholesale">تجارة وجملة B2B</button>
+            <button type="button" class="filter-pill" data-filter="retail">متاجر وخدمات</button>
           </div>
-          <div class="prop-text">
-            <h4>متجاوب مع كل الأجهزة</h4>
-            <p>ملاءمة تامة للهواتف الذكية والشاشات الصغيرة والكمبيوتر والتابلت.</p>
-          </div>
-        </div>
-
-        <div class="prop-item">
-          <div class="prop-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
-          </div>
-          <div class="prop-text">
-            <h4>أزرار تواصل تفاعلية ذكية</h4>
-            <p>منظومة Speed-Dial سهلة للوصول للواتساب وإنستغرام والاتصال والموقع.</p>
-          </div>
+          <span class="results-count" id="results-count">يعرض ٤ نماذج جاهزة</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Showcase Cards Section -->
+  <!-- Showcase Grid -->
   <main class="showcase">
     <div class="container">
-      <div class="grid">
+      <div class="grid" id="showcase-grid">
 
-        <!-- Card 1: Car Detailing -->
-        <article class="card">
+        <!-- Model 1: Yemeni Wholesale Homeware -->
+        <article class="card" data-tags="yemen wholesale" data-keywords="ادوات منزلية جملة اليمن صنعاء شعوب درزن كرتون قدور ترامس معرض الصقر">
           <div class="card-preview">
-            <span class="card-category-badge badge-car">سيارات وعناية فاخرة</span>
-            <img src="cars/assets/images/ba-ppf-after.jpg" alt="نموذج صفحة هبوط لمركز زينة وحماية سيارات" onerror="this.src='https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80'" />
+            <span class="card-category-badge badge-ye">السوق اليمني · جملة</span>
+            <img src="homeware-ye/assets/images/cat-cookware.jpg" alt="نموذج تاجر أدوات منزلية بالجملة — النمط اليمني" />
             <div class="card-preview-overlay"></div>
           </div>
           <div class="card-body">
-            <h3 class="card-title">كروم برو — CHROMEPRO</h3>
+            <h3 class="card-title">معرض الصقر — جملة الأدوات المنزلية (اليمن)</h3>
             <p class="card-desc">
-              صفحة هبوط فاخرة لمراكز حماية وتظليل وزينة السيارات بتقنية الدارك مود. تتضمن سلايدر مقارنة تفاعلي قبل/بعد، حاسبة أسعار فورية، واستعراض مراحل العمل عبر تبويبات ذكية.
+              مصمم بواقعية على غرار محلات الجملة في حي شعوب بصنعاء. يركز على البيع بالدرزن والكرتون، الترحيل اليومي للمحافظات، وكشف طلبية مباشر للواتساب بدون تعقيد.
             </p>
             <div class="card-features-list">
-              <span class="feature-tag">حاسبة تكلفة ذكية</span>
-              <span class="feature-tag">مقارنة قبل وبعد تفاعلية</span>
-              <span class="feature-tag">Dark Automotive UI</span>
-              <span class="feature-tag">زر اتصال وتواصل ذكي</span>
+              <span class="feature-tag">البيع بالدرزن والكرتون</span>
+              <span class="feature-tag">كشف طلبية للواتساب</span>
+              <span class="feature-tag">الترحيل للمحافظات</span>
+              <span class="feature-tag">واجهة نهارية سريعة</span>
             </div>
             <div class="card-actions">
-              <a href="cars/index.html" class="btn-preview btn-car">
+              <a href="homeware-ye/index.html" class="btn-preview btn-ye">
                 <span>معاينة النموذج الحي</span>
-                <span>↗</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
               </a>
+              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B5%D9%82%D8%B1%20%D9%84%D9%84%D8%AC%D9%85%D9%84%D8%A9)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
             </div>
           </div>
         </article>
 
-        <!-- Card 2: Sweets & Ice Cream -->
-        <article class="card">
+        <!-- Model 2: GCC B2B Homeware -->
+        <article class="card" data-tags="gulf wholesale" data-keywords="ادوات منزلية جملة الخليج السعودية توريد شركات حاسبة ارباح دار الأواني">
           <div class="card-preview">
-            <span class="card-category-badge badge-sweets">حلويات وآيسكريم وتطبيقات</span>
-            <img src="sweets/assets/images/dessert-hero.jpg" alt="نموذج صفحة هبوط لمحل حلويات وآيسكريم البطريق" onerror="this.src='https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80'" />
+            <span class="card-category-badge badge-homeware">السوق الخليجي · شركات B2B</span>
+            <img src="homeware/assets/images/hero-showroom.jpg" alt="دار الأواني لتوريد الأدوات المنزلية بالجملة" />
+            <div class="card-preview-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">دار الأواني — توريد الأدوات المنزلية (B2B)</h3>
+            <p class="card-desc">
+              موجهة لمستوردي وموزعي الخليج والمعارض الكبرى. تتضمن كتالوج كراتين بأسعار شرائحية، سلة تسعيرة ذكية، وحاسبة أرباح التاجر وهامش الربح التقديري.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-tag">حاسبة ربح وشرائح</span>
+              <span class="feature-tag">سلة تسعيرة للواتساب</span>
+              <span class="feature-tag">باقات تأسيس المعارض</span>
+              <span class="feature-tag">بحث وفلترة فورية</span>
+            </div>
+            <div class="card-actions">
+              <a href="homeware/index.html" class="btn-preview btn-homeware">
+                <span>معاينة النموذج الحي</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A3%D9%88%D8%A7%D9%86%D9%8A%20B2B)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model 3: Car Detailing -->
+        <article class="card" data-tags="gulf yemen retail" data-keywords="سيارات زينة تلميع حماية تظليل كروم برو خدمات">
+          <div class="card-preview">
+            <span class="card-category-badge badge-car">سيارات وعناية فاخرة</span>
+            <img src="cars/assets/images/ba-ppf-after.jpg" alt="نموذج صفحة هبوط لمركز زينة وحماية سيارات" />
+            <div class="card-preview-overlay"></div>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">كروم برو — CHROMEPRO للسيارات</h3>
+            <p class="card-desc">
+              صفحة هبوط فاخرة لمراكز حماية وتظليل وزينة السيارات بتقنية الدارك مود. تتضمن سلايدر مقارنة تفاعلي قبل/بعد، حاسبة أسعار فورية، وتبويبات مراحل العمل.
+            </p>
+            <div class="card-features-list">
+              <span class="feature-tag">حاسبة تكلفة ذكية</span>
+              <span class="feature-tag">مقارنة قبل وبعد</span>
+              <span class="feature-tag">معرض أعمال وفيديو</span>
+              <span class="feature-tag">تواصل سريع مدمج</span>
+            </div>
+            <div class="card-actions">
+              <a href="cars/index.html" class="btn-preview btn-car">
+                <span>معاينة النموذج الحي</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%83%D8%B1%D9%88%D9%85%20%D8%A8%D8%B1%D9%88%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Model 4: Sweets & App -->
+        <article class="card" data-tags="yemen gulf retail" data-keywords="حلويات ايسكريم كيك تطبيق مطعم كافيه منيو البطريق">
+          <div class="card-preview">
+            <span class="card-category-badge badge-sweets">حلويات ومطاعم وتطبيقات</span>
+            <img src="sweets/assets/images/dessert-hero.jpg" alt="نموذج صفحة هبوط لمحل حلويات وآيسكريم البطريق" />
             <div class="card-preview-overlay"></div>
           </div>
           <div class="card-body">
             <h3 class="card-title">حلويات البطريق — Penguin Sweets</h3>
             <p class="card-desc">
-              صفحة هبوط حيوية ومبهجة لمحل حلويات وتطبيق طلب واستلام فوري. تحتوي على موك أب هاتف تفاعلي ثلاثي الشاشات، استعراض قائمة الأصناف الشهية، ومواقع الفروع.
+              صفحة هبوط حيوية لمحل حلويات وتطبيق طلب واستلام فوري. تحتوي على موك أب هاتف تفاعلي ثلاثي الشاشات، استعراض قائمة الأصناف، ومواقع الفروع.
             </p>
             <div class="card-features-list">
               <span class="feature-tag">موك أب جوال تفاعلي</span>
@@ -653,62 +597,9 @@
             <div class="card-actions">
               <a href="sweets/index.html" class="btn-preview btn-sweets">
                 <span>معاينة النموذج الحي</span>
-                <span>↗</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
               </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 3: Wholesale Homeware (B2B - GCC/Corporate) -->
-        <article class="card">
-          <div class="card-preview">
-            <span class="card-category-badge badge-homeware">جملة وتوريد — النمط الخليجي</span>
-            <img src="homeware/assets/images/hero-showroom.jpg" alt="نموذج صفحة هبوط لتاجر أدوات منزلية بالجملة — دار الأواني" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">دار الأواني — توريد الأدوات المنزلية (B2B)</h3>
-            <p class="card-desc">
-              صفحة هبوط موجهة لمستوردي وموزعي الخليج والمعارض الكبيرة. تضم كتالوج كراتين بأسعار شرائحية، سلة تسعيرة ذكية، وحاسبة أرباح التاجر وهامش الربح التقديري.
-            </p>
-            <div class="card-features-list">
-              <span class="feature-tag">حاسبة ربح وشرائح الجملة</span>
-              <span class="feature-tag">سلة طلبية الكرتون للواتساب</span>
-              <span class="feature-tag">فلترة وبحث فوري للأصناف</span>
-              <span class="feature-tag">باقات تأسيس المعارض</span>
-            </div>
-            <div class="card-actions">
-              <a href="homeware/index.html" class="btn-preview btn-homeware">
-                <span>معاينة النموذج الحي</span>
-                <span>↗</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Card 4: Yemeni Wholesale Homeware Merchant -->
-        <article class="card">
-          <div class="card-preview">
-            <span class="card-category-badge badge-ye">تاجر جملة يمني — حي شعوب</span>
-            <img src="homeware-ye/assets/images/cat-cookware.jpg" alt="نموذج صفحة هبوط لتاجر أدوات منزلية بالجملة بالنمط اليمني" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">معرض الصقر — جملة الأدوات المنزلية (اليمن)</h3>
-            <p class="card-desc">
-              نموذج عملي وواقعي مصمم على غرار محلات الجملة في حي شعوب بصنعاء. يركز على البيع بالدرزن والكرتون، الترحيل اليومي للمحافظات، وكشف طلبية مباشر عبر الواتساب دون تعقيد حاسبات.
-            </p>
-            <div class="card-features-list">
-              <span class="feature-tag">بيع بالدرزن والكرتون</span>
-              <span class="feature-tag">كشف طلبية للواتساب</span>
-              <span class="feature-tag">الترحيل لجميع المحافظات</span>
-              <span class="feature-tag">واجهة نهارية سريعة</span>
-            </div>
-            <div class="card-actions">
-              <a href="homeware-ye/index.html" class="btn-preview btn-ye">
-                <span>معاينة النموذج الحي</span>
-                <span>↗</span>
-              </a>
+              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%AD%D9%84%D9%88%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%B7%D8%B1%D9%8A%D9%82)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
             </div>
           </div>
         </article>
@@ -717,15 +608,57 @@
     </div>
   </main>
 
-  <!-- Bottom Conversion Call to Action -->
+  <!-- Upcoming Roadmap Models -->
+  <section class="roadmap-section">
+    <div class="container">
+      <div class="roadmap-head">
+        <h3>قريباً في الاستوديو — نماذج قيد التجهيز لقطاعات أخرى</h3>
+        <p>إذا كان نشاطك ضمن هذه القطاعات، يمكنك طلب تصميمه وتنفيذه لك فوراً بأولوية خاصة</p>
+      </div>
+      <div class="roadmap-grid">
+        <div class="roadmap-item">
+          <span class="roadmap-tag">المرحلة القادمة · اليمن</span>
+          <strong>منظومات الطاقة الشمسية والبطاريات</strong>
+          <p>عرض الباقات (منزل، فيلا، بئر زراعي)، مواصفات الألواح والانفرترات، وطلب المعاينة.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="roadmap-tag">المرحلة القادمة · طبي</span>
+          <strong>عيادات الأسنان والمراكز الطبية</strong>
+          <p>عرض الحالات قبل/بعد، ملف الأطباء، وحجز المواعيد السريع عبر واتساب.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="roadmap-tag">المرحلة القادمة · تجارة</span>
+          <strong>تجار العسل اليمني والبن والتمور</strong>
+          <p>عرض الأصناف والأوزان، تغليف الهدايا، والشحن المباشر لدول الخليج.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="roadmap-tag">المرحلة القادمة · مطاعم</span>
+          <strong>منيو إلكتروني QR للمطاعم والمقاهي</strong>
+          <p>صفحة خفيفة لطلبات الطاولات والطلب السفري السريع عبر واتساب.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="roadmap-tag">السوق الخليجي · عقار</span>
+          <strong>المشاريع العقارية والديكور والتشطيب</strong>
+          <p>عرض المخططات والفلل والوحدات مع نموذج تسجيل المهتمين.</p>
+        </div>
+        <div class="roadmap-item">
+          <span class="roadmap-tag">توسعة متقدمة</span>
+          <strong>متاجر سلة واتساب + ربط Google Sheets</strong>
+          <p>متاجر متكاملة تتيح للتاجر تعديل أسعاره وأصنافه من جواله مباشرة.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
   <section class="container">
     <div class="contact-cta">
-      <h2>هل تود بناء صفحة هبوط مخصصة لمشروعك؟</h2>
+      <h2>هل تبحث عن صفحة هبوط أو موقع مخصص لنشاطك؟</h2>
       <p>
-        أقوم بتصميم وتطوير صفحات هبوط عالية التحويل مخصصة لهوية علامتك التجارية مع ربط الواتساب وأنظمة الحجز وتجاوب كامل مع الهواتف الذكية.
+        ننفذ لك تصميماً خاصاً بهوية متجرك أو شركتك مع ربط الواتساب وسرعة تحميل فائقة وتوافق تام مع جميع الجوالات.
       </p>
       <a href="https://wa.me/967782259937?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B5%D9%81%D8%AD%D8%A9%20%D9%87%D8%A8%D9%88%D8%B7%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A." target="_blank" class="contact-btn">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.667-.698c.974.53 1.997.817 3.123.818h.005c3.179 0 5.765-2.587 5.766-5.767.001-3.18-2.585-5.766-5.765-5.766zm0 10.42c-.991 0-1.961-.266-2.808-.768l-.201-.119-1.583.415.422-1.543-.131-.208c-.551-.876-.842-1.895-.841-2.942.001-2.903 2.364-5.266 5.268-5.266 2.903 0 5.265 2.363 5.265 5.266 0 2.904-2.362 5.267-5.265 5.267z"/>
         </svg>
         <span>تواصل معي عبر واتساب: <bdi dir="ltr">+967 782 259 937</bdi></span>
@@ -733,12 +666,56 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <div class="container">
-      <p>جميع حقوق التصميم محفوظة © ٢٠٢٦ · صمم وطوّر باحترافية لعرض نماذج صفحات الهبوط</p>
+      <p>جميع حقوق التصميم محفوظة © ٢٠٢٦ · Luai Web Studio — لؤي ويب ستوديو</p>
     </div>
   </footer>
 
+  <script>
+    (function () {
+      const searchInput = document.getElementById('studio-search');
+      const filtersWrap = document.getElementById('studio-filters');
+      const cards = Array.from(document.querySelectorAll('#showcase-grid .card'));
+      const countEl = document.getElementById('results-count');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const q = (searchInput ? searchInput.value : '').trim().toLowerCase();
+        let visible = 0;
+
+        cards.forEach((card) => {
+          const tags = card.dataset.tags || '';
+          const keywords = (card.dataset.keywords || '') + ' ' + card.textContent.toLowerCase();
+          const matchTag = activeFilter === 'all' || tags.includes(activeFilter);
+          const matchText = !q || keywords.includes(q);
+          const show = matchTag && matchText;
+          card.style.display = show ? 'flex' : 'none';
+          if (show) visible++;
+        });
+
+        if (countEl) {
+          countEl.textContent = visible === 0
+            ? 'لا توجد نماذج مطابقة لبحثك'
+            : `يعرض ${visible} ${visible === 1 ? 'نموذج جاهز' : 'نماذج جاهزة'}`;
+        }
+      }
+
+      if (filtersWrap) {
+        filtersWrap.addEventListener('click', (e) => {
+          const btn = e.target.closest('.filter-pill');
+          if (!btn) return;
+          filtersWrap.querySelectorAll('.filter-pill').forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', applyFilter);
+      }
+    })();
+  </script>
 </body>
 </html>
