@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا والفروع | مجموعة الأفق القابضة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contact">
+
+  <div id="corp-header"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">الرئيسية</a> / <span>اتصل بنا والفروع</span></div>
+      <h1>تواصل مع إدارة العقود والمشاريع</h1>
+      <p>فروعنا في صنعاء وعدن والرياض جاهزة لخدمة العملاء والموردين وشركاء الأعمال.</p>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <div class="sec-head center">
+        <span>مكاتبنا</span>
+        <h2>الفروع ومواقع العمل</h2>
+      </div>
+      <div class="grid-3" id="corp-branches"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-mist">
+    <div class="container grid-2" style="align-items:start;">
+      <div class="form-card">
+        <h2 style="font-size:1.35rem;font-weight:900;margin-bottom:.35rem;">نموذج طلب عرض أو مناقصة</h2>
+        <p style="color:var(--slate);font-size:.88rem;margin-bottom:1.2rem;">أرسل تفاصيل طلبك ليصل مباشرة إلى الإدارة المعنية عبر واتساب.</p>
+
+        <form class="form-grid" id="corp-contact-form">
+          <div class="form-field">
+            <label for="cf-org">اسم الشركة / الجهة</label>
+            <input type="text" id="cf-org" required placeholder="مثال: شركة الرواد للتجارة">
+          </div>
+          <div class="form-field">
+            <label for="cf-name">اسم المسؤول</label>
+            <input type="text" id="cf-name" required placeholder="الاسم الكامل">
+          </div>
+          <div class="form-field">
+            <label for="cf-phone">رقم الهاتف / واتساب</label>
+            <input type="tel" id="cf-phone" required placeholder="77XXXXXXX">
+          </div>
+          <div class="form-field">
+            <label for="cf-dept">القسم المعني</label>
+            <select id="cf-dept">
+              <option value="إدارة المقاولات والمشاريع">إدارة المقاولات والمشاريع</option>
+              <option value="قسم الاستشارات الهندسية">قسم الاستشارات الهندسية</option>
+              <option value="إدارة التوريدات والمناقصات">إدارة التوريدات والمناقصات</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="cf-msg">ملخص الطلب أو نطاق العمل</label>
+            <textarea id="cf-msg" rows="3" required placeholder="اكتب تفاصيل المشروع أو طلب التوريد..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">إرسال المراسلة عبر واتساب</button>
+        </form>
+      </div>
+
+      <div>
+        <div class="sec-head">
+          <span>إجابات سريعة</span>
+          <h2>أسئلة المناقصات والتعاقد</h2>
+        </div>
+        <div class="faq-list" id="corp-faqs"></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="corp-footer"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
