@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جسر العالم للشحن | شحن دولي وتخليص جمركي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    خطوط شحن منتظمة من <strong>الصين · دبي · جدة · تركيا</strong> إلى اليمن والخليج
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect width="34" height="34" rx="9" fill="#0B1F3A"/>
+          <path d="M7 22h20l-2.5 5H9.5L7 22z" fill="#EA580C"/>
+          <path d="M10 18V11l7-3 7 3v7" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"/>
+          <line x1="17" y1="8" x2="17" y2="20" stroke="#FDBA74" stroke-width="1.8"/>
+        </svg>
+        <span>جسر العالم للشحن</span>
+      </div>
+      <a href="#quote" class="btn-quote-top">اطلب تسعيرة شحنة</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/port.jpg" alt="ميناء حاويات الشحن الدولي" class="hero-bg" loading="eager">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-badge">شحن بحري · جوي · بري · تخليص جمركي</span>
+        <h1>نشحن بضائعك من المصنع<br>حتى <em>باب مستودعك</em></h1>
+        <p>تجميع شحنات وتخليص جمركي متكامل من الصين ودبي والسعودية وتركيا مع متابعة مباشرة لرحلة الشحنة.</p>
+        <div class="hero-btns">
+          <a href="#quote" class="btn-orange">احسب واطلب تسعيرة الآن</a>
+          <a href="#routes" class="btn-ghost">خطوط الشحن والمدد</a>
+        </div>
+      </div>
+
+      <div class="tracker-card">
+        <h2>تتبّع شحنتك فوراً</h2>
+        <p class="hint">أدخل رقم البوليصة أو اختر رقماً تجريبياً للمعاينة:</p>
+        <div class="demo-codes">
+          <button type="button" class="code-chip" data-code="WB-1024">WB-1024</button>
+          <button type="button" class="code-chip" data-code="WB-2048">WB-2048</button>
+          <button type="button" class="code-chip" data-code="WB-3090">WB-3090</button>
+        </div>
+        <div class="track-row">
+          <input type="text" id="track-input" value="WB-1024" aria-label="رقم الشحنة">
+          <button type="button" class="btn-track" id="btn-track">تتبّع</button>
+        </div>
+        <div class="track-result" id="track-result"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="container">
+      <div class="sec-head">
+        <h2>خدمات الشحن واللوجستيات</h2>
+        <p>حلول متكاملة للتجار وأصحاب المتاجر الإلكترونية والشركات</p>
+      </div>
+      <div class="svc-grid" id="sh-services"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-white" id="routes">
+    <div class="container">
+      <div class="sec-head">
+        <h2>خطوط الشحن الرئيسية والمدد المتوقعة</h2>
+        <p>رحلات أسبوعية منتظمة وتخليص جمركي في الموانئ والمنافذ</p>
+      </div>
+      <div class="routes-grid" id="sh-routes"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="quote">
+    <div class="container">
+      <div class="quote-box">
+        <div class="sec-head" style="margin-bottom:1.4rem;">
+          <h2>طلب تسعيرة شحنة أو استيراد</h2>
+          <p>حدّد مسار الشحنة والوزن التقريبي ليصلك عرض السعر عبر واتساب</p>
+        </div>
+
+        <form class="form-grid" id="sh-form">
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="s-origin">بلد الشحن (المصدر)</label>
+              <select id="s-origin">
+                <option value="الصين (غوانزو / إيوو)">الصين (غوانزو / إيوو)</option>
+                <option value="الإمارات (دبي / جبل علي)">الإمارات (دبي / جبل علي)</option>
+                <option value="السعودية (جدة / الرياض)">السعودية (جدة / الرياض)</option>
+                <option value="تركيا (إسطنبول)">تركيا (إسطنبول)</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="s-dest">الوجهة النهائية</label>
+              <select id="s-dest">
+                <option value="صنعاء">صنعاء</option>
+                <option value="عدن">عدن</option>
+                <option value="تعز / إب">تعز / إب</option>
+                <option value="الرياض / جدة">الرياض / جدة</option>
+                <option value="دبي / الخليج">دبي / الخليج</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="s-mode">وسيلة الشحن</label>
+              <select id="s-mode">
+                <option value="شحن بحري (مجمّع LCL / حاوية)">شحن بحري (مجمّع LCL / حاوية)</option>
+                <option value="شحن جوي سريع">شحن جوي سريع</option>
+                <option value="شحن بري">شحن بري</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="s-weight">الوزن أو الحجم التقريبي</label>
+              <input type="text" id="s-weight" required placeholder="مثال: 150 كجم أو 3 متر مكعب">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="s-goods">نوع البضاعة واسم العميل</label>
+            <input type="text" id="s-goods" required placeholder="مثال: قطع غيار / ملابس — محمد القاسمي">
+          </div>
+          <button type="submit" class="btn-wa">إرسال طلب التسعيرة عبر واتساب</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>جميع الحقوق محفوظة &copy; 2026 — جسر العالم للشحن الدولي | صُمّم بواسطة <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a></p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
