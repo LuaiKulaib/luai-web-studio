@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أكاديمية المستقبل | دبلومات تقنية ومهنية معتمدة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    فتح باب التسجيل لدبلومات الربع الجديد — <span>مقاعد محدودة للتدريب الحضوري والأونلاين</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect width="34" height="34" rx="9" fill="#312E81"/>
+          <path d="M17 8l10 5-10 5-10-5 10-5z" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M11 16v6c0 2.2 2.7 4 6 4s6-1.8 6-4v-6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>أكاديمية المستقبل</span>
+      </div>
+      <a href="#register" class="btn-enroll-top">سجّل في الدبلوم الآن</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/hero.jpg" alt="قاعة تدريب أكاديمية المستقبل" loading="eager">
+    <div class="container hero-body">
+      <span class="hero-badge">تدريب تطبيقي · شهادات معتمدة</span>
+      <h1>طوّر مهاراتك المهنية<br>وابدأ <em>مسارك الوظيفي</em> بثقة</h1>
+      <p>دبلومات عملية في البرمجة، التصميم، التسويق الرقمي، واللغة الإنجليزية مع مدربين خبراء ومشاريع حقيقية.</p>
+      <div class="hero-btns">
+        <a href="#courses" class="btn-amber">استكشف الدبلومات المتاحة</a>
+        <a href="#register" class="btn-ghost">تحديد مستوى واستشارة مجانية</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="container"><div class="stats-grid" id="ac-stats"></div></div>
+  </div>
+
+  <section class="sec" id="courses">
+    <div class="container">
+      <div class="sec-head">
+        <h2>الدبلومات والبرامج التدريبية</h2>
+        <p>اختر المسار المناسب لك واستعرض محاور التدريب بالتفصيل قبل التسجيل</p>
+      </div>
+
+      <div class="controls-bar">
+        <div class="search-box">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="search" id="ac-search" placeholder="ابحث عن دبلوم أو مهارة...">
+        </div>
+        <div class="cat-pills" id="ac-cats">
+          <button type="button" class="cat-pill active" data-cat="all">كافة المسارات</button>
+          <button type="button" class="cat-pill" data-cat="tech">برمجة وتقنية</button>
+          <button type="button" class="cat-pill" data-cat="design">تصميم ومونتاج</button>
+          <button type="button" class="cat-pill" data-cat="business">أعمال ولغات</button>
+        </div>
+      </div>
+
+      <div class="courses-grid" id="ac-courses"></div>
+    </div>
+  </section>
+
+  <section class="sec benefits-sec">
+    <div class="container">
+      <div class="sec-head">
+        <h2>لماذا تتدرب في أكاديمية المستقبل؟</h2>
+      </div>
+      <div class="benefits-grid" id="ac-benefits"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="register">
+    <div class="container">
+      <div class="reg-box">
+        <div class="sec-head" style="margin-bottom:1.4rem;">
+          <h2>حجز مقعد أو استشارة تدريبية</h2>
+          <p>سجّل بياناتك ليتم تأكيد المقعد وإرسال تفاصيل الرسوم والجدول عبر واتساب</p>
+        </div>
+
+        <form class="form-grid" id="ac-form">
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="a-name">الاسم الكامل</label>
+              <input type="text" id="a-name" required placeholder="مثال: سارة باوزير">
+            </div>
+            <div class="form-field">
+              <label for="a-phone">رقم الواتساب</label>
+              <input type="tel" id="a-phone" required placeholder="77XXXXXXX">
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="a-course">الدبلوم المطلوب</label>
+              <select id="a-course"></select>
+            </div>
+            <div class="form-field">
+              <label for="a-mode">نظام الحضور</label>
+              <select id="a-mode">
+                <option value="حضوري في القاعة">حضوري في القاعة</option>
+                <option value="أونلاين مباشر (Zoom)">أونلاين مباشر (Zoom)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">تأكيد التسجيل عبر واتساب</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>جميع الحقوق محفوظة &copy; 2026 — أكاديمية المستقبل للتدريب | صُمّم بواسطة <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a></p>
+  </footer>
+
+  <!-- Syllabus Modal -->
+  <div class="backdrop" id="ac-backdrop"></div>
+  <div class="modal" id="ac-modal" role="dialog" aria-modal="true" aria-labelledby="mod-title">
+    <div class="modal-head">
+      <h3 id="mod-title" style="font-size:1.1rem;font-weight:900;">محاور الدبلوم</h3>
+      <button type="button" class="btn-close" id="btn-close-modal" aria-label="إغلاق">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mod-list" id="mod-list"></div>
+    <button type="button" class="btn-wa-seat" id="btn-modal-register" style="width:100%;">احجز مقعدك في هذا الدبلوم</button>
+  </div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
