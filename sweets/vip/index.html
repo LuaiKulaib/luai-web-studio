@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دار البطريق للحلويات — الفئة الملكية VIP | ضيافة الولائم وعقود الفنادق والمقاهي</title>
+  <meta name="description" content="دار البطريق الملكية — الفئة الملكية VIP. منصة تصميم صواني الولائم لكبار الشخصيات، حاسبة عقود التوريد للفنادق والمقاهي، وإصدار عروض الأسعار الرسمية.">
+  <link rel="icon" type="image/png" href="../assets/images/App_ico.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Maison Telemetry Strip -->
+  <div class="maison-topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-status">
+        <span class="pulse-gold" aria-hidden="true"></span>
+        <span>MAISON PENGUIN · HAUTE CONFISERIE &amp; ROYAL BANQUET CATERING</span>
+      </div>
+      <div class="topbar-meta">
+        <span>أسطول تبريد -18°C | خدمة ولائم حتى 300 ضيف</span>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener">كونسيرج كبار الشخصيات: 967782259937+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Maison Header -->
+  <header class="vip-header" id="vip-header">
+    <div class="container header-inner">
+      <a href="#vip-hero" class="vip-brand" aria-label="دار البطريق الملكية للحلويات">
+        <span class="vip-crest">
+          <svg width="36" height="36" viewBox="0 0 38 38" fill="none" aria-hidden="true">
+            <rect x="2.5" y="2.5" width="33" height="33" rx="6" stroke="#E5BA68" stroke-width="1.2"/>
+            <polygon points="19,7 29,13 29,25 19,31 9,25 9,13" stroke="#E5BA68" stroke-width="1.2" fill="rgba(229,186,104,0.08)"/>
+            <path d="M15 21l4-7 4 7M14 24h10" stroke="#F5DFA8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-titles">
+          <strong>دار البطريق للحلويات</strong>
+          <small>MAISON CONFISERIE · VIP EDITION</small>
+        </span>
+      </a>
+
+      <nav class="vip-nav" aria-label="أقسام الفئة الملكية">
+        <a href="#maison-gallery">جناح العرض الكريمي</a>
+        <a href="#banquet-builder">مُصمّم صواني الولائم</a>
+        <a href="#b2b-estimator">حاسبة عقود B2B</a>
+        <a href="#vip-lounge">تطبيق الكونسيرج</a>
+        <a href="#vip-faq">الأسئلة</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="currency-pills" id="vip-currency-switcher" role="group" aria-label="اختيار العملة">
+          <button type="button" class="v-curr-btn active" data-curr="USD">USD</button>
+          <button type="button" class="v-curr-btn" data-curr="SAR">SAR</button>
+          <button type="button" class="v-curr-btn" data-curr="YER">YER</button>
+        </div>
+
+        <button type="button" class="concierge-drawer-btn" id="open-vip-drawer" aria-label="فتح خزنة الطلبات">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span>طلبية الكونسيرج</span>
+          <span class="v-cart-count" id="vip-cart-count">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="open-vip-mobile-nav" aria-label="فتح القائمة">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-backdrop" id="vip-mobile-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="vip-mobile-drawer" aria-label="قائمة الجوال">
+    <div class="mobile-nav-head">
+      <div class="brand-titles">
+        <strong>دار البطريق VIP</strong>
+        <small>MAISON CONFISERIE</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="close-vip-mobile-nav" aria-label="إغلاق القائمة">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#maison-gallery">جناح العرض الكريمي</a>
+      <a href="#banquet-builder">مُصمّم صواني الولائم</a>
+      <a href="#b2b-estimator">حاسبة عقود B2B</a>
+      <a href="#vip-lounge">تطبيق الكونسيرج</a>
+      <a href="#vip-faq">الأسئلة الشائعة</a>
+    </nav>
+    <div class="mobile-nav-foot">
+      <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="btn-gold-solid btn-full">
+        <span>واتساب كونسيرج VIP</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- 1. Architectural Dark Luxury Hero -->
+  <section class="vip-hero" id="vip-hero">
+    <div class="hero-ambient-glow" aria-hidden="true"></div>
+    <div class="container hero-layout">
+      <div class="hero-editorial">
+        <div class="vault-badge">
+          <span class="gold-rule"></span>
+          <span>MAISON PENGUIN · BANQUETS &amp; CORPORATE HOSPITALITY</span>
+        </div>
+
+        <h1>
+          دار البطريق الملكية
+          <span>لضيافة الولائم الكبرى وعقود الفنادق والمقاهي</span>
+        </h1>
+
+        <p class="hero-desc">
+          تجربة حلويات فاخرة مصمّمة للقصور وقاعات الأعراس والمؤتمرات والفنادق. صمّم صواني البوفيه وأحواض الجيلاتو وأبراج الماكرون حسب عدد ضيوفك، أو قدّر عقد التوريد التجاري الشهري وأصدر عرض سعر رسمياً في ثوانٍ.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="#banquet-builder" class="btn-gold-solid">
+            <span>صمّم صواني الضيافة (20 - 300 ضيف)</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+          </a>
+          <a href="#b2b-estimator" class="btn-gold-ghost">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="9" y1="21" x2="9" y2="9"/>
+            </svg>
+            <span>حاسبة عقود B2B</span>
+          </a>
+        </div>
+
+        <div class="vip-stats-strip" id="vip-stats-grid"></div>
+      </div>
+
+      <div class="hero-vitrine">
+        <div class="vitrine-main">
+          <img src="../assets/images/dessert-1.jpg" alt="كيكة الشوكولاتة البلجيكية الملكية من دار البطريق" loading="eager">
+          <div class="vitrine-caption">
+            <span class="vitrine-tag">HAUTE PATISSERIE · 70% BELGIAN</span>
+            <p>تحضير معمل خاص بطبقات الجاناش الداكن والبندق المحمّص</p>
+          </div>
+        </div>
+        <div class="vitrine-secondary">
+          <img src="../assets/images/dessert-3.jpg" alt="كيكة البستاشيو والتوت البري الفاخرة" loading="eager">
+          <div class="vitrine-secondary-meta">
+            <small>PRIVATE EVENT EDITION</small>
+            <strong>تشكيلة الفستق والتوت</strong>
+            <span>جاهزية لولائم حتى 300 ضيفاً</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Cream Gallery Panel — Signature Maison Vitrine -->
+  <section class="cream-gallery-section" id="maison-gallery">
+    <div class="container">
+      <div class="cream-gallery-panel">
+        <div class="gallery-panel-head">
+          <div>
+            <span class="kicker-cocoa">GALERIE MAISON · CREAM EXHIBITION</span>
+            <h2>معرض إبداعات دار البطريق للضيافة الراقية</h2>
+          </div>
+          <p>
+            لوحة عرض مضيئة لأبرز ابتكارات المعمل من الكيكات الملكية، الجيلاتو الطبيعي، وأصناف الضيافة التي يمكن إضافتها مباشرة إلى طلبية الكونسيرج الخاصة بك.
+          </p>
+        </div>
+
+        <div class="gallery-cards-grid" id="maison-gallery-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Interactive Banquet & VIP Hospitality Tray Builder -->
+  <section class="banquet-section" id="banquet-builder">
+    <div class="container">
+      <div class="section-header-dark">
+        <div>
+          <span class="kicker-gold">BANQUET &amp; VIP HOSPITALITY TRAY BUILDER</span>
+          <h2>مُصمّم صواني الضيافة والولائم الملكية</h2>
+        </div>
+        <p class="section-note">
+          حدّد عدد الضيوف ونوع المناسبة ليقوم النظام باقتراح التوزيع المثالي لصواني الضيافة، أو عدّل الكميات يدوياً مع حساب التكلفة الفوري.
+        </p>
+      </div>
+
+      <div class="banquet-shell">
+        <!-- Left/Start Controls -->
+        <div class="banquet-controls-col">
+          <!-- Guest Slider & Event Controls -->
+          <div class="obsidian-card guest-control-card">
+            <div class="guest-head-row">
+              <div>
+                <span class="micro-label">إجمالي المدعوين للفعالية</span>
+                <div class="guest-readout" id="guest-count-display">80 ضيفاً</div>
+              </div>
+              <div class="event-type-wrap">
+                <label for="banquet-event-type">طبيعة المناسبة</label>
+                <select id="banquet-event-type">
+                  <option value="حفل زفاف واستقبال ملكي">حفل زفاف واستقبال ملكي</option>
+                  <option value="مؤتمر وتدشين رسمي">مؤتمر وتدشين رسمي</option>
+                  <option value="وليمة عائلية لكبار الشخصيات">وليمة عائلية لكبار الشخصيات</option>
+                  <option value="حفل تخرج وتكريم خاص">حفل تخرج وتكريم خاص</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="slider-wrap">
+              <input type="range" id="guest-count-slider" min="20" max="300" step="5" value="80" aria-label="عدد الضيوف">
+              <div class="slider-scale">
+                <span>20 ضيفاً</span>
+                <span>100 ضيف</span>
+                <span>200 ضيف</span>
+                <span>300 ضيف</span>
+              </div>
+            </div>
+
+            <div class="guest-presets-row" id="guest-presets-row">
+              <button type="button" class="preset-pill" data-guests="30">30 ضيفاً · استقبال</button>
+              <button type="button" class="preset-pill active" data-guests="80">80 ضيفاً · خطوبة</button>
+              <button type="button" class="preset-pill" data-guests="150">150 ضيفاً · زفاف</button>
+              <button type="button" class="preset-pill" data-guests="250">250 ضيفاً · مؤتمر</button>
+            </div>
+
+            <div class="auto-rec-banner">
+              <div class="rec-info">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+                </svg>
+                <span id="recommended-formula-text">التوزيع الذكي المقترح لعدد 80 ضيفاً جاهز للتطبيق</span>
+              </div>
+              <button type="button" class="btn-gold-outline-sm" id="apply-recommended-btn">تطبيق التوزيع المقترح</button>
+            </div>
+          </div>
+
+          <!-- 4 Tray Cards -->
+          <div class="trays-grid" id="banquet-trays-grid"></div>
+
+          <!-- Optional Royal Catering Services -->
+          <div class="obsidian-card addons-card">
+            <h3>خدمات الضيافة المرافقة في الموقع (اختياري)</h3>
+            <div class="addons-list" id="banquet-addons-list"></div>
+          </div>
+        </div>
+
+        <!-- Right/End Live Banquet Summary -->
+        <aside class="banquet-summary-col" aria-label="ملخص وتكلفة صواني الولائم">
+          <div class="summary-cream-panel" id="banquet-summary">
+            <div class="summary-head">
+              <span class="kicker-cocoa">BANQUET ALLOCATION SUMMARY</span>
+              <h3>ملخص باقة الضيافة</h3>
+            </div>
+
+            <div class="coverage-box">
+              <div class="coverage-top">
+                <span>تغطية الضيوف المقدّرة</span>
+                <strong id="coverage-ratio-text">85 حصة / 80 ضيفاً</strong>
+              </div>
+              <div class="coverage-track">
+                <div class="coverage-fill" id="coverage-fill-bar" style="width: 100%;"></div>
+              </div>
+              <small id="coverage-status-note">توزيع متكامل يكفي جميع الضيوف مع فائض ضيافة مريح</small>
+            </div>
+
+            <div class="summary-breakdown-list" id="banquet-breakdown-list"></div>
+
+            <div class="summary-totals">
+              <div class="sum-line">
+                <span>المجموع قبل خصم الكميات</span>
+                <span id="banquet-gross-total">$0</span>
+              </div>
+              <div class="sum-line discount-line" id="banquet-discount-row">
+                <span id="banquet-discount-label">خصم باقة الضيافة</span>
+                <span id="banquet-discount-val">-$0</span>
+              </div>
+              <div class="sum-line grand">
+                <span>الإجمالي النهائي للباقة</span>
+                <strong id="banquet-net-total">$0</strong>
+              </div>
+            </div>
+
+            <div class="summary-actions">
+              <button type="button" class="btn-cocoa-solid btn-full" id="open-banquet-proposal-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <span>معاينة وطباعة عرض السعر الرسمي</span>
+              </button>
+              <button type="button" class="btn-cocoa-outline btn-full" id="add-banquet-to-drawer-btn">
+                <span>إضافة الباقة لطلبية الكونسيرج</span>
+              </button>
+              <button type="button" class="btn-gold-wa btn-full" id="send-banquet-wa-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                </svg>
+                <span>إرسال مباشر لكونسيرج واتساب</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. B2B Cafe / Hotel / Event Supply Contract Estimator -->
+  <section class="b2b-section" id="b2b-estimator">
+    <div class="container">
+      <div class="section-header-dark">
+        <div>
+          <span class="kicker-gold">B2B CORPORATE &amp; HOSPITALITY CONTRACTS</span>
+          <h2>حاسبة عقود التوريد للفنادق والمقاهي وقاعات المناسبات</h2>
+        </div>
+        <p class="section-note">
+          حلول توريد مجدولة بأعلى معايير السلسلة الباردة (-18°C) مع خصومات عقود ربع سنوية ونصف سنوية وسنوية حصرية لشركاء الضيافة.
+        </p>
+      </div>
+
+      <div class="b2b-layout">
+        <!-- B2B Configuration Panel -->
+        <div class="obsidian-card b2b-config-card">
+          <div class="b2b-block">
+            <label>نوع المنشأة الشريكة</label>
+            <div class="venue-types-grid" id="b2b-venue-types"></div>
+          </div>
+
+          <div class="b2b-block">
+            <label>مدة عقد التوريد المجدول</label>
+            <div class="contract-terms-grid" id="b2b-contract-terms"></div>
+          </div>
+
+          <div class="b2b-block">
+            <div class="b2b-cadence-row">
+              <label for="b2b-cadence-select">وتيرة التسليم المبرد</label>
+              <select id="b2b-cadence-select">
+                <option value="توريد 3 مرات أسبوعياً">توريد 3 مرات أسبوعياً (السبت - الإثنين - الأربعاء)</option>
+                <option value="توريد يومي طازج فجراً">توريد يومي طازج الساعة 7:00 صباحاً</option>
+                <option value="توريد أسبوعي مجمّد + حسب الفعاليات">توريد أسبوعي رئيسي + شحنات فعاليات</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="b2b-block">
+            <label>تقدير الكميات الأسبوعية المطلوبة</label>
+            <div class="b2b-sliders-grid" id="b2b-sliders-grid"></div>
+          </div>
+        </div>
+
+        <!-- Cream Gallery Financial Contract Dossier -->
+        <div class="b2b-dossier-panel" id="b2b-dossier">
+          <div class="dossier-head">
+            <span class="kicker-cocoa">FINANCIAL SUPPLY ESTIMATE</span>
+            <h3>الملخص المالي لعقد التوريد</h3>
+            <span class="dossier-tier-badge" id="b2b-tier-badge">عقد نصف سنوي · خصم 11%</span>
+          </div>
+
+          <div class="dossier-metrics-grid">
+            <div class="d-metric">
+              <span>صافي الفاتورة الشهرية</span>
+              <strong id="b2b-monthly-net">$0</strong>
+            </div>
+            <div class="d-metric">
+              <span>إجمالي قيمة العقد</span>
+              <strong id="b2b-contract-total">$0</strong>
+            </div>
+            <div class="d-metric">
+              <span>الوفر التعاقدي الإجمالي</span>
+              <strong id="b2b-total-savings">$0</strong>
+            </div>
+            <div class="d-metric">
+              <span>هامش ربح المنشأة المقدّر</span>
+              <strong id="b2b-partner-margin">~42%</strong>
+            </div>
+          </div>
+
+          <div class="dossier-lines" id="b2b-lines-summary"></div>
+
+          <div class="dossier-sla-note">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <polyline points="9 12 11 14 15 10"/>
+            </svg>
+            <span>يشمل التعاقد التوصيل المبرد المجاني، عينات تذوق شهرية، ودعم المطبخ السريع خلال ساعتين.</span>
+          </div>
+
+          <div class="dossier-actions">
+            <button type="button" class="btn-cocoa-solid btn-full" id="open-b2b-proposal-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+              <span>إصدار مسودة عرض العقد (للطباعة/النسخ)</span>
+            </button>
+            <button type="button" class="btn-gold-wa btn-full" id="send-b2b-wa-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>تقديم طلب التعاقد عبر واتساب VIP</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. VIP Lounge, App Companion & Branches -->
+  <section class="lounge-section" id="vip-lounge">
+    <div class="container lounge-grid">
+      <div class="obsidian-card lounge-branches-card">
+        <span class="kicker-gold">PRIVATE TASTING LOUNGES · SANAA</span>
+        <h2>فروع دار البطريق وجلسات التذوق الخاصة</h2>
+        <p>يمكن لمديري الفعاليات ومسؤولي المشتريات الفندقية حجز جلسة تذوق خاصة في فرع شارع حدة أو فرع الأصبحي قبل اعتماد طلبيات الولائم والعقود.</p>
+
+        <div class="lounge-branches-list">
+          <div class="lounge-branch-item">
+            <strong>الفرع الرئيسي — شارع حدة</strong>
+            <span>بجوار مركز الكميم التجاري · يومياً 10:00 ص – 1:30 فجراً</span>
+          </div>
+          <div class="lounge-branch-item">
+            <strong>فرع الأصبحي — حي الأصبحي</strong>
+            <span>شارع الأصبحي العام، تقاطع شارع 24 · يومياً 11:00 ص – 1:00 فجراً</span>
+          </div>
+        </div>
+
+        <a href="https://wa.me/967782259937?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AD%D8%AC%D8%B2%20%D8%AC%D9%84%D8%B3%D8%A9%20%D8%AA%D8%B0%D9%88%D9%82%20VIP%20%D9%84%D8%AF%D9%89%20%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A8%D8%B7%D8%B1%D9%8A%D9%82." target="_blank" rel="noopener" class="btn-gold-solid">
+          <span>حجز جلسة تذوق VIP عبر واتساب</span>
+        </a>
+      </div>
+
+      <div class="obsidian-card lounge-app-card">
+        <div class="lounge-app-copy">
+          <span class="kicker-gold">PENGUIN DIGITAL TRACKING</span>
+          <h3>تتبع التوريد والحجز عبر تطبيق البطريق</h3>
+          <p>استخدم حسابك في تطبيق البطريق لمتابعة تجهيز دفعات الضيافة، مراجعة فواتير التوريد، واستلام إشعارات جاهزية الطلبيات في ثلاجات المعمل.</p>
+          <div class="vip-app-tabs" id="vip-app-tabs">
+            <button type="button" class="v-app-tab active" data-screen="splash">واجهة الدار</button>
+            <button type="button" class="v-app-tab" data-screen="login">بوابة الشركاء</button>
+          </div>
+        </div>
+        <div class="vip-phone-shell">
+          <img id="vip-app-screen-img" src="../assets/images/app-screen-splash.png" alt="شاشة تطبيق دار البطريق للحلويات" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. VIP FAQ -->
+  <section class="vip-faq-section" id="vip-faq">
+    <div class="container faq-layout">
+      <div class="faq-intro">
+        <span class="kicker-gold">CONCIERGE PROTOCOL</span>
+        <h2>الأسئلة الشائعة للولائم والعقود التجارية</h2>
+        <p>تفاصيل اللوجستيات المبردة، فترات الحجز المسبق للأعداد الكبيرة، وشروط التعاقد الشهري والسنوي.</p>
+      </div>
+      <div class="vip-faq-list" id="vip-faq-list"></div>
+    </div>
+  </section>
+
+  <!-- 7. Footer -->
+  <footer class="vip-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="vip-brand">
+          <span class="brand-medallion-pearl">
+            <img src="../assets/images/Penguin_ico.png" alt="دار البطريق">
+          </span>
+          <span class="brand-titles">
+            <strong>دار البطريق للحلويات</strong>
+            <small>MAISON CONFISERIE · VIP EDITION</small>
+          </span>
+        </div>
+        <p>دار الضيافة الراقية لصواني الولائم، الجيلاتو الطبيعي، وعقود الفنادق والمقاهي في اليمن.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>منصات الفئة الملكية</h4>
+        <a href="#maison-gallery">جناح العرض الكريمي</a>
+        <a href="#banquet-builder">مُصمّم صواني الولائم</a>
+        <a href="#b2b-estimator">حاسبة عقود التوريد B2B</a>
+        <a href="#vip-lounge">فروع جلسات التذوق</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>خط الكونسيرج المباشر</h4>
+        <p>الفرع الرئيسي: شارع حدة، جوار مركز الكميم التجاري</p>
+        <p>فرع الأصبحي: شارع الأصبحي العام، تقاطع شارع 24</p>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="gold-link">واتساب VIP: 967782259937+</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>دار البطريق للحلويات — الفئة الملكية VIP · جميع الحقوق محفوظة 2026</span>
+      <span>MAISON PENGUIN HAUTE CONFISERIE</span>
+    </div>
+  </footer>
+
+  <!-- Interactive Printable / Copyable Catering Proposal Modal -->
+  <div class="modal-backdrop" id="proposal-backdrop" aria-hidden="true"></div>
+  <div class="proposal-modal" id="proposal-modal" role="dialog" aria-modal="true" aria-labelledby="proposal-modal-title">
+    <div class="proposal-toolbar">
+      <div class="toolbar-title">
+        <strong id="proposal-modal-title">عرض السعر الرسمي لدار البطريق VIP</strong>
+        <small id="proposal-ref-code">REF: MP-VIP-2026-001</small>
+      </div>
+      <div class="toolbar-actions">
+        <button type="button" class="btn-tool" id="copy-proposal-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span>نسخ العرض</span>
+        </button>
+        <button type="button" class="btn-tool" id="print-proposal-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"/>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+            <rect x="6" y="14" width="12" height="8"/>
+          </svg>
+          <span>طباعة / PDF</span>
+        </button>
+        <button type="button" class="icon-close-btn" id="close-proposal-btn" aria-label="إغلاق نافذة العرض">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Cream Gallery Printable Document Sheet -->
+    <div class="proposal-sheet-scroll">
+      <article class="proposal-sheet" id="proposal-sheet">
+        <header class="sheet-header">
+          <div class="sheet-brand">
+            <img src="../assets/images/Penguin_ico.png" alt="شعار دار البطريق">
+            <div>
+              <strong>دار البطريق للحلويات والضيافة</strong>
+              <small>MAISON PENGUIN · HAUTE CONFISERIE &amp; CATERING</small>
+            </div>
+          </div>
+          <div class="sheet-meta">
+            <span class="sheet-mode-pill" id="proposal-mode-badge">عرض ضيافة وولائم VIP</span>
+            <span id="proposal-date-issued">التاريخ: --</span>
+          </div>
+        </header>
+
+        <div class="sheet-client-inputs">
+          <div class="sheet-field">
+            <label for="proposal-client-input">اسم العميل / الجهة الرسمية</label>
+            <input type="text" id="proposal-client-input" value="ضيف دار البطريق الكريم" placeholder="اكتب اسم العميل أو الفندق أو الشركة...">
+          </div>
+          <div class="sheet-field">
+            <label for="proposal-event-date-input">تاريخ المناسبة / بدء التوريد</label>
+            <input type="date" id="proposal-event-date-input">
+          </div>
+        </div>
+
+        <div class="sheet-summary-banner" id="proposal-context-banner"></div>
+
+        <table class="sheet-table">
+          <thead>
+            <tr>
+              <th>البند والمواصفات</th>
+              <th>الكمية</th>
+              <th>سعر الوحدة</th>
+              <th>الإجمالي</th>
+            </tr>
+          </thead>
+          <tbody id="proposal-table-body"></tbody>
+        </table>
+
+        <div class="sheet-totals-box" id="proposal-totals-box"></div>
+
+        <footer class="sheet-footer-terms">
+          <p><strong>شروط التنفيذ وسلسلة التبريد:</strong> يتم تجهيز الأصناف طازجة في يوم التسليم وتُنقل عبر مركبات مبردة (-18°C للجيلاتو / +4°C للكيك والترافل). صلاحية عرض السعر 14 يوماً من تاريخ الإصدار.</p>
+          <p>اعتماد الكونسيرج المباشر: واتساب 967782259937+ | فرع شارع حدة — صنعاء</p>
+        </footer>
+      </article>
+    </div>
+
+    <div class="proposal-modal-foot">
+      <button type="button" class="btn-gold-wa btn-full" id="modal-wa-dispatch-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>اعتماد وإرسال العرض لكونسيرج واتساب (الفئة الملكية VIP)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- VIP Concierge Slide-Over Dispatch Drawer -->
+  <div class="drawer-backdrop" id="vip-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="vip-drawer" id="vip-drawer" role="dialog" aria-modal="true" aria-labelledby="vip-drawer-title">
+    <div class="vip-drawer-head">
+      <div>
+        <h2 id="vip-drawer-title">طلبية كونسيرج دار البطريق</h2>
+        <small>الفئة الملكية VIP · تنفيذ وإرسال مباشر</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="close-vip-drawer" aria-label="إغلاق الخزنة">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="vip-drawer-body" id="vip-drawer-items"></div>
+
+    <div class="vip-drawer-foot">
+      <div class="drawer-inputs">
+        <input type="text" id="vip-client-name" placeholder="اسم العميل أو الجهة" aria-label="اسم العميل">
+        <input type="tel" id="vip-client-phone" placeholder="رقم التواصل / الواتساب" aria-label="رقم التواصل">
+      </div>
+      <div class="drawer-total-row">
+        <span>الإجمالي الكلي</span>
+        <strong id="vip-drawer-total">$0</strong>
+      </div>
+      <button type="button" class="btn-gold-wa btn-full" id="vip-drawer-wa-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>إرسال طلبية الكونسيرج عبر واتساب</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="vip-toast" id="vip-toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

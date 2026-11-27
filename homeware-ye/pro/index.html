@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معرض الصقر للأدوات المنزلية | بوابة الجملة الاحترافية — حي شعوب، صنعاء (Pro)</title>
+  <meta name="description" content="منصة تجارة الجملة بالدرزن والكرتون من معرض الصقر للأدوات المنزلية — حي شعوب، صنعاء. تسعير فوري بـ 3 عملات (USD / SAR / YER) وجدول الترحيل اليومي لكافة المحافظات." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Utility Ribbon -->
+  <div class="topbar" id="topBar">
+    <div class="container topbar-inner">
+      <div class="topbar-info">
+        <span class="topbar-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          حي شعوب — صنعاء
+        </span>
+        <span>ترحيل يومي مباشر إلى صنعاء، عدن، تعز، الحديدة، إب، والمكلا</span>
+        <span class="topbar-sep hide-sm" aria-hidden="true"></span>
+        <span class="hide-sm" dir="ltr">USD · SAR · YER</span>
+      </div>
+      <div class="topbar-right">
+        <a href="tel:+967782259937" class="topbar-phone" dir="ltr">+967 782 259 937</a>
+        <button type="button" class="topbar-close" id="topCloseBtn" aria-label="إغلاق الشريط العلوي">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Sticky Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="معرض الصقر للأدوات المنزلية">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>معرض الصقر للأدوات المنزلية</strong>
+          <small>جملة بالدرزن والكرتون — حي شعوب، صنعاء</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#departments">الأقسام</a>
+        <a href="#catalog">كتالوج الجملة</a>
+        <a href="#freight">جدول الترحيل اليومي</a>
+        <a href="#setup">تجهيز المحلات</a>
+        <a href="#location">موقع المعرض</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="currency-switcher" role="group" aria-label="تحويل العملة">
+          <button type="button" class="curr-btn active" data-currency="USD">USD</button>
+          <button type="button" class="curr-btn" data-currency="SAR">SAR</button>
+          <button type="button" class="curr-btn" data-currency="YER">YER</button>
+        </div>
+
+        <button type="button" class="quote-trigger" id="openDrawerBtn" aria-label="فتح كشف التسعيرة والطلبية">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+            <line x1="9" y1="12" x2="15" y2="12"></line>
+            <line x1="9" y1="16" x2="13" y2="16"></line>
+          </svg>
+          <span class="quote-trigger-label">كشف الطلبية</span>
+          <span class="quote-count" id="headerDrawerCount">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#departments">الأقسام الستة</a>
+      <a href="#catalog">كتالوج الجملة والأسعار</a>
+      <a href="#freight">جدول الترحيل اليومي للمحافظات</a>
+      <a href="#setup">تجهيز المحلات الجديدة</a>
+      <a href="#faq">استفسارات التجار</a>
+      <a href="#location">العنوان في حي شعوب</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Split Editorial Wholesale Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span class="kicker-dot" aria-hidden="true"></span>
+            <span>مركز الجملة الرئيسي — حي شعوب، صنعاء</span>
+            <span class="tier-pill" dir="ltr">HERITAGE PRO</span>
+          </div>
+
+          <h1>توريد الأدوات المنزلية والكهربائية بالجملة من قلب شعوب إلى كافة محافظات اليمن</h1>
+
+          <p class="hero-lead">
+            نوفر لتجار الجملة وأصحاب معارض الأواني المنزلية تشكيلة كاملة بالدرزن والكرتون مع تسعير استرشادي فوري بثلاث عملات (<span dir="ltr">USD / SAR / YER</span>) وترحيل يومي مغلف ومضمون في نفس اليوم.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary" id="heroGoCatalogBtn">
+              <span>تصفح الكتالوج وحدد الدرازن والكراتين</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </a>
+            <button type="button" class="btn btn-outline" id="heroOpenDrawerBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+              <span>إصدار كشف الطلبية والشحن</span>
+            </button>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong dir="ltr">12 SKU</strong>
+              <span>أصناف جملة حاضرة بالمخزن</span>
+            </div>
+            <div class="metric-item">
+              <strong dir="ltr">USD / SAR / YER</strong>
+              <span>محول تسعيرة ثلاثي العملات</span>
+            </div>
+            <div class="metric-item">
+              <strong>درزن / كرتون</strong>
+              <span>مرونة كاملة في التشكيل</span>
+            </div>
+            <div class="metric-item">
+              <strong>6+ محافظات</strong>
+              <span>ترحيل يومي حتى مكتب النقل</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-frame">
+            <img src="../assets/images/hero-showroom.jpg" alt="صالة عرض معرض الصقر للأدوات المنزلية في حي شعوب صنعاء" />
+            <div class="hero-overlay-card">
+              <div class="overlay-card-head">
+                <span class="overlay-badge">التوريد الفوري — حي شعوب</span>
+                <span class="overlay-code" dir="ltr">SANA'A HUB</span>
+              </div>
+              <strong>مخازن وساحة تحميل مخصصة للتجار</strong>
+              <p>تجهيز وفرز الكراتين وتسليمها لمكاتب الترحيل المتجهة إلى عدن، تعز، الحديدة، إب، والمكلا يومياً.</p>
+              <div class="overlay-thumb-row">
+                <img src="../assets/images/warehouse-logistics.jpg" alt="تغليف وشحن الكراتين في مخزن معرض الصقر" />
+                <div>
+                  <span>آخر موعد تسليم ترحيل اليوم</span>
+                  <strong dir="ltr">04:30 PM</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 Wholesale Departments -->
+    <section class="section section--tint" id="departments">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">أقسام المعرض والمخازن</span>
+            <h2>تصفح حسب قطاع الجملة الرئيسي</h2>
+          </div>
+          <p>اختر القسم المطلوب للانتقال مباشرة إلى الأصناف المتوفرة ومعرفة تعبئة الكرتون والدرزن والأسعار الاسترشادية.</p>
+        </div>
+
+        <div class="departments-grid" id="departmentsGrid">
+          <button type="button" class="dept-card" data-jump-cat="pots">
+            <span class="dept-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 10h16v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-6z"></path>
+                <path d="M2 10h20"></path>
+                <path d="M9 10V7a3 3 0 0 1 6 0v3"></path>
+              </svg>
+            </span>
+            <strong>قدور الضغط والجرانيت والاستيل</strong>
+            <span>أطقم 10 قطع، مقاسات الولائم، والطاوات</span>
+          </button>
+
+          <button type="button" class="dept-card" data-jump-cat="hospitality">
+            <span class="dept-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="2" x2="6" y2="5"></line>
+                <line x1="10" y1="2" x2="10" y2="5"></line>
+                <line x1="14" y1="2" x2="14" y2="5"></line>
+              </svg>
+            </span>
+            <strong>الترامس والشاي والضيافة</strong>
+            <span>أباريق حفظ الحرارة وأطقم الفناجين العربية</span>
+          </button>
+
+          <button type="button" class="dept-card" data-jump-cat="tableware">
+            <span class="dept-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"></circle>
+                <circle cx="12" cy="12" r="4.5"></circle>
+              </svg>
+            </span>
+            <strong>الصحون والميلامين والزجاج</strong>
+            <span>أطقم السفرة 24 قطعة وأطباق العزائم</span>
+          </button>
+
+          <button type="button" class="dept-card" data-jump-cat="storage">
+            <span class="dept-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="21 8 21 21 3 21 3 8"></polyline>
+                <rect x="1" y="3" width="22" height="5"></rect>
+                <line x1="10" y1="12" x2="14" y2="12"></line>
+              </svg>
+            </span>
+            <strong>الحافظات والبلاستيكات</strong>
+            <span>برطمانات الزجاج وحافظات الثلاجة والبهارات</span>
+          </button>
+
+          <button type="button" class="dept-card" data-jump-cat="electric">
+            <span class="dept-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </span>
+            <strong>الكهربائيات المنزلية</strong>
+            <span>غلايات 220V وأجهزة القهوة والمطارات الدبل</span>
+          </button>
+
+          <button type="button" class="dept-card" data-jump-cat="cleaning">
+            <span class="dept-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3l1.9 5.8a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z"></path>
+              </svg>
+            </span>
+            <strong>أدوات النظافة والترتيب</strong>
+            <span>سلال التنظيم، المماسح، وفرش التنظيف اليومية</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Currency Interactive Catalog -->
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">كتالوج الجملة بالدرزن والكرتون</span>
+            <h2>كافة الأصناف المتوفرة مع محول الأسعار الفوري</h2>
+          </div>
+          <div class="currency-banner">
+            <span class="rate-pill" id="activeCurrencyRateText" dir="ltr">1 USD = 3.75 SAR = 535 YER</span>
+            <small>تسعيرة جملة استرشادية تتحدث فورياً عند تبديل العملة أو وحدة الطلب</small>
+          </div>
+        </div>
+
+        <div class="catalog-toolbar">
+          <div class="cat-pills" id="catPills" role="tablist" aria-label="تصفية حسب القسم"></div>
+
+          <div class="toolbar-right">
+            <div class="currency-switcher toolbar-currency" role="group" aria-label="العملة المعروضة">
+              <button type="button" class="curr-btn active" data-currency="USD">USD</button>
+              <button type="button" class="curr-btn" data-currency="SAR">SAR</button>
+              <button type="button" class="curr-btn" data-currency="YER">YER</button>
+            </div>
+
+            <label class="search-box" aria-label="بحث سريع في الأصناف">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="search" id="catalogSearch" placeholder="ابحث باسم الصنف أو المواصفة (جرانيت، ترامس، بورسلين...)" />
+            </label>
+          </div>
+        </div>
+
+        <div class="catalog-meta-bar">
+          <span id="catalogResultCount">عرض 12 من أصل 12 صنف</span>
+          <button type="button" class="text-reset-btn" id="resetFiltersBtn">إظهار جميع الأصناف</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid"></div>
+
+        <div class="catalog-empty" id="catalogEmpty" hidden>
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <strong>لم يتم العثور على أصناف مطابقة للبحث</strong>
+          <p>جرّب تعديل كلمات البحث أو إعادة تصفية الأقسام لعرض كافة الأصناف الـ 12.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Governorate Daily Freight Table -->
+    <section class="section section--indigo" id="freight">
+      <div class="container">
+        <div class="freight-layout">
+          <div class="freight-header-col">
+            <span class="section-eyebrow section-eyebrow--amber">جدول الترحيل اليومي — صنعاء والجمهورية</span>
+            <h2>خطوط الشحن البري اليومية من مخازن حي شعوب</h2>
+            <p>
+              فور اعتماد فاتورتك يتم فرز الكراتين، تأمين الزجاجيات والبورسلين بالفوم، وتسليم الشحنة مجاناً إلى مكتب الترحيل المعتمد المتجه إلى محافظتك مع إرسال صورة سند الشحن عبر الواتساب.
+            </p>
+
+            <div class="freight-photo-card">
+              <img src="../assets/images/warehouse-logistics.jpg" alt="مستودع معرض الصقر وتجهيز كراتين الشحن" />
+              <div class="freight-photo-meta">
+                <strong>تغليف وحماية ضد الكسر</strong>
+                <span>تسليم مجاني لمكاتب النقل البري داخل صنعاء قبل الساعة 4:30 عصراً</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="freight-table-card">
+            <div class="table-head-bar">
+              <div>
+                <strong>جدول مواعيد وخطوط الترحيل اليومي</strong>
+                <span>اضغط على «اختيار للطلبية» لربط محافظتك مباشرة بكشف الطلبية</span>
+              </div>
+              <span class="dispatch-live-pill">رحلات يومية منتظمة</span>
+            </div>
+
+            <div class="table-scroll">
+              <table class="freight-table">
+                <thead>
+                  <tr>
+                    <th>المحافظة / الوجهة</th>
+                    <th>معدل الترحيل</th>
+                    <th>الوصول التقديري</th>
+                    <th>التوصيل لمكتب النقل</th>
+                    <th>إجراء</th>
+                  </tr>
+                </thead>
+                <tbody id="freightTableBody"></tbody>
+              </table>
+            </div>
+
+            <div class="extended-govs">
+              <span>تغطية شاملة أيضاً إلى:</span>
+              <strong>ذمار · مأرب · البيضاء · عمران · حجة · المحويت · صعدة · شبوة والضالع</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Turnkey Store Setup Plans -->
+    <section class="section section--tint" id="setup">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">تجهيز المشاريع والمحلات</span>
+            <h2>خطط تأسيس وتزويد المحلات وطلبيات المواسم</h2>
+          </div>
+          <p>استفد من خبرة سوق حي شعوب في تكوين تشكيلة سريعة الدوران تناسب رأس المال وطبيعة مبيعات منطقتك.</p>
+        </div>
+
+        <div class="setup-grid" id="setupGrid"></div>
+      </div>
+    </section>
+
+    <!-- Merchants FAQ -->
+    <section class="section" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head section-head--center">
+          <span class="section-eyebrow">السياسات التجارية والدفع</span>
+          <h2>أسئلة متكررة من تجار الجملة والمحافظات</h2>
+          <p>تفاصيل البيع بالدرزن والكرتون، الترحيل البري، وطرق التحويل المالي المعتمدة.</p>
+        </div>
+
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+
+    <!-- Physical Showroom Location -->
+    <section class="section section--tint" id="location">
+      <div class="container">
+        <div class="location-card">
+          <div class="location-info">
+            <span class="section-eyebrow">المعاينة والاستلام المباشر</span>
+            <h2>زيارتك لمخازن معرض الصقر في حي شعوب، صنعاء</h2>
+            <p>نرحب بجميع أصحاب المعارض وتجار المحافظات لمعاينة خامات الجرانيت، أوزان الاستيل، وتغليف البورسلين مباشرة في صالة العرض.</p>
+
+            <ul class="location-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <div>
+                  <strong>العنوان التجاري:</strong>
+                  <span>صنعاء – حي شعوب، الشارع التجاري العام (سوق الأدوات المنزلية)</span>
+                </div>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                <div>
+                  <strong>ساعات الدوام:</strong>
+                  <span>السبت إلى الخميس: 8:30 صباحاً – 9:00 مساءً</span>
+                </div>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <div>
+                  <strong>هاتف وواتساب مبيعات الجملة:</strong>
+                  <span dir="ltr" class="phone-strong">+967 782 259 937</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="location-actions">
+              <a href="https://wa.me/967782259937?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D9%85%D9%88%D9%82%D8%B9%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B5%D9%82%D8%B1%20%D9%81%D9%8A%20%D8%AD%D9%8A%20%D8%B4%D8%B9%D9%88%D8%A8%20(%D8%A7%D9%84%D9%81%D8%A6%D8%A9%20%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D8%A9%20Pro)." target="_blank" rel="noopener" class="btn btn-primary">
+                <span>طلب إحداثيات المعرض عبر واتساب</span>
+              </a>
+              <a href="tel:+967782259937" class="btn btn-outline">
+                <span>اتصال مباشر بالمبيعات</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="location-panel">
+            <div class="location-panel-badge">بوابة التاجر — صنعاء</div>
+            <h3>معرض الصقر للأدوات المنزلية</h3>
+            <p>مخازن مجهزة وساحة تحميل فورية لسيارات الترحيل والدينات في قلب حي شعوب التجاري.</p>
+            <div class="location-tags">
+              <span>تجهيز في نفس اليوم</span>
+              <span>تسعير بالدرزن والكرتون</span>
+              <span>سند شحن مصور بالواتساب</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>معرض الصقر للأدوات المنزلية — الفئة الفاخرة Pro</strong>
+        <p>تجارة الجملة بالدرزن والكرتون — صنعاء، حي شعوب، الشارع التجاري العام · ترحيل يومي لكافة المحافظات اليمنية</p>
+      </div>
+      <div class="footer-meta">
+        <span>جميع الحقوق محفوظة &copy; 2026</span>
+        <a href="tel:+967782259937" dir="ltr">+967 782 259 937</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Summary Pill -->
+  <div class="floating-quote-bar" id="floatingBar" hidden>
+    <div class="floating-info">
+      <strong id="floatingCountText">0 أصناف</strong>
+      <span id="floatingTotalText">$0.00</span>
+    </div>
+    <button type="button" class="btn btn-primary btn-sm" id="floatingOpenBtn">عرض كشف الطلبية والإرسال</button>
+  </div>
+
+  <!-- Slide-Over Dozen/Carton Quote Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="quote-drawer" id="quoteDrawer" aria-hidden="true" aria-label="كشف الطلبية وتسعير الجملة">
+    <div class="drawer-head">
+      <div>
+        <h3>كشف طلبية الجملة — Pro</h3>
+        <small>تبديل مرن بين الدرزن والكرتون مع تحديد خط الترحيل</small>
+      </div>
+      <button type="button" class="drawer-close" id="closeDrawerBtn" aria-label="إغلاق كشف الطلبية">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-currency-bar">
+      <span>عملة العرض:</span>
+      <div class="currency-switcher drawer-currency" role="group" aria-label="عملة كشف الطلبية">
+        <button type="button" class="curr-btn active" data-currency="USD">USD</button>
+        <button type="button" class="curr-btn" data-currency="SAR">SAR</button>
+        <button type="button" class="curr-btn" data-currency="YER">YER</button>
+      </div>
+    </div>
+
+    <div class="drawer-body">
+      <div class="drawer-empty" id="drawerEmpty">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+          <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+        </svg>
+        <strong>كشف الطلبية فارغ حالياً</strong>
+        <p>أضف الأصناف من الكتالوج وحدد وحدة الطلب (درزن أو كرتون) لإرسال الكشف المفصل عبر واتساب.</p>
+      </div>
+
+      <div class="drawer-items" id="drawerList"></div>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-form">
+        <div class="form-row">
+          <label for="drawerMerchantName">اسم التاجر / المحل</label>
+          <input type="text" id="drawerMerchantName" placeholder="مثال: معرض النجاح للأواني المنزلية" />
+        </div>
+        <div class="form-row">
+          <label for="drawerGovSelect">وجهة الترحيل اليومي (المحافظة)</label>
+          <select id="drawerGovSelect"></select>
+          <small class="gov-route-meta" id="drawerGovMeta"></small>
+        </div>
+      </div>
+
+      <div class="drawer-totals">
+        <div class="total-line">
+          <span>إجمالي الأصناف / الوحدات</span>
+          <strong><span id="drawerTotalSkus">0</span> صنف (<span id="drawerTotalCartons">0</span> كرتون · <span id="drawerTotalDozens">0</span> درزن)</strong>
+        </div>
+        <div class="total-line total-line--main">
+          <span>الإجمالي التقديري</span>
+          <strong id="drawerSubtotal" dir="ltr">$0.00</strong>
+        </div>
+        <div class="drawer-alt-totals" id="drawerAltTotals" dir="ltr"></div>
+      </div>
+
+      <div class="drawer-actions">
+        <button type="button" class="btn btn-primary btn-full" id="sendQuoteWaBtn">
+          <span>إرسال الكشف التفصيلي عبر واتساب</span>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </button>
+        <button type="button" class="btn-clear" id="clearDrawerBtn">تفريغ الكشف</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite" hidden></div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

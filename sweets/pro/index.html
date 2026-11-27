@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حلويات وآيسكريم البطريق — الفئة الفاخرة Pro | استوديو الكيك المخصّص والجيلاتو</title>
+  <meta name="description" content="حلويات وآيسكريم البطريق — الفئة الفاخرة Pro. استوديو تصميم كيكات المناسبات، جيلاتو طبيعي 100%، وجدولة الاستلام السريع من الفروع بدون انتظار.">
+  <link rel="icon" type="image/png" href="../assets/images/App_ico.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Editorial Boutique Strip -->
+  <div class="boutique-announcement">
+    <div class="container announcement-inner">
+      <div class="announcement-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <polyline points="9 12 11 14 15 10"/>
+        </svg>
+        <span>جيلاتو طبيعي طازج وكيكات مناسبات مصممة حسب الطلب — استلام فوري دون طوابير من فروع صنعاء</span>
+      </div>
+      <div class="announcement-meta">
+        <span>الفرع الرئيسي: شارع حدة | فرع الأصبحي</span>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener">كونسيرج الطلبات: 967782259937+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Couture Patisserie Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand-lockup" aria-label="حلويات وآيسكريم البطريق الرئيسية">
+        <span class="brand-medallion">
+          <img src="../assets/images/Penguin_ico.png" alt="شعار حلويات وآيسكريم البطريق">
+        </span>
+        <span class="brand-titles">
+          <strong>حلويات وآيسكريم البطريق</strong>
+          <small>PATISSERIE COUTURE · PRO EDITION</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#menu-gallery">القائمة المختارة</a>
+        <a href="#cake-studio">استوديو الكيك</a>
+        <a href="#pickup-scheduler">جدولة الاستلام</a>
+        <a href="#reviews">آراء العملاء</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+      </nav>
+
+      <div class="header-controls">
+        <!-- Currency Switcher: USD / SAR / YER -->
+        <div class="currency-switcher" id="currency-switcher" role="group" aria-label="اختيار العملة">
+          <button type="button" class="curr-btn active" data-curr="USD">USD</button>
+          <button type="button" class="curr-btn" data-curr="SAR">SAR</button>
+          <button type="button" class="curr-btn" data-curr="YER">YER</button>
+        </div>
+
+        <button type="button" class="cart-trigger" id="open-cart-btn" aria-label="فتح سلة الطلبات">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span>السلة</span>
+          <span class="cart-badge" id="cart-count">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="open-mobile-nav" aria-label="فتح قائمة التنقل">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="قائمة الجوال">
+    <div class="mobile-nav-head">
+      <div class="brand-titles">
+        <strong>البطريق باتيسري</strong>
+        <small>PATISSERIE COUTURE</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="close-mobile-nav" aria-label="إغلاق القائمة">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#menu-gallery">القائمة المختارة</a>
+      <a href="#cake-studio">استوديو الكيك المخصّص</a>
+      <a href="#pickup-scheduler">جدولة الاستلام من الفرع</a>
+      <a href="#reviews">تقييمات العملاء</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+    </nav>
+    <div class="mobile-nav-foot">
+      <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="btn-boutique-primary btn-full">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>تواصل عبر واتساب</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- 1. Split Editorial Boutique Hero -->
+  <section class="editorial-hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-rule"></span>
+          <span class="eyebrow-en">PATISSERIE COUTURE BOUTIQUE</span>
+          <span class="eyebrow-dot" aria-hidden="true"></span>
+          <span>معمل البطريق الرئيسي — صنعاء</span>
+        </div>
+
+        <h1>
+          صياغة الكيكات الفاخرة
+          <span class="hero-subline">وفنُ الجيلاتو الطبيعي الطازج يومياً</span>
+        </h1>
+
+        <p class="hero-lead">
+          في بوتيك <strong>حلويات وآيسكريم البطريق</strong>، نصنع الجيلاتو من الحليب الطازج والفواكه الطبيعية النقية، ونمنحك استوديو متكاملاً لتصميم كيكة مناسبتك بالوزن والنكهة وعبارة الإهداء، مع جدولة الاستلام السريع من ثلاجات الفروع دون دقيقة انتظار.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cake-studio" class="btn-boutique-primary">
+            <span>صمّم كيكتك في الاستوديو</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+          </a>
+          <a href="#menu-gallery" class="btn-boutique-secondary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+            </svg>
+            <span>تصفح القائمة والجيلاتو</span>
+          </a>
+        </div>
+
+        <!-- Boutique Craft Guarantees -->
+        <div class="hero-guarantees">
+          <div class="guarantee-item">
+            <span class="guarantee-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+              </svg>
+            </span>
+            <div>
+              <strong>جيلاتو طبيعي 100%</strong>
+              <span>خالي من الزيوت المهدرجة</span>
+            </div>
+          </div>
+          <div class="guarantee-item">
+            <span class="guarantee-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </span>
+            <div>
+              <strong>تجاوز طوابير الفروع</strong>
+              <span>استلام مبرد حسب موعدك</span>
+            </div>
+          </div>
+          <div class="guarantee-item">
+            <span class="guarantee-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </span>
+            <div>
+              <strong>4.9 من 5 تقييم العملاء</strong>
+              <span>أكثر من 15,480 تقييم موثق</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-arch-frame">
+          <img src="../assets/images/dessert-hero.jpg" alt="أكواب البانا كوتا بالفراولة الطازجة من بوتيك البطريق" loading="eager">
+          <div class="hero-frame-caption">
+            <span class="caption-tag">ATELIER DU JOUR</span>
+            <p>تحلية يومية طازجة بكريمة الفانيليا الطبيعية</p>
+          </div>
+        </div>
+
+        <div class="hero-inset-card">
+          <div class="inset-img-wrap">
+            <img src="../assets/images/dessert-3.jpg" alt="كيكة الفستق والتوت البري المخصصة" loading="eager">
+          </div>
+          <div class="inset-meta">
+            <small>COUTURE LAYER CAKE</small>
+            <strong>بستاشيو وتوت بري</strong>
+            <span>تخصيص كامل عبر الاستوديو</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Boutique Metrics Band -->
+  <section class="metrics-band" aria-label="أرقام ومزايا حلويات البطريق">
+    <div class="container metrics-row" id="metrics-grid"></div>
+  </section>
+
+  <!-- 3. Artisan Gelato & Signature Menu Gallery -->
+  <section class="menu-section" id="menu-gallery">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">LA CARTE PATISSERIE</span>
+          <h2>المجموعة المختارة والجيلاتو الحرفي</h2>
+          <p class="section-desc">
+            تشكيلة مصغرة من معملنا اليومي تجمع بين كيكات المناسبات بالشوكولاتة البلجيكية، والجيلاتو الطبيعي، وصواني الضيافة الجاهزة للاستلام السريع.
+          </p>
+        </div>
+        <div class="menu-tabs" id="menu-tabs" role="tablist" aria-label="تصنيفات القائمة"></div>
+      </div>
+
+      <div class="menu-grid" id="menu-grid"></div>
+    </div>
+  </section>
+
+  <!-- 4. Interactive Custom Celebration Cake Studio -->
+  <section class="studio-section" id="cake-studio">
+    <div class="container">
+      <div class="section-head studio-head">
+        <div>
+          <span class="section-kicker">CUSTOM CELEBRATION CAKE STUDIO</span>
+          <h2>استوديو تصميم كيكات المناسبات المخصّصة</h2>
+          <p class="section-desc">
+            اختر الوزن، نكهة الإسفنج، الحشوة المقرمشة، ونمط التغليف مع كتابة عبارة الإهداء لتشاهد معاينة حية لكيكتك مع التسعير الفوري وإضافتها لسلة الطلبات.
+          </p>
+        </div>
+      </div>
+
+      <div class="studio-layout">
+        <!-- Configuration Controls -->
+        <div class="studio-controls">
+          <!-- Step 1: Weight / Size -->
+          <div class="studio-group">
+            <div class="studio-group-head">
+              <span class="step-num">01</span>
+              <h3>اختر وزن وحجم الكيكة</h3>
+            </div>
+            <div class="size-cards-grid" id="studio-size-options"></div>
+          </div>
+
+          <!-- Step 2: Sponge Flavor -->
+          <div class="studio-group">
+            <div class="studio-group-head">
+              <span class="step-num">02</span>
+              <h3>نكهة الإسفنج الطازج</h3>
+            </div>
+            <div class="option-pills-grid" id="studio-sponge-options"></div>
+          </div>
+
+          <!-- Step 3: Crisp Filling -->
+          <div class="studio-group">
+            <div class="studio-group-head">
+              <span class="step-num">03</span>
+              <h3>الحشوة الداخلية المقرمشة</h3>
+            </div>
+            <div class="option-pills-grid" id="studio-filling-options"></div>
+          </div>
+
+          <!-- Step 4: Exterior Frosting -->
+          <div class="studio-group">
+            <div class="studio-group-head">
+              <span class="step-num">04</span>
+              <h3>نمط التغليف والكريمة الخارجية</h3>
+            </div>
+            <div class="swatch-pills-grid" id="studio-frosting-options"></div>
+          </div>
+
+          <!-- Step 5: Custom Event Message & Occasion -->
+          <div class="studio-group">
+            <div class="studio-group-head">
+              <span class="step-num">05</span>
+              <h3>عبارة الإهداء والمناسبة</h3>
+            </div>
+            <div class="message-fields">
+              <div class="field-box">
+                <label for="cake-occasion-select">نوع المناسبة</label>
+                <select id="cake-occasion-select">
+                  <option value="عيد ميلاد سعيد">عيد ميلاد سعيد</option>
+                  <option value="تهنئة تخرج ونجاح">تهنئة تخرج ونجاح</option>
+                  <option value="خطوبة وزفاف">خطوبة وزفاف</option>
+                  <option value="مناسبة عائلية خاصة">مناسبة عائلية خاصة</option>
+                </select>
+              </div>
+              <div class="field-box">
+                <label for="cake-message-input">العبارة المكتوبة على الكيكة (حد أقصى 45 حرفاً)</label>
+                <input type="text" id="cake-message-input" maxlength="45" value="أجمل التهاني وأحلى اللحظات" placeholder="اكتب اسم المحتفى به أو عبارة الإهداء...">
+              </div>
+            </div>
+            <label class="topper-check">
+              <input type="checkbox" id="cake-topper-toggle">
+              <span>إضافة تاج أكريليك ذهبي + شمعة شرار احتفالية (+4 دولار)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Live Luxury Cake Card Preview -->
+        <aside class="studio-preview-col" aria-label="معاينة بطاقة الكيكة المخصصة">
+          <div class="cake-preview-card" id="cake-preview-card">
+            <div class="preview-card-header">
+              <span class="preview-badge" id="preview-tier-badge">1 KG · 1 TIER</span>
+              <span class="preview-leadtime" id="preview-leadtime">تجهيز خلال 4 ساعات</span>
+            </div>
+
+            <!-- Live Interactive Layered Patisserie Cake Illustration -->
+            <div class="cake-visual-stage" id="cake-visual-stage">
+              <div class="cake-occasion-tag" id="preview-occasion-label">عيد ميلاد سعيد</div>
+
+              <div class="couture-cake-render" id="couture-cake-render">
+                <!-- Dynamic Tiers built smoothly by CSS/DOM in app.js -->
+              </div>
+
+              <div class="cake-plaque-calligraphy">
+                <span class="plaque-label">بطاقة الإهداء</span>
+                <p id="preview-message-text">أجمل التهاني وأحلى اللحظات</p>
+              </div>
+            </div>
+
+            <!-- Spec Summary Table -->
+            <div class="preview-specs-list">
+              <div class="spec-row">
+                <span>الحجم والسعة</span>
+                <strong id="preview-size-summary">1 كجم (8 - 10 أشخاص)</strong>
+              </div>
+              <div class="spec-row">
+                <span>الإسفنج</span>
+                <strong id="preview-sponge-summary">فانيليا مدغشقر البيضاء</strong>
+              </div>
+              <div class="spec-row">
+                <span>الحشوة المقرمشة</span>
+                <strong id="preview-filling-summary">كرانشي البندق والبرالين</strong>
+              </div>
+              <div class="spec-row">
+                <span>التغليف</span>
+                <strong id="preview-frosting-summary">كريمة شامبين عاجية</strong>
+              </div>
+              <div class="spec-row" id="preview-topper-row" style="display: none;">
+                <span>إضافات التزيين</span>
+                <strong>تاج أكريليك ذهبي وشمعة شرار</strong>
+              </div>
+            </div>
+
+            <div class="preview-price-bar">
+              <div>
+                <small>السعر الإجمالي للكيكة</small>
+                <div class="studio-total-price" id="studio-price">$32</div>
+              </div>
+              <button type="button" class="btn-boutique-primary" id="studio-add-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+                <span>أضف للسلة</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Branch Pickup Time Scheduler & App Companion -->
+  <section class="scheduler-section" id="pickup-scheduler">
+    <div class="container scheduler-grid">
+      <!-- Scheduler Form Card -->
+      <div class="scheduler-card">
+        <span class="section-kicker">SKIP THE LINE · BRANCH PICKUP</span>
+        <h2>جدولة موعد الاستلام المبرد من الفرع</h2>
+        <p class="scheduler-intro">
+          حدّد الفرع وتوقيت وصولك ليتم حفظ طلبك بدرجة تبريد مثالية في منطقة الاستلام السريع، مع مزامنة فورية مع سلة الطلبات الخاصة بك.
+        </p>
+
+        <div class="branch-selector-list" id="branch-selector-list"></div>
+
+        <div class="scheduler-row-fields">
+          <div class="field-box">
+            <label for="scheduler-date">تاريخ الاستلام</label>
+            <input type="date" id="scheduler-date">
+          </div>
+          <div class="field-box">
+            <label for="scheduler-fulfillment">طريقة الاستلام</label>
+            <select id="scheduler-fulfillment">
+              <option value="استلام مباشر من ثلاجة الحجز السريع">استلام مباشر من ثلاجة الحجز السريع</option>
+              <option value="توصيل مبرد داخل صنعاء">توصيل مبرد داخل صنعاء</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="slots-wrap">
+          <label>الفترة الزمنية المفضلة</label>
+          <div class="time-slots-grid" id="time-slots-grid"></div>
+        </div>
+
+        <div class="scheduler-status-bar" id="scheduler-status-bar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          <span id="scheduler-summary-text">تم تحديد الاستلام من الفرع الرئيسي — شارع حدة</span>
+        </div>
+      </div>
+
+      <!-- Boutique App Companion Showcase -->
+      <div class="app-companion-card">
+        <div class="companion-copy">
+          <span class="section-kicker">PENGUIN MOBILE CONCIERGE</span>
+          <h3>تابع تجهيز طلبك عبر تطبيق البطريق</h3>
+          <p>
+            متوفر لأنظمة iOS و Android لمتابعة مراحل الخبز والتزيين لحظة بلحظة والحصول على كود الاستلام الفوري من ثلاجات الفرع.
+          </p>
+          <div class="app-screen-tabs" id="app-screen-tabs">
+            <button type="button" class="app-tab-btn active" data-screen="splash">شاشة الترحيب</button>
+            <button type="button" class="app-tab-btn" data-screen="login">تسجيل الدخول والمحفظة</button>
+          </div>
+          <div class="companion-actions">
+            <a href="https://wa.me/967782259937?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%AD%D8%B5%D9%88%D9%84%20%D8%B9%D9%84%D9%89%20%D8%B1%D8%A7%D8%A8%D8%B7%20%D8%AA%D8%AD%D9%85%D9%8A%D9%84%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%A7%D9%84%D8%A8%D8%B7%D8%B1%D9%8A%D9%82." target="_blank" rel="noopener" class="btn-boutique-outline">
+              <span>اطلب رابط التطبيق عبر واتساب</span>
+            </a>
+          </div>
+        </div>
+        <div class="companion-phone-frame">
+          <img id="companion-screen-img" src="../assets/images/app-screen-splash.png" alt="شاشة تطبيق حلويات وآيسكريم البطريق" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Client Reviews -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-head center-head">
+        <span class="section-kicker">TESTIMONIALS · 4.9 / 5</span>
+        <h2>شهادات عملاء بوتيك البطريق</h2>
+        <p class="section-desc">آراء حقيقية لعملاء اختبروا استوديو الكيك المخصّص وسرعة الاستلام من فروعنا.</p>
+      </div>
+      <div class="reviews-grid" id="reviews-grid"></div>
+    </div>
+  </section>
+
+  <!-- 7. FAQ Accordion -->
+  <section class="faq-section" id="faq">
+    <div class="container faq-layout">
+      <div class="faq-side">
+        <span class="section-kicker">ATELIER GUIDE</span>
+        <h2>الأسئلة الشائعة حول الحجز والتخصيص</h2>
+        <p>كل التفاصيل التي تحتاجها حول مدة تجهيز الكيكات المخصصة، حفظ الجيلاتو أثناء النقل، ومواعيد عمل الفروع.</p>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="btn-boutique-secondary">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+          <span>استشارة فورية عبر واتساب</span>
+        </a>
+      </div>
+      <div class="faq-list" id="faq-list"></div>
+    </div>
+  </section>
+
+  <!-- 8. Boutique Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <div class="brand-lockup footer-lockup">
+          <span class="brand-medallion">
+            <img src="../assets/images/Penguin_ico.png" alt="حلويات وآيسكريم البطريق">
+          </span>
+          <span class="brand-titles">
+            <strong>حلويات وآيسكريم البطريق</strong>
+            <small>PATISSERIE COUTURE · PRO EDITION</small>
+          </span>
+        </div>
+        <p>معمل جيلاتو طبيعي واستوديو تصميم كيكات المناسبات — نحضّر كل طلب طازجاً ليصلكم في قمة الجودة.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>أقسام البوتيك</h4>
+        <a href="#menu-gallery">القائمة المختارة</a>
+        <a href="#cake-studio">استوديو الكيك</a>
+        <a href="#pickup-scheduler">جدولة الاستلام</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+      </div>
+
+      <div class="footer-branches-col">
+        <h4>الفروع وساعات العمل</h4>
+        <p>الفرع الرئيسي: شارع حدة، جوار مركز الكميم (10:00 ص – 1:30 ف)</p>
+        <p>فرع الأصبحي: شارع الأصبحي العام، تقاطع 24 (11:00 ص – 1:00 ف)</p>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="footer-wa-link">واتساب الطلبات: 967782259937+</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>حلويات وآيسكريم البطريق — الفئة الفاخرة Pro · جميع الحقوق محفوظة 2026</span>
+      <span>PENGUIN ICE CREAM &amp; CUSTOM CAKES</span>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Order Basket Drawer -->
+  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title">
+    <div class="cart-head">
+      <div>
+        <h2 id="cart-drawer-title">سلة الطلبات والحجز</h2>
+        <small>الفئة الفاخرة Pro · تأكيد فوري عبر واتساب</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="close-cart-btn" aria-label="إغلاق السلة">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cart-items-container"></div>
+
+    <div class="cart-checkout-form">
+      <div class="drawer-pickup-summary">
+        <div class="pickup-summary-row">
+          <span>الفرع المحدد</span>
+          <strong id="drawer-branch-display">الفرع الرئيسي — شارع حدة</strong>
+        </div>
+        <div class="pickup-summary-row">
+          <span>موعد الاستلام</span>
+          <strong id="drawer-time-display">اليوم · العصر 4:00 - 6:30</strong>
+        </div>
+      </div>
+
+      <div class="checkout-inputs">
+        <input type="text" id="customer-name" placeholder="الاسم الكريم" aria-label="الاسم الكريم">
+        <input type="tel" id="customer-phone" placeholder="رقم الهاتف / الواتساب" aria-label="رقم الهاتف">
+      </div>
+
+      <div class="cart-totals">
+        <div class="total-row">
+          <span>الإجمالي بالعملة المختارة</span>
+          <strong id="cart-grand-total">$0</strong>
+        </div>
+      </div>
+
+      <button type="button" class="btn-boutique-primary btn-full" id="whatsapp-checkout-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>إرسال الطلب عبر واتساب</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="boutique-toast" id="boutique-toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

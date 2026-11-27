@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الشمس للطاقة المتجددة | الفئة الملكية VIP — الشبكة الصناعية ومحطات الري العميقة</title>
+  <meta name="description" content="الشمس للطاقة المتجددة — الفئة الملكية VIP. محاكي العائد الاقتصادي والوفر من الديزل، جدول الكميات الهندسي BOQ، منظومات الآبار العميقة والمصانع في اليمن." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Industrial Telemetry Ribbon -->
+  <div class="vip-telemetry-strip">
+    <div class="container ribbon-inner">
+      <div class="ribbon-item">
+        <span class="telemetry-dot" aria-hidden="true"></span>
+        <span class="font-tech">INDUSTRIAL &amp; IRRIGATION GRID // YEMEN 6.5 PSH</span>
+      </div>
+      <div class="ribbon-item">
+        <span>توريد وتركيب في صنعاء وعموم المحافظات (12 محافظة)</span>
+      </div>
+      <div class="ribbon-actions">
+        <a href="tel:+967782259937" class="ribbon-tel font-tech" dir="ltr">+967 782 259 937</a>
+        <a href="#roi-simulator" class="ribbon-link">محاكي عائد الديزل ROI</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIP Command Header -->
+  <header class="vip-header" id="vipHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="vip-brand" aria-label="الشمس للطاقة المتجددة — الفئة الملكية VIP">
+        <span class="vip-crest">
+          <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="14 2 25 8 25 20 14 26 3 20 3 8 14 2" />
+            <circle cx="14" cy="14" r="4" />
+            <line x1="14" y1="6" x2="14" y2="8" />
+            <line x1="14" y1="20" x2="14" y2="22" />
+            <line x1="6" y1="14" x2="8" y2="14" />
+            <line x1="20" y1="14" x2="22" y2="14" />
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <span class="brand-ar">الشمس للطاقة المتجددة <span class="vip-badge font-tech">VIP</span></span>
+          <span class="brand-en font-tech">INDUSTRIAL SOLAR &amp; IRRIGATION GRID</span>
+        </span>
+      </a>
+
+      <nav class="vip-nav" id="vipNav" aria-label="التنقل الرئيسي">
+        <a href="#roi-simulator">محاكي الديزل ROI</a>
+        <a href="#systems-matrix">المنظومات الصناعية</a>
+        <a href="#boq-desk">جدول الكميات BOQ</a>
+        <a href="#field-grid">المشاريع والضمان</a>
+        <a href="#vip-dispatch">طلب الاعتماد الهندسي</a>
+      </nav>
+
+      <div class="header-tools">
+        <button type="button" class="btn btn-gold-outline btn-sm" id="headerOpenBoqBtn">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="8" y1="13" x2="16" y2="13" />
+            <line x1="8" y1="17" x2="13" y2="17" />
+          </svg>
+          <span>مقايسة BOQ</span>
+        </button>
+        <a id="headerVipWaBtn" href="https://wa.me/967782259937" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
+          <span>تواصل VIP</span>
+        </a>
+        <button type="button" class="vip-menu-btn" id="vipMenuToggle" aria-label="فتح القائمة" aria-expanded="false">
+          <svg class="icon-md" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="vip-mobile-drawer" id="vipMobileDrawer" hidden>
+      <a href="#roi-simulator">محاكي الديزل والعائد ROI</a>
+      <a href="#systems-matrix">المنظومات الصناعية والغطاسات</a>
+      <a href="#boq-desk">مقايسة جدول الكميات BOQ</a>
+      <a href="#field-grid">مشاريع الميدان والضمان</a>
+      <a href="#vip-dispatch">إرسال طلب الاعتماد VIP</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Industrial Obsidian Hero -->
+    <section class="vip-hero" id="hero">
+      <div class="hero-backdrop">
+        <img src="../assets/images/farm.jpg" alt="مصفوفة ألواح شمسية صناعية عالية القدرة" loading="eager" />
+        <div class="hero-vignette" aria-hidden="true"></div>
+        <div class="hero-grid-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-layout">
+        <div class="hero-command">
+          <div class="hero-kicker">
+            <span class="kicker-bar"></span>
+            <span class="font-tech">INDUSTRIAL SOLAR &amp; DEEP-WELL IRRIGATION // VIP</span>
+          </div>
+
+          <h1 class="hero-title">
+            طاقة شمسية صناعية <span class="gold-text">وريّ آبار عميقة</span> بعائد استثماري مضمون
+          </h1>
+
+          <p class="hero-lead">
+            قسم المشاريع الكبرى والزراعة المتقدمة في اليمن: تصميم وتنفيذ محطات الغطاسات العميقة (VFD MPPT)، منظومات المصانع والمنشآت التجارية ثلاثية الطور، وبنوك بطاريات LiFePO4 الذكية مع كفالة رسمية 5 سنوات على الألواح وتوفير 70–90% من فاتورة الديزل.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#roi-simulator" class="btn btn-gold btn-lg">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+              <span>احسب عائد التوفير من الديزل ROI</span>
+            </a>
+            <button type="button" class="btn btn-obsidian-outline btn-lg" id="heroOpenBoqBtn">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="8" y1="13" x2="16" y2="13" />
+                <line x1="8" y1="17" x2="13" y2="17" />
+              </svg>
+              <span>إصدار جدول الكميات BOQ</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Technical Telemetry Cards Deck -->
+        <aside class="telemetry-deck" aria-label="بطاقات القياس الهندسية">
+          <div class="deck-head">
+            <span class="font-tech">TELEMETRY BENCHMARK // YEMEN</span>
+            <span class="deck-status font-tech">TIER-1 JINKO / LONGI</span>
+          </div>
+
+          <div class="telemetry-cards-grid" id="vipStatsGrid">
+            <!-- Populated with SOLAR_DATA.stats + telemetry overlays -->
+          </div>
+
+          <div class="deck-specs-strip">
+            <div class="deck-spec">
+              <span>متوسط الإشعاع الشمسي</span>
+              <strong class="font-tech">6.5 kWh/m2/day</strong>
+            </div>
+            <div class="deck-spec">
+              <span>خفض تكلفة الديزل</span>
+              <strong class="font-tech">70% – 90%</strong>
+            </div>
+            <div class="deck-spec">
+              <span>الضمان الهندسي</span>
+              <strong class="font-tech">5 Years / 3 Yrs Pump</strong>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Agricultural Deep-Well & Factory Diesel-Savings ROI Simulator -->
+    <section class="roi-section" id="roi-simulator">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow font-tech">DIESEL-TO-SOLAR ROI ENGINE</span>
+            <h2 class="section-title">محاكي العائد المالي للآبار العميقة والمصانع (بديل الديزل)</h2>
+            <p class="section-copy">
+              أدخل عمق البئر وقدرة الغطاسة أو حمل المنشأة الصناعية مع استهلاكك الشهري الحالي من الديزل، لاحتساب الوفر المالي الشهري والسنوي، فترة الاسترداد بالأشهر، ورسم منحنى الوفر التراكمي لخمس سنوات.
+            </p>
+          </div>
+
+          <div class="roi-currency-bar" id="roiCurrencyBar" role="group" aria-label="عملة الحساب">
+            <button type="button" class="curr-btn is-active" data-currency="USD">USD ($)</button>
+            <button type="button" class="curr-btn" data-currency="SAR">SAR (ر.س)</button>
+            <button type="button" class="curr-btn" data-currency="YER">YER (ر.ي)</button>
+          </div>
+        </div>
+
+        <div class="roi-grid">
+          <!-- Simulator Control Panel -->
+          <div class="roi-controls-card">
+            <!-- Mode Tabs -->
+            <div class="roi-mode-tabs" id="roiModeTabs" role="group" aria-label="نوع المشروع">
+              <button type="button" class="mode-tab is-active" data-mode="well">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v20" />
+                  <path d="M2 12h20" />
+                  <circle cx="12" cy="12" r="4" />
+                </svg>
+                <span>بئر عميق وغطاسة زراعية (HP)</span>
+              </button>
+              <button type="button" class="mode-tab" data-mode="factory">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 20h20" />
+                  <path d="M4 20V9l6 3V9l6 3V4h4v16" />
+                </svg>
+                <span>مصنع أو منشأة تجارية (kW)</span>
+              </button>
+            </div>
+
+            <!-- Deep Well Inputs -->
+            <div class="mode-fields" id="wellModeFields">
+              <div class="slider-field">
+                <div class="slider-top">
+                  <label for="wellDepthSlider">عمق البئر الارتوازي (متر)</label>
+                  <strong class="slider-readout font-tech" id="wellDepthValue">120 m</strong>
+                </div>
+                <input type="range" id="wellDepthSlider" min="30" max="260" step="10" value="120" class="vip-range" />
+                <div class="slider-scale font-tech"><span>30m</span><span>145m</span><span>260m</span></div>
+              </div>
+
+              <div class="slider-field">
+                <div class="slider-top">
+                  <label for="pumpPowerSlider">قدرة الغطاسة الزراعية (HP)</label>
+                  <strong class="slider-readout font-tech" id="pumpPowerValue">5 HP (4.25 kW)</strong>
+                </div>
+                <input type="range" id="pumpPowerSlider" min="1" max="25" step="1" value="5" class="vip-range" />
+                <div class="slider-scale font-tech"><span>1 HP</span><span>5 HP</span><span>15 HP</span><span>25 HP</span></div>
+              </div>
+            </div>
+
+            <!-- Factory / Commercial Inputs -->
+            <div class="mode-fields" id="factoryModeFields" hidden>
+              <div class="slider-field">
+                <div class="slider-top">
+                  <label for="factoryKwSlider">قدرة حمل المصنع أو المنشأة (kW)</label>
+                  <strong class="slider-readout font-tech" id="factoryKwValue">15 kW</strong>
+                </div>
+                <input type="range" id="factoryKwSlider" min="3" max="50" step="1" value="15" class="vip-range" />
+                <div class="slider-scale font-tech"><span>3 kW</span><span>15 kW</span><span>35 kW</span><span>50 kW</span></div>
+              </div>
+            </div>
+
+            <!-- Shared Operating Hours -->
+            <div class="slider-field">
+              <div class="slider-top">
+                <label for="dailyHoursSlider">ساعات التشغيل اليومية بالمولّد / الشمس</label>
+                <strong class="slider-readout font-tech" id="dailyHoursValue">7 ساعات / يوم</strong>
+              </div>
+              <input type="range" id="dailyHoursSlider" min="4" max="16" step="1" value="7" class="vip-range" />
+              <div class="slider-scale font-tech"><span>4h</span><span>8h</span><span>12h</span><span>16h</span></div>
+            </div>
+
+            <div class="diesel-divider">
+              <span>بيانات استهلاك الديزل الحالي للمقارنة</span>
+              <button type="button" class="sync-diesel-btn" id="syncDieselBtn">تقدير تلقائي حسب القدرة</button>
+            </div>
+
+            <div class="slider-field">
+              <div class="slider-top">
+                <label for="dieselLitersSlider">استهلاك الديزل الشهري (لتر / شهر)</label>
+                <strong class="slider-readout font-tech" id="dieselLitersValue">320 لتر / شهر</strong>
+              </div>
+              <input type="range" id="dieselLitersSlider" min="100" max="6000" step="20" value="320" class="vip-range" />
+              <div class="slider-scale font-tech"><span>100 L</span><span>1,500 L</span><span>3,500 L</span><span>6,000 L</span></div>
+            </div>
+
+            <div class="slider-field">
+              <div class="slider-top">
+                <label for="dieselPriceSlider">سعر لتر الديزل</label>
+                <strong class="slider-readout font-tech" id="dieselPriceValue">$1.15 / لتر</strong>
+              </div>
+              <input type="range" id="dieselPriceSlider" min="0.7" max="1.8" step="0.05" value="1.15" class="vip-range" />
+              <div class="slider-scale font-tech" id="dieselPriceScale"><span>$0.70</span><span>$1.25</span><span>$1.80</span></div>
+            </div>
+
+            <label class="maint-check-row" for="includeMaintCheck">
+              <input type="checkbox" id="includeMaintCheck" checked />
+              <span>احتساب تكاليف تغيير الزيوت وصيانة المولّد الدورية (+15% فوق فاتورة الديزل)</span>
+            </label>
+          </div>
+
+          <!-- ROI Telemetry Results & Inline SVG Chart -->
+          <div class="roi-analytics-card">
+            <div class="roi-kpis-row">
+              <div class="roi-kpi">
+                <span class="r-lbl">الوفر الشهري الصافي</span>
+                <strong class="r-val font-tech" id="roiMonthlySave">$0</strong>
+                <span class="r-sub" id="roiMonthlyDieselNote">بدل فاتورة الديزل الشهرية</span>
+              </div>
+
+              <div class="roi-kpi">
+                <span class="r-lbl">الوفر السنوي الصافي</span>
+                <strong class="r-val font-tech" id="roiAnnualSave">$0</strong>
+                <span class="r-sub">بعد خصم صيانة دورية طفيفة</span>
+              </div>
+
+              <div class="roi-kpi roi-kpi-gold">
+                <span class="r-lbl">صافي الوفر خلال 5 سنوات</span>
+                <strong class="r-val font-tech" id="roiFiveYearSave">$0</strong>
+                <span class="r-sub" id="roiRoiPercent">عائد استثماري مرتفع</span>
+              </div>
+
+              <div class="roi-kpi roi-kpi-cyan">
+                <span class="r-lbl">فترة الاسترداد (Payback)</span>
+                <strong class="r-val font-tech" id="roiPaybackMonths">0 شهر</strong>
+                <span class="r-sub" id="roiCapexEstimate">الاستثمار التقديري: $0</span>
+              </div>
+            </div>
+
+            <!-- Inline Linear SVG Cumulative Savings vs Diesel Cost Chart -->
+            <div class="svg-chart-shell">
+              <div class="chart-header">
+                <div>
+                  <h3>منحنى التكلفة التراكمية: الديزل مقابل المنظومة الشمسية (60 شهراً)</h3>
+                  <span class="chart-sub font-tech">CUMULATIVE CASHFLOW &amp; BREAK-EVEN TELEMETRY</span>
+                </div>
+                <div class="chart-legend">
+                  <span class="leg-item"><i class="leg-line leg-diesel"></i>تكلفة الديزل</span>
+                  <span class="leg-item"><i class="leg-line leg-solar"></i>استثمار الطاقة الشمسية</span>
+                  <span class="leg-item"><i class="leg-line leg-net"></i>صافي الوفر التراكمي</span>
+                </div>
+              </div>
+
+              <div class="chart-svg-wrap">
+                <svg id="roiChartSvg" viewBox="0 0 720 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="رسم بياني لمقارنة التكلفة التراكمية للديزل مع الوفر الشمسي خلال 5 سنوات">
+                  <!-- Dynamically populated by app.js with linear SVG primitives -->
+                </svg>
+              </div>
+
+              <div class="chart-footer-bar">
+                <div class="system-rec-strip" id="roiSystemSummaryStrip">
+                  <!-- Populated dynamically with Panels 550W, Drive/Inverter, Daily kWh -->
+                </div>
+                <button type="button" class="btn btn-gold btn-sm" id="openBoqFromSimBtn">
+                  <span>توليد جدول الكميات الفني (BOQ)</span>
+                  <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="19" y1="12" x2="5" y2="12" />
+                    <polyline points="12 19 5 12 12 5" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industrial & Catalog Systems Matrix (SOLAR_DATA.packages) -->
+    <section class="systems-section" id="systems-matrix">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow font-tech">SOLAR ARCHITECTURAL CATALOG</span>
+            <h2 class="section-title">المنظومات المعتمدة والغطاسات الزراعية</h2>
+            <p class="section-copy">
+              جميع الباقات من المنزل الصغير وحتى المنشآت التجارية والغطاسات الزراعية متاحة بتسليم كامل مع إمكانية استعراض جدول الكميات BOQ لكل منظومة فوراً.
+            </p>
+          </div>
+
+          <div class="sys-filters" id="vipPkgFilters" role="group" aria-label="تصفية المنظومات">
+            <button type="button" class="sys-filter-btn is-active" data-filter="all">الكل (5)</button>
+            <button type="button" class="sys-filter-btn" data-filter="agricultural">غطاسات وآبار</button>
+            <button type="button" class="sys-filter-btn" data-filter="commercial">تجاري وصناعي</button>
+            <button type="button" class="sys-filter-btn" data-filter="residential">سكني وفلل</button>
+          </div>
+        </div>
+
+        <div class="vip-pkg-grid" id="vipPkgGrid">
+          <!-- Populated from SOLAR_DATA.packages via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated BOQ Executive Desk Banner -->
+    <section class="boq-desk-section" id="boq-desk">
+      <div class="container">
+        <div class="boq-desk-card">
+          <div class="boq-desk-copy">
+            <span class="section-eyebrow font-tech">BILL OF QUANTITIES // TIER-1 HARDWARE</span>
+            <h2>جدول الكميات والمواصفات الهندسية التفاعلي (BOQ)</h2>
+            <p>
+              اعرض مقايسة مفصلة تشمل: ألواح Jinko / LONGi Mono PERC 550W، انفرتر هايبريد MPPT أو مغير سرعة VFD للغطاسات، بنوك بطاريات LiFePO4 48V، لوحة الحماية AC/DC ومانع الصواعق SPD، والهياكل المجلفنة — جاهزة للنسخ أو الطباعة PDF أو الإرسال لاعتماد المهندس.
+            </p>
+            <div class="boq-desk-tags">
+              <span>Jinko / LONGi 550W</span>
+              <span>VFD MPPT Solar Drive</span>
+              <span>LiFePO4 48V BMS</span>
+              <span>AC/DC SPD Protection</span>
+            </div>
+          </div>
+          <div class="boq-desk-cta">
+            <button type="button" class="btn btn-gold btn-lg" id="deskOpenBoqBtn">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="8" y1="13" x2="16" y2="13" />
+                <line x1="8" y1="17" x2="13" y2="17" />
+              </svg>
+              <span>فتح جدول الكميات التفاعلي الآن</span>
+            </button>
+            <span class="boq-desk-note">محدّث تلقائياً من حسابات محاكي الديزل ROI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Field Projects, Why Solar, Process & FAQs -->
+    <section class="field-section" id="field-grid">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow font-tech">ENGINEERING DEPLOYMENT // 12 GOVERNORATES</span>
+            <h2 class="section-title">معايير التنفيذ الميداني في عموم المحافظات</h2>
+            <p class="section-copy">نلتزم بأعلى مواصفات التثبيت والحماية الكهربائية لضمان استثمار طويل الأمد.</p>
+          </div>
+        </div>
+
+        <div class="vip-reasons-grid" id="vipReasonsGrid">
+          <!-- Populated from SOLAR_DATA.reasons -->
+        </div>
+
+        <!-- Visual Field Portfolio using ONLY Verified Images -->
+        <div class="vip-gallery-grid">
+          <article class="v-gal-card v-gal-wide">
+            <img src="../assets/images/farm.jpg" alt="حقل ألواح شمسية لتشغيل الآبار الزراعية والمصانع" loading="lazy" />
+            <div class="v-gal-caption">
+              <span class="font-tech">AGRI-SOLAR ARRAY · 15–50 KW</span>
+              <h3>محطات الطاقة الشمسية للمزارع والآبار الارتوازية</h3>
+              <p>مصفوفات Mono PERC بزوايا ميل مدروسة لمناطق اليمن المرتفعة والسهول الساحلية.</p>
+            </div>
+          </article>
+
+          <article class="v-gal-card">
+            <img src="../assets/images/hero.jpg" alt="فحص ومعايرة الألواح الشمسية قبل التثبيت" loading="lazy" />
+            <div class="v-gal-caption">
+              <span class="font-tech">TIER-1 QUALITY CONTROL</span>
+              <h3>ألواح Jinko وLONGi الأصلية</h3>
+              <p>أداء مستقر حتى في الأجواء الغائمة بكفاءة 20–30%.</p>
+            </div>
+          </article>
+
+          <article class="v-gal-card v-gal-tall">
+            <img src="../assets/images/packages.jpg" alt="فريق التركيب الهندسي على السطح" loading="lazy" />
+            <div class="v-gal-caption">
+              <span class="font-tech">STRUCTURAL MOUNTING</span>
+              <h3>تثبيت آمن مقاوم للرياح</h3>
+              <p>تركيب في يوم واحد للمنازل و2–3 أيام للمشاريع الكبيرة.</p>
+            </div>
+          </article>
+
+          <article class="v-gal-card">
+            <img src="../assets/images/install.jpg" alt="تركيب منظومة شمسية متكاملة على فيلا سكنية" loading="lazy" />
+            <div class="v-gal-caption">
+              <span class="font-tech">RESIDENTIAL &amp; VILLA 10KW</span>
+              <h3>منظومات الفلل ثلاثية الطور</h3>
+              <p>تشغيل المكيفات والأجهزة الثقيلة على مدار 24 ساعة.</p>
+            </div>
+          </article>
+
+          <article class="v-gal-card">
+            <img src="../assets/images/why.jpg" alt="الاستدامة الزراعية والطاقة الشمسية النظيفة" loading="lazy" />
+            <div class="v-gal-caption">
+              <span class="font-tech">ZERO DIESEL EMISSIONS</span>
+              <h3>استدامة زراعية واقتصادية</h3>
+              <p>توفير فوري من الشهر الأول وتحرر من تقلبات الوقود.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- 4-Step Execution Protocol -->
+        <div class="vip-process-grid" id="vipProcessGrid">
+          <!-- Populated from SOLAR_DATA.process -->
+        </div>
+
+        <!-- FAQ Block -->
+        <div class="vip-faq-wrap">
+          <div class="vip-faq-head">
+            <span class="section-eyebrow font-tech">TECHNICAL KNOWLEDGEBASE</span>
+            <h3>الأسئلة الهندسية الشائعة</h3>
+          </div>
+          <div class="vip-faq-list" id="vipFaqList">
+            <!-- Populated from SOLAR_DATA.faqs -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP Engineering Dispatch Section -->
+    <section class="dispatch-section" id="vip-dispatch">
+      <div class="container dispatch-grid">
+        <div class="dispatch-info">
+          <span class="section-eyebrow font-tech">VIP ENGINEERING DISPATCH</span>
+          <h2 class="section-title">اعتماد مشروعك وإرسال المهندس المختص</h2>
+          <p class="section-copy">
+            سواءً كنت تخطط لتشغيل غطاسة بئر ارتوازي، مصنع إنتاج، أو مجمع سكني في أي من المحافظات الـ12، يجهز فريقنا عرض الأسعار وجدول الكميات الميداني مجاناً.
+          </p>
+
+          <div class="dispatch-cards">
+            <div class="d-card">
+              <span class="font-tech">HOTLINE</span>
+              <strong class="font-tech" dir="ltr">+967 782 259 937</strong>
+              <span>استقبال الطلبات الهندسية والزراعية يومياً</span>
+            </div>
+            <div class="d-card">
+              <span class="font-tech">WARRANTY SLA</span>
+              <strong>5 سنوات على الألواح · 3 سنوات للغطاسة</strong>
+              <span>صيانة سنوية وعقود تشغيل للمشاريع التجارية</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="dispatch-form" id="vipDispatchForm" novalidate>
+          <div class="d-form-head">
+            <h3>طلب استشارة وتنفيذ — الفئة الملكية VIP</h3>
+            <span class="font-tech">DIRECT ENGINEERING DESK</span>
+          </div>
+
+          <div class="d-form-grid">
+            <div class="d-field">
+              <label for="vipClientName">الاسم / اسم المنشأة أو المزرعة <span class="gold-text">*</span></label>
+              <input type="text" id="vipClientName" placeholder="مثال: مزارع وادي حضرموت / مصنع النخبة" required />
+            </div>
+            <div class="d-field">
+              <label for="vipClientPhone">رقم الهاتف / الواتساب <span class="gold-text">*</span></label>
+              <input type="tel" id="vipClientPhone" dir="ltr" placeholder="777 000 000" required />
+            </div>
+            <div class="d-field">
+              <label for="vipClientGov">المحافظة</label>
+              <select id="vipClientGov">
+                <option value="صنعاء وأمانة العاصمة">صنعاء وأمانة العاصمة</option>
+                <option value="مأرب">مأرب</option>
+                <option value="حضرموت">حضرموت</option>
+                <option value="تعز">تعز</option>
+                <option value="عدن">عدن</option>
+                <option value="الحديدة">الحديدة</option>
+                <option value="إب">إب</option>
+                <option value="ذمار">ذمار</option>
+                <option value="عمران">عمران</option>
+                <option value="حجة">حجة</option>
+                <option value="البيضاء">البيضاء</option>
+                <option value="محافظة أخرى">محافظة أخرى</option>
+              </select>
+            </div>
+            <div class="d-field">
+              <label for="vipProjectScope">نطاق المشروع</label>
+              <select id="vipProjectScope">
+                <option value="بئر زراعي وغطاسة شمسية">بئر زراعي وغطاسة شمسية</option>
+                <option value="مصنع / ورشة / خط إنتاج">مصنع / ورشة / خط إنتاج</option>
+                <option value="مجمع تجاري / محطة / فندق">مجمع تجاري / محطة / فندق</option>
+                <option value="فيلا فاخرة / مشروع سكني">فيلا فاخرة / مشروع سكني</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="d-field d-field-full">
+            <label for="vipNotes">تفاصيل إضافية (عمق البئر، قدرة المولّد الحالي، أو ملاحظات)</label>
+            <textarea id="vipNotes" rows="3" placeholder="اكتب تفاصيل الموقع أو عدّل الحسابات في محاكي الديزل ليتم إرفاقها تلقائياً..."></textarea>
+          </div>
+
+          <div class="vip-form-feedback" id="vipFormFeedback" hidden></div>
+
+          <div class="d-form-actions">
+            <button type="submit" class="btn btn-gold btn-lg">
+              <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+              <span>إرسال الطلب عبر واتساب VIP</span>
+            </button>
+            <button type="button" class="btn btn-gold-outline btn-lg" id="dispatchOpenBoqBtn">استعراض جدول الكميات BOQ</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- VIP Footer -->
+  <footer class="vip-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="vip-brand">
+          <span class="vip-crest">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+              <polygon points="14 2 25 8 25 20 14 26 3 20 3 8 14 2" />
+              <circle cx="14" cy="14" r="4" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <span class="brand-ar">الشمس للطاقة المتجددة <span class="vip-badge font-tech">VIP</span></span>
+            <span class="brand-en font-tech">INDUSTRIAL SOLAR &amp; IRRIGATION GRID</span>
+          </span>
+        </div>
+        <p class="footer-note">
+          توريد وتركيب المنظومات الشمسية الصناعية والغطاسات الزراعية العميقة في صنعاء وعموم المحافظات اليمنية الـ12 بكفالة هندسية رسمية.
+        </p>
+      </div>
+
+      <div class="footer-meta">
+        <span class="font-tech" dir="ltr">VIP ENGINEERING: +967 782 259 937</span>
+        <a id="footerVipWaBtn" href="https://wa.me/967782259937" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">اتصال واتساب VIP</a>
+      </div>
+    </div>
+    <div class="container footer-legal">
+      <span>جميع الحقوق محفوظة — الشمس للطاقة المتجددة</span>
+      <span class="font-tech">VIP TIER // OBSIDIAN SOLAR GRID EDITION</span>
+    </div>
+  </footer>
+
+  <!-- Interactive Technical BOQ (Bill of Quantities) & Quote Generator Modal -->
+  <div class="boq-modal" id="boqModal" role="dialog" aria-modal="true" aria-labelledby="boqModalTitle" hidden>
+    <div class="boq-modal-card">
+      <div class="boq-modal-header">
+        <div>
+          <span class="boq-ref font-tech" id="boqRefCode">REF: SOLAR-VIP-BOQ-2025</span>
+          <h3 id="boqModalTitle">جدول الكميات والمواصفات الهندسية (BOQ)</h3>
+          <p id="boqModalSubtitle">مقايسة تقديرية شاملة التوريد والتركيب والحماية — الفئة الملكية VIP</p>
+        </div>
+        <button type="button" class="boq-close-btn" id="boqCloseBtn" aria-label="إغلاق نافذة جدول الكميات">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="boq-modal-body">
+        <!-- Personalize & Storage Architecture Switch -->
+        <div class="boq-controls-bar">
+          <div class="boq-input-pair">
+            <label for="boqProjectTitleInput">اسم العميل / المشروع</label>
+            <input type="text" id="boqProjectTitleInput" placeholder="مشروع ري بئر / منشأة تجارية" />
+          </div>
+          <div class="boq-input-pair">
+            <label for="boqGovSelect">المحافظة</label>
+            <select id="boqGovSelect">
+              <option value="صنعاء">صنعاء</option>
+              <option value="مأرب">مأرب</option>
+              <option value="حضرموت">حضرموت</option>
+              <option value="تعز">تعز</option>
+              <option value="عدن">عدن</option>
+              <option value="الحديدة">الحديدة</option>
+              <option value="إب">إب</option>
+              <option value="ذمار">ذمار</option>
+              <option value="عمران">عمران</option>
+              <option value="حجة">حجة</option>
+              <option value="البيضاء">البيضاء</option>
+            </select>
+          </div>
+          <div class="boq-storage-switch">
+            <span class="boq-switch-lbl">نظام التخزين والتشغيل</span>
+            <div class="boq-switch-pills" id="boqStoragePills" role="group" aria-label="اختيار نظام التخزين في المقايسة">
+              <button type="button" class="boq-pill is-active" data-storage="hybrid">هجين + بطاريات LiFePO4</button>
+              <button type="button" class="boq-pill" data-storage="direct">تشغيل نهاري VFD مباشر</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- KPI Strip inside BOQ -->
+        <div class="boq-summary-strip" id="boqSummaryStrip">
+          <!-- Populated dynamically by app.js -->
+        </div>
+
+        <!-- Itemized BOQ Table -->
+        <div class="boq-table-wrap">
+          <table class="boq-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>البند الهندسي والمواصفات المعتمدة</th>
+                <th>الوحدة</th>
+                <th>الكمية</th>
+                <th>التكلفة التقديرية</th>
+                <th>الكفالة</th>
+              </tr>
+            </thead>
+            <tbody id="boqTableBody">
+              <!-- Populated dynamically by app.js -->
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4"><strong>إجمالي الميزانية التقديرية الشاملة للتركيب والاختبار</strong></td>
+                <td colspan="2"><strong class="font-tech boq-total-cell" id="boqTotalCost">$0</strong></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <p class="boq-disclaimer">
+          * الأسعار أعلاه تقديرية استرشادية قابلة للتعديل النهائي بعد المعاينة الميدانية وتحديد طول الكابلات وعمق البئر أو طبيعة السطح. جميع المنظومات تشمل التوريد والتركيب والاختبار بدون رسوم خفية.
+        </p>
+      </div>
+
+      <div class="boq-modal-footer">
+        <div class="boq-copy-toast" id="boqCopyToast" hidden>تم نسخ المقايسة الهندسية إلى الحافظة</div>
+        <div class="boq-footer-actions">
+          <button type="button" class="btn btn-obsidian-outline btn-sm" id="boqCopyBtn">
+            <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" />
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" />
+            </svg>
+            <span>نسخ المقايسة</span>
+          </button>
+          <button type="button" class="btn btn-obsidian-outline btn-sm" id="boqPrintBtn">
+            <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 6 2 18 2 18 9" />
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+              <rect x="6" y="14" width="12" height="8" />
+            </svg>
+            <span>طباعة / PDF</span>
+          </button>
+          <a id="boqWhatsappBtn" href="https://wa.me/967782259937" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
+            <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+            <span>إرسال لاعتماد VIP عبر واتساب</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

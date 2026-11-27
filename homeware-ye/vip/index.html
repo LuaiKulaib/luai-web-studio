@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>معرض الصقر للأدوات المنزلية | مركز التوزيع الوطني وبوابة الموزعين — حي شعوب، صنعاء (VIP)</title>
+  <meta name="description" content="مركز القيادة والتوزيع الوطني من معرض الصقر للأدوات المنزلية — حي شعوب، صنعاء. حاسبة حمولة الدينات والتريلات، حوافز الموزعين (5% / 10% / 15%)، وإصدار مانيفست تجاري قابل للطباعة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Command Ribbon -->
+  <div class="command-bar no-print">
+    <div class="container command-bar-inner">
+      <div class="command-status">
+        <span class="status-pulse" aria-hidden="true"></span>
+        <span>مركز التوزيع الوطني — حي شعوب، صنعاء: جاهزية فورية للتحميل والشحن البري</span>
+        <span class="cmd-sep hide-sm" aria-hidden="true"></span>
+        <span class="hide-sm">دينة 3 طن · تريلا 20 طن · شحن جزئي لكافة المحافظات</span>
+      </div>
+      <div class="command-meta">
+        <span>إدارة كبار التجار والموزعين:</span>
+        <a href="tel:+967782259937" dir="ltr">+967 782 259 937</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portal Sticky Header -->
+  <header class="portal-header no-print">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="معرض الصقر للأدوات المنزلية — الفئة الملكية VIP">
+        <span class="brand-crest" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 12 12 17 22 12"></polyline>
+            <polyline points="2 17 12 22 22 17"></polyline>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>معرض الصقر للأدوات المنزلية</strong>
+          <small dir="ltr">NATIONAL WHOLESALE HUB &bull; SANA'A VIP</small>
+        </span>
+      </a>
+
+      <nav class="portal-nav" aria-label="التنقل الرئيسي">
+        <a href="#presets">حمولات جاهزة</a>
+        <a href="#workspace">حاسبة الحمولة والكتالوج</a>
+        <a href="#freight-network">شبكة الترحيل الوطني</a>
+        <a href="#distributor-portal">بوابة الموزع الفرعي</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="currency-group" role="group" aria-label="العملة المعروضة">
+          <button type="button" class="curr-btn active" data-currency="USD">USD</button>
+          <button type="button" class="curr-btn" data-currency="SAR">SAR</button>
+          <button type="button" class="curr-btn" data-currency="YER">YER</button>
+        </div>
+
+        <button type="button" class="btn-brass-sm" id="headerProformaBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span class="hide-sm">المانيفست التجاري</span>
+          <span class="badge-count" id="headerManifestCount">0</span>
+        </button>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileNav" hidden>
+      <a href="#presets">حمولات التحميل الجاهزة</a>
+      <a href="#workspace">حاسبة الحمولة والكتالوج المركزي</a>
+      <a href="#freight-network">خطوط الشحن للمحافظات</a>
+      <a href="#distributor-portal">بوابة اعتماد الموزعين الفرعيين</a>
+      <a href="#faq">السياسات والاعتمادات</a>
+    </div>
+  </header>
+
+  <main class="no-print">
+    <!-- Command Hero -->
+    <section class="command-hero" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-main">
+          <div class="vip-eyebrow">
+            <span class="vip-chip" dir="ltr">VIP DISTRIBUTION HUB</span>
+            <span>الفئة الملكية VIP — بوابة الموزعين وتجار الجملة الكبرى</span>
+          </div>
+
+          <h1>مركز الإمداد الوطني: خطّط حمولة الدينات والتريلات وأصدر مانيفست الجملة فوراً</h1>
+
+          <p class="hero-desc">
+            من مستودعات معرض الصقر في حي شعوب بصنعاء إلى كافة المحافظات. احسب امتلاء المركبة (<span dir="ltr">دينة 3 طن / تريلا 20 طن / شحن جزئي</span>)، فعّل خصومات الموزعين حتى 15%، واستخرج فاتورة مانيفست قابلة للطباعة والنسخ بـ 3 عملات.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#workspace" class="btn btn-brass">
+              <span>بدء تخطيط الحمولة والمانيفست</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </a>
+            <a href="#distributor-portal" class="btn btn-slate-outline">
+              <span>تقديم طلب موزع فرعي بالمحافظات</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <strong dir="ltr">5% - 15%</strong>
+              <span>شرائح حافز الموزع الفرعي</span>
+            </div>
+            <div class="metric-card">
+              <strong dir="ltr">3 - 20 TON</strong>
+              <span>تقدير حمولة دينة / تريلا / جزئي</span>
+            </div>
+            <div class="metric-card">
+              <strong dir="ltr">USD / SAR / YER</strong>
+              <span>تسعير موحد بـ 3 عملات معاً</span>
+            </div>
+            <div class="metric-card">
+              <strong>مانيفست فوري</strong>
+              <span>نسخ، طباعة A4، أو إرسال واتساب</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-media-frame">
+            <img src="../assets/images/hero-showroom.jpg" alt="معرض الصقر للأدوات المنزلية — حي شعوب، صنعاء" />
+            <div class="hero-command-card">
+              <div class="hc-top">
+                <span class="hc-tag">منصة التحميل — حي شعوب</span>
+                <span class="hc-code" dir="ltr">SHU'UB CENTRAL</span>
+              </div>
+              <strong>تجهيز كامل للحمولات التجارية والمنزلية</strong>
+              <div class="hc-logistics-row">
+                <img src="../assets/images/warehouse-logistics.jpg" alt="مستودعات الشحن والتغليف لمعرض الصقر" />
+                <div>
+                  <span>تغطية يومية لـ 6 خطوط رئيسية</span>
+                  <strong>صنعاء · عدن · تعز · الحديدة · إب · المكلا</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Load Presets -->
+    <section class="section section--elevated" id="presets">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">تعبئة تلقائية ذكية للحمولة</span>
+            <h2>حمولات تجهيز قياسية بنقرة واحدة</h2>
+          </div>
+          <p>اختر حمولة جاهزة لتعبئة حاسبة المركبة والمانيفست بكافة الأصناف الأساسية، أو عدّل الكميات بحرية داخل مساحة العمل.</p>
+        </div>
+
+        <div class="presets-grid" id="presetsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Freight Estimator + Catalog Workspace -->
+    <section class="section" id="workspace">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">مساحة العمل التنفيذية</span>
+            <h2>كتالوج الـ 12 صنفاً + حاسبة حمولة المركبات وشرائح البونص</h2>
+          </div>
+          <div class="rate-legend" dir="ltr">1 USD = 3.75 SAR = 535 YER</div>
+        </div>
+
+        <div class="workspace-grid">
+          <!-- Left / Main Catalog Builder -->
+          <div class="catalog-panel">
+            <div class="workspace-toolbar">
+              <div class="cat-pills" id="vipCategoryTabs" role="tablist" aria-label="تصفية الأقسام"></div>
+
+              <div class="toolbar-actions">
+                <label class="vip-search" aria-label="بحث في الكتالوج">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                  <input type="search" id="vipSearchInput" placeholder="ابحث بالاسم أو كود SKU (SQ-YE01)..." />
+                </label>
+
+                <div class="view-toggle" role="group" aria-label="نمط العرض">
+                  <button type="button" class="view-btn active" id="vipViewCardsBtn">بطاقات</button>
+                  <button type="button" class="view-btn" id="vipViewTableBtn">جدول سريع</button>
+                </div>
+              </div>
+            </div>
+
+            <div id="vipCatalogEl"></div>
+
+            <div class="vip-empty-box" id="vipCatalogEmpty" hidden>
+              <strong>لا توجد أصناف مطابقة لمعايير البحث</strong>
+              <p>جرّب مسح البحث أو اختيار «كافة الأصناف (١٢)».</p>
+            </div>
+          </div>
+
+          <!-- Right / Sticky Crisp-White Load Estimator & Invoice Card -->
+          <aside class="estimator-card" aria-label="حاسبة حمولة المركبة وملخص المانيفست">
+            <div class="est-header">
+              <div>
+                <span class="est-eyebrow">تقدير الشحن والتوزيع</span>
+                <h3>حاسبة الحمولة والمانيفست</h3>
+              </div>
+              <button type="button" class="est-clear-btn" id="clearManifestBtn">تفريغ</button>
+            </div>
+
+            <!-- Vehicle Load Estimator Selector -->
+            <div class="est-block">
+              <label class="est-label">اختر فئة المركبة / الشحن:</label>
+              <div class="vehicle-selector" id="vehicleSelector" role="group" aria-label="فئة المركبة">
+                <button type="button" class="veh-btn" data-vehicle="partial">
+                  <strong>شحن جزئي</strong>
+                  <span>حتى 25 كرتون</span>
+                </button>
+                <button type="button" class="veh-btn active" data-vehicle="dyna3">
+                  <strong>دينة 3 طن</strong>
+                  <span>حتى 120 كرتون</span>
+                </button>
+                <button type="button" class="veh-btn" data-vehicle="trailer20">
+                  <strong>تريلا 20 طن</strong>
+                  <span>حتى 650 كرتون</span>
+                </button>
+              </div>
+
+              <div class="load-meter-box">
+                <div class="load-meter-top">
+                  <span>امتلاء سعة المركبة</span>
+                  <strong id="loadFillPercentText" dir="ltr">0%</strong>
+                </div>
+                <div class="load-progress-track">
+                  <div class="load-progress-fill" id="loadProgressFill" style="width: 0%;"></div>
+                </div>
+                <div class="load-meter-sub" id="loadStatsText">0 كرتون / 0 م³ / 0 كجم</div>
+                <div class="load-alert" id="loadCapacityAlert" hidden></div>
+              </div>
+            </div>
+
+            <!-- Sub-Distributor Volume Bonus Tier (5% / 10% / 15%) -->
+            <div class="est-block">
+              <div class="bonus-top-row">
+                <span class="est-label">حافز كمية الموزع الفرعي:</span>
+                <span class="bonus-badge" id="bonusTierBadge">0% (طلب أساسي)</span>
+              </div>
+              <div class="bonus-tiers-grid" id="bonusProgressPills">
+                <div class="tier-step" data-tier="5">
+                  <strong>5%</strong>
+                  <span>من $1,500</span>
+                </div>
+                <div class="tier-step" data-tier="10">
+                  <strong>10%</strong>
+                  <span>من $4,000</span>
+                </div>
+                <div class="tier-step" data-tier="15">
+                  <strong>15%</strong>
+                  <span>من $10,000</span>
+                </div>
+              </div>
+              <p class="bonus-hint" id="bonusHintText">أضف بضاعة بقيمة $1,500 لفتح خصم الموزع الفضي 5%.</p>
+            </div>
+
+            <!-- Governorate Freight Line -->
+            <div class="est-block">
+              <label class="est-label" for="estGovSelect">خط الترحيل للمحافظة:</label>
+              <select id="estGovSelect" class="est-select"></select>
+              <small class="est-gov-meta" id="estGovMeta"></small>
+            </div>
+
+            <!-- Selected Items Mini-Ledger -->
+            <div class="est-items-wrap">
+              <div class="est-items-head">
+                <span>الأصناف المضافة</span>
+                <span class="est-counts-pill"><span id="estCartonsCount">0</span> كرتون · <span id="estDozensCount">0</span> درزن</span>
+              </div>
+              <div class="est-items-list" id="estItemsList"></div>
+              <div class="est-weight-line" id="estWeightCbm" dir="ltr">0.00 CBM · 0 kg</div>
+            </div>
+
+            <!-- 3-Currency Totals Breakdown -->
+            <div class="est-totals-card">
+              <div class="tri-currency-grid">
+                <div class="tri-box">
+                  <small dir="ltr">USD</small>
+                  <strong id="estSubtotalUsd" dir="ltr">$0.00</strong>
+                </div>
+                <div class="tri-box">
+                  <small dir="ltr">SAR</small>
+                  <strong id="estSubtotalSar" dir="ltr">0 ر.س</strong>
+                </div>
+                <div class="tri-box">
+                  <small dir="ltr">YER</small>
+                  <strong id="estSubtotalYer" dir="ltr">0 ر.ي</strong>
+                </div>
+              </div>
+
+              <div class="est-summary-line">
+                <span>حافز الموزع المخصوم</span>
+                <strong id="estBonusAmount" dir="ltr">-$0.00</strong>
+              </div>
+              <div class="est-summary-line est-summary-line--net">
+                <span>صافي الفاتورة المستحق</span>
+                <strong id="estNetTotal" dir="ltr">$0.00</strong>
+              </div>
+              <div class="est-alt-net" id="estAltTotals" dir="ltr"></div>
+            </div>
+
+            <div class="est-actions">
+              <button type="button" class="btn btn-slate btn-full" id="openProformaModalBtn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+                <span>إصدار المانيفست التجاري القابل للطباعة</span>
+              </button>
+              <button type="button" class="btn btn-brass btn-full" id="estWhatsappBtn">
+                <span>إرسال الحمولة إلى واتساب كبار العملاء</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- National Governorate Freight Network -->
+    <section class="section section--elevated" id="freight-network">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">شبكة الإمداد والنقل الوطني</span>
+            <h2>خطوط الترحيل اليومي من حي شعوب إلى المحافظات</h2>
+          </div>
+          <p>تغليف معزز ضد الكسر، توصيل مجاني إلى مكاتب الترحيل أو تحميل مباشر للدينات والتريلات في ساحة المستودع.</p>
+        </div>
+
+        <div class="network-layout">
+          <div class="network-grid" id="freightNetworkGrid"></div>
+          <div class="network-visual-card">
+            <img src="../assets/images/warehouse-logistics.jpg" alt="ساحة تجهيز وشحن الكراتين في معرض الصقر بصنعاء" />
+            <div class="network-visual-body">
+              <span class="nv-badge">معايير الشحن الآمن</span>
+              <h3>حماية ثلاثية للأواني الزجاجية والبورسلين</h3>
+              <p>يتم رص كراتين الجرانيت في الأسفل وأطقم السفرة والزجاجيات في الأعلى مع فواصل حماية لضمان وصول الشحنة بنسبة سلامة 100%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Governorate Sub-Distributor Application Portal -->
+    <section class="section" id="distributor-portal">
+      <div class="container">
+        <div class="portal-split">
+          <div class="portal-copy">
+            <span class="section-eyebrow">التوسع التجاري والوكالات الفرعية</span>
+            <h2>بوابة التقديم لاعتماد موزع فرعي في محافظتك</h2>
+            <p>
+              نوفر للتجار النشطين وأصحاب المعارض الكبرى في المحافظات اليمنية فرصة الاعتماد كموزع فرعي لمنتجات معرض الصقر مع أولوية في البضاعة الجديدة وحوافز حجم تصل إلى 15%.
+            </p>
+
+            <div class="portal-perks">
+              <div class="perk-box">
+                <strong dir="ltr">5% — 15%</strong>
+                <span>حوافز ومكافآت حجم شهرية حسب شريحة السحب</span>
+              </div>
+              <div class="perk-box">
+                <strong>أولوية التوريد</strong>
+                <span>حجز كميات المواسم (رمضان والأعياد) قبل نفاد الدفعات</span>
+              </div>
+              <div class="perk-box">
+                <strong>تجهيز متكامل</strong>
+                <span>شحن بالدينة أو التريلا أو الشحن الجزئي المجمع</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crisp White Sub-Distributor Portal Form -->
+          <form class="distributor-form-card" id="distForm" novalidate>
+            <div class="df-head">
+              <h3>طلب اعتماد موزع فرعي (VIP)</h3>
+              <span class="df-tier-pill" id="distProjectedBonus">شريحة الحافز المتوقعة: 5%</span>
+            </div>
+
+            <div class="df-grid">
+              <div class="df-field">
+                <label for="distCompany">اسم المعرض / الشركة التجارية *</label>
+                <input type="text" id="distCompany" required placeholder="مثال: مؤسسة الوادي للأواني المنزلية" />
+              </div>
+
+              <div class="df-field">
+                <label for="distPhone">رقم الجوال / الواتساب *</label>
+                <input type="tel" id="distPhone" required dir="ltr" placeholder="+967 7XX XXX XXX" />
+              </div>
+
+              <div class="df-field">
+                <label for="distGov">المحافظة المستهدفة للتوزيع</label>
+                <select id="distGov">
+                  <option value="صنعاء والأمانة">صنعاء والأمانة</option>
+                  <option value="عدن">عدن</option>
+                  <option value="تعز">تعز</option>
+                  <option value="الحديدة">الحديدة</option>
+                  <option value="إب">إب</option>
+                  <option value="المكلا وحضرموت">المكلا وحضرموت</option>
+                  <option value="ذمار">ذمار</option>
+                  <option value="مأرب">مأرب</option>
+                  <option value="محافظة أخرى">محافظة أخرى</option>
+                </select>
+              </div>
+
+              <div class="df-field">
+                <label for="distFleet">نطاق السحب والشحن المعتاد</label>
+                <select id="distFleet">
+                  <option value="شحن جزئي أسبوعي">شحن جزئي أسبوعي</option>
+                  <option value="دينة 3 طن">دينة 3 طن</option>
+                  <option value="تريلا 20 طن">تريلا 20 طن</option>
+                </select>
+              </div>
+
+              <div class="df-field df-field--full">
+                <label for="distMonthlyBracket">متوسط السحب الشهري المتوقع (بالدولار)</label>
+                <select id="distMonthlyBracket">
+                  <option value="5">من $1,500 إلى $3,999 (حافز 5%)</option>
+                  <option value="10">من $4,000 إلى $9,999 (حافز 10%)</option>
+                  <option value="15">$10,000 فأكثر (حافز موزع معتمد 15%)</option>
+                </select>
+              </div>
+
+              <div class="df-field df-field--full">
+                <label>الأقسام الرئيسية المستهدفة في التوزيع:</label>
+                <div class="df-cat-checks" id="distCategoriesWrap"></div>
+              </div>
+
+              <div class="df-field df-field--full">
+                <label for="distNotes">ملاحظات أو أصناف مطلوبة بشكل دوري</label>
+                <input type="text" id="distNotes" placeholder="مثال: تركيز على قدور الجرانيت والترامس والأجهزة الكهربائية..." />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-brass btn-full" id="distSubmitWaBtn">
+              <span>إرسال طلب اعتماد الموزع عبر واتساب (VIP)</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section--elevated" id="faq">
+      <div class="container container--narrow">
+        <div class="section-head section-head--center">
+          <span class="section-eyebrow">الاعتمادات، الدفع، والترحيل</span>
+          <h2>أسئلة كبار التجار والموزعين الفرعيين</h2>
+          <p>تفاصيل حجز الكميات، التحويل عبر الصرافة، وشحن الدينات والتريلات من حي شعوب.</p>
+        </div>
+
+        <div class="vip-faq-list" id="vipFaqList"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="portal-footer no-print">
+    <div class="container footer-inner">
+      <div>
+        <strong>معرض الصقر للأدوات المنزلية — الفئة الملكية VIP</strong>
+        <p>مركز التوزيع الوطني — صنعاء، حي شعوب، الشارع التجاري العام · ترحيل يومي لكافة محافظات الجمهورية</p>
+      </div>
+      <div class="footer-meta">
+        <span>جميع الحقوق محفوظة &copy; 2026</span>
+        <a href="tel:+967782259937" dir="ltr">+967 782 259 937</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Printable / Copyable Pro-Forma Commercial Manifest Modal -->
+  <div class="proforma-backdrop no-print" id="proformaBackdrop" hidden></div>
+  <div class="proforma-modal" id="proformaModal" role="dialog" aria-modal="true" aria-labelledby="pfModalTitle" hidden>
+    <div class="pf-toolbar no-print">
+      <div>
+        <strong id="pfModalTitle">المانيفست التجاري المبدئي (Pro-Forma Commercial Manifest)</strong>
+        <span>وثيقة عرض وحجز حمولة صالحة للطباعة A4 والنسخ والإرسال</span>
+      </div>
+      <div class="pf-toolbar-actions">
+        <button type="button" class="pf-btn pf-btn--ghost" id="pfCopyBtn">نسخ النص</button>
+        <button type="button" class="pf-btn pf-btn--ghost" id="pfPrintBtn">طباعة A4</button>
+        <button type="button" class="pf-btn pf-btn--brass" id="pfWhatsappBtn">إرسال واتساب VIP</button>
+        <button type="button" class="pf-close" id="closeProformaModalBtn" aria-label="إغلاق المانيفست">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="pf-controls-bar no-print">
+      <div class="pf-input-group">
+        <label for="pfMerchantInput">اسم التاجر / المعرض</label>
+        <input type="text" id="pfMerchantInput" placeholder="اسم المنشأة المستلمة" />
+      </div>
+      <div class="pf-input-group">
+        <label for="pfPhoneInput">جوال المستلم</label>
+        <input type="text" id="pfPhoneInput" dir="ltr" placeholder="+967 ..." />
+      </div>
+      <div class="pf-input-group">
+        <label for="pfGovSelect">خط النقل للمحافظة</label>
+        <select id="pfGovSelect"></select>
+      </div>
+      <div class="pf-input-group">
+        <label for="pfVehicleSelect">فئة المركبة</label>
+        <select id="pfVehicleSelect">
+          <option value="partial">شحن جزئي</option>
+          <option value="dyna3">دينة 3 طن</option>
+          <option value="trailer20">تريلا 20 طن</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Crisp White Printable Pro-Forma Document -->
+    <article class="pf-document">
+      <div class="pf-doc-head">
+        <div>
+          <span class="pf-doc-kicker">PRO-FORMA COMMERCIAL MANIFEST &bull; الفئة الملكية VIP</span>
+          <h2>معرض الصقر للأدوات المنزلية — جملة وتوريد</h2>
+          <p>صنعاء – حي شعوب، الشارع التجاري العام | هاتف وواتساب: <span dir="ltr">+967 782 259 937</span></p>
+        </div>
+        <div class="pf-doc-meta">
+          <div><span>رقم المرجع:</span> <strong id="pfRefCode" dir="ltr">SAQR-VIP-2026</strong></div>
+          <div><span>التاريخ:</span> <strong id="pfDate" dir="ltr">2026</strong></div>
+          <div><span>العملة الأساسية:</span> <strong id="pfCurrencyDisplay" dir="ltr">USD</strong></div>
+        </div>
+      </div>
+
+      <div class="pf-party-grid">
+        <div>
+          <small>الجهة الطالبة / التاجر:</small>
+          <strong id="pfMerchantDisplay">تاجر جملة — طلب توريد معتمد</strong>
+        </div>
+        <div>
+          <small>خط الترحيل وفئة المركبة:</small>
+          <strong id="pfRouteDisplay">صنعاء والأمانة — دينة 3 طن</strong>
+        </div>
+      </div>
+
+      <div class="pf-table-wrap">
+        <table class="pf-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>كود SKU</th>
+              <th>الصنف والمواصفة</th>
+              <th>الوحدة</th>
+              <th>الكمية</th>
+              <th>سعر الوحدة</th>
+              <th>الإجمالي</th>
+            </tr>
+          </thead>
+          <tbody id="pfTableBody"></tbody>
+        </table>
+      </div>
+
+      <div class="pf-doc-footer">
+        <div class="pf-notes">
+          <strong>شروط التسليم والترحيل المبدئية:</strong>
+          <ul>
+            <li>الأسعار المعروضة استرشادية قابلة للتثبيت النهائي عند سداد الدفعة عبر الصرافة أو نقداً في المعرض.</li>
+            <li>التوصيل مجاني من مخزن حي شعوب إلى مكاتب الترحيل المعتمدة داخل صنعاء مع إرسال صورة سند الشحن.</li>
+            <li id="pfLoadSummary">إجمالي الشحنة: 0 وحدة</li>
+          </ul>
+        </div>
+
+        <div class="pf-totals-box">
+          <div class="pf-tot-row">
+            <span>إجمالي الوحدات:</span>
+            <strong id="pfTotalUnits">0 وحدة</strong>
+          </div>
+          <div class="pf-tot-row">
+            <span>الإجمالي قبل الحافز:</span>
+            <strong id="pfGrossTotal" dir="ltr">$0.00</strong>
+          </div>
+          <div class="pf-tot-row pf-tot-row--bonus">
+            <span id="pfBonusLabel">حافز الموزع (0%):</span>
+            <strong id="pfBonusValue" dir="ltr">-$0.00</strong>
+          </div>
+          <div class="pf-tot-row pf-tot-row--net">
+            <span>الصافي التقديري:</span>
+            <strong id="pfNetTotal" dir="ltr">$0.00</strong>
+          </div>
+          <div class="pf-tri-summary" id="pfThreeCurrencies" dir="ltr"></div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="vip-toast no-print" id="vipToast" role="status" aria-live="polite" hidden></div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
