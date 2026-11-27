@@ -1,0 +1,277 @@
+/* =========================================================
+   style.css — تهامة جولدن تروبيكس (Global Mango Export)
+   Theme: Tropical Orchard Emerald (#0A3320) + Golden Mango (#E07A00) + Warm Ivory (#FAF9F5)
+   ========================================================= */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --emerald:    #0A3320;
+  --emerald-lt: #115E3B;
+  --mango:      #D97706;
+  --mango-lt:   #F59E0B;
+  --gold-soft:  #FDE68A;
+  --ivory:      #FAF9F5;
+  --white:      #FFFFFF;
+  --ink:        #141D17;
+  --slate:      #526058;
+  --border:     #E3E1D8;
+  --shadow:     0 12px 32px rgba(10, 51, 32, 0.08);
+  --radius:     16px;
+  --ff-ar:      'Tajawal', sans-serif;
+  --ff-en:      'Outfit', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--ff-ar);
+  direction: rtl;
+  color: var(--ink);
+  background: var(--ivory);
+  overflow-x: hidden;
+  line-height: 1.65;
+}
+img { display: block; width: 100%; object-fit: cover; }
+a   { text-decoration: none; }
+button, input, select, textarea { font-family: inherit; }
+
+.container { max-width: 1180px; margin: 0 auto; padding-inline: 1.25rem; }
+
+/* ---- Top Trade Compliance Bar --------------------------- */
+.top-trade-bar {
+  background: #062114; color: rgba(255,255,255,.86);
+  font-size: .8rem; font-weight: 600; padding: .45rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.top-trade-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.top-trade-bar strong { color: var(--gold-soft); font-family: var(--ff-en); }
+
+/* ---- Sticky Header -------------------------------------- */
+.site-header {
+  position: sticky; top: 0; z-index: 900;
+  background: rgba(255,255,255,.97); backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding-block: .8rem; }
+.brand-lockup { display: flex; align-items: center; gap: .7rem; color: var(--emerald); }
+.brand-text strong { display: block; font-size: 1.12rem; font-weight: 900; line-height: 1.1; }
+.brand-text span   { display: block; font-size: .7rem; color: var(--mango); font-family: var(--ff-en); font-weight: 800; letter-spacing: .6px; text-transform: uppercase; }
+
+.nav-links { display: none; align-items: center; gap: 1.35rem; }
+.nav-links a { font-size: .9rem; font-weight: 700; color: var(--ink); transition: color .2s; }
+.nav-links a:hover { color: var(--mango); }
+@media(min-width: 920px) { .nav-links { display: flex; } }
+
+.btn-rfq-top {
+  background: linear-gradient(135deg, var(--mango) 0%, var(--mango-lt) 100%);
+  color: var(--white); font-size: .86rem; font-weight: 800;
+  padding: .55rem 1.25rem; border-radius: 99px;
+  display: inline-flex; align-items: center; gap: .45rem; white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(217,119,6,.3);
+}
+.btn-rfq-top:hover { filter: brightness(1.06); }
+
+/* ---- Cinematic Hero ------------------------------------- */
+.hero {
+  position: relative; min-height: 82vh;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  background: var(--emerald); overflow: hidden; padding-top: 4rem;
+}
+.hero-img { position: absolute; inset: 0; height: 100%; opacity: .45; }
+.hero::after {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(6,33,20,.96) 0%, rgba(10,51,32,.72) 55%, rgba(10,51,32,.32) 100%);
+}
+.hero-content { position: relative; z-index: 2; padding-bottom: 3rem; color: var(--white); }
+
+.origin-pill {
+  display: inline-flex; align-items: center; gap: .45rem;
+  background: rgba(245,158,11,.18); border: 1px solid rgba(253,230,138,.45);
+  color: var(--gold-soft); font-size: .82rem; font-weight: 800;
+  padding: .35rem .95rem; border-radius: 99px; margin-bottom: 1.1rem;
+}
+.hero h1 {
+  font-size: clamp(2rem, 4.8vw, 3.35rem); font-weight: 900; line-height: 1.18;
+  max-width: 740px; margin-bottom: 1rem;
+}
+.hero h1 em { font-style: normal; color: var(--mango-lt); }
+.hero-sub { font-size: 1.05rem; color: rgba(255,255,255,.88); max-width: 620px; margin-bottom: 2rem; }
+.hero-ctas { display: flex; flex-wrap: wrap; gap: .9rem; margin-bottom: 2.8rem; }
+.btn-mango-lg {
+  background: linear-gradient(135deg, var(--mango) 0%, var(--mango-lt) 100%);
+  color: var(--white); font-weight: 800; font-size: .98rem;
+  padding: .9rem 1.85rem; border-radius: 99px;
+  display: inline-flex; align-items: center; gap: .5rem;
+  box-shadow: 0 10px 26px rgba(217,119,6,.36);
+}
+.btn-glass-lg {
+  background: rgba(255,255,255,.1); color: var(--white);
+  border: 1.5px solid rgba(255,255,255,.35); font-weight: 700; font-size: .96rem;
+  padding: .9rem 1.65rem; border-radius: 99px;
+}
+
+.kpi-strip {
+  display: grid; gap: .9rem; grid-template-columns: repeat(2, 1fr);
+  background: rgba(6, 33, 20, .86); backdrop-filter: blur(12px);
+  border: 1px solid rgba(253,230,138,.22); border-radius: var(--radius); padding: 1.25rem 1.4rem;
+}
+@media(min-width: 780px) { .kpi-strip { grid-template-columns: repeat(4, 1fr); } }
+.kpi-box strong { display: block; font-size: 1.55rem; font-weight: 900; color: var(--mango-lt); font-family: var(--ff-en); line-height: 1.15; }
+.kpi-box small  { font-size: .78rem; color: var(--gold-soft); font-weight: 700; }
+.kpi-box span   { display: block; font-size: .82rem; color: rgba(255,255,255,.78); margin-top: .15rem; }
+
+/* ---- Sections ------------------------------------------- */
+.sec { padding: 4.2rem 0; }
+.sec-white { background: var(--white); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.sec-emerald { background: var(--emerald); color: var(--white); }
+
+.sec-head { text-align: center; margin-bottom: 2.5rem; }
+.sec-kicker {
+  display: inline-block; font-family: var(--ff-en); font-size: .76rem; font-weight: 800;
+  letter-spacing: 1px; color: var(--mango); text-transform: uppercase; margin-bottom: .35rem;
+}
+.sec-emerald .sec-kicker { color: var(--gold-soft); }
+.sec-head h2 { font-size: clamp(1.65rem, 3.8vw, 2.3rem); font-weight: 900; line-height: 1.25; }
+.sec-head p  { color: var(--slate); max-width: 620px; margin: .5rem auto 0; font-size: .98rem; }
+.sec-emerald .sec-head p { color: rgba(255,255,255,.76); }
+
+/* ---- Cultivars Grid ------------------------------------- */
+.filter-pills { display: flex; justify-content: center; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
+.f-pill {
+  border: 1px solid var(--border); background: var(--white); color: var(--slate);
+  font-size: .85rem; font-weight: 700; padding: .48rem 1.1rem; border-radius: 99px; cursor: pointer;
+}
+.f-pill.active { background: var(--emerald); color: var(--white); border-color: var(--emerald); }
+
+.cultivar-grid { display: grid; gap: 1.35rem; grid-template-columns: 1fr; }
+@media(min-width: 780px) { .cultivar-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.cult-card {
+  background: var(--white); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column;
+}
+.cult-img { position: relative; height: 220px; }
+.cult-img img { height: 100%; }
+.cult-badge {
+  position: absolute; top: .85rem; right: .85rem;
+  background: rgba(10,51,32,.9); color: var(--gold-soft);
+  font-size: .75rem; font-weight: 800; padding: .28rem .78rem; border-radius: 99px;
+}
+.cult-body { padding: 1.35rem; flex: 1; display: flex; flex-direction: column; }
+.cult-en   { font-family: var(--ff-en); font-size: .8rem; font-weight: 700; color: var(--mango); margin-bottom: .2rem; }
+.cult-body h3 { font-size: 1.22rem; font-weight: 900; color: var(--emerald); margin-bottom: .45rem; }
+.cult-body p  { font-size: .88rem; color: var(--slate); margin-bottom: 1rem; }
+
+.spec-matrix {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: .55rem;
+  margin-bottom: 1.15rem; flex: 1;
+}
+.spec-cell { background: var(--ivory); border: 1px solid var(--border); border-radius: 10px; padding: .55rem .75rem; }
+.spec-cell span   { display: block; font-size: .72rem; color: var(--slate); }
+.spec-cell strong { font-size: .86rem; font-weight: 800; color: var(--ink); }
+
+.cult-actions { display: flex; gap: .6rem; flex-wrap: wrap; }
+.btn-spec-rfq {
+  flex: 1; background: var(--emerald); color: var(--white); border: none;
+  border-radius: 10px; padding: .72rem 1rem; font-weight: 800; font-size: .88rem; cursor: pointer;
+}
+.btn-spec-rfq:hover { background: var(--emerald-lt); }
+.btn-wa-sm {
+  background: #25D366; color: var(--white); font-weight: 800; font-size: .88rem;
+  padding: .72rem 1rem; border-radius: 10px; display: inline-flex; align-items: center; gap: .35rem;
+}
+
+/* ---- Harvest Availability Calendar ---------------------- */
+.cal-wrap {
+  background: var(--white); border: 1px solid var(--border); border-radius: 18px;
+  overflow-x: auto; box-shadow: var(--shadow); padding: 1.2rem;
+}
+.cal-table { width: 100%; min-width: 760px; border-collapse: collapse; }
+.cal-table th { padding: .7rem .45rem; font-size: .8rem; font-weight: 800; color: var(--emerald); border-bottom: 2px solid var(--border); text-align: center; }
+.cal-table th:first-child { text-align: right; min-width: 155px; }
+.cal-table td { padding: .65rem .35rem; border-bottom: 1px solid var(--border); text-align: center; }
+.cal-table td:first-child { text-align: right; font-weight: 800; font-size: .9rem; color: var(--ink); }
+.cal-dot { display: inline-block; width: 22px; height: 14px; border-radius: 4px; }
+.lvl-0 { background: #F1F5F9; }
+.lvl-1 { background: #FDE68A; border: 1px solid #F59E0B; }
+.lvl-2 { background: #059669; }
+
+.cal-legend { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 1rem; font-size: .82rem; font-weight: 700; }
+.cal-legend span { display: inline-flex; align-items: center; gap: .45rem; }
+
+/* ---- Container & Packaging Configurator ----------------- */
+.pack-grid {
+  display: grid; gap: 1.5rem; grid-template-columns: 1fr; align-items: start;
+}
+@media(min-width: 860px) { .pack-grid { grid-template-columns: 1.05fr 1fr; } }
+
+.pack-card {
+  background: var(--ivory); border: 1px solid var(--border); border-radius: 18px; padding: 1.6rem;
+}
+.pack-card h3 { font-size: 1.15rem; font-weight: 900; color: var(--emerald); margin-bottom: 1rem; }
+.field-blk { margin-bottom: .95rem; }
+.field-blk label { display: block; font-size: .82rem; font-weight: 700; margin-bottom: .3rem; }
+.field-blk select {
+  width: 100%; padding: .65rem .85rem; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--white); font-size: .9rem; font-weight: 700;
+}
+
+.pack-summary {
+  background: var(--emerald); color: var(--white); border-radius: 18px; padding: 1.6rem;
+}
+.pack-summary h3 { font-size: 1.15rem; font-weight: 900; color: var(--gold-soft); margin-bottom: 1rem; }
+.sum-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .8rem; margin-bottom: 1.2rem; }
+.sum-cell { background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.14); border-radius: 12px; padding: .9rem; }
+.sum-cell span   { display: block; font-size: .75rem; color: rgba(255,255,255,.75); }
+.sum-cell strong { font-size: 1.25rem; font-weight: 900; color: var(--gold-soft); }
+
+/* ---- Cold Chain & Certifications ------------------------ */
+.cold-grid { display: grid; gap: 1.2rem; grid-template-columns: 1fr; }
+@media(min-width: 640px) { .cold-grid { grid-template-columns: repeat(2, 1fr); } }
+@media(min-width: 960px) { .cold-grid { grid-template-columns: repeat(4, 1fr); } }
+.cold-card {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14);
+  border-radius: var(--radius); padding: 1.5rem 1.2rem;
+}
+.cold-num { font-family: var(--ff-en); font-size: 2rem; font-weight: 900; color: var(--mango-lt); opacity: .75; line-height: 1; margin-bottom: .5rem; }
+.cold-card h3 { font-size: 1.02rem; font-weight: 800; margin-bottom: .35rem; }
+.cold-card p  { font-size: .86rem; color: rgba(255,255,255,.78); }
+
+.cert-grid { display: grid; gap: 1.1rem; grid-template-columns: repeat(2, 1fr); margin-bottom: 2.5rem; }
+@media(min-width: 820px) { .cert-grid { grid-template-columns: repeat(4, 1fr); } }
+@media(max-width: 480px) { .cert-grid { grid-template-columns: 1fr; } }
+.cert-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.35rem; text-align: center; box-shadow: var(--shadow); }
+.cert-code { display: inline-block; font-family: var(--ff-en); font-size: .82rem; font-weight: 900; color: var(--emerald); background: #ECFDF5; border: 1px solid #A7F3D0; padding: .28rem .75rem; border-radius: 99px; margin-bottom: .6rem; }
+.cert-card h3 { font-size: .98rem; font-weight: 800; margin-bottom: .3rem; }
+.cert-card p  { font-size: .82rem; color: var(--slate); }
+
+/* ---- RFQ Export Form ------------------------------------ */
+.rfq-box {
+  background: var(--white); border: 1px solid var(--border); border-radius: 20px;
+  padding: 2rem 1.5rem; box-shadow: var(--shadow);
+  display: grid; gap: 1.8rem; grid-template-columns: 1fr; align-items: center;
+}
+@media(min-width: 860px) { .rfq-box { grid-template-columns: 1fr 1.15fr; padding: 2.2rem; } }
+.rfq-visual { border-radius: 14px; overflow: hidden; height: 100%; min-height: 260px; position: relative; }
+.rfq-visual img { height: 100%; }
+.rfq-visual-cap {
+  position: absolute; bottom: .9rem; right: .9rem; left: .9rem;
+  background: rgba(6,33,20,.9); color: var(--white); padding: .9rem 1rem; border-radius: 12px;
+}
+.rfq-visual-cap strong { display: block; color: var(--gold-soft); font-size: .95rem; }
+.rfq-visual-cap span   { font-size: .8rem; opacity: .88; }
+
+.form-grid { display: grid; gap: .85rem; }
+.form-row-2 { display: grid; gap: .85rem; grid-template-columns: 1fr; }
+@media(min-width: 520px) { .form-row-2 { grid-template-columns: 1fr 1fr; } }
+.form-field label { display: block; font-size: .82rem; font-weight: 700; margin-bottom: .25rem; }
+.form-field input, .form-field select, .form-field textarea {
+  width: 100%; padding: .64rem .88rem; border-radius: 10px; border: 1px solid var(--border); background: var(--ivory); font-size: .9rem;
+}
+.btn-submit-rfq {
+  width: 100%; background: var(--emerald); color: var(--white); border: none;
+  border-radius: 10px; padding: .92rem; font-size: 1rem; font-weight: 800; cursor: pointer;
+}
+.btn-submit-rfq:hover { background: var(--emerald-lt); }
+
+.site-footer { background: #062114; color: rgba(255,255,255,.74); text-align: center; font-size: .82rem; padding: 1.4rem 1rem; }
+.site-footer a { color: var(--gold-soft); font-weight: 700; }
