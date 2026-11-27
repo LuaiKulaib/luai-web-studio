@@ -3,23 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>لؤي ويب ستوديو | Luai Web Studio — معرض صفحات الهبوط والمواقع التجارية</title>
-  <meta name="description" content="استوديو متخصص في تصميم وتطوير صفحات الهبوط الاحترافية والمتاجر ومواقع الشركات للأسواق اليمنية والخليجية. تصفح النماذج الحية واختر ما يناسب نشاطك." />
+  <title>لؤي ويب ستوديو | Luai Web Studio — معرض صفحات الهبوط والفئات الاحترافية</title>
+  <meta name="description" content="استوديو متخصص في تصميم وتطوير صفحات الهبوط والمتاجر ومواقع الشركات بثلاث فئات متدرجة: القياسية (50$)، الفاخرة Pro (120$)، والملكية VIP (250$)." />
 
-  <!-- Google Fonts: Tajawal & Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
 
   <style>
     :root {
-      --bg: #080A0F;
-      --bg-card: rgba(17, 20, 30, 0.78);
-      --bg-card-hover: rgba(24, 28, 42, 0.92);
+      --bg: #07090E;
+      --bg-row: rgba(15, 19, 29, 0.72);
+      --bg-card: rgba(19, 24, 36, 0.88);
+      --bg-card-hover: rgba(26, 32, 48, 0.96);
       --border: rgba(255, 255, 255, 0.08);
-      --border-hover: rgba(99, 102, 241, 0.45);
       --accent: #6366F1;
       --accent-light: #818CF8;
+      --pro-accent: #F59E0B;
+      --vip-gold: #D4AF37;
+      --vip-gold-soft: #FDE68A;
       --text: #F8FAFC;
       --text-muted: #94A3B8;
       --radius: 20px;
@@ -35,8 +37,8 @@
       background-color: var(--bg);
       background-image:
         radial-gradient(circle at 12% 14%, rgba(99, 102, 241, 0.10) 0%, transparent 40%),
-        radial-gradient(circle at 86% 60%, rgba(16, 185, 129, 0.06) 0%, transparent 42%),
-        radial-gradient(circle at 50% 92%, rgba(255, 107, 0, 0.05) 0%, transparent 40%);
+        radial-gradient(circle at 86% 45%, rgba(212, 175, 55, 0.07) 0%, transparent 42%),
+        radial-gradient(circle at 50% 92%, rgba(16, 185, 129, 0.06) 0%, transparent 40%);
       background-attachment: fixed;
       color: var(--text);
       font-family: var(--font-ar);
@@ -51,20 +53,20 @@
 
     .container {
       width: 100%;
-      max-width: 1220px;
+      max-width: 1320px;
       margin-inline: auto;
       padding-inline: 22px;
     }
 
     /* ── Header ── */
     header {
-      padding: 18px 0;
+      padding: 16px 0;
       border-bottom: 1px solid var(--border);
       backdrop-filter: blur(14px);
       position: sticky;
       top: 0;
-      z-index: 50;
-      background: rgba(8, 10, 15, 0.84);
+      z-index: 60;
+      background: rgba(7, 9, 14, 0.88);
     }
     .header-inner {
       display: flex;
@@ -77,11 +79,11 @@
       width: 42px;
       height: 42px;
       border-radius: 12px;
-      background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+      background: linear-gradient(135deg, #6366F1 0%, #D4AF37 100%);
       display: grid;
       place-items: center;
       color: #fff;
-      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.30);
       flex-shrink: 0;
     }
     .brand-text h1 { font-size: 18px; font-weight: 800; line-height: 1.2; }
@@ -90,15 +92,16 @@
       font-size: 11px;
       letter-spacing: 0.08em;
       text-transform: uppercase;
-      color: var(--accent-light);
+      color: var(--vip-gold-soft);
       display: block;
     }
     .header-cta {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: rgba(255, 255, 255, 0.07);
-      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      color: var(--vip-gold-soft);
       padding: 10px 18px;
       border-radius: 99px;
       font-size: 14px;
@@ -107,14 +110,14 @@
       white-space: nowrap;
     }
     .header-cta:hover {
-      background: var(--accent);
-      border-color: var(--accent);
+      background: var(--vip-gold);
+      color: #07090E;
       transform: translateY(-2px);
     }
 
     /* ── Hero ── */
     .hero {
-      padding: 64px 0 42px;
+      padding: 54px 0 32px;
       text-align: center;
     }
     .hero-badge {
@@ -123,12 +126,12 @@
       gap: 8px;
       padding: 6px 16px;
       border-radius: 99px;
-      background: rgba(99, 102, 241, 0.12);
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      color: #a5b4fc;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.32);
+      color: var(--vip-gold-soft);
       font-size: 13px;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
     .pulse-dot {
       width: 8px;
@@ -138,34 +141,74 @@
       box-shadow: 0 0 10px #10B981;
     }
     .hero-title {
-      font-size: clamp(28px, 4.6vw, 48px);
+      font-size: clamp(27px, 4.4vw, 46px);
       font-weight: 900;
       line-height: 1.24;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
     }
     .hero-title span {
-      background: linear-gradient(135deg, #a5b4fc 0%, #34d399 100%);
+      background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #34D399 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .hero-subtitle {
-      font-size: clamp(15px, 1.8vw, 17.5px);
+      font-size: clamp(15px, 1.7vw, 17px);
       color: var(--text-muted);
-      max-width: 680px;
+      max-width: 720px;
       margin-inline: auto;
-      margin-bottom: 34px;
+      margin-bottom: 28px;
     }
 
-    /* ── Smart Search & Filter Bar ── */
+    /* ── Tier Pricing Strip ── */
+    .tier-legend {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+      text-align: right;
+    }
+    .tier-legend-box {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .tier-legend-box.is-pro {
+      border-color: rgba(245, 158, 11, 0.32);
+      background: rgba(245, 158, 11, 0.05);
+    }
+    .tier-legend-box.is-vip {
+      border-color: rgba(212, 175, 55, 0.42);
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.09) 0%, rgba(15, 23, 42, 0.4) 100%);
+    }
+    .tier-legend-box strong { display: block; font-size: 15px; font-weight: 800; }
+    .tier-legend-box small { display: block; font-size: 12.5px; color: var(--text-muted); }
+    .legend-price {
+      font-family: var(--font-en);
+      font-size: 22px;
+      font-weight: 900;
+      padding: 4px 12px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      white-space: nowrap;
+    }
+    .is-pro .legend-price { color: #FCD34D; background: rgba(245, 158, 11, 0.14); }
+    .is-vip .legend-price { color: #07090E; background: linear-gradient(135deg, #FDE68A, #D4AF37); }
+
+    /* ── Explorer Bar ── */
     .explorer-bar {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 18px;
-      margin-bottom: 36px;
+      margin-bottom: 34px;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 14px;
       backdrop-filter: blur(14px);
     }
     .search-row {
@@ -179,7 +222,7 @@
       transition: var(--transition);
     }
     .search-row:focus-within {
-      border-color: var(--accent);
+      border-color: var(--vip-gold);
       background: rgba(255, 255, 255, 0.07);
     }
     .search-row svg { color: var(--text-muted); flex-shrink: 0; }
@@ -212,227 +255,301 @@
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.08);
       color: var(--text-muted);
-      font-size: 13.5px;
+      font-size: 13px;
       font-weight: 700;
       transition: var(--transition);
     }
-    .filter-pill:hover { border-color: rgba(255,255,255,0.25); color: #fff; }
+    .filter-pill:hover { border-color: rgba(255,255,255,0.28); color: #fff; }
     .filter-pill.active {
       background: var(--accent);
       border-color: var(--accent);
       color: #fff;
     }
+    .filter-pill.tier-filter-btn.active {
+      background: linear-gradient(135deg, #D97706, #D4AF37);
+      border-color: #D4AF37;
+      color: #07090E;
+    }
     .results-count {
       font-size: 13px;
-      color: var(--text-muted);
-      font-weight: 600;
+      color: var(--vip-gold-soft);
+      font-weight: 700;
     }
 
-    /* ── Cards Grid ── */
+    /* ── Sector Rows Showcase ── */
     .showcase { padding-bottom: 70px; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px;
+    .sectors-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
     }
-    .card {
+    .sector-row {
+      background: var(--bg-row);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 22px;
+      backdrop-filter: blur(12px);
+    }
+    .sector-row.is-batch-live {
+      border-color: rgba(212, 175, 55, 0.24);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+    .sector-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding-bottom: 16px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    }
+    .sector-title-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .sector-num {
+      font-family: var(--font-en);
+      font-size: 12px;
+      font-weight: 900;
+      padding: 4px 10px;
+      border-radius: 8px;
+      background: rgba(99, 102, 241, 0.18);
+      color: #C7D2FE;
+      border: 1px solid rgba(99, 102, 241, 0.35);
+    }
+    .sector-header h2 {
+      font-size: clamp(18px, 2.2vw, 22px);
+      font-weight: 900;
+      color: #fff;
+    }
+    .sector-status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 5px 12px;
+      border-radius: 99px;
+      background: rgba(16, 185, 129, 0.14);
+      color: #6EE7B7;
+      border: 1px solid rgba(16, 185, 129, 0.32);
+    }
+    .sector-status-pill.is-upcoming {
+      background: rgba(245, 158, 11, 0.12);
+      color: #FCD34D;
+      border-color: rgba(245, 158, 11, 0.28);
+    }
+
+    /* ── 3-Column Tier Grid inside each Sector Row ── */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .tier-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: var(--radius);
+      border-radius: 18px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
       transition: var(--transition);
-      backdrop-filter: blur(16px);
+      position: relative;
     }
-    .card:hover {
-      transform: translateY(-6px);
-      border-color: var(--border-hover);
-      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.42);
+    .tier-card:hover {
+      transform: translateY(-5px);
       background: var(--bg-card-hover);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
     }
+    .tier-card.tier-std {
+      border-color: rgba(148, 163, 184, 0.18);
+    }
+    .tier-card.tier-pro {
+      border-color: rgba(245, 158, 11, 0.34);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, rgba(19, 24, 36, 0.94) 38%);
+    }
+    .tier-card.tier-vip {
+      border-color: rgba(212, 175, 55, 0.52);
+      background: linear-gradient(180deg, rgba(212, 175, 55, 0.11) 0%, rgba(12, 14, 20, 0.98) 42%);
+      box-shadow: 0 12px 32px rgba(212, 175, 55, 0.08);
+    }
+
     .card-preview {
       position: relative;
       width: 100%;
-      height: 245px;
+      height: 178px;
       overflow: hidden;
-      background: #0f1118;
+      background: #0c0e14;
     }
     .card-preview img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center center;
-      transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+      transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
     }
-    .card:hover .card-preview img { transform: scale(1.05); }
+    .tier-card:hover .card-preview img { transform: scale(1.06); }
+    .tier-card.is-queued .card-preview img {
+      filter: grayscale(35%) brightness(0.68);
+    }
     .card-preview-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(to top, rgba(17, 20, 30, 0.94) 0%, rgba(17, 20, 30, 0.15) 60%, transparent 100%);
+      background: linear-gradient(to top, rgba(13, 16, 24, 0.96) 0%, rgba(13, 16, 24, 0.2) 60%, transparent 100%);
     }
-    .card-category-badge {
+
+    .tier-top-bar {
       position: absolute;
-      top: 14px;
-      right: 14px;
-      padding: 5px 13px;
-      border-radius: 99px;
-      font-size: 12px;
-      font-weight: 800;
-      backdrop-filter: blur(10px);
+      top: 12px;
+      right: 12px;
+      left: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
       z-index: 2;
     }
-    .badge-car { background: rgba(255, 107, 0, 0.20); color: #ff9a3d; border: 1px solid rgba(255, 107, 0, 0.4); }
-    .badge-sweets { background: rgba(230, 57, 115, 0.20); color: #f472b6; border: 1px solid rgba(230, 57, 115, 0.4); }
-    .badge-homeware { background: rgba(200, 141, 50, 0.22); color: #fbbf24; border: 1px solid rgba(226, 171, 82, 0.42); }
-    .badge-ye { background: rgba(56, 189, 248, 0.20); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.4); }
-    .badge-solar { background: rgba(245, 158, 11, 0.20); color: #FCD34D; border: 1px solid rgba(245, 158, 11, 0.4); }
-    .badge-dental { background: rgba(13, 148, 136, 0.18); color: #5EEAD4; border: 1px solid rgba(13, 148, 136, 0.4); }
-    .badge-honey { background: rgba(217, 119, 6, 0.22); color: #FDE68A; border: 1px solid rgba(245, 158, 11, 0.45); }
-    .badge-trade { background: rgba(139, 26, 43, 0.28); color: #FCA5A5; border: 1px solid rgba(248, 113, 113, 0.42); }
-    .badge-qr { background: rgba(234, 88, 12, 0.22); color: #FDBA74; border: 1px solid rgba(251, 146, 60, 0.42); }
-    .badge-estate { background: rgba(200, 162, 90, 0.22); color: #E2C17D; border: 1px solid rgba(200, 162, 90, 0.45); }
-    .badge-wastore { background: rgba(5, 150, 105, 0.22); color: #6EE7B7; border: 1px solid rgba(16, 185, 129, 0.45); }
-    .badge-corp { background: rgba(29, 78, 216, 0.25); color: #93C5FD; border: 1px solid rgba(59, 130, 246, 0.45); }
-    .badge-academy { background: rgba(99, 102, 241, 0.25); color: #C7D2FE; border: 1px solid rgba(129, 140, 248, 0.45); }
-    .badge-ship { background: rgba(234, 88, 12, 0.25); color: #FED7AA; border: 1px solid rgba(251, 146, 60, 0.45); }
-    .badge-travel { background: rgba(6, 78, 59, 0.35); color: #6EE7B7; border: 1px solid rgba(52, 211, 153, 0.45); }
-    .badge-events { background: rgba(112, 26, 70, 0.35); color: #F9A8D4; border: 1px solid rgba(244, 114, 182, 0.42); }
-    .badge-exchange { background: rgba(6, 95, 70, 0.32); color: #6EE7B7; border: 1px solid rgba(52, 211, 153, 0.45); }
-    .badge-beauty { background: rgba(190, 24, 93, 0.25); color: #F9A8D4; border: 1px solid rgba(244, 114, 182, 0.45); }
-    .badge-mango  { background: rgba(217, 119, 6, 0.28); color: #FDE68A; border: 1px solid rgba(245, 158, 11, 0.48); }
+    .tier-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 11px;
+      border-radius: 99px;
+      font-size: 11.5px;
+      font-weight: 800;
+      backdrop-filter: blur(10px);
+    }
+    .tier-std .tier-badge {
+      background: rgba(15, 23, 42, 0.85);
+      color: #E2E8F0;
+      border: 1px solid rgba(148, 163, 184, 0.38);
+    }
+    .tier-pro .tier-badge {
+      background: rgba(120, 53, 15, 0.88);
+      color: #FDE68A;
+      border: 1px solid rgba(245, 158, 11, 0.55);
+    }
+    .tier-vip .tier-badge {
+      background: linear-gradient(135deg, #D4AF37 0%, #F59E0B 100%);
+      color: #07090E;
+      border: 1px solid #FDE68A;
+    }
+    .tier-price-pill {
+      font-family: var(--font-en);
+      font-size: 14px;
+      font-weight: 900;
+      padding: 4px 12px;
+      border-radius: 99px;
+      background: rgba(7, 9, 14, 0.88);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+    }
+    .tier-pro .tier-price-pill { color: #FCD34D; border-color: rgba(245, 158, 11, 0.45); }
+    .tier-vip .tier-price-pill { color: #FDE68A; border-color: rgba(212, 175, 55, 0.65); }
 
     .card-body {
-      padding: 24px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
       flex: 1;
     }
-    .card-title { font-size: 20.5px; font-weight: 800; margin-bottom: 8px; }
-    .card-desc { font-size: 14px; color: var(--text-muted); line-height: 1.65; margin-bottom: 18px; flex: 1; }
+    .card-style-name {
+      font-family: var(--font-en);
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+    .tier-pro .card-style-name { color: #FBBF24; }
+    .tier-vip .card-style-name { color: var(--vip-gold-soft); }
 
-    .card-features-list { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 20px; }
+    .card-title { font-size: 17px; font-weight: 800; margin-bottom: 6px; color: #F8FAFC; }
+    .card-desc { font-size: 13.2px; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px; flex: 1; }
+
+    .card-features-list { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 15px; }
     .feature-tag {
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
       background: rgba(255, 255, 255, 0.04);
       border: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 4px 10px;
+      padding: 3px 9px;
       border-radius: 6px;
-      color: #cbd5e1;
+      color: #CBD5E1;
     }
+    .tier-vip .feature-tag {
+      border-color: rgba(212, 175, 55, 0.22);
+      color: #FDE68A;
+      background: rgba(212, 175, 55, 0.06);
+    }
+
     .card-actions {
       display: flex;
       align-items: center;
-      gap: 10px;
-      padding-top: 16px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      gap: 8px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.07);
     }
     .btn-preview {
       flex: 1;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
-      padding: 11px 16px;
+      gap: 7px;
+      padding: 10px 13px;
       border-radius: var(--radius-sm);
       font-weight: 800;
-      font-size: 14px;
+      font-size: 13.2px;
       color: #fff;
       transition: var(--transition);
     }
-    .btn-car { background: linear-gradient(135deg, #FF6B00 0%, #e05d00 100%); }
-    .btn-sweets { background: linear-gradient(135deg, #E63973 0%, #c2185b 100%); }
-    .btn-homeware { background: linear-gradient(135deg, #10B981 0%, #059669 100%); }
-    .btn-ye { background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%); }
-    .btn-solar { background: linear-gradient(135deg, #0369A1 0%, #0EA5E9 100%); }
-    .btn-dental { background: linear-gradient(135deg, #0D9488 0%, #14B8A6 100%); }
-    .btn-honey { background: linear-gradient(135deg, #92400E 0%, #D97706 100%); }
-    .btn-trade { background: linear-gradient(135deg, #8B1A2B 0%, #283473 100%); }
-    .btn-qr { background: linear-gradient(135deg, #C2410C 0%, #EA580C 100%); }
-    .btn-estate { background: linear-gradient(135deg, #A37E38 0%, #C8A25A 100%); color: #0B101B; }
-    .btn-wastore { background: linear-gradient(135deg, #059669 0%, #10B981 100%); }
-    .btn-corp { background: linear-gradient(135deg, #0F172A 0%, #1D4ED8 100%); }
-    .btn-academy { background: linear-gradient(135deg, #312E81 0%, #4338CA 100%); }
-    .btn-ship { background: linear-gradient(135deg, #0B1F3A 0%, #EA580C 100%); }
-    .btn-travel { background: linear-gradient(135deg, #064E3B 0%, #D97706 100%); }
-    .btn-events { background: linear-gradient(135deg, #4A0E2E 0%, #9D174D 100%); }
-    .btn-exchange { background: linear-gradient(135deg, #0F172A 0%, #059669 100%); }
-    .btn-beauty { background: linear-gradient(135deg, #831843 0%, #EC4899 100%); }
-    .btn-mango  { background: linear-gradient(135deg, #0A3320 0%, #D97706 100%); }
-    .btn-preview:hover { transform: translateY(-2px); filter: brightness(1.08); }
+    .btn-preview.btn-std { background: linear-gradient(135deg, #334155 0%, #475569 100%); }
+    .btn-preview.btn-pro { background: linear-gradient(135deg, #B45309 0%, #F59E0B 100%); color: #fff; }
+    .btn-preview.btn-vip { background: linear-gradient(135deg, #D4AF37 0%, #FDE68A 100%); color: #07090E; }
+    .btn-preview.btn-queued {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      color: #CBD5E1;
+      cursor: default;
+    }
+    .btn-preview:not(.btn-queued):hover { transform: translateY(-2px); filter: brightness(1.08); }
 
     .btn-order-similar {
-      padding: 11px 14px;
+      padding: 10px 12px;
       border-radius: var(--radius-sm);
       background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.14);
       color: #e2e8f0;
-      font-size: 13px;
+      font-size: 12.5px;
       font-weight: 700;
       white-space: nowrap;
       transition: var(--transition);
     }
-    .btn-order-similar:hover { background: rgba(255, 255, 255, 0.12); border-color: #fff; }
+    .btn-order-similar:hover { background: rgba(255, 255, 255, 0.14); border-color: #fff; }
 
-    /* ── Upcoming Roadmap Section ── */
-    .roadmap-section {
-      padding: 40px 0 64px;
-      border-top: 1px solid var(--border);
-    }
-    .roadmap-head {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .roadmap-head h3 { font-size: 24px; font-weight: 900; margin-bottom: 8px; }
-    .roadmap-head p { color: var(--text-muted); font-size: 14.5px; }
-
-    .roadmap-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-    .roadmap-item {
-      background: rgba(255, 255, 255, 0.025);
-      border: 1px dashed rgba(255, 255, 255, 0.14);
-      border-radius: 14px;
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .roadmap-tag {
-      align-self: flex-start;
-      font-size: 11px;
-      font-weight: 800;
-      color: var(--accent-light);
-      background: rgba(99, 102, 241, 0.14);
-      padding: 2px 10px;
-      border-radius: 99px;
-    }
-    .roadmap-item strong { font-size: 15.5px; color: #f1f5f9; }
-    .roadmap-item p { font-size: 13px; color: var(--text-muted); }
-
-    /* ── Bottom CTA ── */
+    /* ── Bottom CTA & Footer ── */
     .contact-cta {
-      background: linear-gradient(135deg, rgba(99, 102, 241, 0.16) 0%, rgba(16, 185, 129, 0.10) 100%);
-      border: 1px solid rgba(99, 102, 241, 0.32);
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(99, 102, 241, 0.12) 100%);
+      border: 1px solid rgba(212, 175, 55, 0.28);
       border-radius: var(--radius);
-      padding: clamp(32px, 5vw, 54px) 26px;
+      padding: clamp(30px, 5vw, 50px) 24px;
       text-align: center;
-      margin-bottom: 64px;
+      margin-bottom: 56px;
     }
-    .contact-cta h2 { font-size: clamp(22px, 3.6vw, 32px); font-weight: 900; margin-bottom: 12px; }
-    .contact-cta p { font-size: 15.5px; color: #cbd5e1; max-width: 600px; margin: 0 auto 24px; }
+    .contact-cta h2 { font-size: clamp(22px, 3.4vw, 30px); font-weight: 900; margin-bottom: 10px; }
+    .contact-cta p { font-size: 15px; color: #cbd5e1; max-width: 620px; margin: 0 auto 22px; }
     .contact-btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
       background: #16A34A;
       color: #fff;
-      font-size: 15.5px;
+      font-size: 15px;
       font-weight: 800;
-      padding: 14px 28px;
+      padding: 13px 26px;
       border-radius: 99px;
       transition: var(--transition);
     }
@@ -440,22 +557,23 @@
 
     footer {
       border-top: 1px solid var(--border);
-      padding: 26px 0;
+      padding: 24px 0;
       text-align: center;
       color: var(--text-muted);
       font-size: 13.5px;
       margin-top: auto;
     }
 
-    @media (max-width: 900px) {
-      .roadmap-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (max-width: 1040px) {
+      .tier-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tier-card.tier-vip { grid-column: span 2; }
     }
-    @media (max-width: 768px) {
-      .grid, .roadmap-grid { grid-template-columns: 1fr; }
-      .header-cta { padding: 8px 14px; font-size: 13px; }
+    @media (max-width: 760px) {
+      .tier-legend, .tier-grid { grid-template-columns: 1fr; }
+      .tier-card.tier-vip { grid-column: span 1; }
+      .header-cta { padding: 8px 14px; font-size: 12.5px; }
       .brand-text h1 { font-size: 16px; }
-      .card-actions { flex-direction: column; }
-      .btn-preview, .btn-order-similar { width: 100%; text-align: center; }
+      .sector-row { padding: 16px; }
     }
   </style>
 </head>
@@ -473,11 +591,11 @@
         </div>
         <div class="brand-text">
           <h1>لؤي ويب ستوديو</h1>
-          <span>Luai Web Studio</span>
+          <span>Luai Web Studio · Multi-Tier Showcase</span>
         </div>
       </div>
 
-      <a href="https://wa.me/967782259937?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%B4%D8%A7%D9%87%D8%AF%D8%AA%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A3%D8%B9%D9%85%D8%A7%D9%84%D9%83%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B5%D9%81%D8%AD%D8%A9%20%D9%87%D8%A8%D9%88%D8%B7%20%D8%A3%D9%88%20%D9%85%D9%88%D9%82%D8%B9%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A." target="_blank" class="header-cta">
+      <a href="https://wa.me/967782259937?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%B4%D8%A7%D9%87%D8%AF%D8%AA%20%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D9%81%D8%A6%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%20%D9%88%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="header-cta">
         <span>اطلب تصميم موقعك الآن</span>
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
       </a>
@@ -488,637 +606,824 @@
     <div class="container">
       <div class="hero-badge">
         <span class="pulse-dot"></span>
-        <span>متاح لتنفيذ صفحات الهبوط والمتاجر ومواقع الشركات</span>
+        <span>منصة الفئات الثلاث — 19 قطاعاً تجارياً في اليمن والخليج</span>
       </div>
       <h2 class="hero-title">
-        حلول ويب مصممة <span>لجذب العملاء ومضاعفة مبيعاتك</span>
+        كل نشاط تجاري… <span>بثلاث فئات تصميم وتسعير احترافية</span>
       </h2>
       <p class="hero-subtitle">
-        ابحث وتصفح النماذج الحية المصممة خصيصاً للأسواق اليمنية والخليجية، وجرب تجربة المستخدم بنفسك قبل أن نخصصها بالكامل لهوية نشاطك التجاري.
+        قارن بين الفئة القياسية والفاخرة والملكية لنفس النشاط جنباً إلى جنب، وجرّب المعاينة الحية لكل فئة قبل اعتماد الهوية المناسبة لميزانية وحجم أعمالك.
       </p>
+
+      <!-- Pricing Tier Overview -->
+      <div class="tier-legend">
+        <div class="tier-legend-box">
+          <div>
+            <strong>الفئة القياسية (Standard)</strong>
+            <small>انطلاقة سريعة متكاملة · ربط مباشر بالواتساب</small>
+          </div>
+          <span class="legend-price">$50</span>
+        </div>
+        <div class="tier-legend-box is-pro">
+          <div>
+            <strong>الفئة الفاخرة (Pro Edition)</strong>
+            <small>هوية تحريرية راقية · تعدد عملات وحاسبات وسلة طلبات</small>
+          </div>
+          <span class="legend-price">$120</span>
+        </div>
+        <div class="tier-legend-box is-vip">
+          <div>
+            <strong>الفئة الملكية (VIP Sovereign)</strong>
+            <small>منصة تنفيذية مخصصة · فواتير Pro-Forma ومحاكيات ROI</small>
+          </div>
+          <span class="legend-price">$250</span>
+        </div>
+      </div>
 
       <!-- Search & Filter Bar -->
       <div class="explorer-bar">
         <div class="search-row">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="search" id="studio-search" placeholder="ابحث عن نموذج مناسب لنشاطك (مثال: أدوات منزلية، سيارات، حلويات، جملة، مطعم...)" />
+          <input type="search" id="studio-search" placeholder="ابحث عن نشاطك (مثال: مانجو، عسل، عقار، سيارات، أدوات منزلية، مطعم، شحن...)" />
         </div>
         <div class="filter-row">
           <div class="filter-pills" id="studio-filters">
-            <button type="button" class="filter-pill active" data-filter="all">كافة النماذج</button>
+            <button type="button" class="filter-pill active" data-filter="all">كافة القطاعات (19)</button>
             <button type="button" class="filter-pill" data-filter="yemen">السوق اليمني</button>
             <button type="button" class="filter-pill" data-filter="gulf">السوق الخليجي</button>
             <button type="button" class="filter-pill" data-filter="wholesale">تجارة وجملة B2B</button>
             <button type="button" class="filter-pill" data-filter="retail">متاجر وخدمات</button>
+            <button type="button" class="filter-pill tier-filter-btn" data-filter="ready3">قطاعات 3 فئات مكتملة (5)</button>
           </div>
-          <span class="results-count" id="results-count">يعرض ١٩ نموذجاً جاهزاً</span>
+          <span class="results-count" id="results-count">يعرض 19 قطاعاً · 29 نموذجاً حياً جاهزاً للمعاينة</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Showcase Grid -->
+  <!-- Showcase Rows -->
   <main class="showcase">
     <div class="container">
-      <div class="grid" id="showcase-grid">
-
-        <!-- Model 1: Yemeni Wholesale Homeware -->
-        <article class="card" data-tags="yemen wholesale" data-keywords="ادوات منزلية جملة اليمن صنعاء شعوب درزن كرتون قدور ترامس معرض الصقر">
-          <div class="card-preview">
-            <span class="card-category-badge badge-ye">السوق اليمني · جملة</span>
-            <img src="homeware-ye/assets/images/cat-cookware.jpg" alt="نموذج تاجر أدوات منزلية بالجملة — النمط اليمني" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">معرض الصقر — جملة الأدوات المنزلية (اليمن)</h3>
-            <p class="card-desc">
-              مصمم بواقعية على غرار محلات الجملة في حي شعوب بصنعاء. يركز على البيع بالدرزن والكرتون، الترحيل اليومي للمحافظات، وكشف طلبية مباشر للواتساب بدون تعقيد.
-            </p>
-            <div class="card-features-list">
-              <span class="feature-tag">البيع بالدرزن والكرتون</span>
-              <span class="feature-tag">كشف طلبية للواتساب</span>
-              <span class="feature-tag">الترحيل للمحافظات</span>
-              <span class="feature-tag">واجهة نهارية سريعة</span>
-            </div>
-            <div class="card-actions">
-              <a href="homeware-ye/index.html" class="btn-preview btn-ye">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%85%D8%B9%D8%B1%D8%B6%20%D8%A7%D9%84%D8%B5%D9%82%D8%B1%20%D9%84%D9%84%D8%AC%D9%85%D9%84%D8%A9)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 2: GCC B2B Homeware -->
-        <article class="card" data-tags="gulf wholesale" data-keywords="ادوات منزلية جملة الخليج السعودية توريد شركات حاسبة ارباح دار الأواني">
-          <div class="card-preview">
-            <span class="card-category-badge badge-homeware">السوق الخليجي · شركات B2B</span>
-            <img src="homeware/assets/images/hero-showroom.jpg" alt="دار الأواني لتوريد الأدوات المنزلية بالجملة" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">دار الأواني — توريد الأدوات المنزلية (B2B)</h3>
-            <p class="card-desc">
-              موجهة لمستوردي وموزعي الخليج والمعارض الكبرى. تتضمن كتالوج كراتين بأسعار شرائحية، سلة تسعيرة ذكية، وحاسبة أرباح التاجر وهامش الربح التقديري.
-            </p>
-            <div class="card-features-list">
-              <span class="feature-tag">حاسبة ربح وشرائح</span>
-              <span class="feature-tag">سلة تسعيرة للواتساب</span>
-              <span class="feature-tag">باقات تأسيس المعارض</span>
-              <span class="feature-tag">بحث وفلترة فورية</span>
-            </div>
-            <div class="card-actions">
-              <a href="homeware/index.html" class="btn-preview btn-homeware">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%AF%D8%A7%D8%B1%20%D8%A7%D9%84%D8%A3%D9%88%D8%A7%D9%86%D9%8A%20B2B)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 3: Car Detailing -->
-        <article class="card" data-tags="gulf yemen retail" data-keywords="سيارات زينة تلميع حماية تظليل كروم برو خدمات">
-          <div class="card-preview">
-            <span class="card-category-badge badge-car">سيارات وعناية فاخرة</span>
-            <img src="cars/assets/images/ba-ppf-after.jpg" alt="نموذج صفحة هبوط لمركز زينة وحماية سيارات" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">كروم برو — CHROMEPRO للسيارات</h3>
-            <p class="card-desc">
-              صفحة هبوط فاخرة لمراكز حماية وتظليل وزينة السيارات بتقنية الدارك مود. تتضمن سلايدر مقارنة تفاعلي قبل/بعد، حاسبة أسعار فورية، وتبويبات مراحل العمل.
-            </p>
-            <div class="card-features-list">
-              <span class="feature-tag">حاسبة تكلفة ذكية</span>
-              <span class="feature-tag">مقارنة قبل وبعد</span>
-              <span class="feature-tag">معرض أعمال وفيديو</span>
-              <span class="feature-tag">تواصل سريع مدمج</span>
-            </div>
-            <div class="card-actions">
-              <a href="cars/index.html" class="btn-preview btn-car">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%83%D8%B1%D9%88%D9%85%20%D8%A8%D8%B1%D9%88%20%D9%84%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 4: Sweets & App -->
-        <article class="card" data-tags="yemen gulf retail" data-keywords="حلويات ايسكريم كيك تطبيق مطعم كافيه منيو البطريق">
-          <div class="card-preview">
-            <span class="card-category-badge badge-sweets">حلويات ومطاعم وتطبيقات</span>
-            <img src="sweets/assets/images/dessert-hero.jpg" alt="نموذج صفحة هبوط لمحل حلويات وآيسكريم البطريق" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">حلويات البطريق — Penguin Sweets</h3>
-            <p class="card-desc">
-              صفحة هبوط حيوية لمحل حلويات وتطبيق طلب واستلام فوري. تحتوي على موك أب هاتف تفاعلي ثلاثي الشاشات، استعراض قائمة الأصناف، ومواقع الفروع.
-            </p>
-            <div class="card-features-list">
-              <span class="feature-tag">موك أب جوال تفاعلي</span>
-              <span class="feature-tag">توجيه لتحميل التطبيق</span>
-              <span class="feature-tag">ألوان باستيل شهية</span>
-              <span class="feature-tag">تصفح المنيو السريع</span>
-            </div>
-            <div class="card-actions">
-              <a href="sweets/index.html" class="btn-preview btn-sweets">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%AD%D9%84%D9%88%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A8%D8%B7%D8%B1%D9%8A%D9%82)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 5: Solar Energy -->
-        <article class="card" data-tags="yemen retail" data-keywords="طاقة شمسية بطاريات انفرتر لوح شمسي غطاسة زراعية كهرباء منظومة صنعاء">
-          <div class="card-preview">
-            <span class="card-category-badge badge-solar">طاقة شمسية · اليمن</span>
-            <img src="solar/assets/images/hero.jpg" alt="منظومة طاقة شمسية — اليمن" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">الشمس للطاقة المتجددة</h3>
-            <p class="card-desc">منظومات سكنية وزراعية وتجارية — كفالة 5 سنوات، تركيب احترافي في صنعاء وعموم المحافظات.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">طاقة شمسية</span>
-              <span class="feature-tag">غطاسة زراعية</span>
-              <span class="feature-tag">تركيب وكفالة</span>
-              <span class="feature-tag">السوق اليمني</span>
-            </div>
-            <div class="card-actions">
-              <a href="solar/index.html" class="btn-preview btn-solar">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%B7%D8%A7%D9%82%D8%A9%20%D8%B4%D9%85%D8%B3%D9%8A%D8%A9)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 6: Dental Clinic -->
-        <article class="card" data-tags="yemen gulf retail" data-keywords="عيادة أسنان تبييض زراعة تقويم قشور أطفال صنعاء طبيب ابتسامة">
-          <div class="card-preview">
-            <span class="card-category-badge badge-dental">صحة وطب · عيادة</span>
-            <img src="dental/assets/images/hero.jpg" alt="عيادة ابتسامة لطب الأسنان" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">عيادة ابتسامة — طب وتجميل الأسنان</h3>
-            <p class="card-desc">تبييض، قشور، زراعة، تقويم — كشف أول مجاني مع أشعة ثلاثية الأبعاد وحجز سريع عبر واتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">زراعة أسنان</span>
-              <span class="feature-tag">تبييض ليزر</span>
-              <span class="feature-tag">ملف الأطباء</span>
-              <span class="feature-tag">كشف مجاني</span>
-            </div>
-            <div class="card-actions">
-              <a href="dental/index.html" class="btn-preview btn-dental">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%B9%D9%8A%D8%A7%D8%AF%D8%A9%20%D8%A3%D8%B3%D9%86%D8%A7%D9%86)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 7: Yemeni Honey & Coffee -->
-        <article class="card" data-tags="yemen gulf retail wholesale" data-keywords="عسل سدر حضرمي دوعني بن يمني قهوة تمور هدايا شحن الخليج دار السدر">
-          <div class="card-preview">
-            <span class="card-category-badge badge-honey">عسل وبن · اليمن والخليج</span>
-            <img src="honey/assets/images/hero.jpg" alt="دار السدر للعسل اليمني والبن الأصيل" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">دار السدر — عسل السدر والبن اليمني</h3>
-            <p class="card-desc">عسل سدر دوعني وحضرمي وبن يمني أصيل — شهادات مخبرية، تغليف هدايا فاخر، وشحن مباشر لدول الخليج.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">عسل سدر أصيل</span>
-              <span class="feature-tag">بن أرابيكا يمني</span>
-              <span class="feature-tag">تغليف هدايا</span>
-              <span class="feature-tag">شحن الخليج</span>
-            </div>
-            <div class="card-actions">
-              <a href="honey/index.html" class="btn-preview btn-honey">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9%20%D8%A7%D9%84%D8%B9%D8%B3%D9%84%20%D9%88%D8%A7%D9%84%D8%A8%D9%86)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 8: Import, Wholesale & Cold Chain Corp -->
-        <article class="card" data-tags="yemen wholesale" data-keywords="استيراد توزيع تبريد مجمدات شركات جملة وكلاء مخازن السعيد المخلافي اغذية اليمن">
-          <div class="card-preview">
-            <span class="card-category-badge badge-trade">شركات الاستيراد والتوزيع · اليمن</span>
-            <img src="trade-corp/assets/images/warehouse.jpg" alt="مجموعة السعيد للتجارة والتبريد والاستيراد" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">مجموعة السعيد — استيراد وتوزيع وتبريد</h3>
-            <p class="card-desc">نموذج شركات الاستيراد والأغذية المجمدة: عرض العلامات التجارية، تغطية المحافظات والوكلاء، أسطول النقل، وطلبات التوريد.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">شبكة التغطية والوكلاء</span>
-              <span class="feature-tag">سلسلة التبريد والأسطول</span>
-              <span class="feature-tag">العلامات التجارية</span>
-              <span class="feature-tag">طلبات جملة ووكالات</span>
-            </div>
-            <div class="card-actions">
-              <a href="trade-corp/index.html" class="btn-preview btn-trade">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%B4%D8%B1%D9%83%D8%A9%20%D8%A7%D8%B3%D8%AA%D9%8A%D8%B1%D8%A7%D8%AF%20%D9%88%D8%AA%D9%88%D8%B2%D9%8A%D8%B9%20%D9%88%D8%AA%D8%A8%D8%B1%D9%8A%D8%AF)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 9: QR Menu for Restaurants & Cafes -->
-        <article class="card" data-tags="yemen gulf retail" data-keywords="منيو مطعم كافيه باركود QR طلب طاولة سفري مشويات بيتزا عصائر قهوة الديوان">
-          <div class="card-preview">
-            <span class="card-category-badge badge-qr">منيو QR · مطاعم ومقاهي</span>
-            <img src="qr-menu/assets/images/grill.jpg" alt="منيو إلكتروني QR لمطعم وكافيه الديوان" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">مطعم الديوان — منيو إلكتروني QR</h3>
-            <p class="card-desc">قائمة طعام سريعة لمسح الطاولات والطلب السفري: فلترة بالأقسام، تبديل العملة (ر.ي / ر.س)، وسلة طلب فورية للواتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">طلب طاولة أو سفري</span>
-              <span class="feature-tag">سلة طلب للواتساب</span>
-              <span class="feature-tag">باركود QR للطاولة</span>
-              <span class="feature-tag">تبديل ر.ي / ر.س</span>
-            </div>
-            <div class="card-actions">
-              <a href="qr-menu/index.html" class="btn-preview btn-qr">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%85%D9%86%D9%8A%D9%88%20QR%20%D9%84%D9%84%D9%85%D8%B7%D8%A7%D8%B9%D9%85)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 10: Luxury Gulf Real Estate -->
-        <article class="card" data-tags="gulf retail wholesale" data-keywords="عقار فلل تاون هاوس بنتهاوس مخططات هندسية حاسبة عائد استثماري خطة سداد الرياض دبي الخليج">
-          <div class="card-preview">
-            <span class="card-category-badge badge-estate">عقارات فاخرة · السوق الخليجي</span>
-            <img src="real-estate/assets/images/resort.jpg" alt="مشروع أفق السحاب العقاري — السوق الخليجي" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">إعمار السحاب — المشاريع العقارية الفاخرة</h3>
-            <p class="card-desc">بمعايير شركات التطوير العالمية: مخططات تفاعلية 2D، خطة سداد 10/50/40، حاسبة العائد ROI، وتحويل العملات (ر.س / د.إ / $).</p>
-            <div class="card-features-list">
-              <span class="feature-tag">مخططات تفاعلية</span>
-              <span class="feature-tag">حاسبة العائد ROI</span>
-              <span class="feature-tag">خطة سداد 10/50/40</span>
-              <span class="feature-tag">تبديل ر.س / د.إ / $</span>
-            </div>
-            <div class="card-actions">
-              <a href="real-estate/index.html" class="btn-preview btn-estate">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9%20%D8%A7%D9%84%D8%B9%D9%82%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D8%A9)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 11: WhatsApp Store + Google Sheets -->
-        <article class="card" data-tags="yemen gulf retail" data-keywords="متجر سلة واتساب google sheets جدول بيانات الكترونيات عطور هدايا كوبون خصم شحن النخبة">
-          <div class="card-preview">
-            <span class="card-category-badge badge-wastore">متجر سلة واتساب · Google Sheets</span>
-            <img src="whatsapp-store/assets/images/watch.jpg" alt="متجر النخبة — سلة واتساب + Google Sheets" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">متجر النخبة — سلة واتساب + Google Sheets</h3>
-            <p class="card-desc">متجر سريع مربوط بـ Google Sheets لتعديل الأسعار والمخزون من الجوال، مع سلة مشتريات، كوبون خصم، وحساب الشحن للواتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">ربط Google Sheets</span>
-              <span class="feature-tag">محاكاة لوحة التاجر</span>
-              <span class="feature-tag">كوبونات + شحن</span>
-              <span class="feature-tag">طلب للواتساب</span>
-            </div>
-            <div class="card-actions">
-              <a href="whatsapp-store/index.html" class="btn-preview btn-wastore">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%85%D8%AA%D8%AC%D8%B1%20%D8%B3%D9%84%D8%A9%20%D9%88%D8%A7%D8%AA%D8%B3%D8%A7%D8%A8%20%2B%20Google%20Sheets)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 12: Multi-Page Corporate Website -->
-        <article class="card" data-tags="yemen gulf wholesale" data-keywords="شركة متعددة الصفحات مقاولات هندسة توريدات مناقصات فروع الأفق B2B موقع تعريفي">
-          <div class="card-preview">
-            <span class="card-category-badge badge-corp">موقع شركة متعدد الصفحات · 4 صفحات</span>
-            <img src="corporate/assets/images/office.jpg" alt="مجموعة الأفق القابضة — موقع شركة متعدد الصفحات" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">مجموعة الأفق — موقع شركة متكامل (4 صفحات)</h3>
-            <p class="card-desc">موقع مؤسسي متكامل لقطاعات المقاولات والهندسة والتوريدات: الرئيسية، من نحن والقيادة، الخدمات والمشاريع، والفروع والمناقصات.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">4 صفحات مترابطة</span>
-              <span class="feature-tag">فلترة المشاريع</span>
-              <span class="feature-tag">فروع ونموذج مناقصات</span>
-              <span class="feature-tag">هوية B2B مؤسسية</span>
-            </div>
-            <div class="card-actions">
-              <a href="corporate/index.html" class="btn-preview btn-corp">
-                <span>معاينة الموقع الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%88%D9%82%D8%B9%20%D8%B4%D8%B1%D9%83%D8%A9%20%D9%85%D8%AA%D8%B9%D8%AF%D8%AF%20%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A7%D8%AA%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9%20%D8%A7%D9%84%D8%A3%D9%81%D9%82)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 13: Training Academy & Courses -->
-        <article class="card" data-tags="yemen gulf retail" data-keywords="أكاديمية معهد تدريب دورات دبلومات برمجة تصميم إنجليزي تسويق أونلاين حضوري تسجيل المستقبل">
-          <div class="card-preview">
-            <span class="card-category-badge badge-academy">تعليم وتدريب · معاهد وأكاديميات</span>
-            <img src="academy/assets/images/coding.jpg" alt="أكاديمية المستقبل للتدريب والدبلومات" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">أكاديمية المستقبل — المعاهد والدورات التدريبية</h3>
-            <p class="card-desc">عرض الدبلومات الحضورية والأونلاين، معاينة محاور كل دورة، فلترة التخصصات، وحجز المقاعد مباشرة عبر واتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">معاينة محاور الدبلوم</span>
-              <span class="feature-tag">بحث وفلترة تخصصات</span>
-              <span class="feature-tag">حضوري + أونلاين</span>
-              <span class="feature-tag">نموذج تسجيل فوري</span>
-            </div>
-            <div class="card-actions">
-              <a href="academy/index.html" class="btn-preview btn-academy">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9%20%D9%88%D9%85%D8%B1%D9%83%D8%B2%20%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 14: International Shipping & Customs -->
-        <article class="card" data-tags="yemen gulf wholesale" data-keywords="شحن دولي بحري جوي بري تخليص جمركي حاويات الصين دبي جدة اليمن تتبع شحنة جسر العالم">
-          <div class="card-preview">
-            <span class="card-category-badge badge-ship">شحن دولي وجمارك · لوجستيات</span>
-            <img src="shipping/assets/images/port.jpg" alt="جسر العالم للشحن الدولي والتخليص الجمركي" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">جسر العالم — الشحن الدولي والتخليص الجمركي</h3>
-            <p class="card-desc">لشركات الشحن من الصين ودبي وجدة: تتبع فوري للبوليصة، خطوط الشحن البحري والجوي، وطلب تسعيرة شحنة عبر واتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">تتبع الشحنات الفوري</span>
-              <span class="feature-tag">بحري + جوي + بري</span>
-              <span class="feature-tag">خطوط الصين ودبي</span>
-              <span class="feature-tag">طلب تسعيرة شحنة</span>
-            </div>
-            <div class="card-actions">
-              <a href="shipping/index.html" class="btn-preview btn-ship">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%B4%D8%B1%D9%83%D8%A9%20%D8%B4%D8%AD%D9%86%20%D8%AF%D9%88%D9%84%D9%8A%20%D9%88%D8%AA%D8%AE%D9%84%D9%8A%D8%B5%20%D8%AC%D9%85%D8%B1%D9%83%D9%8A)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 15: Travel, Tourism & Umrah -->
-        <article class="card" data-tags="yemen gulf retail" data-keywords="سفر سفريات عمرة حج طيران تذاكر تأشيرات سياحة عائلية فنادق مكة الصفوة">
-          <div class="card-preview">
-            <span class="card-category-badge badge-travel">سفريات وعمرة · سياحة وتأشيرات</span>
-            <img src="travel/assets/images/makkah.jpg" alt="الصفوة للسفريات والسياحة والعمرة" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">الصفوة — وكالات السفر والعمرة والطيران</h3>
-            <p class="card-desc">عرض باقات العمرة الجوية والبرية، حجوزات التذاكر الدولية، متابعة التأشيرات، ونموذج حجز مباشر عبر واتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">باقات العمرة</span>
-              <span class="feature-tag">طيران وتأشيرات</span>
-              <span class="feature-tag">سياحة عائلية</span>
-              <span class="feature-tag">حجز سريع للواتساب</span>
-            </div>
-            <div class="card-actions">
-              <a href="travel/index.html" class="btn-preview btn-travel">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%88%D9%83%D8%A7%D9%84%D8%A9%20%D8%B3%D9%81%D8%B1%D9%8A%D8%A7%D8%AA%20%D9%88%D8%B9%D9%85%D8%B1%D8%A9)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 16: Wedding Halls & Hospitality -->
-        <article class="card" data-tags="yemen gulf retail" data-keywords="قاعة أفراح مناسبات زفاف ضيافة بوفيه كوشة خطوبة تخرج مؤتمرات الفخامة">
-          <div class="card-preview">
-            <span class="card-category-badge badge-events">صالات أفراح · ضيافة ومناسبات</span>
-            <img src="events/assets/images/banquet.jpg" alt="قاعة الفخامة الملكية للمناسبات والضيافة" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">قاعة الفخامة — صالات الأفراح والمناسبات</h3>
-            <p class="card-desc">استعراض سعات القاعات، باقات الضيافة والبوفيه المفتوح، ونموذج التحقق من توفر التاريخ والحجز عبر واتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">القاعات والسعات</span>
-              <span class="feature-tag">باقات البوفيه</span>
-              <span class="feature-tag">تحقق من التاريخ</span>
-              <span class="feature-tag">حجز واتساب</span>
-            </div>
-            <div class="card-actions">
-              <a href="events/index.html" class="btn-preview btn-events">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%82%D8%A7%D8%B9%D8%A9%20%D8%A3%D9%81%D8%B1%D8%A7%D8%AD%20%D9%88%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 17: Currency Exchange & Remittance -->
-        <article class="card" data-tags="yemen gulf wholesale retail" data-keywords="صرافة تحويلات مالية عملات دولار سعودي درهم يورو حوالات فورية الريان">
-          <div class="card-preview">
-            <span class="card-category-badge badge-exchange">صرافة وتحويلات · خدمات مالية</span>
-            <img src="exchange/assets/images/transfer.jpg" alt="الريان للصرافة والتحويلات المالية" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">الريان — مكاتب الصرافة والتحويلات المالية</h3>
-            <p class="card-desc">محوّل عملات وحاسبة حوالات فورية، نشرة أسعار الصرف اليومية، الفروع، وتثبيت السعر عبر واتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">محوّل عملات تفاعلي</span>
-              <span class="feature-tag">نشرة بيع وشراء</span>
-              <span class="feature-tag">حوالات وتجار</span>
-              <span class="feature-tag">تثبيت السعر للواتساب</span>
-            </div>
-            <div class="card-actions">
-              <a href="exchange/index.html" class="btn-preview btn-exchange">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%85%D9%83%D8%AA%D8%A8%20%D8%B5%D8%B1%D8%A7%D9%81%D8%A9%20%D9%88%D8%AA%D8%AD%D9%88%D9%8A%D9%84%D8%A7%D8%AA)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 18: Beauty & Spa Lounge -->
-        <article class="card" data-tags="yemen gulf retail" data-keywords="تجميل صالون سبا بشرة شعر أظافر عرائس نسائي نورة حجز موعد">
-          <div class="card-preview">
-            <span class="card-category-badge badge-beauty">تجميل وسبا · صالونات نسائية</span>
-            <img src="beauty/assets/images/salon.jpg" alt="دار نورة للعناية والتجميل والسبا" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">دار نورة — مراكز التجميل والعناية والسبا</h3>
-            <p class="card-desc">تصنيف جلسات البشرة والشعر والأظافر، باقات العرائس VIP، ونموذج حجز موعد عبر واتساب.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">فلترة أقسام العناية</span>
-              <span class="feature-tag">باقات العرائس VIP</span>
-              <span class="feature-tag">حجز مواعيد سريع</span>
-              <span class="feature-tag">تصميم أنيق هادئ</span>
-            </div>
-            <div class="card-actions">
-              <a href="beauty/index.html" class="btn-preview btn-beauty">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D9%85%D8%B1%D9%83%D8%B2%20%D8%AA%D8%AC%D9%85%D9%8A%D9%84%20%D9%88%D8%B3%D8%A8%D8%A7)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Model 19: International Yemeni Mango Export (Al-Hudaydah) -->
-        <article class="card" data-tags="yemen gulf wholesale" data-keywords="مانجو تصدير الحديدة تهامة زراعي فواكه قلب الثور تيمور زبدة هندي حاويات مبردة دولي">
-          <div class="card-preview">
-            <span class="card-category-badge badge-mango">تصدير زراعي دولي · الحديدة</span>
-            <img src="mango/assets/images/hero.jpg" alt="تهامة جولدن تروبيكس لتصدير المانجو اليمني" loading="lazy" />
-            <div class="card-preview-overlay"></div>
-          </div>
-          <div class="card-body">
-            <h3 class="card-title">تهامة جولدن تروبيكس — تصدير المانجو الدولي (الحديدة)</h3>
-            <p class="card-desc">بوابة تصدير B2B بمواصفات UNECE FFV-45: مواصفات الأصناف والمختبر، تقويم الحصاد السنوي، وحاسبة التعبئة والحاويات المبرّدة.</p>
-            <div class="card-features-list">
-              <span class="feature-tag">مواصفات Brix وDry Matter</span>
-              <span class="feature-tag">تقويم الحصاد 12 شهراً</span>
-              <span class="feature-tag">حاسبة باليت وحاوية 40ft</span>
-              <span class="feature-tag">طلب تسعيرة B2B RFQ</span>
-            </div>
-            <div class="card-actions">
-              <a href="mango/index.html" class="btn-preview btn-mango">
-                <span>معاينة النموذج الحي</span>
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
-              </a>
-              <a href="https://wa.me/967782259937?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%86%D9%85%D9%88%D8%B0%D8%AC%20%D9%85%D8%B4%D8%A7%D8%A8%D9%87%20%D9%84%D9%80%20(%D8%AA%D8%B5%D8%AF%D9%8A%D8%B1%20%D8%A7%D9%84%D9%85%D8%A7%D9%86%D8%AC%D9%88%20%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A)%20%D9%84%D9%86%D8%B4%D8%A7%D8%B7%D9%8A." target="_blank" class="btn-order-similar">اطلب مثله</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
+      <div class="sectors-stack" id="sectors-stack"></div>
     </div>
   </main>
-
-  <!-- Upcoming Roadmap Models -->
-  <section class="roadmap-section">
-    <div class="container">
-      <div class="roadmap-head">
-        <h3>قريباً في الاستوديو — نماذج قيد التجهيز لقطاعات أخرى</h3>
-        <p>إذا كان نشاطك ضمن هذه القطاعات، يمكنك طلب تصميمه وتنفيذه لك فوراً بأولوية خاصة</p>
-      </div>
-      <div class="roadmap-grid">
-        <div class="roadmap-item" style="border-color:rgba(245,158,11,.4);background:rgba(245,158,11,.06);">
-          <span class="roadmap-tag" style="background:rgba(245,158,11,.18);color:#FCD34D;border-color:rgba(245,158,11,.4);">✓ مكتمل · اليمن</span>
-          <strong>منظومات الطاقة الشمسية والبطاريات</strong>
-          <p>النموذج جاهز ومتاح الآن — <a href="solar/index.html" style="color:#F59E0B;font-weight:700;">معاينة النموذج</a></p>
-        </div>
-        <div class="roadmap-item" style="border-color:rgba(13,148,136,.4);background:rgba(13,148,136,.06);">
-          <span class="roadmap-tag" style="background:rgba(13,148,136,.18);color:#5EEAD4;border-color:rgba(13,148,136,.4);">&#10003; مكتمل · طبي</span>
-          <strong>عيادات الأسنان والمراكز الطبية</strong>
-          <p>النموذج جاهز ومتاح الآن — <a href="dental/index.html" style="color:#0D9488;font-weight:700;">معاينة النموذج</a></p>
-        </div>
-        <div class="roadmap-item" style="border-color:rgba(217,119,6,.4);background:rgba(217,119,6,.06);">
-          <span class="roadmap-tag" style="background:rgba(217,119,6,.18);color:#FDE68A;border-color:rgba(217,119,6,.4);">✓ مكتمل · تجارة</span>
-          <strong>تجار العسل اليمني والبن والتمور</strong>
-          <p>النموذج جاهز ومتاح الآن — <a href="honey/index.html" style="color:#F59E0B;font-weight:700;">معاينة النموذج</a></p>
-        </div>
-        <div class="roadmap-item" style="border-color:rgba(234,88,12,.4);background:rgba(234,88,12,.06);">
-          <span class="roadmap-tag" style="background:rgba(234,88,12,.18);color:#FDBA74;border-color:rgba(234,88,12,.4);">✓ مكتمل · مطاعم</span>
-          <strong>منيو إلكتروني QR للمطاعم والمقاهي</strong>
-          <p>النموذج جاهز ومتاح الآن — <a href="qr-menu/index.html" style="color:#FB923C;font-weight:700;">معاينة النموذج</a></p>
-        </div>
-        <div class="roadmap-item" style="border-color:rgba(200,162,90,.45);background:rgba(200,162,90,.07);">
-          <span class="roadmap-tag" style="background:rgba(200,162,90,.2);color:#E2C17D;border-color:rgba(200,162,90,.45);">✓ مكتمل · عقار</span>
-          <strong>المشاريع العقارية والديكور والتشطيب</strong>
-          <p>النموذج جاهز ومتاح الآن — <a href="real-estate/index.html" style="color:#E2C17D;font-weight:700;">معاينة النموذج</a></p>
-        </div>
-        <div class="roadmap-item" style="border-color:rgba(16,185,129,.45);background:rgba(16,185,129,.07);">
-          <span class="roadmap-tag" style="background:rgba(16,185,129,.2);color:#6EE7B7;border-color:rgba(16,185,129,.45);">✓ مكتمل · متاجر</span>
-          <strong>متاجر سلة واتساب + ربط Google Sheets</strong>
-          <p>النموذج جاهز ومتاح الآن — <a href="whatsapp-store/index.html" style="color:#34D399;font-weight:700;">معاينة النموذج</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Bottom CTA -->
   <section class="container">
     <div class="contact-cta">
-      <h2>هل تبحث عن صفحة هبوط أو موقع مخصص لنشاطك؟</h2>
+      <h2>هل ترغب بتجهيز فئتك المفضلة أو طلب باقة مخصصة لنشاطك؟</h2>
       <p>
-        ننفذ لك تصميماً خاصاً بهوية متجرك أو شركتك مع ربط الواتساب وسرعة تحميل فائقة وتوافق تام مع جميع الجوالات.
+        اختر بين الفئة القياسية ($50) أو الفاخرة ($120) أو الملكية ($250)، وسنخصص النصوص والصور والألوان بالكامل لهوية مشروعك خلال وقت قياسي.
       </p>
-      <a href="https://wa.me/967782259937?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%B5%D9%81%D8%AD%D8%A9%20%D9%87%D8%A8%D9%88%D8%B7%20%D9%84%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A." target="_blank" class="contact-btn">
+      <a href="https://wa.me/967782259937?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D9%85%D9%88%D9%82%D8%B9%20%D8%B6%D9%85%D9%86%20%D9%81%D8%A6%D8%A7%D8%AA%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88." target="_blank" class="contact-btn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.667-.698c.974.53 1.997.817 3.123.818h.005c3.179 0 5.765-2.587 5.766-5.767.001-3.18-2.585-5.766-5.765-5.766zm0 10.42c-.991 0-1.961-.266-2.808-.768l-.201-.119-1.583.415.422-1.543-.131-.208c-.551-.876-.842-1.895-.841-2.942.001-2.903 2.364-5.266 5.268-5.266 2.903 0 5.265 2.363 5.265 5.266 0 2.904-2.362 5.267-5.265 5.267z"/>
         </svg>
-        <span>تواصل معي عبر واتساب: <bdi dir="ltr">+967 782 259 937</bdi></span>
+        <span>تواصل مباشرة عبر واتساب: <bdi dir="ltr">+967 782 259 937</bdi></span>
       </a>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>جميع حقوق التصميم محفوظة © ٢٠٢٦ · Luai Web Studio — لؤي ويب ستوديو</p>
+      <p>جميع حقوق التصميم محفوظة © 2026 · Luai Web Studio — لؤي ويب ستوديو</p>
     </div>
   </footer>
 
   <script>
     (function () {
+      const WA = 'https://wa.me/967782259937?text=';
+
+      const SECTORS = [
+        {
+          num: '01',
+          id: 'mango',
+          sectorName: 'تصدير المانجو الدولي (الحديدة)',
+          brandName: 'تهامة جولدن تروبيكس',
+          tags: 'yemen gulf wholesale ready3',
+          keywords: 'مانجو تصدير الحديدة تهامة زراعي فواكه قلب الثور تيمور زبدة حاويات مبردة unec brix',
+          std: {
+            img: 'mango/assets/images/hero.jpg',
+            title: 'بوابة التصدير الأساسية — الحديدة',
+            desc: 'عرض الأصناف التصديرية بمواصفات UNECE FFV-45، تقويم الحصاد 12 شهراً، وحاسبة الحاويات.',
+            features: ['مواصفات Brix وDry Matter', 'تقويم الحصاد', 'حاسبة باليت 40ft', 'نموذج B2B RFQ'],
+            url: 'mango/index.html'
+          },
+          pro: {
+            live: true,
+            img: 'mango/assets/images/mangoes.jpg',
+            styleName: 'Luxury Botanical Editorial',
+            title: 'النسخة التحريرية لتسعير الصادرات',
+            desc: 'هوية عاجية وزيتونية راقية مع تسعير FOB لحظي بثلاث عملات (USD/SAR/EUR) ونافذة الفحص المخبري.',
+            features: ['تسعير 3 عملات فوري', 'نافذة فحص Lab QC', 'فلترة ربع سنوية للحصاد', 'طلب تسعير Pro'],
+            url: 'mango/pro/index.html'
+          },
+          vip: {
+            live: true,
+            img: 'mango/assets/images/reefer.jpg',
+            styleName: 'Sovereign Global Trade Console',
+            title: 'منصة العقود والحاويات المختلطة VIP',
+            desc: 'لوحة تجارة دولية بباني بيان شحنات مختلطة (Manifest)، حاسبة Incoterms، وقائمة تحقق MRL والجمارك.',
+            features: ['باني بيان حاويات مختلط', 'شاشة قياس الموانئ', 'وثائق Phyto & Euro-1', 'إصدار بيان Pro-Forma'],
+            url: 'mango/vip/index.html'
+          }
+        },
+        {
+          num: '02',
+          id: 'honey',
+          sectorName: 'العسل اليمني والبن الحضرمي',
+          brandName: 'دار السدر — عسل السدر والبن',
+          tags: 'yemen gulf retail wholesale ready3',
+          keywords: 'عسل سدر حضرمي دوعني بن يمني قهوة تمور هدايا شحن الخليج دار السدر',
+          std: {
+            img: 'honey/assets/images/hero.jpg',
+            title: 'متجر دار السدر القياسي',
+            desc: 'عسل سدر دوعني وحضرمي وبن يمني أصيل مع شهادات مخبرية وطلب سريع لدول الخليج.',
+            features: ['عسل سدر أصيل', 'بن أرابيكا يمني', 'تغليف هدايا', 'طلب سريع للواتساب'],
+            url: 'honey/index.html'
+          },
+          pro: {
+            live: true,
+            img: 'honey/assets/images/coffee.jpg',
+            styleName: 'Royal Apiary Editorial',
+            title: 'البوتيك التحريري وسلة التسوق',
+            desc: 'تصميم عاجي فاخر مع محوّل 4 عملات خليجية، اختيار الأوزان بالأسعار، وسلة منزلقة مع رسوم التوصيل.',
+            features: ['4 عملات (SAR/AED/KWD/$)', 'تبديل أوزان تفاعلي', 'سلة منزلقة وتغليف', 'حاسبة شحن الخليج'],
+            url: 'honey/pro/index.html'
+          },
+          vip: {
+            live: true,
+            img: 'honey/assets/images/hero.jpg',
+            styleName: 'Haute Luxe Collector Vault',
+            title: 'خزنة المقتنيات وصناديق الإهداء الملكية',
+            desc: 'واجهات أونيكس وذهب 24 قيراط مع فاحص دفعات الحصاد المرقمة ومُكوّن صناديق الإهداء بالخط المذهب.',
+            features: ['مُكوّن صندوق إهداء VIP', 'معاينة خط ذهبي فوري', 'شهادات دفعات مرقمة', 'تتبع الشحن الجوي'],
+            url: 'honey/vip/index.html'
+          }
+        },
+        {
+          num: '03',
+          id: 'real-estate',
+          sectorName: 'العقارات والمشاريع الفاخرة',
+          brandName: 'إعمار السحاب — أفق السحاب ريزيدنس',
+          tags: 'gulf retail wholesale ready3',
+          keywords: 'عقار فلل تاون هاوس بنتهاوس مخططات هندسية حاسبة عائد استثماري خطة سداد الرياض دبي الخليج',
+          std: {
+            img: 'real-estate/assets/images/resort.jpg',
+            title: 'بوابة المشروع العقاري القياسية',
+            desc: 'مخططات تفاعلية 2D، خطة سداد 10/50/40، حاسبة العائد ROI، وتحويل العملات (ر.س / د.إ / $).',
+            features: ['مخططات تفاعلية', 'حاسبة العائد ROI', 'خطة سداد 10/50/40', 'تبديل 3 عملات'],
+            url: 'real-estate/index.html'
+          },
+          pro: {
+            live: true,
+            img: 'real-estate/assets/images/villa.jpg',
+            styleName: 'Architectural Gallery Minimalism',
+            title: 'معرض العمارة والمخططات التفاعلي',
+            desc: 'تصميم حجري نهاري على طراز دور المزادات مع نافذة تكبير المخطط الهندسي ومحاكاة التمويل العقاري.',
+            features: ['معرض صور مفلتر', 'نافذة تكبير المخطط', 'محاكي دفعات وتمويل', 'حجز معاينة خاصة'],
+            url: 'real-estate/pro/index.html'
+          },
+          vip: {
+            live: true,
+            img: 'real-estate/assets/images/interior.jpg',
+            styleName: 'Ultra-Private Sovereign Concierge',
+            title: 'منصة كبار المستثمرين والمحاكاة العقارية',
+            desc: 'واجهة كونسيرج ليلي بالذهب المصقول مع رسم بياني لعائد 10 سنوات، تخصيص الرخام، وحجز جولة كبار الشخصيات.',
+            features: ['محاكي ROI ورسم بياني', 'تخصيص رخام وأنظمة KNX', 'مخطط عام للمشروع SVG', 'حجز سائق خاص VIP'],
+            url: 'real-estate/vip/index.html'
+          }
+        },
+        {
+          num: '04',
+          id: 'cars',
+          sectorName: 'حماية وزينة السيارات الفاخرة',
+          brandName: 'كروم برو — CHROMEPRO للسيارات',
+          tags: 'gulf yemen retail ready3',
+          keywords: 'سيارات زينة تلميع حماية تظليل كروم برو خدمات سيراميك ppf',
+          std: {
+            img: 'cars/assets/images/ba-ppf-after.jpg',
+            title: 'صفحة الهبوط الرياضية القياسية',
+            desc: 'تصميم داكن لمركز الحماية والتظليل مع سلايدر مقارنة قبل/بعد وحاسبة أسعار فورية وتقييمات.',
+            features: ['حاسبة تكلفة ذكية', 'مقارنة قبل وبعد', 'معرض أعمال', 'تواصل سريع مدمج'],
+            url: 'cars/index.html'
+          },
+          pro: {
+            live: true,
+            img: 'cars/assets/images/hero-bg.jpg',
+            styleName: 'Stealth Precision Atelier',
+            title: 'أستوديو الدقة والمقارنة البصرية',
+            desc: 'أربعة استوديوهات مقارنة قبل/بعد (PPF، سيراميك، تظليل، داخلي)، تقسيط تابي وتمارا، ومعرض مفلتر.',
+            features: ['4 استوديوهات قبل/بعد', 'تقسيط 4 دفعات تابي', 'معرض مفلتر + Lightbox', 'مُكوّن باقات الحماية'],
+            url: 'cars/pro/index.html'
+          },
+          vip: {
+            live: true,
+            img: 'cars/assets/images/g-1.jpg',
+            styleName: 'Monaco Supercar Vault',
+            title: 'قبو السوبركار ومناطق الحماية المخصصة',
+            desc: 'مُكوّن مناطق حماية تفاعلي (Ultra-Gloss vs Matte)، شريط شهادة الضمان التسلسلية، وحجز سطحة VIP.',
+            features: ['اختيار مناطق PPF التفصيلية', 'مؤشر عزل VLT% التفاعلي', 'معاينة شهادة الضمان', 'طلب نقل سطحة خاص'],
+            url: 'cars/vip/index.html'
+          }
+        },
+        {
+          num: '05',
+          id: 'homeware',
+          sectorName: 'توريد الأدوات المنزلية بالجملة B2B',
+          brandName: 'دار الأواني — توريد الأدوات المنزلية',
+          tags: 'gulf wholesale ready3',
+          keywords: 'ادوات منزلية جملة الخليج السعودية توريد شركات حاسبة ارباح دار الأواني قدور ترامس',
+          std: {
+            img: 'homeware/assets/images/hero-showroom.jpg',
+            title: 'كتالوج التوريد التجاري القياسي',
+            desc: 'كتالوج كراتين بأسعار شرائحية، سلة تسعيرة ذكية للواتساب، وحاسبة هامش الربح للتاجر.',
+            features: ['حاسبة ربح وشرائح', 'سلة تسعيرة للواتساب', 'باقات تأسيس معارض', 'بحث وفلترة فورية'],
+            url: 'homeware/index.html'
+          },
+          pro: {
+            live: true,
+            img: 'homeware/assets/images/cat-cookware.jpg',
+            styleName: 'Modern Nordic Showroom B2B',
+            title: 'منصة التوريد النوردية متعددة العملات',
+            desc: 'تصميم نهاري متطور مع 3 عملات، شريط تقدم خصم الشرائح (6%/12%/18%)، ومحاكاة أرباح التجزئة.',
+            features: ['شريط خصم شرائحي حي', '3 عملات (SAR/AED/$)', 'درج طلبية الجملة', 'محاكي هامش ربح المتجر'],
+            url: 'homeware/pro/index.html'
+          },
+          vip: {
+            live: true,
+            img: 'homeware/assets/images/warehouse-logistics.jpg',
+            styleName: 'Global Supply Chain Command Portal',
+            title: 'بوابة الموزعين وتأسيس المعارض المتكاملة',
+            desc: 'تشكيلات تجهيز متجر/معرض/هايبرماركت بضغطة واحدة، جدول مقارنة تجاري، وفاتورة Pro-Forma للطباعة.',
+            features: ['تشكيلات تأسيس جاهزة', 'فاتورة Pro-Forma للطباعة', 'حاسبة أوزان وباليتات', 'بيان باركود وأرباح SKU'],
+            url: 'homeware/vip/index.html'
+          }
+        },
+        {
+          num: '06',
+          id: 'homeware-ye',
+          sectorName: 'جملة الأدوات المنزلية (السوق اليمني)',
+          brandName: 'معرض الصقر — جملة الأدوات المنزلية',
+          tags: 'yemen wholesale',
+          keywords: 'ادوات منزلية جملة اليمن صنعاء شعوب درزن كرتون قدور ترامس معرض الصقر',
+          std: {
+            img: 'homeware-ye/assets/images/cat-cookware.jpg',
+            title: 'نموذج الجملة اليمني (شعوب — صنعاء)',
+            desc: 'يركز على البيع بالدرزن والكرتون، الترحيل اليومي للمحافظات، وكشف طلبية مباشر للواتساب.',
+            features: ['البيع بالدرزن والكرتون', 'كشف طلبية للواتساب', 'الترحيل للمحافظات', 'واجهة نهارية سريعة'],
+            url: 'homeware-ye/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'homeware-ye/assets/images/cat-cookware.jpg',
+            styleName: 'Yemeni Heritage Trade Pro',
+            title: 'بوابة تجار الجملة والمحافظات (الدفعة 2)',
+            desc: 'نسخة متقدمة بحاسبة الدولار/الريال السعودي/الريال اليمني، شرائح خصم الدرزن، وسلة كشف مرقمة.',
+            features: ['تبديل 3 عملات فورية', 'حاسبة الدرزن والكرتون', 'جدول خطوط الترحيل'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'homeware-ye/assets/images/cat-cookware.jpg',
+            styleName: 'National Wholesale Distribution Hub',
+            title: 'منظومة التوزيع المركزية والوكلاء (الدفعة 2)',
+            desc: 'حاسبة شحنات التريلات والدينات بين المحافظات، كشف تسعيرة قابل للطباعة بباركود، وبوابة وكلاء.',
+            features: ['حاسبة حمولة الترحيل', 'كشف فاتورة قابل للطباعة', 'طلبات الاعتماد والوكالات'],
+            url: ''
+          }
+        },
+        {
+          num: '07',
+          id: 'sweets',
+          sectorName: 'الحلويات والمقاهي وتطبيقات الطلب',
+          brandName: 'حلويات البطريق — Penguin Sweets',
+          tags: 'yemen gulf retail',
+          keywords: 'حلويات ايسكريم كيك تطبيق مطعم كافيه منيو البطريق',
+          std: {
+            img: 'sweets/assets/images/dessert-hero.jpg',
+            title: 'صفحة الحلويات والتطبيق القياسية',
+            desc: 'موك أب هاتف تفاعلي ثلاثي الشاشات، استعراض قائمة الأصناف، ومواقع الفروع.',
+            features: ['موك أب جوال تفاعلي', 'توجيه لتحميل التطبيق', 'ألوان باستيل شهية', 'تصفح المنيو السريع'],
+            url: 'sweets/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'sweets/assets/images/dessert-hero.jpg',
+            styleName: 'Patisserie Couture Boutique',
+            title: 'بوتيك الحلويات والمناسبات (الدفعة 2)',
+            desc: 'واجهة حلوانية فاخرة مع سلة طلب كيكات المناسبات وتحديد موعد الاستلام وكتابة عبارة الإهداء.',
+            features: ['مُخصّص كيكات الحفلات', 'سلة طلب وموعد استلام', 'معرض نكهات تفاعلي'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'sweets/assets/images/dessert-hero.jpg',
+            styleName: 'Maison Confiserie & Corporate Catering',
+            title: 'منصة التموين الملكي وتوزيع الكافيهات (الدفعة 2)',
+            desc: 'مُكوّن صواني الضيافة والتموين الفندقي وحاسبة عقود توريد الحلويات للكافيهات والشركات.',
+            features: ['مُكوّن صواني الضيافة', 'عقود التوريد B2B', 'تتبع شحن التبريد السريع'],
+            url: ''
+          }
+        },
+        {
+          num: '08',
+          id: 'solar',
+          sectorName: 'الطاقة الشمسية والمنظومات الزراعية',
+          brandName: 'الشمس للطاقة المتجددة',
+          tags: 'yemen retail',
+          keywords: 'طاقة شمسية بطاريات انفرتر لوح شمسي غطاسة زراعية كهرباء منظومة صنعاء',
+          std: {
+            img: 'solar/assets/images/hero.jpg',
+            title: 'نموذج الطاقة الشمسية القياسي',
+            desc: 'منظومات سكنية وزراعية وتجارية مع كفالة 5 سنوات وتركيب احترافي في عموم المحافظات.',
+            features: ['منظومات سكنية وزراعية', 'غطاسة آبار شمسية', 'كفالة 5 سنوات', 'طلب معاينة'],
+            url: 'solar/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'solar/assets/images/hero.jpg',
+            styleName: 'CleanTech Engineering Pro',
+            title: 'حاسبة الأحمال والمنظومات الذكية (الدفعة 2)',
+            desc: 'أداة اختيار الأجهزة المنزلية أو المضخات لحساب عدد الألواح والبطاريات والانفرتر المطلوب بالضبط.',
+            features: ['حاسبة الأحمال الكهربائية', 'مقارنة بطاريات الليثيوم', 'دراسة كلفة مبدئية'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'solar/assets/images/hero.jpg',
+            styleName: 'Industrial Solar & Irrigation Grid',
+            title: 'بوابة المشاريع الكبرى والآبار العميقة (الدفعة 2)',
+            desc: 'محاكي العائد المالي وتوفير الديزل على 5 سنوات للمزارع والمصانع مع إخراج مقايسة فنية للواتساب.',
+            features: ['محاكي توفير الديزل ROI', 'تصميم منظومة ضخ عميق', 'مقايسة هندسية للطباعة'],
+            url: ''
+          }
+        },
+        {
+          num: '09',
+          id: 'dental',
+          sectorName: 'عيادات الأسنان والمراكز الطبية',
+          brandName: 'عيادة ابتسامة — طب وتجميل الأسنان',
+          tags: 'yemen gulf retail',
+          keywords: 'عيادة أسنان تبييض زراعة تقويم قشور أطفال صنعاء طبيب ابتسامة',
+          std: {
+            img: 'dental/assets/images/hero.jpg',
+            title: 'صفحة العيادة القياسية',
+            desc: 'تبييض، قشور، زراعة، تقويم — ملف الأطباء مع كشف أول مجاني وحجز سريع عبر واتساب.',
+            features: ['زراعة وتجميل أسنان', 'ملف الأطباء', 'كشف أول مجاني', 'حجز واتساب'],
+            url: 'dental/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'dental/assets/images/hero.jpg',
+            styleName: 'Swiss Medical Precision Clinic',
+            title: 'المركز التجميلي السويسري وحجز المواعيد (الدفعة 2)',
+            desc: 'جدول حجز مواعيد حسب الطبيب والعيادة، مقارنة نتائج الابتسامة قبل/بعد، وبوابة التخصصات.',
+            features: ['جدول مواعيد الأطباء', 'مقارنة ابتسامة قبل/بعد', 'باقات هوليوود سمايل'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'dental/assets/images/hero.jpg',
+            styleName: 'Luxury Smile Atelier & Diagnostics',
+            title: 'مجمع طب الأسنان الرقمي VIP (الدفعة 2)',
+            desc: 'حاسبة خطة العلاج والتقسيط الطبي، استمارة تاريخ مرضي سريعة، وحجز أجنحة كبار الشخصيات والسياحة العلاجية.',
+            features: ['حاسبة خطة وتقسيط العلاج', 'برامج السياحة العلاجية', 'أجنحة كبار الشخصيات'],
+            url: ''
+          }
+        },
+        {
+          num: '10',
+          id: 'trade-corp',
+          sectorName: 'شركات الاستيراد والتوزيع والتبريد',
+          brandName: 'مجموعة السعيد — استيراد وتوزيع وتبريد',
+          tags: 'yemen wholesale',
+          keywords: 'استيراد توزيع تبريد مجمدات شركات جملة وكلاء مخازن السعيد المخلافي اغذية اليمن',
+          std: {
+            img: 'trade-corp/assets/images/warehouse.jpg',
+            title: 'موقع مجموعة التوزيع القياسي',
+            desc: 'عرض العلامات التجارية، تغطية المحافظات والوكلاء، أسطول النقل المبرد، وطلبات التوريد.',
+            features: ['شبكة التغطية والوكلاء', 'سلسلة التبريد والأسطول', 'العلامات التجارية', 'طلبات جملة'],
+            url: 'trade-corp/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'trade-corp/assets/images/warehouse.jpg',
+            styleName: 'Enterprise FMCG Distribution Pro',
+            title: 'بوابة العلامات التجارية والوكالات الإقليمية (الدفعة 2)',
+            desc: 'خريطة تغطية المخازن والمحافظات، كتالوج منتجات التبريد بالأصناف، وبوابة تقديم طلب وكيل معتمد.',
+            features: ['خريطة مستودعات المحافظات', 'كتالوج الأغذية المبردة', 'نموذج اعتماد وكلاء'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'trade-corp/assets/images/warehouse.jpg',
+            styleName: 'Global Holding Logistics Command',
+            title: 'منصة القابضة للتوريدات والاعتمادات (الدفعة 2)',
+            desc: 'شاشة تتبع حاويات الموانئ والقدرة التخزينية، طلب عروض مناقصات الإغاثة والفنادق، وملف امتثال الجودة.',
+            features: ['مؤشرات سعة المخازن المبردة', 'بوابة مناقصات المنظمات', 'شهادات ISO وسلامة الغذاء'],
+            url: ''
+          }
+        },
+        {
+          num: '11',
+          id: 'qr-menu',
+          sectorName: 'منيو QR للمطاعم والمقاهي',
+          brandName: 'مطعم الديوان — منيو إلكتروني QR',
+          tags: 'yemen gulf retail',
+          keywords: 'منيو مطعم كافيه باركود QR طلب طاولة سفري مشويات بيتزا عصائر قهوة الديوان',
+          std: {
+            img: 'qr-menu/assets/images/grill.jpg',
+            title: 'المنيو الإلكتروني القياسي',
+            desc: 'قائمة طعام سريعة لمسح الطاولات والطلب السفري مع تبديل العملة (ر.ي / ر.س) وسلة للواتساب.',
+            features: ['طلب طاولة أو سفري', 'سلة طلب للواتساب', 'باركود QR للطاولة', 'تبديل ر.ي / ر.س'],
+            url: 'qr-menu/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'qr-menu/assets/images/grill.jpg',
+            styleName: 'Fine Dining Interactive Menu',
+            title: 'المنيو التفاعلي بتخصيص الإضافات (الدفعة 3)',
+            desc: 'إضافة خيارات الحجم والصلصات ومستوى النضج، حساب السعرات الحرارية، وتقسيم فاتورة الطاولة.',
+            features: ['خيارات حجم وإضافات', 'مؤشر الحساسية والسعرات', 'سلة طاولات متقدمة'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'qr-menu/assets/images/grill.jpg',
+            styleName: 'Signature Restaurant & Lounge OS',
+            title: 'تجربة المطاعم الفاخرة وحجز الطاولات VIP (الدفعة 3)',
+            desc: 'حجز طاولات الـ VIP والمناسبات، باقات الولائم والعزائم، تعدد الفروع، وقوائم تذوق الشيف.',
+            features: ['حجز طاولات وكبائن VIP', 'مُكوّن الولائم والعزائم', 'تبديل الفروع والعملات'],
+            url: ''
+          }
+        },
+        {
+          num: '12',
+          id: 'whatsapp-store',
+          sectorName: 'متاجر سلة واتساب + Google Sheets',
+          brandName: 'متجر النخبة — سلة واتساب',
+          tags: 'yemen gulf retail',
+          keywords: 'متجر سلة واتساب google sheets جدول بيانات الكترونيات عطور هدايا كوبون خصم شحن النخبة',
+          std: {
+            img: 'whatsapp-store/assets/images/watch.jpg',
+            title: 'متجر السلة السريع القياسي',
+            desc: 'ربط مع Google Sheets لتحديث المخزون، سلة مشتريات، كوبون خصم، وحساب الشحن للواتساب.',
+            features: ['ربط Google Sheets', 'محاكاة لوحة التاجر', 'كوبونات + شحن', 'طلب للواتساب'],
+            url: 'whatsapp-store/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'whatsapp-store/assets/images/watch.jpg',
+            styleName: 'Boutique D2C Storefront Pro',
+            title: 'واجهة العلامة التجارية واختيار الألوان (الدفعة 3)',
+            desc: 'بطاقات منتج بمعاينة الألوان والمقاسات، المفضلة، شريط الشحن المجاني التفاعلي، والبحث الفوري.',
+            features: ['اختيار مقاسات وألوان', 'شريط الشحن المجاني', 'عرض سريع Modal للمنتج'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'whatsapp-store/assets/images/watch.jpg',
+            styleName: 'Omnichannel Luxury E-Commerce',
+            title: 'منصة المتجر الفاخر متعددة العملات والباقات (الدفعة 3)',
+            desc: 'منشئ الباقات والهدايا (Bundle Builder)، تبديل العملات، فواتير ضريبية فورية، ولوحة إدارة تجريبية.',
+            features: ['منشئ الباقات والخصومات', 'تحويل العملات اللحظي', 'إصدار فاتورة مبدئية'],
+            url: ''
+          }
+        },
+        {
+          num: '13',
+          id: 'corporate',
+          sectorName: 'مواقع الشركات القابضة والمقاولات',
+          brandName: 'مجموعة الأفق — موقع شركة متكامل',
+          tags: 'yemen gulf wholesale',
+          keywords: 'شركة متعددة الصفحات مقاولات هندسة توريدات مناقصات فروع الأفق B2B موقع تعريفي',
+          std: {
+            img: 'corporate/assets/images/office.jpg',
+            title: 'الموقع المؤسسي القياسي (4 صفحات)',
+            desc: 'أربع صفحات مترابطة: الرئيسية، القيادة، المشاريع والخدمات، والفروع وطلبات المناقصات.',
+            features: ['4 صفحات مترابطة', 'فلترة المشاريع', 'فروع ونموذج مناقصات', 'هوية B2B مؤسسية'],
+            url: 'corporate/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'corporate/assets/images/office.jpg',
+            styleName: 'Architectural Engineering Group Pro',
+            title: 'بوابة المجموعة الهندسية وملفات الاعتماد (الدفعة 3)',
+            desc: 'واجهة شركات حديثة مع سجل المشاريع المنفذة بالفلاتر، تقارير السلامة والاعتماد، وملف تعريفي رقمي.',
+            features: ['سجل مشاريع تفاعلي', 'حوكمة وجودة ISO', 'بوابة تأهيل المقاولين'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'corporate/assets/images/office.jpg',
+            styleName: 'Sovereign Holding & Investor Relations',
+            title: 'منصة القابضة وعلاقات المستثمرين VIP (الدفعة 3)',
+            desc: 'مؤشرات المحافظ الاستثمارية للشركة، خريطة القطاعات التابعة، وبوابة مناقصات وعقود تنفيذية.',
+            features: ['مؤشرات أداء المحفظة', 'بوابة قطاعات القابضة', 'نموذج عقود استراتيجية'],
+            url: ''
+          }
+        },
+        {
+          num: '14',
+          id: 'academy',
+          sectorName: 'الأكاديميات ومعاهد التدريب والدبلومات',
+          brandName: 'أكاديمية المستقبل — التدريب والدبلومات',
+          tags: 'yemen gulf retail',
+          keywords: 'أكاديمية معهد تدريب دورات دبلومات برمجة تصميم إنجليزي تسويق أونلاين حضوري تسجيل المستقبل',
+          std: {
+            img: 'academy/assets/images/coding.jpg',
+            title: 'منصة المعهد والدورات القياسية',
+            desc: 'عرض الدبلومات الحضورية والأونلاين، معاينة محاور كل دورة، فلترة التخصصات، والتسجيل عبر واتساب.',
+            features: ['معاينة محاور الدبلوم', 'بحث وفلترة تخصصات', 'حضوري + أونلاين', 'نموذج تسجيل فوري'],
+            url: 'academy/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'academy/assets/images/coding.jpg',
+            styleName: 'Modern EdTech Campus Pro',
+            title: 'بوابة المسارات المهنية والتقسيط الدراسي (الدفعة 3)',
+            desc: 'مقارنة المسارات التدريبية، حاسبة رسوم القسط المبكر والمجموعات، وتصفح المدربين ومواعيد الدفعات.',
+            features: ['حاسبة رسوم الدبلوم', 'تقويم بدء الدفعات', 'سجل الخريجين والاعتمادات'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'academy/assets/images/coding.jpg',
+            styleName: 'Executive Academy & Corporate L&D',
+            title: 'أكاديمية تدريب الشركات والشهادات الدولية (الدفعة 3)',
+            desc: 'مُكوّن حقائب التدريب المؤسسي للشركات، نظام التحقق من أرقام الشهادات، وحاسبة مقاعد الفرق.',
+            features: ['حاسبة تدريب الشركات', 'التحقق من الشهادات', 'بوابة المناهج التفصيلية'],
+            url: ''
+          }
+        },
+        {
+          num: '15',
+          id: 'shipping',
+          sectorName: 'الشحن الدولي والتخليص الجمركي',
+          brandName: 'جسر العالم — الشحن الدولي والجمارك',
+          tags: 'yemen gulf wholesale',
+          keywords: 'شحن دولي بحري جوي بري تخليص جمركي حاويات الصين دبي جدة اليمن تتبع شحنة جسر العالم',
+          std: {
+            img: 'shipping/assets/images/port.jpg',
+            title: 'بوابة الشحن القياسية',
+            desc: 'لشركات الشحن من الصين ودبي وجدة: تتبع البوليصة، الخطوط البحرية والجوية، وطلب تسعيرة.',
+            features: ['تتبع الشحنات الفوري', 'بحري + جوي + بري', 'خطوط الصين ودبي', 'طلب تسعيرة شحنة'],
+            url: 'shipping/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'shipping/assets/images/port.jpg',
+            styleName: 'Global Freight Forwarder Pro',
+            title: 'حاسبة الوزن الحجمي Cbm وتتبع الخطوط (الدفعة 3)',
+            desc: 'حاسبة الوزن الحجمي والشحن الجزئي LCL مقابل الحاوية FCL بين الصين ودبي وموانئ اليمن.',
+            features: ['حاسبة CBM والأبعاد', 'مقارنة شحن جوي/بحري', 'تتبع مراحل التخليص'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'shipping/assets/images/port.jpg',
+            styleName: 'Enterprise Supply Chain Terminal',
+            title: 'محطة اللوجستيات والشحن التعاقدي VIP (الدفعة 3)',
+            desc: 'مُقدّر الرسوم الجمركية وخطوط الحاويات المباشرة، بوليصة شحن مبدئية، وحجز تجميع مستودعات الصين.',
+            features: ['تقدير تكلفة الحاوية الكاملة', 'إدارة التجميع بالصين ودبي', 'بيان شحن B2B للواتساب'],
+            url: ''
+          }
+        },
+        {
+          num: '16',
+          id: 'travel',
+          sectorName: 'وكالات السفر والسياحة والعمرة',
+          brandName: 'الصفوة — وكالات السفر والعمرة',
+          tags: 'yemen gulf retail',
+          keywords: 'سفر سفريات عمرة حج طيران تذاكر تأشيرات سياحة عائلية فنادق مكة الصفوة',
+          std: {
+            img: 'travel/assets/images/makkah.jpg',
+            title: 'صفحة السفريات والعمرة القياسية',
+            desc: 'عرض باقات العمرة الجوية والبرية، حجوزات التذاكر الدولية، متابعة التأشيرات، والحجز السريع.',
+            features: ['باقات العمرة', 'طيران وتأشيرات', 'سياحة عائلية', 'حجز سريع للواتساب'],
+            url: 'travel/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'travel/assets/images/makkah.jpg',
+            styleName: 'Luxury Pilgrimage & Hospitality Pro',
+            title: 'منصة العمرة الفندقية وتخصيص الرحلات (الدفعة 4)',
+            desc: 'تبديل فئة الفنادق المطلة على الحرم، حاسبة عدد المعتمرين والغرف، وتتبع حالة التأشيرة والجواز.',
+            features: ['اختيار فنادق الحرمين', 'حاسبة الغرف والأفراد', 'فاحص متطلبات التأشيرات'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'travel/assets/images/makkah.jpg',
+            styleName: 'Royal Concierge Aviation & Umrah',
+            title: 'خدمة كبار الشخصيات والسياحة التنفيذية VIP (الدفعة 4)',
+            desc: 'مُصمّم برنامج العمرة والسياحة العائلية الخاص يومياً (Tailor-Made)، استقبال المطار الخاص، وتنقلات GMC.',
+            features: ['مصمم رحلات خاص يوم بيوم', 'حجز طيران درجة أولى/رجال', 'ضيافة واستقبال خاص VIP'],
+            url: ''
+          }
+        },
+        {
+          num: '17',
+          id: 'events',
+          sectorName: 'صالات الأفراح والمؤتمرات والضيافة',
+          brandName: 'قاعة الفخامة — الصالات والمناسبات',
+          tags: 'yemen gulf retail',
+          keywords: 'قاعة أفراح مناسبات زفاف ضيافة بوفيه كوشة خطوبة تخرج مؤتمرات الفخامة',
+          std: {
+            img: 'events/assets/images/banquet.jpg',
+            title: 'صفحة قاعة الفخامة القياسية',
+            desc: 'استعراض سعات القاعات، باقات الضيافة والبوفيه المفتوح، والتحقق من توفر التاريخ عبر واتساب.',
+            features: ['القاعات والسعات', 'باقات البوفيه', 'تحقق من التاريخ', 'حجز واتساب'],
+            url: 'events/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'events/assets/images/banquet.jpg',
+            styleName: 'Royal Banquet Gallery Pro',
+            title: 'حاسبة الضيوف وباقات الديكور والكوشة (الدفعة 4)',
+            desc: 'تقدير التكلفة حسب عدد المدعوين ونوع البوفيه وتجهيز الكوشة والإضاءة مع تقويم حجز تفاعلي.',
+            features: ['حاسبة الضيوف والطاولات', 'اختيار ثيمات الديكور', 'تقويم التواريخ المتاحة'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'events/assets/images/banquet.jpg',
+            styleName: 'Palatial Gala & Conference Concierge',
+            title: 'منصة القصور الملكية والمؤتمرات VIP (الدفعة 4)',
+            desc: 'مُكوّن الحفل الملكي الكامل (القاعة + الضيافة + التصوير + الصوتيات)، جدول توزيع المدعوين، وحجز معاينة.',
+            features: ['منشئ باقة الزفاف/المؤتمر', 'معرض 360° وتوزيع القاعة', 'عقد حجز مبدئي للواتساب'],
+            url: ''
+          }
+        },
+        {
+          num: '18',
+          id: 'exchange',
+          sectorName: 'شركات الصرافة والتحويلات المالية',
+          brandName: 'الريان — الصرافة والتحويلات المالية',
+          tags: 'yemen gulf wholesale retail',
+          keywords: 'صرافة تحويلات مالية عملات دولار سعودي درهم يورو حوالات فورية الريان',
+          std: {
+            img: 'exchange/assets/images/transfer.jpg',
+            title: 'منصة الصرافة والتحويلات القياسية',
+            desc: 'محوّل عملات وحاسبة حوالات فورية، نشرة أسعار الصرف اليومية، الفروع، وتثبيت السعر عبر واتساب.',
+            features: ['محوّل عملات تفاعلي', 'نشرة بيع وشراء', 'حوالات وتجار', 'تثبيت السعر للواتساب'],
+            url: 'exchange/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'exchange/assets/images/transfer.jpg',
+            styleName: 'FinTech Treasury Terminal Pro',
+            title: 'منصة أسعار الصرف الفورية والحوالات السريعة (الدفعة 4)',
+            desc: 'مقارنة أسعار صرف المراكز والبنوك، حاسبة عمولات التحويل بين العملات، وبوابة تتبع الحوالة برقم الإشعار.',
+            features: ['تتبع الحوالة برقم المرجع', 'مؤشر تغيير السعر اليومي', 'دليل شبكة الفروع والوكلاء'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'exchange/assets/images/transfer.jpg',
+            styleName: 'Private FX Desk & Corporate Remittance',
+            title: 'غرفة عمليات التجار والاعتمادات المالية VIP (الدفعة 4)',
+            desc: 'بوابة مقاصة وتحويلات الشركات والمستوردين (FX Treasury Desk) مع تثبيت سعر الشراء لصفقات كبرى.',
+            features: ['غرفة تسعير صفقات التجار', 'حاسبة الحوالات الدولية B2B', 'تثبيت عقد صرف مباشر'],
+            url: ''
+          }
+        },
+        {
+          num: '19',
+          id: 'beauty',
+          sectorName: 'مراكز التجميل والعناية والسبا',
+          brandName: 'دار نورة — التجميل والعناية والسبا',
+          tags: 'yemen gulf retail',
+          keywords: 'تجميل صالون سبا بشرة شعر أظافر عرائس نسائي نورة حجز موعد',
+          std: {
+            img: 'beauty/assets/images/salon.jpg',
+            title: 'صفحة دار نورة القياسية',
+            desc: 'تصنيف جلسات البشرة والشعر والأظافر، باقات العرائس VIP، ونموذج حجز موعد عبر واتساب.',
+            features: ['فلترة أقسام العناية', 'باقات العرائس VIP', 'حجز مواعيد سريع', 'تصميم أنيق هادئ'],
+            url: 'beauty/index.html'
+          },
+          pro: {
+            live: false,
+            img: 'beauty/assets/images/salon.jpg',
+            styleName: 'Parisian Atelier Beauty Boutique',
+            title: 'بوتيك العناية وحاسبة باقة العروس (الدفعة 4)',
+            desc: 'تصميم باريسي راقٍ يتيح اختيار عدة جلسات في سلة واحدة وحجز الخبيرات مع توقيت الجلسة باليوم والساعة.',
+            features: ['سلة جلسات العناية', 'اختيار الخبيرة والموعد', 'باقات شهر العسل والعرائس'],
+            url: ''
+          },
+          vip: {
+            live: false,
+            img: 'beauty/assets/images/salon.jpg',
+            styleName: 'Maison Sanctuary & Bridal Suite',
+            title: 'جناح السبا الملكي وتجهيز العرائس VIP (الدفعة 4)',
+            desc: 'مُكوّن برنامج العروس لـ 7 أيام متكاملة، عضويات الصالون السنوية، وحجز الخدمة المنزلية الخاصة لكبار الشخصيات.',
+            features: ['مصمم برنامج العروس 7 أيام', 'باقات العضوية الملكية', 'حجز الأجنحة والخدمة المنزلية'],
+            url: ''
+          }
+        }
+      ];
+
+      const stackEl = document.getElementById('sectors-stack');
       const searchInput = document.getElementById('studio-search');
       const filtersWrap = document.getElementById('studio-filters');
-      const cards = Array.from(document.querySelectorAll('#showcase-grid .card'));
       const countEl = document.getElementById('results-count');
       let activeFilter = 'all';
 
-      function applyFilter() {
-        const q = (searchInput ? searchInput.value : '').trim().toLowerCase();
-        let visible = 0;
+      function waOrderUrl(sectorLabel, tierLabel, priceLabel) {
+        return WA + encodeURIComponent(
+          `مرحباً، أرغب في طلب (${tierLabel} — ${priceLabel}) لقطاع: (${sectorLabel}).`
+        );
+      }
 
-        cards.forEach((card) => {
-          const tags = card.dataset.tags || '';
-          const keywords = (card.dataset.keywords || '') + ' ' + card.textContent.toLowerCase();
-          const matchTag = activeFilter === 'all' || tags.includes(activeFilter);
-          const matchText = !q || keywords.includes(q);
-          const show = matchTag && matchText;
-          card.style.display = show ? 'flex' : 'none';
-          if (show) visible++;
+      function renderTierCard(sector, tierKey, data) {
+        const meta = {
+          std: { label: 'الفئة القياسية', price: '$50', btnClass: 'btn-std', tierBadge: 'Standard · 50$' },
+          pro: { label: 'الفئة الفاخرة Pro', price: '$120', btnClass: 'btn-pro', tierBadge: 'Pro Edition · 120$' },
+          vip: { label: 'الفئة الملكية VIP', price: '$250', btnClass: 'btn-vip', tierBadge: 'VIP Sovereign · 250$' }
+        }[tierKey];
+
+        const isLive = tierKey === 'std' || data.live;
+        const statusCls = isLive ? '' : ' is-queued';
+
+        const actionBtn = isLive
+          ? `<a href="${data.url}" class="btn-preview ${meta.btnClass}">
+               <span>معاينة حية</span>
+               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+             </a>`
+          : `<span class="btn-preview btn-queued">قيد التجهيز في الدفعة القادمة</span>`;
+
+        const orderBtn = `<a href="${waOrderUrl(sector.sectorName, meta.label, meta.price)}" target="_blank" class="btn-order-similar">${isLive ? 'اطلب هذه الفئة' : 'احجزها مبكراً'}</a>`;
+
+        return `
+          <article class="tier-card tier-${tierKey}${statusCls}">
+            <div class="card-preview">
+              <div class="tier-top-bar">
+                <span class="tier-badge">${meta.tierBadge}</span>
+                <span class="tier-price-pill">${meta.price}</span>
+              </div>
+              <img src="${data.img}" alt="${sector.brandName} — ${meta.label}" loading="lazy" />
+              <div class="card-preview-overlay"></div>
+            </div>
+            <div class="card-body">
+              <div class="card-style-name">${data.styleName || 'Classic Essential Edition'}</div>
+              <h3 class="card-title">${data.title}</h3>
+              <p class="card-desc">${data.desc}</p>
+              <div class="card-features-list">
+                ${data.features.map((f) => `<span class="feature-tag">${f}</span>`).join('')}
+              </div>
+              <div class="card-actions">
+                ${actionBtn}
+                ${orderBtn}
+              </div>
+            </div>
+          </article>
+        `;
+      }
+
+      function renderAll() {
+        const q = (searchInput ? searchInput.value : '').trim().toLowerCase();
+        const filtered = SECTORS.filter((s) => {
+          const matchTag = activeFilter === 'all' || s.tags.includes(activeFilter);
+          const textBlob = `${s.sectorName} ${s.brandName} ${s.keywords} ${s.std.title} ${s.pro.title} ${s.vip.title}`.toLowerCase();
+          const matchQ = !q || textBlob.includes(q);
+          return matchTag && matchQ;
+        });
+
+        let liveModels = 0;
+        filtered.forEach((s) => {
+          liveModels += 1 + (s.pro.live ? 1 : 0) + (s.vip.live ? 1 : 0);
         });
 
         if (countEl) {
-          countEl.textContent = visible === 0
-            ? 'لا توجد نماذج مطابقة لبحثك'
-            : `يعرض ${visible} ${visible === 1 ? 'نموذج جاهز' : 'نماذج جاهزة'}`;
+          countEl.textContent = filtered.length === 0
+            ? 'لا توجد قطاعات مطابقة لبحثك'
+            : `يعرض ${filtered.length} قطاعاً · ${liveModels} نموذجاً حياً جاهزاً للمعاينة (${filtered.length * 3} بطاقة فئة)`;
         }
+
+        if (!stackEl) return;
+        stackEl.innerHTML = filtered.map((s) => {
+          const isFull = s.pro.live && s.vip.live;
+          const badgeText = isFull
+            ? '3 فئات متاحة بالكامل للمعاينة ($50 · $120 · $250)'
+            : 'الفئة القياسية متاحة الآن · الفاخرة والملكية قيد التجهيز';
+          return `
+            <section class="sector-row${isFull ? ' is-batch-live' : ''}" id="sector-${s.id}">
+              <div class="sector-header">
+                <div class="sector-title-group">
+                  <span class="sector-num">SECTOR ${s.num}</span>
+                  <h2>${s.brandName} — ${s.sectorName}</h2>
+                </div>
+                <span class="sector-status-pill${isFull ? '' : ' is-upcoming'}">${badgeText}</span>
+              </div>
+              <div class="tier-grid">
+                ${renderTierCard(s, 'std', s.std)}
+                ${renderTierCard(s, 'pro', s.pro)}
+                ${renderTierCard(s, 'vip', s.vip)}
+              </div>
+            </section>
+          `;
+        }).join('');
       }
 
       if (filtersWrap) {
@@ -1127,16 +1432,17 @@
           if (!btn) return;
           filtersWrap.querySelectorAll('.filter-pill').forEach((b) => b.classList.remove('active'));
           btn.classList.add('active');
-          activeFilter = btn.dataset.filter;
-          applyFilter();
+          activeFilter = btn.dataset.filter || 'all';
+          renderAll();
         });
       }
 
       if (searchInput) {
-        searchInput.addEventListener('input', applyFilter);
+        searchInput.addEventListener('input', renderAll);
       }
+
+      renderAll();
     })();
   </script>
 </body>
 </html>
-

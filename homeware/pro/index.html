@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دار الأواني للتجارة والجملة | بوابة الموردين الاحترافية — Pro</title>
+  <meta name="description" content="منصة التوريد التجاري للأدوات المنزلية والجرانيت الكوري والضيافة بالجملة — أسعار مصانع مباشرة، خصومات كميات حتى 18%، وضمان تعويض فوري 100% ضد الكسر." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Utility Ribbon -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-items">
+        <span class="topbar-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          تعويض فوري 100% ضد الكسر أثناء الشحن
+        </span>
+        <span class="topbar-sep" aria-hidden="true"></span>
+        <span>فواتير ضريبية إلكترونية + باركود جاهز للكاشير</span>
+        <span class="topbar-sep hide-sm" aria-hidden="true"></span>
+        <span class="hide-sm">شحن مجاني للطلبيات من 5,000 ر.س فأكثر</span>
+      </div>
+      <div class="topbar-contact">
+        <span>خط مبيعات الجملة:</span>
+        <a href="tel:+967782259937" dir="ltr">+967 782 259 937</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#hero" class="brand" aria-label="دار الأواني للتجارة والجملة">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M3 10h18l-2 9H5l-2-9z"/>
+            <path d="M7 10V7a5 5 0 0 1 10 0v3"/>
+            <path d="M9 14h6"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>دار الأواني للتجارة</strong>
+          <small>توريد الأدوات المنزلية بالجملة</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#catalog">الكتالوج التجاري</a>
+        <a href="#simulator">محاكي الأرباح</a>
+        <a href="#standards">معايير الجودة</a>
+        <a href="#packages">باقات التجهيز</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="currency-switcher" role="group" aria-label="اختيار العملة">
+          <button type="button" class="curr-btn active" data-currency="SAR">SAR</button>
+          <button type="button" class="curr-btn" data-currency="AED">AED</button>
+          <button type="button" class="curr-btn" data-currency="USD">USD</button>
+        </div>
+
+        <button type="button" class="quote-trigger" id="openQuoteDrawerBtn" aria-label="عرض سلة عرض السعر">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+          <span>عرض السعر</span>
+          <span class="quote-count" id="headerQuoteCount">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#catalog">الكتالوج التجاري</a>
+      <a href="#simulator">محاكي الأرباح</a>
+      <a href="#standards">معايير الجودة</a>
+      <a href="#packages">باقات التجهيز</a>
+      <a href="#faq">الأسئلة الشائعة</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Split Editorial B2B Hero -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-kicker">
+            <span class="kicker-dot" aria-hidden="true"></span>
+            <span>منصة التوريد المعتمد للتجار والمعارض</span>
+            <span class="tier-tag" dir="ltr">B2B PRO</span>
+          </div>
+          <h1>توريد جملة مباشر بمواصفات تصدير أوروبية وهوامش ربح مضمونة</h1>
+          <p class="hero-lead">
+            نوفر لمحلات الأواني، المعارض، ومراكز التسوق تشكيلة سريعة الدوران من الجرانيت الكوري الأصلي، أطقم الضيافة، والستانلس ستيل الغذائي بأسعار المصنع وخصومات شرائح تصل إلى 18%.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#catalog" class="btn btn-primary">
+              <span>تصفح الكتالوج وبناء الطلب</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            </a>
+            <a href="#simulator" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              <span>احسب عائد استثمارك</span>
+            </a>
+          </div>
+
+          <div class="hero-pillars">
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <div>
+                <h3>جرانيت كوري 10 طبقات</h3>
+                <p>طلاء مصبوب سماكة 5 ملم خالٍ من PFOA ومقاوم للخدش والحرارة.</p>
+              </div>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div>
+                <h3>ستانلس ستيل 304 غذائي</h3>
+                <p>درجة نقاء عالية مقاومة للصدأ بضمان مصنعي لمدة 5 سنوات.</p>
+              </div>
+            </article>
+
+            <article class="pillar-card">
+              <div class="pillar-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+              </div>
+              <div>
+                <h3>تعويض 100% ضد الكسر</h3>
+                <p>استبدال أو خصم فوري لأي قطعة متضررة أثناء الشحن دون أي تعقيد.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="showroom-frame">
+            <img src="../assets/images/hero-showroom.jpg" alt="صالة عرض دار الأواني للتجارة والجملة للأدوات المنزلية" loading="eager" />
+            <div class="frame-overlay-badge">
+              <span class="overlay-label">الحد الأدنى للطلب التجاري</span>
+              <strong id="heroMoqDisplay">1,500 ر.س</strong>
+            </div>
+          </div>
+
+          <div class="hero-stats-strip">
+            <div class="stat-box">
+              <strong dir="ltr">+520</strong>
+              <span>معرض ومتجر شريك</span>
+            </div>
+            <div class="stat-box">
+              <strong dir="ltr">45% - 75%</strong>
+              <span>هامش ربح التجزئة</span>
+            </div>
+            <div class="stat-box">
+              <strong dir="ltr">18%</strong>
+              <span>خصم الكميات الأقصى</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality Standards Strip -->
+    <section class="standards-strip" id="standards">
+      <div class="container">
+        <div class="standards-grid" id="standardsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Volume Discount Tier Overview Bar -->
+    <section class="tier-banner-section">
+      <div class="container">
+        <div class="tier-banner-card">
+          <div class="tier-banner-info">
+            <span class="section-eyebrow">نظام شرائح الجملة التلقائي</span>
+            <h2>كلما زادت قيمة طلبيتك، ارتفع خصم الجملة وصافي ربحك</h2>
+            <p>يتم احتساب خصم الشريحة تلقائياً داخل قائمة عرض السعر وتحديث أسعار الكراتين فوراً.</p>
+          </div>
+          <div class="tier-milestones" id="tierMilestonesBanner">
+            <div class="milestone-chip">
+              <span class="milestone-rate" dir="ltr">6%</span>
+              <strong id="tier5kLabel">5,000 ر.س+</strong>
+              <small>شحن مجاني + خصم إضافي</small>
+            </div>
+            <div class="milestone-chip">
+              <span class="milestone-rate" dir="ltr">12%</span>
+              <strong id="tier10kLabel">10,000 ر.س+</strong>
+              <small>شريحة المعارض والهايبر</small>
+            </div>
+            <div class="milestone-chip highlight">
+              <span class="milestone-rate" dir="ltr">18%</span>
+              <strong id="tier25kLabel">25,000 ر.س+</strong>
+              <small>شريحة الموزعين الكبار</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Currency Interactive B2B Catalog -->
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">الكتالوج التجاري متعدد العملات</span>
+            <h2>أصناف الجملة عالية الدوران والربحية</h2>
+            <p class="section-sub">استعرض الأسعار بعملتك المحلية، قارن سعر الجملة بسعر البيع المقترح، وأضف الكراتين لعرض السعر الفوري.</p>
+          </div>
+
+          <div class="catalog-currency-indicator">
+            <span>العملة النشطة:</span>
+            <strong id="activeCurrencyName">الريال السعودي (SAR)</strong>
+          </div>
+        </div>
+
+        <!-- Search + Filter Controls -->
+        <div class="catalog-controls">
+          <div class="search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="search" id="catalogSearch" placeholder="ابحث باسم الصنف، رمز الباركود (مثل DA-GR-101)، أو الخامة..." autocomplete="off" />
+          </div>
+
+          <div class="sort-box">
+            <label for="catalogSort">ترتيب حسب:</label>
+            <select id="catalogSort">
+              <option value="featured">الأكثر طلباً للتجار</option>
+              <option value="margin-desc">الأعلى هامش ربح</option>
+              <option value="price-asc">الأقل سعر كرتون</option>
+              <option value="price-desc">الأعلى سعر كرتون</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="تصنيفات المنتجات"></div>
+
+        <div class="catalog-meta-bar">
+          <span id="catalogResultCount">عرض 12 صنفاً تجارياً</span>
+          <span class="meta-hint">الأسعار شاملة تغليف الكرتون المقوى وجاهزة للباركود</span>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid"></div>
+
+        <div class="catalog-empty" id="catalogEmpty" hidden>
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <h3>لا توجد أصناف مطابقة لبحثك</h3>
+          <p>جرب البحث برمز آخر أو أعد ضبط التصنيف إلى كافة الأصناف.</p>
+          <button type="button" class="btn btn-outline" id="resetCatalogFilters">إعادة ضبط البحث</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Retailer Profit Margin Simulator -->
+    <section class="simulator-section" id="simulator">
+      <div class="container">
+        <div class="simulator-shell">
+          <div class="simulator-controls-col">
+            <span class="section-eyebrow">أداة تخطيط المشتريات والعائد</span>
+            <h2>محاكي هامش ربح التاجر الشهري</h2>
+            <p class="section-sub">حدّد عدد الكراتين ومعدل الدوران الشهري لمعاينة خصم الشريحة المكتسب وصافي الربح والعائد على الاستثمار.</p>
+
+            <div class="sim-presets" role="group" aria-label="خطط استثمار جاهزة">
+              <button type="button" class="sim-preset-btn active" data-cartons="10" data-markup="55" data-turnover="1">متجر ناشئ (10 كراتين)</button>
+              <button type="button" class="sim-preset-btn" data-cartons="24" data-markup="60" data-turnover="1.5">معرض متوسط (24 كرتوناً)</button>
+              <button type="button" class="sim-preset-btn" data-cartons="55" data-markup="65" data-turnover="2">موزع / هايبر (55 كرتوناً)</button>
+            </div>
+
+            <div class="sim-field">
+              <div class="sim-label-row">
+                <label for="simCartonsRange">حجم التوريد (عدد الكراتين)</label>
+                <strong id="simCartonsValue">10 كراتين</strong>
+              </div>
+              <input type="range" id="simCartonsRange" min="4" max="80" step="1" value="10" />
+              <div class="sim-scale">
+                <span>4 كراتين</span>
+                <span>40 كرتوناً</span>
+                <span>80 كرتوناً</span>
+              </div>
+            </div>
+
+            <div class="sim-field">
+              <div class="sim-label-row">
+                <label for="simMarkupRange">متوسط هامش البيع بالتجزئة</label>
+                <strong id="simMarkupValue" dir="ltr">+55%</strong>
+              </div>
+              <input type="range" id="simMarkupRange" min="30" max="85" step="5" value="55" />
+              <div class="sim-scale">
+                <span dir="ltr">30%</span>
+                <span dir="ltr">55%</span>
+                <span dir="ltr">85%</span>
+              </div>
+            </div>
+
+            <div class="sim-field">
+              <div class="sim-label-row">
+                <label for="simTurnoverRange">معدل دوران المخزون الشهري</label>
+                <strong id="simTurnoverValue">1.0 دورة / شهر</strong>
+              </div>
+              <input type="range" id="simTurnoverRange" min="1" max="3" step="0.5" value="1" />
+              <div class="sim-scale">
+                <span>1x شهرياً</span>
+                <span>2x شهرياً</span>
+                <span>3x شهرياً</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="simulator-results-col">
+            <div class="sim-tier-badge" id="simTierBadge">
+              <span>شريحة الخصم المطبقة:</span>
+              <strong id="simTierText">خصم 6% + شحن مجاني</strong>
+            </div>
+
+            <div class="sim-kpi-grid">
+              <div class="sim-kpi">
+                <span>قيمة الاستثمار الصافية (بعد الخصم)</span>
+                <strong id="simNetInvestment">--</strong>
+                <small id="simDiscountSaved">توفير فوري: --</small>
+              </div>
+              <div class="sim-kpi">
+                <span>إجمالي مبيعات التجزئة المتوقعة</span>
+                <strong id="simExpectedRevenue">--</strong>
+                <small>على أساس متوسط سعر الكرتون المرجعي</small>
+              </div>
+              <div class="sim-kpi accent">
+                <span>صافي الربح الشهري التقديري</span>
+                <strong id="simMonthlyProfit">--</strong>
+                <small id="simAnnualProfit">عائد سنوي تقديري: --</small>
+              </div>
+              <div class="sim-kpi">
+                <span>معدل العائد على الاستثمار (ROI)</span>
+                <strong id="simRoiPercent" dir="ltr">--</strong>
+                <small>شامل وفر خصم شريحة الجملة</small>
+              </div>
+            </div>
+
+            <div class="sim-visual-bar">
+              <div class="sim-bar-header">
+                <span>توزيع دورة رأس المال الشهرية</span>
+                <span id="simRatioLabel">التكلفة مقابل صافي الربح</span>
+              </div>
+              <div class="sim-bar-track">
+                <div class="sim-bar-cost" id="simBarCost" style="width: 60%"></div>
+                <div class="sim-bar-profit" id="simBarProfit" style="width: 40%"></div>
+              </div>
+              <div class="sim-bar-legend">
+                <span><i class="dot cost"></i> تكلفة الجملة الصافية</span>
+                <span><i class="dot profit"></i> صافي ربح التاجر</span>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-block" id="applySimToQuoteBtn">
+              تعبئة طلبية متوازنة بنفس حجم الاستثمار في عرض السعر
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warehouse & Logistics Section -->
+    <section class="logistics-section">
+      <div class="container logistics-grid">
+        <div class="logistics-visual">
+          <img src="../assets/images/warehouse-logistics.jpg" alt="مستودعات التجهيز والشحن التجاري في دار الأواني" loading="lazy" />
+          <div class="logistics-caption">
+            <strong>99.8%</strong>
+            <span>نسبة وصول الشحنات الزجاجية والخزفية سليمة بفضل التغليف خماسي الطبقات</span>
+          </div>
+        </div>
+
+        <div class="logistics-content">
+          <span class="section-eyebrow">سلسلة الإمداد والخدمات اللوجستية</span>
+          <h2>من خطوط الإنتاج مباشرة إلى مستودعك خلال 24 - 48 ساعة</h2>
+          <p class="section-sub">نظام فحص وتغليف صارم يضمن للتاجر استلام بضاعة جاهزة للعرض والبيع الفوري بالباركود.</p>
+
+          <div class="process-list" id="processList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Turnkey Packages -->
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-eyebrow">باقات التأسيس والتوسع</span>
+          <h2>اختر باقة التوريد المناسبة لحجم نشاطك</h2>
+          <p class="section-sub">باقات مجهزة بأكثر الأصناف مبيعاً مع دعم الصور الاستوديو وجدول التسعير للكاشير.</p>
+        </div>
+
+        <div class="packages-grid" id="packagesGrid"></div>
+      </div>
+    </section>
+
+    <!-- Merchant Reviews -->
+    <section class="reviews-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="section-eyebrow">شركاء النجاح</span>
+            <h2>ماذا يقول أصحاب المعارض والمشتريات عن دار الأواني؟</h2>
+          </div>
+        </div>
+        <div class="reviews-grid" id="reviewsGrid"></div>
+      </div>
+    </section>
+
+    <!-- B2B FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro">
+          <span class="section-eyebrow">الأسئلة التجارية المتكررة</span>
+          <h2>إجابات واضحة حول الطلب، الضريبة، وسياسة التعويض</h2>
+          <p class="section-sub">فريق خدمة التجار جاهز للرد على استفساراتكم وطلبات التسعير الخاصة عبر واتساب مباشرة.</p>
+          <a href="https://wa.me/967782259937" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <span>تحدث مع مدير حسابات الجملة</span>
+          </a>
+        </div>
+
+        <div class="faq-list" id="faqList"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M3 10h18l-2 9H5l-2-9z"/>
+              <path d="M7 10V7a5 5 0 0 1 10 0v3"/>
+              <path d="M9 14h6"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <strong>دار الأواني للتجارة والجملة</strong>
+            <small>بوابة الموردين الاحترافية — الفئة الفاخرة Pro</small>
+          </span>
+        </div>
+        <p>شريكك الموثوق في استيراد وتوزيع الأواني المنزلية، الجرانيت الكوري، ومستلزمات الضيافة بأسعار تنافسية وضمان شامل.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>روابط سريعة</h4>
+        <a href="#catalog">الكتالوج متعدد العملات</a>
+        <a href="#simulator">محاكي أرباح التاجر</a>
+        <a href="#packages">باقات افتتاح المتاجر</a>
+        <a href="#faq">الأسئلة الشائعة</a>
+      </div>
+
+      <div class="footer-contact">
+        <h4>التواصل التجاري</h4>
+        <p>واتساب المبيعات: <a href="https://wa.me/967782259937" target="_blank" rel="noopener noreferrer" dir="ltr">+967 782 259 937</a></p>
+        <p>ساعات صالة العرض والمستودعات: يومياً 8 صباحاً - 9 مساءً</p>
+        <p>توريد لجميع المدن والمناطق خلال 24 - 72 ساعة</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>جميع الحقوق محفوظة &copy; 2026 دار الأواني للتجارة والجملة</span>
+      <span>نظام تسعير الجملة الفوري B2B Pro</span>
+    </div>
+  </footer>
+
+  <!-- Sticky Bottom Floating Summary (visible when cart has items) -->
+  <div class="floating-quote-bar" id="floatingQuoteBar" hidden>
+    <div class="container floating-bar-inner">
+      <div class="floating-summary">
+        <span class="floating-badge" id="floatingCartonsCount">0 كرتون</span>
+        <div>
+          <strong id="floatingNetTotal">0 ر.س</strong>
+          <small id="floatingDiscountNote">أضف أصنافاً لفتح خصم 6%</small>
+        </div>
+      </div>
+      <button type="button" class="btn btn-copper" id="floatingOpenDrawerBtn">
+        <span>مراجعة وإرسال عرض السعر</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Slide-Over Wholesale Quote Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="quote-drawer" id="quoteDrawer" aria-labelledby="drawerTitle" aria-hidden="true">
+    <div class="drawer-header">
+      <div>
+        <h2 id="drawerTitle">طلبية عرض السعر التجاري</h2>
+        <p>بوابة الجملة — الفئة الفاخرة Pro</p>
+      </div>
+      <button type="button" class="drawer-close" id="closeQuoteDrawerBtn" aria-label="إغلاق">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+
+    <!-- Live Volume Tier Discount Progress -->
+    <div class="drawer-tier-progress">
+      <div class="tier-progress-top">
+        <span id="drawerTierLabel">الطلب التجاري الأساسي</span>
+        <strong id="drawerTierPercent" dir="ltr">0%</strong>
+      </div>
+      <div class="tier-track">
+        <div class="tier-fill" id="drawerTierFill" style="width: 0%"></div>
+      </div>
+      <div class="tier-markers">
+        <span>0</span>
+        <span id="marker5k">5k (6%)</span>
+        <span id="marker10k">10k (12%)</span>
+        <span id="marker25k">25k (18%)</span>
+      </div>
+      <p class="tier-hint" id="drawerTierHint">أضف أصنافاً للوصول إلى شريحة 5,000 ر.س والحصول على شحن مجاني + خصم 6%.</p>
+    </div>
+
+    <!-- Drawer Items -->
+    <div class="drawer-body" id="drawerBody">
+      <div class="drawer-empty" id="drawerEmptyState">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <h3>قائمة عرض السعر فارغة</h3>
+        <p>أضف كراتين من الكتالوج التجاري لحساب خصم الشريحة وإرسال الطلب مباشرة.</p>
+      </div>
+
+      <div class="drawer-items-list" id="drawerItemsList"></div>
+    </div>
+
+    <!-- Merchant Details & Summary -->
+    <div class="drawer-footer">
+      <div class="merchant-mini-form">
+        <input type="text" id="merchantNameInput" placeholder="اسم التاجر أو المنشأة (اختياري)" />
+        <input type="text" id="merchantCityInput" placeholder="المدينة / وجهة الشحن" />
+      </div>
+
+      <div class="drawer-totals">
+        <div class="total-row">
+          <span>إجمالي الكراتين / القطع</span>
+          <strong id="drawerTotalQty">0 كرتون (0 قطعة)</strong>
+        </div>
+        <div class="total-row">
+          <span>المجموع الفرعي للجملة</span>
+          <span id="drawerSubtotal">0 ر.س</span>
+        </div>
+        <div class="total-row discount-row">
+          <span>خصم شريحة الكميات</span>
+          <strong id="drawerDiscountAmount">- 0 ر.س</strong>
+        </div>
+        <div class="total-row profit-row">
+          <span>ربح التاجر المتوقع عند البيع</span>
+          <strong id="drawerExpectedProfit">0 ر.س</strong>
+        </div>
+        <div class="total-row grand-row">
+          <span>الصافي المستحق للدفع</span>
+          <strong id="drawerNetPayable">0 ر.س</strong>
+        </div>
+      </div>
+
+      <div class="drawer-actions">
+        <button type="button" class="btn btn-primary btn-block" id="dispatchWhatsappBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          <span>إرسال طلبية العرض عبر واتساب</span>
+        </button>
+        <button type="button" class="btn-link-danger" id="clearQuoteBtn">تفريغ القائمة</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toastNotice" role="status" aria-live="polite" hidden></div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

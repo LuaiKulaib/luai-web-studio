@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تهامة جولدن تروبيكس VIP | وحدة التجارة الدولية السيادية — مانجو الحديدة</title>
+  <meta name="description" content="Tihama Golden Tropics® VIP Sovereign Trade Console — منصة بناء بيان الشحنة المختلطة (Pro-Forma Manifest) وتخصيص حاويات المانجو المبرّدة من الحديدة إلى العالم." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Executive Telemetry Strip -->
+  <div class="telemetry-strip" aria-label="خطوط الملاحة وقياس التبريد المباشر">
+    <div class="container telemetry-inner">
+      <div class="telemetry-nodes">
+        <span class="tele-node">
+          <i class="pulse-dot" aria-hidden="true"></i>
+          <strong>AL-HUDAYDAH HUB</strong>
+          <span>PACKING HOUSE ACTIVE</span>
+        </span>
+        <span class="tele-sep" aria-hidden="true">|</span>
+        <span class="tele-node">
+          <strong>Jebel Ali</strong>
+          <span class="gold-val">4d</span>
+        </span>
+        <span class="tele-node">
+          <strong>Jeddah</strong>
+          <span class="gold-val">2d</span>
+        </span>
+        <span class="tele-node">
+          <strong>Rotterdam</strong>
+          <span class="gold-val">14d</span>
+        </span>
+        <span class="tele-node">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" />
+          </svg>
+          <strong>10°–12°C Reefer Lock</strong>
+        </span>
+      </div>
+      <div class="telemetry-std">
+        <span>UNECE FFV-45 CLASS I · GLOBALG.A.P. · MRL TESTED</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sovereign Glass Header -->
+  <header class="vip-header">
+    <div class="container vip-header-inner">
+      <a href="#top" class="brand-vip" aria-label="تهامة جولدن تروبيكس VIP">
+        <span class="brand-crest">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 21c4.5 0 7.5-3.4 7.5-8 0-4.2-2.7-7.7-6.2-8.7C10.5 3.5 8 5 6.8 7.5 5.2 10.9 4.5 14 5.8 17c1.2 2.7 3.6 4 6.2 4z" />
+            <path d="M13.5 4.2c1.4-1.5 3.5-2.1 5.3-1.4-.5 2-2 3.3-4.1 3.6" />
+          </svg>
+        </span>
+        <div>
+          <strong>تهامة جولدن تروبيكس</strong>
+          <span>SOVEREIGN TRADE CONSOLE · VIP</span>
+        </div>
+      </a>
+
+      <nav class="vip-nav" aria-label="التنقل الرئيسي">
+        <a href="#cultivars">مصفوفة الأصناف</a>
+        <a href="#manifest-builder">باني بيان الشحنة (Manifest)</a>
+        <a href="#corridors">الممرات والتبريد</a>
+        <a href="#calendar">تقويم التصدير</a>
+      </nav>
+
+      <div class="vip-header-actions">
+        <button type="button" class="btn-manifest-drawer" id="open-manifest-drawer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M9 11l3 3L22 4" />
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+          </svg>
+          <span>بيان الشحنة</span>
+          <span class="manifest-count-badge" id="drawer-count-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sovereign Trade Console Hero -->
+  <section id="top" class="vip-hero">
+    <img src="../assets/images/hero.jpg" alt="محصول مانجو تهامة الفاخر للتصدير الدولي من الحديدة" class="vip-hero-bg" />
+    <div class="vip-hero-overlay" aria-hidden="true"></div>
+
+    <div class="container vip-hero-grid">
+      <div class="vip-hero-copy">
+        <div class="sovereign-tag">
+          <span>AL-HUDAYDAH CONTRACTUAL EXPORT DESK</span>
+          <span class="tag-tier">VIP EDITION</span>
+        </div>
+
+        <h1>منصة التخصيص التصديري السيادية… <span class="gold-serif">لمانجو وادي سهام وزبيد</span></h1>
+
+        <p class="vip-lead">
+          غرفة عمليات متكاملة لكبار المستوردين وسلاسل الهايبرماركت الدولية: خصّص حاوياتك المختلطة <strong>20ft / 40ft High-Cube</strong> أو باليتات الشحن الجوي، واختر شروط التسليم <strong>FOB / CIF / DDP</strong> ومستندات الامتثال لتصدير بيان شحنة مبدئي فوري.
+        </p>
+
+        <div class="vip-hero-ctas">
+          <a href="#manifest-builder" class="btn-gold-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <line x1="3" y1="9" x2="21" y2="9" />
+              <line x1="9" y1="21" x2="9" y2="9" />
+            </svg>
+            <span>فتح باني بيان الشحنة (Pro-Forma)</span>
+          </a>
+          <a href="#cultivars" class="btn-obsidian-lg">استعراض الأصناف المخبرية</a>
+        </div>
+      </div>
+
+      <!-- Architectural Telemetry Console Card -->
+      <aside class="telemetry-console-card" aria-label="لوحة قياس الأداء التصديري">
+        <div class="tcc-head">
+          <span class="tcc-title">EXPORT COMMAND TELEMETRY</span>
+          <span class="tcc-status">LIVE SEASONAL CAPACITY</span>
+        </div>
+
+        <div class="tcc-kpi-grid" id="vip-kpi-grid"></div>
+
+        <div class="tcc-corridors">
+          <div class="corridor-row">
+            <span>خط الخليج البحري (جدة)</span>
+            <strong>2 Days · DDP / CIF</strong>
+          </div>
+          <div class="corridor-row">
+            <span>مركز دبي اللوجستي (جبل علي)</span>
+            <strong>4 Days · 40ft Reefer</strong>
+          </div>
+          <div class="corridor-row">
+            <span>الممر الأوروبي (روتردام)</span>
+            <strong>14 Days · Euro-1 / MRL</strong>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Cultivar Intelligence Matrix -->
+  <section id="cultivars" class="vip-sec">
+    <div class="container">
+      <div class="vip-sec-head">
+        <div>
+          <span class="vip-kicker">CULTIVAR INTELLIGENCE MATRIX</span>
+          <h2>الأصناف التصديرية المعتمدة ومواصفات الجودة</h2>
+          <p>اختر الصنف المناسب لعقدك التصديري وأضفه مباشرةً إلى بيان تخصيص الحاويات والباليتات.</p>
+        </div>
+
+        <div class="vip-filter-pills" id="vip-cultivar-filters" role="tablist" aria-label="تصفية الأصناف">
+          <button type="button" class="vf-pill active" data-filter="all">كافة الأصناف (5)</button>
+          <button type="button" class="vf-pill" data-filter="air">شحن جوي (Air Cargo)</button>
+          <button type="button" class="vf-pill" data-filter="retail">تجزئة وسوبرماركت</button>
+          <button type="button" class="vf-pill" data-filter="sea">حاويات بحرية 40ft</button>
+        </div>
+      </div>
+
+      <div class="vip-cultivar-grid" id="vip-cultivar-grid"></div>
+    </div>
+  </section>
+
+  <!-- Interactive Mixed-Container & Pallet Allocation Manifest Builder -->
+  <section id="manifest-builder" class="vip-sec vip-sec-elevated">
+    <div class="container">
+      <div class="vip-sec-head">
+        <div>
+          <span class="vip-kicker">MIXED-CONTAINER &amp; PALLET ALLOCATION ENGINE</span>
+          <h2>باني بيان الشحنة المبدئي (Pro-Forma Export Manifest)</h2>
+          <p>أضف أكثر من صنف ووحدة نقل ضمن شحنة واحدة، حدّد شروط التسليم (Incoterms) ومستندات الامتثال، واحصل على حساب فوري للأطنان والكراتين والقيمة التقديرية.</p>
+        </div>
+      </div>
+
+      <div class="manifest-workspace">
+        <!-- Left/Start Column: Allocation Configurator + Incoterms + Compliance -->
+        <div class="builder-controls">
+          <div class="glass-panel">
+            <div class="panel-header">
+              <span class="panel-step">01</span>
+              <div>
+                <h3>إضافة تخصيص صنف / حاوية إلى البيان</h3>
+                <p>يدعم المزج بين الشحن الجوي والباليتات وحاويات 20ft و 40ft High-Cube</p>
+              </div>
+            </div>
+
+            <div class="ctrl-grid-2">
+              <div class="vip-field">
+                <label for="mb-cultivar">الصنف التصديري</label>
+                <select id="mb-cultivar"></select>
+              </div>
+              <div class="vip-field">
+                <label for="mb-unit">وحدة النقل والتخصيص</label>
+                <select id="mb-unit"></select>
+              </div>
+            </div>
+
+            <div class="ctrl-grid-2">
+              <div class="vip-field">
+                <label for="mb-packaging">مواصفة الكرتون التصديري</label>
+                <select id="mb-packaging"></select>
+              </div>
+              <div class="vip-field">
+                <label for="mb-count">عدد الوحدات (باليت / حاوية)</label>
+                <input type="number" id="mb-count" min="1" max="50" value="1" />
+              </div>
+            </div>
+
+            <button type="button" class="btn-add-allocation" id="mb-add-btn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>
+              <span>إضافة التخصيص إلى بيان الشحنة</span>
+            </button>
+          </div>
+
+          <!-- Incoterms Selector -->
+          <div class="glass-panel">
+            <div class="panel-header">
+              <span class="panel-step">02</span>
+              <div>
+                <h3>شروط التسليم الدولية (Incoterms 2020)</h3>
+                <p>يُحدّث التقييم المالي المبدئي تلقائياً حسب نطاق التسليم واللوجستيات</p>
+              </div>
+            </div>
+
+            <div class="incoterm-grid" id="incoterm-selector" role="radiogroup" aria-label="شروط التسليم Incoterms"></div>
+          </div>
+
+          <!-- Compliance Document Checklist -->
+          <div class="glass-panel">
+            <div class="panel-header">
+              <span class="panel-step">03</span>
+              <div>
+                <h3>حزمة مستندات الامتثال والتخليص الجمركي</h3>
+                <p>حدّد الشهادات الرسمية المطلوب إرفاقها بملف الشحنة (تُدرج في بيان واتساب)</p>
+              </div>
+            </div>
+
+            <div class="compliance-checklist" id="compliance-checklist"></div>
+          </div>
+        </div>
+
+        <!-- Right/End Column: Live Pro-Forma Export Manifest -->
+        <aside class="manifest-live-panel" aria-live="polite">
+          <div class="manifest-paper">
+            <div class="mp-header">
+              <div>
+                <span class="mp-kicker">PRO-FORMA EXPORT MANIFEST · VIP TIER</span>
+                <h3>بيان التصدير المبدئي المجمع</h3>
+              </div>
+              <span class="mp-incoterm-badge" id="mp-incoterm-badge">FOB Hodeidah</span>
+            </div>
+
+            <div class="mp-items-list" id="mp-items-list"></div>
+
+            <div class="mp-totals-grid">
+              <div class="mp-total-cell">
+                <span>إجمالي الكراتين</span>
+                <strong id="mp-total-cartons">0</strong>
+              </div>
+              <div class="mp-total-cell">
+                <span>إجمالي الباليتات</span>
+                <strong id="mp-total-pallets">0</strong>
+              </div>
+              <div class="mp-total-cell">
+                <span>الوزن الصافي (Net MT)</span>
+                <strong id="mp-net-mt">0.00 طن</strong>
+              </div>
+              <div class="mp-total-cell">
+                <span>الوزن الإجمالي (Gross MT)</span>
+                <strong id="mp-gross-mt">0.00 طن</strong>
+              </div>
+            </div>
+
+            <div class="mp-valuation-bar">
+              <div>
+                <span>القيمة التقديرية للشحنة (<em id="mp-val-term">FOB Hodeidah</em>)</span>
+                <small id="mp-val-note">شامل التعبئة والتبريد المسبق وفحص UNECE FFV-45</small>
+              </div>
+              <strong id="mp-total-usd">$0</strong>
+            </div>
+
+            <div class="mp-docs-summary">
+              <span>الشهادات المدرجة:</span>
+              <div id="mp-docs-tags" class="mp-docs-tags"></div>
+            </div>
+
+            <form class="mp-importer-form" id="vip-manifest-form">
+              <div class="ctrl-grid-2">
+                <div class="vip-field">
+                  <label for="vip-company">اسم الجهة المستوردة</label>
+                  <input type="text" id="vip-company" required placeholder="شركة / مجموعة تجارية" />
+                </div>
+                <div class="vip-field">
+                  <label for="vip-destination">ميناء / مطار الوصول</label>
+                  <input type="text" id="vip-destination" required placeholder="جبل علي / جدة / روتردام" />
+                </div>
+              </div>
+              <div class="vip-field">
+                <label for="vip-window">نافذة الشحن المستهدفة وملاحظات العقد</label>
+                <input type="text" id="vip-window" placeholder="مثال: شحن أسبوعي خلال مايو — أجهزة Data Logger مفعّلة" />
+              </div>
+
+              <div class="mp-form-actions">
+                <button type="submit" class="btn-export-vip">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 2L11 13" />
+                    <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                  </svg>
+                  <span>اعتماد وإرسال البيان (VIP) عبر واتساب</span>
+                </button>
+                <button type="button" class="btn-clear-manifest" id="mp-clear-btn">إفراغ البيان</button>
+              </div>
+            </form>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trade Corridors & Cold Chain Engineering -->
+  <section id="corridors" class="vip-sec">
+    <div class="container">
+      <div class="vip-sec-head">
+        <div>
+          <span class="vip-kicker">COLD CHAIN &amp; MARITIME LOGISTICS</span>
+          <h2>هندسة سلسلة التبريد والممرات البحرية والجوية</h2>
+          <p>تحكم حراري مستمر من مزارع وادي سهام وزبيد حتى مراكز التوزيع الإقليمية والدولية.</p>
+        </div>
+      </div>
+
+      <div class="corridor-layout">
+        <div class="corridor-visuals">
+          <figure class="corridor-card-img">
+            <img src="../assets/images/reefer.jpg" alt="حاويات شحن بحري مبرّدة 40 قدم لنقل مانجو تهامة" loading="lazy" />
+            <figcaption>
+              <strong>40ft High-Cube Reefer Fleet</strong>
+              <span>ضبط حراري 10°–12°C · تهوية نسبية محكمة</span>
+            </figcaption>
+          </figure>
+          <div class="corridor-sub-imgs">
+            <figure class="corridor-card-img">
+              <img src="../assets/images/crate.jpg" alt="تعبئة مانجو تهامة في كراتين تهوية دولية" loading="lazy" />
+              <figcaption>
+                <strong>Euro-Pallet Unitization</strong>
+                <span>تحزيم وزوايا حماية للتصدير</span>
+              </figcaption>
+            </figure>
+            <figure class="corridor-card-img">
+              <img src="../assets/images/logistics.jpg" alt="لوجستيات التصدير الجوي والبحري من الحديدة" loading="lazy" />
+              <figcaption>
+                <strong>Air &amp; Sea Customs Desk</strong>
+                <span>تخليص مسبق وشهادات منشأ</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="cold-chain-list" id="vip-cold-steps"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Harvest Calendar -->
+  <section id="calendar" class="vip-sec vip-sec-elevated">
+    <div class="container">
+      <div class="vip-sec-head">
+        <div>
+          <span class="vip-kicker">ANNUAL HARVEST &amp; CONTRACT CALENDAR</span>
+          <h2>جدول التوافر السنوي وتخصيص العقود الموسمية</h2>
+          <p>مخطط الإنتاج التجاري على مدار 12 شهراً لأصناف تهامة التصديرية الخمسة.</p>
+        </div>
+      </div>
+
+      <div class="vip-cal-wrap">
+        <table class="vip-cal-table" aria-label="تقويم حصاد وتصدير مانجو تهامة">
+          <thead>
+            <tr id="vip-cal-head"></tr>
+          </thead>
+          <tbody id="vip-cal-body"></tbody>
+        </table>
+      </div>
+
+      <div class="vip-cal-legend">
+        <span><i class="v-dot lvl-2"></i> ذروة التصدير (تخصيص حاويات كاملة)</span>
+        <span><i class="v-dot lvl-1"></i> بداية / نهاية الموسم (تخصيص جوي ومحدود)</span>
+        <span><i class="v-dot lvl-0"></i> خارج الموسم</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="vip-footer">
+    <div class="container vip-footer-inner">
+      <div>
+        <strong>تهامة جولدن تروبيكس® — Tihama Golden Tropics (VIP Sovereign Console)</strong>
+        <p>وادي سهام وزبيد، الحديدة — الجمهورية اليمنية · معيار UNECE FFV-45 Class I &amp; GlobalG.A.P.</p>
+      </div>
+      <div class="vip-footer-right">
+        <span>Trade Desk WhatsApp: +967 782 259 937</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-Over Pro-Forma Manifest Drawer -->
+  <div class="drawer-backdrop" id="manifest-drawer-backdrop" hidden aria-hidden="true">
+    <aside class="manifest-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      <div class="drawer-head">
+        <div>
+          <span class="mp-kicker">SLIDE-OVER PRO-FORMA CONSOLE</span>
+          <h3 id="drawer-title">ملخص بيان الشحنة الحالي (VIP)</h3>
+        </div>
+        <button type="button" class="drawer-close" id="close-manifest-drawer" aria-label="إغلاق لوحة البيان">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="drawer-body" id="drawer-manifest-body"></div>
+
+      <div class="drawer-foot">
+        <a href="#manifest-builder" class="btn-gold-lg" id="drawer-jump-builder">تعديل البنود والاعتماد عبر واتساب</a>
+      </div>
+    </aside>
+  </div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

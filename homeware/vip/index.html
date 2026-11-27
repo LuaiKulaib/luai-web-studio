@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دار الأواني للتجارة والجملة | مركز القيادة والتوريد المؤسسي — VIP</title>
+  <meta name="description" content="بوابة الموزعين وكبار العملاء لدار الأواني: باقات افتتاح المعارض الجاهزة، بناء حاويات مختلطة مخصصة، وإصدار عروض أسعار تجارية رسمية قابلة للطباعة." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Executive Command Status Bar -->
+  <div class="command-bar no-print">
+    <div class="container command-bar-inner">
+      <div class="command-status">
+        <span class="status-pulse" aria-hidden="true"></span>
+        <span>حالة سلسلة الإمداد: المستودعات المركزية جاهزة للشحن الفوري (24 - 48 ساعة)</span>
+        <span class="cmd-sep" aria-hidden="true"></span>
+        <span class="hide-sm">تغطية 100% ضد الكسر + باركود وفواتير ضريبية</span>
+      </div>
+      <div class="command-meta">
+        <span>إدارة كبار العملاء:</span>
+        <a href="tel:+967782259937" dir="ltr">+967 782 259 937</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header class="portal-header no-print">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <span class="brand-crest" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+            <polyline points="2 12 12 17 22 12"/>
+            <polyline points="2 17 12 22 22 17"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>دار الأواني — بوابة التوريد التنفيذية</strong>
+          <small dir="ltr">GLOBAL SUPPLY COMMAND PORTAL &bull; VIP</small>
+        </span>
+      </a>
+
+      <nav class="portal-nav" aria-label="التنقل التنفيذي">
+        <a href="#presets">باقات افتتاح المعارض</a>
+        <a href="#workspace">بناء الحاوية والمانيفست</a>
+        <a href="#operations">معايير التوريد</a>
+        <a href="#faq">الاعتمادات والأسئلة</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="currency-group" role="group" aria-label="العملة">
+          <button type="button" class="curr-btn active" data-currency="SAR">SAR</button>
+          <button type="button" class="curr-btn" data-currency="AED">AED</button>
+          <button type="button" class="curr-btn" data-currency="USD">USD</button>
+        </div>
+
+        <button type="button" class="btn-gold-sm" id="headerProformaBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+          <span>عرض السعر الرسمي</span>
+          <span class="badge-count" id="headerManifestCount">0</span>
+        </button>
+
+        <button type="button" class="mobile-toggle" id="mobileMenuBtn" aria-label="القائمة" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobileNav" hidden>
+      <a href="#presets">باقات افتتاح المعارض</a>
+      <a href="#workspace">بناء الحاوية والمانيفست</a>
+      <a href="#operations">معايير التوريد</a>
+      <a href="#faq">الاعتمادات والأسئلة</a>
+    </div>
+  </header>
+
+  <main class="no-print">
+    <!-- Command Hero -->
+    <section class="command-hero" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-main">
+          <div class="vip-eyebrow">
+            <span class="vip-chip" dir="ltr">ENTERPRISE VIP PORTAL</span>
+            <span>نظام التوريد المباشر للموزعين وسلاسل المعارض</span>
+          </div>
+          <h1>مركز تحكم المشتريات: أسس معرضك أو ابنِ حاويتك المختلطة بضغطة زر</h1>
+          <p class="hero-desc">
+            بوابة مخصصة للمستثمرين، الهايبرماركت، ومكاتب التوريد. اختر باقة افتتاح جاهزة لتعبئة المانيفست تلقائياً بأكثر الأصناف مبيعاً، عدّل الكراتين بالباركود، واطبع عرض السعر التجاري المبدئي فوراً.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="#presets" class="btn btn-champagne">
+              <span>اختيار باقة افتتاح جاهزة</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            </a>
+            <a href="#workspace" class="btn btn-navy-outline">
+              <span>فتح منشئ الحاوية المختلطة</span>
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <strong dir="ltr">18%</strong>
+              <span>أعلى خصم كميات فوري</span>
+            </div>
+            <div class="metric-card">
+              <strong dir="ltr">6</strong>
+              <span>قطاعات منزلية متكاملة</span>
+            </div>
+            <div class="metric-card">
+              <strong dir="ltr">100%</strong>
+              <span>ضمان تعويض الكسر الفوري</span>
+            </div>
+            <div class="metric-card">
+              <strong dir="ltr">PDF / WA</strong>
+              <span>إصدار Pro-Forma فوري</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-command-visual">
+          <div class="visual-card primary">
+            <img src="../assets/images/hero-showroom.jpg" alt="صالة عرض المنتجات الرئيسية لدار الأواني" loading="eager" />
+            <div class="visual-overlay">
+              <span>تشكيلة العرض المعتمدة</span>
+              <strong>جرانيت كوري 10 طبقات + بورسلين + ضيافة</strong>
+            </div>
+          </div>
+          <div class="visual-card secondary">
+            <img src="../assets/images/warehouse-logistics.jpg" alt="مستودعات التجهيز والشحن بالطبليات" loading="eager" />
+            <div class="visual-overlay">
+              <span>التجهيز اللوجستي</span>
+              <strong>شحن بالطبليات والحاويات المبردة والمؤمنة</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Turnkey Showroom Opening Presets -->
+    <section class="presets-section" id="presets">
+      <div class="container">
+        <div class="section-header-dark">
+          <div>
+            <span class="gold-eyebrow">تعبئة تلقائية ذكية للمانيفست</span>
+            <h2>باقات افتتاح المعارض الجاهزة (Turnkey Presets)</h2>
+            <p>اضغط على أي باقة لتعبئة قائمة التوريد (Procurement Manifest) تلقائياً بتشكيلة متوازنة تغطي كافة الأقسام الستة مع احتساب الخصم وعائد التجزئة.</p>
+          </div>
+          <div class="active-preset-pill" id="activePresetBanner">
+            <span>الوضع الحالي:</span>
+            <strong id="activePresetName">تخصيص يدوي مفتوح</strong>
+          </div>
+        </div>
+
+        <div class="presets-grid" id="presetsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Custom Mixed Container Builder + Crisp White Trade Manifest Panel -->
+    <section class="workspace-section" id="workspace">
+      <div class="container">
+        <div class="workspace-header">
+          <div>
+            <span class="gold-eyebrow">بناء الشحنة المخصصة</span>
+            <h2>منشئ الحاوية المختلطة وقائمة التوريد (Procurement Manifest)</h2>
+          </div>
+
+          <div class="view-mode-switch" role="group" aria-label="طريقة عرض الأصناف">
+            <button type="button" class="view-btn active" data-view="grid">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <span>عرض البطاقات</span>
+            </button>
+            <button type="button" class="view-btn" data-view="table">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              <span>جدول التوريد السريع</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="workspace-split">
+          <!-- Catalog Builder Side -->
+          <div class="builder-pane">
+            <div class="builder-toolbar">
+              <div class="search-field">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="search" id="vipSearchInput" placeholder="بحث سريع برمز SKU (مثل DA-GR-101) أو اسم الصنف..." autocomplete="off" />
+              </div>
+              <div class="category-pills" id="vipCategoryTabs"></div>
+            </div>
+
+            <!-- Grid or Table View rendered here -->
+            <div id="vipCatalogContainer"></div>
+          </div>
+
+          <!-- Crisp White Trade Manifest Panel -->
+          <aside class="manifest-panel" id="manifestPanel" aria-label="قائمة التوريد وعرض السعر">
+            <div class="manifest-head">
+              <div>
+                <span class="manifest-tag" dir="ltr">PROCUREMENT MANIFEST</span>
+                <h3>ملخص الشحنة وعرض السعر</h3>
+              </div>
+              <button type="button" class="manifest-clear-btn" id="clearManifestBtn">تفريغ</button>
+            </div>
+
+            <!-- Tier Progress -->
+            <div class="manifest-tier-box">
+              <div class="tier-row-top">
+                <span id="manifestTierLabel">الشريحة الأساسية</span>
+                <strong id="manifestTierRate" dir="ltr">0%</strong>
+              </div>
+              <div class="tier-progress-track">
+                <div class="tier-progress-fill" id="manifestTierFill" style="width: 0%"></div>
+              </div>
+              <small id="manifestTierNextHint">أضف أصنافاً لتفعيل خصم 6% / 12% / 18%</small>
+            </div>
+
+            <!-- Container / Pallet Load Bar -->
+            <div class="container-load-box">
+              <div class="load-top">
+                <span>تقدير حمولة الشحن والوزن</span>
+                <strong id="manifestLoadText">0 كجم &bull; 0% طبلية</strong>
+              </div>
+              <div class="load-track">
+                <div class="load-fill" id="manifestLoadFill" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <!-- Manifest Line Items -->
+            <div class="manifest-items" id="manifestItemsList"></div>
+
+            <!-- Financial Summary -->
+            <div class="manifest-financials">
+              <div class="fin-line">
+                <span>عدد الأصناف / الكراتين</span>
+                <strong id="manifestCounts">0 صنف &bull; 0 كرتون</strong>
+              </div>
+              <div class="fin-line">
+                <span>إجمالي الجملة قبل الخصم</span>
+                <span id="manifestSubtotal">0 ر.س</span>
+              </div>
+              <div class="fin-line discount">
+                <span>خصم شريحة الكميات</span>
+                <strong id="manifestDiscount">- 0 ر.س</strong>
+              </div>
+              <div class="fin-line net">
+                <span>صافي التكلفة المستحقة</span>
+                <strong id="manifestNetPayable">0 ر.س</strong>
+              </div>
+              <div class="fin-divider"></div>
+              <div class="fin-line retail">
+                <span>عائد البيع بالتجزئة المتوقع</span>
+                <strong id="manifestRetailRevenue">0 ر.س</strong>
+              </div>
+              <div class="fin-line profit">
+                <span>صافي ربح التاجر والهامش</span>
+                <strong id="manifestProfitSummary">0 ر.س (0%)</strong>
+              </div>
+            </div>
+
+            <div class="manifest-actions">
+              <button type="button" class="btn btn-navy btn-block" id="openProformaModalBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <span>إصدار عرض السعر الرسمي (Pro-Forma)</span>
+              </button>
+              <button type="button" class="btn btn-champagne btn-block" id="manifestWhatsappBtn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                <span>اعتماد وإرسال أمر التوريد عبر واتساب</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quality & Supply Chain Standards -->
+    <section class="operations-section" id="operations">
+      <div class="container">
+        <div class="section-header-dark">
+          <div>
+            <span class="gold-eyebrow">معايير التشغيل المؤسسية</span>
+            <h2>بنية تحتية متكاملة لدعم كبار التجار وسلاسل التجزئة</h2>
+          </div>
+        </div>
+        <div class="ops-standards-grid" id="vipStandardsGrid"></div>
+        <div class="ops-process-grid" id="vipProcessGrid"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header-dark">
+          <div>
+            <span class="gold-eyebrow">الاعتمادات التجارية والشحن</span>
+            <h2>الأسئلة الشائعة للتوريد المؤسسي</h2>
+          </div>
+        </div>
+        <div class="vip-faq-grid" id="vipFaqList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="portal-footer no-print">
+    <div class="container footer-inner">
+      <div>
+        <strong>دار الأواني للتجارة والجملة — مركز التوريد التنفيذي VIP</strong>
+        <p>توريد مباشر من المصانع بضمان تعويض 100% ضد الكسر وفواتير ضريبية إلكترونية معتمدة.</p>
+      </div>
+      <div class="footer-links-row">
+        <a href="#presets">باقات الافتتاح</a>
+        <a href="#workspace">بناء الحاوية</a>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener noreferrer" dir="ltr">WhatsApp: +967 782 259 937</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Live Printable / Copyable Pro-Forma Commercial Quote Modal -->
+  <div class="modal-backdrop" id="proformaBackdrop" hidden>
+    <div class="proforma-modal" id="proformaModal" role="dialog" aria-modal="true" aria-labelledby="proformaTitle">
+      <div class="proforma-toolbar no-print">
+        <div class="toolbar-title">
+          <strong id="proformaTitle">وثيقة عرض السعر التجاري المبدئي (Pro-Forma Commercial Quote)</strong>
+          <span>جاهزة للطباعة، الحفظ كـ PDF، النسخ، أو الإرسال المباشر للمشتريات</span>
+        </div>
+        <div class="toolbar-actions">
+          <button type="button" class="tool-btn" id="copyProformaBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span>نسخ نص العرض</span>
+          </button>
+          <button type="button" class="tool-btn" id="printProformaBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            <span>طباعة / PDF</span>
+          </button>
+          <button type="button" class="tool-btn primary" id="proformaWhatsappBtn">
+            <span>إرسال واتساب VIP</span>
+          </button>
+          <button type="button" class="tool-close" id="closeProformaModalBtn" aria-label="إغلاق">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Editable Buyer Info Strip (reflects live on sheet) -->
+      <div class="proforma-buyer-inputs no-print">
+        <input type="text" id="pfCompanyInput" placeholder="اسم الشركة / المعرض المشتري" />
+        <input type="text" id="pfVatInput" placeholder="الرقم الضريبي أو السجل التجاري (اختياري)" />
+        <input type="text" id="pfCityInput" placeholder="المدينة / منفذ التسليم" />
+      </div>
+
+      <!-- Printable Crisp White Commercial Sheet -->
+      <div class="proforma-sheet" id="proformaSheet">
+        <div class="sheet-header">
+          <div>
+            <span class="sheet-kicker" dir="ltr">PRO-FORMA COMMERCIAL QUOTE</span>
+            <h2>دار الأواني للتجارة والجملة</h2>
+            <p>توريد الأدوات المنزلية، الجرانيت الكوري، ومستلزمات الضيافة — الفئة الملكية VIP</p>
+          </div>
+          <div class="sheet-meta">
+            <div><span>رقم المرجع:</span> <strong id="pfRefNumber" dir="ltr">DAQ-VIP-2026-001</strong></div>
+            <div><span>تاريخ الإصدار:</span> <strong id="pfDate" dir="ltr">--</strong></div>
+            <div><span>صلاحية العرض:</span> <strong>7 أيام عمل</strong></div>
+            <div><span>العملة:</span> <strong id="pfCurrency" dir="ltr">SAR</strong></div>
+          </div>
+        </div>
+
+        <div class="sheet-parties">
+          <div class="party-box">
+            <small>مُصدر العرض (المورّد)</small>
+            <strong>مؤسسة دار الأواني للتجارة والجملة</strong>
+            <span>واتساب التوريد المباشر: <span dir="ltr">+967 782 259 937</span></span>
+          </div>
+          <div class="party-box">
+            <small>الجهة الطالبة (العميل التجاري)</small>
+            <strong id="pfCompanyDisplay">عميل التوريد المؤسسي</strong>
+            <span id="pfVatCityDisplay">المدينة: غير محددة &bull; السجل/الضريبي: قيد التحديث</span>
+          </div>
+        </div>
+
+        <div class="sheet-table-wrap">
+          <table class="sheet-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>رمز الباركود (SKU)</th>
+                <th>الصنف التجاري</th>
+                <th>الكراتين</th>
+                <th>إجمالي القطع</th>
+                <th>سعر الكرتون</th>
+                <th>إجمالي الجملة</th>
+                <th>عائد التجزئة</th>
+              </tr>
+            </thead>
+            <tbody id="pfTableBody"></tbody>
+          </table>
+        </div>
+
+        <div class="sheet-summary-grid">
+          <div class="sheet-terms">
+            <h4>بنود وضمانات التوريد المعتمدة:</h4>
+            <ul>
+              <li>تعويض 100% فوري لأي قطعة متضررة أو مكسورة أثناء النقل.</li>
+              <li>تجهيز ملصقات الباركود والفاتورة الضريبية الإلكترونية مع الشحنة.</li>
+              <li>تغطية شحن مجاني للطلبيات التي تتجاوز حد الشريحة المعتمدة.</li>
+            </ul>
+          </div>
+
+          <div class="sheet-totals-box">
+            <div class="st-row">
+              <span>المجموع الفرعي للجملة</span>
+              <strong id="pfSubtotal">0 ر.س</strong>
+            </div>
+            <div class="st-row">
+              <span>خصم الشريحة المكتسب (<span id="pfTierPct" dir="ltr">0%</span>)</span>
+              <strong id="pfDiscount">- 0 ر.س</strong>
+            </div>
+            <div class="st-row grand">
+              <span>صافي الفاتورة المستحق (Net Payable)</span>
+              <strong id="pfNetPayable">0 ر.س</strong>
+            </div>
+            <div class="st-row retail">
+              <span>إجمالي مبيعات التجزئة المتوقعة</span>
+              <strong id="pfRetailRevenue">0 ر.س</strong>
+            </div>
+            <div class="st-row margin">
+              <span>صافي ربح التاجر ونسبة الهامش</span>
+              <strong id="pfNetMargin">0 ر.س (0%)</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="vip-toast no-print" id="vipToast" role="status" aria-live="polite" hidden></div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
