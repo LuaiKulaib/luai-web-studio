@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الريان للصرافة والتحويلات المالية | أسعار الصرف وحاسبة الحوالات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    نشرة أسعار الصرف اليومية · حوالات فورية لليمن والخليج · <strong>مرخصة ومعتمدة</strong>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect width="34" height="34" rx="9" fill="#065F46"/>
+          <path d="M10 13h14l-3-3M24 21H10l3 3" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>الريان للصرافة والتحويلات</span>
+      </div>
+      <a href="#rates" class="btn-top">نشرة أسعار الصرف</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/transfer.jpg" alt="حوالات مالية وصرافة عملات" class="hero-bg" loading="eager">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-badge">حوالات فورية · صرف عملات · خدمات التجار</span>
+        <h1>حوّل واستلم أموالك<br>بأعلى سرعة <em>وأفضل سعر صرف</em></h1>
+        <p>شبكة فروع واسعة في المحافظات مع استلام الحوالات الدولية من الخليج وأوروبا وحوالات اعتمادات التجار.</p>
+        <div class="hero-btns">
+          <a href="#rates" class="btn-emerald">نشرة الصرف اليومية</a>
+          <a href="#branches" class="btn-ghost">مواقع الفروع</a>
+        </div>
+      </div>
+
+      <div class="conv-card">
+        <h2>محوّل العملات وحاسبة الحوالة</h2>
+        <p class="hint">احسب القيمة التقريبية وأرسل طلب الحوالة أو الصرف لواتساب:</p>
+        <div class="conv-grid">
+          <div class="conv-field">
+            <label for="ex-amount">المبلغ</label>
+            <input type="number" id="ex-amount" value="1000" min="1">
+          </div>
+          <div class="conv-field">
+            <label for="ex-curr">العملة الأجنبية</label>
+            <select id="ex-curr"></select>
+          </div>
+          <div class="conv-field">
+            <label for="ex-mode">نوع العملية</label>
+            <select id="ex-mode">
+              <option value="buy">شراء من العميل (استلام ريال يمني)</option>
+              <option value="sell">بيع للعميل (شراء عملة أجنبية)</option>
+            </select>
+          </div>
+        </div>
+        <div class="conv-result">
+          <span>القيمة بالريال اليمني</span>
+          <strong id="ex-output">141,500 ر.ي</strong>
+        </div>
+        <button type="button" class="btn-wa-full" id="btn-ex-wa">تثبيت السعر أو إرسال حوالة عبر واتساب</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="rates">
+    <div class="container">
+      <div class="sec-head">
+        <h2>نشرة أسعار الصرف الاسترشادية</h2>
+        <p>أسعار تنافسية ومحدّثة — للتأكيد الفوري للكميات التجارية تواصل عبر واتساب</p>
+      </div>
+      <div class="rates-wrap">
+        <table class="rates-table">
+          <thead>
+            <tr>
+              <th>العملة</th>
+              <th>شراء (ر.ي)</th>
+              <th>بيع (ر.ي)</th>
+            </tr>
+          </thead>
+          <tbody id="ex-rates-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-white">
+    <div class="container">
+      <div class="sec-head">
+        <h2>خدماتنا المالية والمصرفية</h2>
+      </div>
+      <div class="svc-grid" id="ex-services"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="branches">
+    <div class="container">
+      <div class="sec-head">
+        <h2>الفروع الرئيسية</h2>
+      </div>
+      <div class="br-grid" id="ex-branches"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>جميع الحقوق محفوظة &copy; 2026 — الريان للصرافة والتحويلات | صُمّم بواسطة <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a></p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

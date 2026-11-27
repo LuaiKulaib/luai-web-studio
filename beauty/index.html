@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دار نورة للعناية والتجميل | بشرة وشعر وأظافر وباقات العرائس</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    قسم خاص للسيدات والعرائس · تعقيم طبي كامل · حجز المواعيد: 0782259937
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect width="34" height="34" rx="9" fill="#831843"/>
+          <path d="M17 8c3 4 6 6.5 6 10a6 6 0 1 1-12 0c0-3.5 3-6 6-10z" stroke="#F9A8D4" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="17" cy="18" r="2" fill="#FFFFFF"/>
+        </svg>
+        <span>دار نورة للعناية والتجميل</span>
+      </div>
+      <a href="#book" class="btn-top">احجزي موعدك</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/salon.jpg" alt="دار نورة للعناية والتجميل" loading="eager">
+    <div class="container hero-body">
+      <span class="hero-badge">عناية بالبشرة · شعر · أظافر · باقات عرائس</span>
+      <h1>إطلالة متألقة وعناية<br>تمنحك <em>الراحة والجمال</em></h1>
+      <p>جلسات عناية بالبشرة والشعر والأظافر بأحدث الأجهزة وباقات متكاملة للعرائس في أجواء هادئة ومخصصة للنساء.</p>
+      <div class="hero-btns">
+        <a href="#book" class="btn-pink">احجزي موعدك الآن</a>
+        <a href="#services" class="btn-ghost">استكشفي الخدمات والباقات</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services">
+    <div class="container">
+      <div class="sec-head">
+        <h2>خدمات العناية والجمال</h2>
+        <p>اختاري القسم المناسب واستعرضي الجلسات المتوفرة</p>
+      </div>
+
+      <div class="filter-pills" id="be-filters">
+        <button type="button" class="f-pill active" data-cat="all">كافة الخدمات</button>
+        <button type="button" class="f-pill" data-cat="skin">العناية بالبشرة</button>
+        <button type="button" class="f-pill" data-cat="hair">الشعر والسبا</button>
+        <button type="button" class="f-pill" data-cat="nails">الأظافر</button>
+      </div>
+
+      <div class="svc-grid" id="be-services"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-white">
+    <div class="container">
+      <div class="sec-head">
+        <h2>الباقات المميّزة للعرائس والمناسبات</h2>
+      </div>
+      <div class="pkg-grid" id="be-packages"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="book">
+    <div class="container">
+      <div class="book-box">
+        <div class="sec-head" style="margin-bottom:1.4rem;">
+          <h2>حجز موعد سريع عبر واتساب</h2>
+          <p>حدّدي الخدمة والموعد المناسب ليتم تأكيد الحجز مباشرة من الاستقبال</p>
+        </div>
+
+        <form class="form-grid" id="be-form">
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="b-service">الخدمة أو الباقة</label>
+              <select id="b-service">
+                <option value="جلسة تنظيف بشرة عميق">جلسة تنظيف بشرة عميق</option>
+                <option value="معالجة وبروتين للشعر">معالجة وبروتين للشعر</option>
+                <option value="مانيكير وباديكير سبا">مانيكير وباديكير سبا</option>
+                <option value="باقة العروس الملكية">باقة العروس الملكية</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="b-time">الفترة المفضّلة</label>
+              <select id="b-time">
+                <option value="الفترة الصباحية (10 ص – 1 م)">الفترة الصباحية (10 ص – 1 م)</option>
+                <option value="الفترة المسائية (3 م – 8 م)">الفترة المسائية (3 م – 8 م)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="b-name">الاسم</label>
+              <input type="text" id="b-name" required placeholder="الاسم الكريم">
+            </div>
+            <div class="form-field">
+              <label for="b-day">اليوم المقترح</label>
+              <input type="text" id="b-day" required placeholder="مثال: الخميس القادم">
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">تأكيد الحجز عبر واتساب</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>جميع الحقوق محفوظة &copy; 2026 — دار نورة للعناية والتجميل | صُمّم بواسطة <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a></p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
