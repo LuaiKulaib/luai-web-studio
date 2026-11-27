@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصفوة للسفريات والسياحة والعمرة | رحلات وتأشيرات وتذاكر طيران</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    رحلات عمرة أسبوعية · حجوزات طيران دولي · <strong>خدمة 24 ساعة عبر واتساب</strong>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect width="34" height="34" rx="9" fill="#064E3B"/>
+          <path d="M21 9a8 8 0 1 0 0 16 6.5 6.5 0 1 1 0-16z" fill="#F59E0B"/>
+          <circle cx="23" cy="14" r="1.5" fill="#FFFFFF"/>
+        </svg>
+        <span>الصفوة للسفريات والعمرة</span>
+      </div>
+      <a href="#book" class="btn-top">احجز رحلتك</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/makkah.jpg" alt="رحلات العمرة والسياحة" loading="eager">
+    <div class="container hero-body">
+      <span class="hero-badge">عمرة · طيران · تأشيرات · سياحة عائلية</span>
+      <h1>رحلات ميسّرة وخدمة<br>تليق <em>بضيوف الرحمن</em> والمسافرين</h1>
+      <p>ننظم باقات العمرة الجويّة والبريّة، حجوزات التذاكر الدولية، وتأشيرات الزيارة والعمل مع متابعة على مدار الساعة.</p>
+      <div class="hero-btns">
+        <a href="#packages" class="btn-gold">استعراض الباقات والعروض</a>
+        <a href="#book" class="btn-ghost">طلب حجز أو تأشيرة</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="container"><div class="stats-grid" id="tr-stats"></div></div>
+  </div>
+
+  <section class="sec" id="packages">
+    <div class="container">
+      <div class="sec-head">
+        <h2>باقات العمرة والسفر</h2>
+        <p>برامج متكاملة تناسب الأفراد والعائلات بتنظيم موثوق</p>
+      </div>
+
+      <div class="filter-pills" id="tr-filters">
+        <button type="button" class="f-pill active" data-cat="all">كافة الباقات</button>
+        <button type="button" class="f-pill" data-cat="umrah">باقات العمرة</button>
+        <button type="button" class="f-pill" data-cat="visas">طيران وتأشيرات</button>
+        <button type="button" class="f-pill" data-cat="tourism">سياحة عائلية</button>
+      </div>
+
+      <div class="pkg-grid" id="tr-packages"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-white">
+    <div class="container">
+      <div class="sec-head">
+        <h2>خدمات الوكالة</h2>
+      </div>
+      <div class="svc-grid" id="tr-services"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="book">
+    <div class="container">
+      <div class="book-box">
+        <div class="sec-head" style="margin-bottom:1.4rem;">
+          <h2>حجز رحلة أو استفسار عن تأشيرة</h2>
+          <p>أرسل تفاصيل سفرك وسيقوم موظف الحجوزات بالرد عليك بأفضل الخيارات والأسعار</p>
+        </div>
+
+        <form class="form-grid" id="tr-form">
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="t-service">الخدمة المطلوبة</label>
+              <select id="t-service">
+                <option value="باقة عمرة (طيران)">باقة عمرة (طيران)</option>
+                <option value="رحلة عمرة بريّة">رحلة عمرة بريّة</option>
+                <option value="حجز تذكرة طيران">حجز تذكرة طيران</option>
+                <option value="تأشيرة زيارة / عمل">تأشيرة زيارة / عمل</option>
+                <option value="برنامج سياحي عائلي">برنامج سياحي عائلي</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="t-city">مدينة المغادرة</label>
+              <select id="t-city">
+                <option value="صنعاء">صنعاء</option>
+                <option value="عدن">عدن</option>
+                <option value="سيئون / المكلا">سيئون / المكلا</option>
+                <option value="الرياض / جدة">الرياض / جدة</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="t-name">الاسم الكامل</label>
+              <input type="text" id="t-name" required placeholder="مثال: عبدالله المهدي">
+            </div>
+            <div class="form-field">
+              <label for="t-count">عدد المسافرين والموعد المقترح</label>
+              <input type="text" id="t-count" required placeholder="مثال: 3 أشخاص — الشهر القادم">
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">إرسال الطلب عبر واتساب</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>جميع الحقوق محفوظة &copy; 2026 — الصفوة للسفريات والسياحة والعمرة | صُمّم بواسطة <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a></p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
