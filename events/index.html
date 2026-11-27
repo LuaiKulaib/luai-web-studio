@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قاعة الفخامة الملكية | صالات الأفراح والضيافة والمناسبات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    معاينة يومية للقاعات · تنسيق كوشة وبوفيه مفتوح · حجز المواعيد: 0782259937
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <rect width="34" height="34" rx="9" fill="#4A0E2E"/>
+          <path d="M9 22l3-8 5 4 5-4 3 8H9z" stroke="#EBD391" stroke-width="2" stroke-linejoin="round"/>
+          <line x1="9" y1="25" x2="25" y2="25" stroke="#C89D3C" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span>قاعة الفخامة الملكية</span>
+      </div>
+      <a href="#reserve" class="btn-top">تحقّق من توفر التاريخ</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="assets/images/banquet.jpg" alt="قاعة الفخامة الملكية للأفراح" loading="eager">
+    <div class="container hero-body">
+      <span class="hero-badge">قاعات أفراح · ضيافة ملكية · مؤتمرات</span>
+      <h1>ليلة لا تُنسى بأرقى<br>معايير <em>الفخامة والضيافة</em></h1>
+      <p>صالات فسيحة بتصاميم عصرية، أجنحة خاصة للنساء والرجال، بوفيهات مفتوحة، وفريق تنظيم يهتم بكل تفصيل.</p>
+      <div class="hero-btns">
+        <a href="#reserve" class="btn-gold">احجز موعدك وتاريخ المناسبة</a>
+        <a href="#halls" class="btn-ghost">استكشف القاعات والباقات</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-strip">
+    <div class="container"><div class="stats-grid" id="ev-stats"></div></div>
+  </div>
+
+  <section class="sec" id="halls">
+    <div class="container">
+      <div class="sec-head">
+        <h2>القاعات وباقات الضيافة</h2>
+        <p>خيارات مرنة تناسب حفلات الزفاف الكبرى، التخرج، والمؤتمرات الرسمية</p>
+      </div>
+      <div class="halls-grid" id="ev-halls"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-white">
+    <div class="container">
+      <div class="sec-head">
+        <h2>مزايا التنظيم المتكامل</h2>
+      </div>
+      <div class="perks-grid" id="ev-perks"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="reserve">
+    <div class="container">
+      <div class="book-box">
+        <div class="sec-head" style="margin-bottom:1.4rem;">
+          <h2>استعلام عن توفر القاعة وطلب عرض سعر</h2>
+          <p>حدد نوع المناسبة والتاريخ المقترح ليتم التواصل معك وتأكيد الحجز عبر واتساب</p>
+        </div>
+
+        <form class="form-grid" id="ev-form">
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="e-type">نوع المناسبة</label>
+              <select id="e-type">
+                <option value="حفل زفاف (قاعة كبرى)">حفل زفاف (قاعة كبرى)</option>
+                <option value="حفل خطوبة / ملكة">حفل خطوبة / ملكة</option>
+                <option value="حفل تخرج / تكريم">حفل تخرج / تكريم</option>
+                <option value="مؤتمر / مأدبة رسمية">مؤتمر / مأدبة رسمية</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="e-hall">القاعة المطلوبة</label>
+              <select id="e-hall">
+                <option value="القاعة الملكية (350–600 ضيف)">القاعة الملكية (350–600 ضيف)</option>
+                <option value="قاعة الياسمين (100–250 ضيف)">قاعة الياسمين (100–250 ضيف)</option>
+                <option value="ضيافة وبوفيه خارجي">ضيافة وبوفيه خارجي</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-field">
+              <label for="e-name">الاسم الكامل</label>
+              <input type="text" id="e-name" required placeholder="مثال: ياسر العولقي">
+            </div>
+            <div class="form-field">
+              <label for="e-date">التاريخ المقترح وعدد الضيوف</label>
+              <input type="text" id="e-date" required placeholder="مثال: 15 الشهر القادم — 300 ضيف">
+            </div>
+          </div>
+          <button type="submit" class="btn-submit">إرسال الاستعلام عبر واتساب</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>جميع الحقوق محفوظة &copy; 2026 — قاعة الفخامة الملكية | صُمّم بواسطة <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a></p>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
