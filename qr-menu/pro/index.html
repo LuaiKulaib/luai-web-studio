@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مطعم وكافيه الديوان — الفئة الفاخرة Pro | منيو تفاعلي وتخصيص الأطباق</title>
+  <meta name="description" content="مطعم وكافيه الديوان — صنعاء شارع حدة. منيو QR تفاعلي فاخر يتيح اختيار الطاولة أو الاستلام السفري، تخصيص الأطباق، تصفية السعرات، تعدد العملات، وتقسيم الفاتورة.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Editorial Dining Strip -->
+  <div class="dining-topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <polyline points="12 7 12 12 15.5 14"/>
+        </svg>
+        <span id="topbar-hours">مفتوح يومياً: 11:00 ص – 1:00 ص · صنعاء — شارع حدة</span>
+      </div>
+      <div class="topbar-meta">
+        <span>AL-DIWAN · FINE DINING INTERACTIVE MENU</span>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener">الطلبات المباشرة: 967782259937+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Bistro Header -->
+  <header class="pro-header" id="pro-header">
+    <div class="container header-inner">
+      <a href="#pro-hero" class="brand-lockup" aria-label="مطعم وكافيه الديوان">
+        <span class="brand-emblem">
+          <svg width="26" height="26" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 23h18"/>
+            <path d="M7 23v-7a7 7 0 0 1 14 0v7"/>
+            <path d="M14 5v4"/>
+            <circle cx="14" cy="4" r="1.3"/>
+          </svg>
+        </span>
+        <span class="brand-titles">
+          <strong id="brand-name-display">مطعم وكافيه الديوان</strong>
+          <small>FINE DINING · PRO QR EDITION</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a href="#table-qr-panel">الطاولة والاستلام</a>
+        <a href="#menu-section">قائمة التخصيص</a>
+        <a href="#chef-notes">معايير المطبخ</a>
+        <a href="#pro-faq">إرشادات الضيوف</a>
+      </nav>
+
+      <div class="header-controls">
+        <div class="currency-switcher" id="currency-switcher" role="group" aria-label="تبديل العملة">
+          <button type="button" class="curr-btn active" data-curr="YER">YER</button>
+          <button type="button" class="curr-btn" data-curr="SAR">SAR</button>
+          <button type="button" class="curr-btn" data-curr="USD">USD</button>
+        </div>
+
+        <button type="button" class="btn-qr-trigger" id="btn-open-qr" aria-label="عرض باركود الطاولة">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7" rx="1"/>
+            <rect x="14" y="3" width="7" height="7" rx="1"/>
+            <rect x="3" y="14" width="7" height="7" rx="1"/>
+            <path d="M14 14h3v3h-3z"/>
+            <path d="M20 14v7h-3"/>
+            <path d="M14 20h3"/>
+          </svg>
+          <span>باركود</span>
+        </button>
+
+        <button type="button" class="ticket-trigger" id="btn-open-ticket" aria-label="فتح تذكرة الطلب">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 3h16v18l-2.5-1.6L15 21l-3-1.8L9 21l-2.5-1.6L4 21V3z"/>
+            <line x1="8" y1="8" x2="16" y2="8"/>
+            <line x1="8" y1="12" x2="16" y2="12"/>
+            <line x1="8" y1="16" x2="12" y2="16"/>
+          </svg>
+          <span id="header-table-status">طاولة #4</span>
+          <span class="ticket-badge" id="ticket-badge-count">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="open-mobile-nav" aria-label="فتح قائمة الجوال">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="mobile-nav-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="قائمة الجوال">
+    <div class="mobile-nav-head">
+      <div class="brand-titles">
+        <strong>مطعم وكافيه الديوان</strong>
+        <small>FINE DINING · PRO EDITION</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="close-mobile-nav" aria-label="إغلاق القائمة">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#table-qr-panel">تجهيز الطاولة والاستلام</a>
+      <a href="#menu-section">قائمة الأطباق والتخصيص</a>
+      <a href="#chef-notes">معايير المطبخ والسعرات</a>
+      <a href="#pro-faq">إرشادات الضيوف</a>
+    </nav>
+    <div class="mobile-nav-foot">
+      <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="btn-pro-primary btn-full">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>تواصل مع مطعم الديوان</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- 1. Editorial Split Bistro Hero -->
+  <section class="pro-hero" id="pro-hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-line" aria-hidden="true"></span>
+          <span>SANAA · HADDA STREET · PRO INTERACTIVE MENU</span>
+        </div>
+        <h1>تجربة طعام تفاعلية من الفحم وفرن الحطب إلى طاولتك</h1>
+        <p class="hero-lead" id="hero-subtitle">مأكولات شرقية · مشويات على الفحم · قهوة مختصة — خصّص حجم حصتك، درجة الشواء، والإضافات بدقة، ثم قسّم الفاتورة بين ضيوفك وأرسل التذكرة مباشرة.</p>
+
+        <div class="hero-actions">
+          <a href="#menu-section" class="btn-pro-primary">
+            <span>استكشف القائمة وخصّص طبقك</span>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+          </a>
+          <a href="#table-qr-panel" class="btn-pro-outline">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="8" width="18" height="4" rx="1"/>
+              <line x1="6" y1="12" x2="6" y2="20"/>
+              <line x1="18" y1="12" x2="18" y2="20"/>
+            </svg>
+            <span>ضبط الطاولة أو السفري</span>
+          </a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <strong>8</strong>
+            <span>أطباق ومشروبات مختارة</span>
+          </div>
+          <div class="metric-item">
+            <strong>3 عملات</strong>
+            <span>YER / SAR / USD</span>
+          </div>
+          <div class="metric-item">
+            <strong>1 – 10</strong>
+            <span>تقسيم فوري للفاتورة</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo-frame">
+          <img src="../assets/images/hero.jpg" alt="تشكيلة أطباق مطعم وكافيه الديوان" id="hero-dish-preview">
+          <div class="hero-photo-badge">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="hero-fulfillment-badge">صالة / طاولة رقم #4 · جاهز لاستقبال الطلب</span>
+          </div>
+        </div>
+        <div class="hero-telemetry-card">
+          <div class="telemetry-row">
+            <span>الفرع النشط</span>
+            <strong id="hero-active-branch">صنعاء — شارع حدة</strong>
+          </div>
+          <div class="telemetry-row">
+            <span>متوسط التحضير</span>
+            <strong id="hero-prep-window">12 – 18 دقيقة</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Table QR & Fulfillment Mode Control Panel -->
+  <section class="fulfillment-section" id="table-qr-panel">
+    <div class="container">
+      <div class="fulfillment-card">
+        <div class="fulfillment-header">
+          <div>
+            <span class="section-kicker">SERVICE ROUTING &amp; QR TABLE</span>
+            <h2>تحديد نوع الخدمة ورقم الطاولة</h2>
+          </div>
+          <div class="mode-switch" role="tablist" aria-label="طريقة استلام الطلب">
+            <button type="button" class="mode-tab active" id="mode-btn-dinein" data-mode="dinein" role="tab" aria-selected="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="8" width="18" height="4" rx="1"/>
+                <line x1="6" y1="12" x2="6" y2="20"/>
+                <line x1="18" y1="12" x2="18" y2="20"/>
+              </svg>
+              <span>صالة / طاولة</span>
+            </button>
+            <button type="button" class="mode-tab" id="mode-btn-takeaway" data-mode="takeaway" role="tab" aria-selected="false">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 0 1-8 0"/>
+              </svg>
+              <span>استلام سفري</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Dine-in Options -->
+        <div class="fulfillment-grid" id="dinein-controls">
+          <div class="field-group">
+            <label for="pro-branch-select">القسم داخل الفرع (شارع حدة)</label>
+            <select id="pro-branch-select">
+              <option value="الصالة الرئيسية — شارع حدة">الصالة الرئيسية — شارع حدة</option>
+              <option value="التراس المفتوح — شارع حدة">التراس المفتوح — شارع حدة</option>
+              <option value="قسم العائلات — شارع حدة">قسم العائلات — شارع حدة</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="pro-table-select">رقم الطاولة (QR)</label>
+            <select id="pro-table-select">
+              <option value="1">طاولة #1</option>
+              <option value="2">طاولة #2</option>
+              <option value="3">طاولة #3</option>
+              <option value="4" selected>طاولة #4</option>
+              <option value="5">طاولة #5</option>
+              <option value="6">طاولة #6</option>
+              <option value="7">طاولة #7 (جلسة نافذة)</option>
+              <option value="8">طاولة #8 (جلسة نافذة)</option>
+              <option value="9">طاولة #9 (عائلات)</option>
+              <option value="10">طاولة #10 (عائلات)</option>
+              <option value="VIP-1">بوث خاص VIP-1</option>
+              <option value="VIP-2">بوث خاص VIP-2</option>
+            </select>
+          </div>
+          <div class="field-action">
+            <button type="button" class="btn-pro-secondary" id="btn-preview-table-qr">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" rx="1"/>
+                <rect x="14" y="3" width="7" height="7" rx="1"/>
+                <rect x="3" y="14" width="7" height="7" rx="1"/>
+                <path d="M14 14h3v3h-3z"/>
+                <path d="M20 14v7h-3"/>
+              </svg>
+              <span>معاينة ملصق QR للطاولة</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Takeaway Options -->
+        <div class="fulfillment-grid hidden" id="takeaway-controls">
+          <div class="field-group">
+            <label for="takeaway-branch-select">نقطة الاستلام</label>
+            <select id="takeaway-branch-select">
+              <option value="فرع شارع حدة الرئيسي — كاونتر الاستلام">فرع شارع حدة الرئيسي — كاونتر الاستلام</option>
+              <option value="خدمة الاستلام من السيارة — شارع حدة">خدمة الاستلام من السيارة — شارع حدة</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="takeaway-time-select">موعد الجاهزية المفضّل</label>
+            <select id="takeaway-time-select">
+              <option value="استلام فوري (15-20 دقيقة)">استلام فوري (15-20 دقيقة)</option>
+              <option value="بعد 30 دقيقة">بعد 30 دقيقة</option>
+              <option value="بعد 45 دقيقة">بعد 45 دقيقة</option>
+              <option value="تجهيز مجدول بعد ساعة">تجهيز مجدول بعد ساعة</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="takeaway-pack-select">نوع التغليف</label>
+            <select id="takeaway-pack-select">
+              <option value="تغليف حراري حافظ للسخونة">تغليف حراري حافظ للسخونة</option>
+              <option value="عزل الصوصات والمشروبات في عبوات مستقلة">عزل الصوصات والمشروبات في عبوات مستقلة</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="fulfillment-summary-strip" id="fulfillment-live-summary">
+          التوجيه النشط: صالة / طاولة #4 · الصالة الرئيسية — شارع حدة
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Interactive Menu Section with Dietary & Calorie Filters -->
+  <section class="menu-section" id="menu-section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="section-kicker">CURATED MENU &amp; CUSTOMIZATION</span>
+          <h2>القائمة التفاعلية وتخصيص الأطباق</h2>
+        </div>
+        <p class="section-sub">اضغط "تخصيص وإضافة" لاختيار حجم الحصة، درجة الشواء أو التتبيل، والإضافات الخاصة قبل الإرسال.</p>
+      </div>
+
+      <!-- Search + Category + Dietary Controls -->
+      <div class="menu-controls-deck">
+        <div class="search-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input type="search" id="pro-menu-search" placeholder="ابحث عن طبق أو مكون (مثال: مشاوي، دجاج، كينوا، بيتزا، لاتيه...)" aria-label="ابحث في قائمة الطعام">
+        </div>
+
+        <div class="cat-tabs-row" id="pro-cat-tabs" role="tablist" aria-label="فئات القائمة"></div>
+
+        <div class="dietary-row">
+          <span class="dietary-label">تصفية السعرات والنظام الغذائي:</span>
+          <div class="dietary-pills" id="dietary-filter-bar" role="group" aria-label="تصفية حسب السعرات والنظام الغذائي">
+            <button type="button" class="diet-pill active" data-diet="all">جميع الخيارات</button>
+            <button type="button" class="diet-pill" data-diet="low-cal">أقل من 350 سعرة</button>
+            <button type="button" class="diet-pill" data-diet="high-protein">غني بالبروتين</button>
+            <button type="button" class="diet-pill" data-diet="vegetarian">نباتي / طازج</button>
+            <button type="button" class="diet-pill" data-diet="beverage">عصائر وقهوة</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-meta-bar">
+        <span id="pro-menu-count">يعرض 8 أطباق</span>
+        <span class="currency-note">الأسعار شاملة التجهيز الفوري — يمكنك التبديل بين YER و SAR و USD من الأعلى</span>
+      </div>
+
+      <div class="menu-grid" id="pro-menu-grid"></div>
+    </div>
+  </section>
+
+  <!-- 4. Culinary Transparency & Standards -->
+  <section class="standards-section" id="chef-notes">
+    <div class="container">
+      <div class="section-head center">
+        <span class="section-kicker">CULINARY CRAFT</span>
+        <h2>شفافية المكونات ودقة التحضير</h2>
+      </div>
+      <div class="standards-grid" id="pro-standards-grid"></div>
+    </div>
+  </section>
+
+  <!-- 5. Diner FAQ -->
+  <section class="faq-section" id="pro-faq">
+    <div class="container faq-layout">
+      <div class="faq-intro">
+        <span class="section-kicker">GUEST GUIDE</span>
+        <h2>أسئلة الضيوف الشائعة</h2>
+        <p>تفاصيل واضحة حول التخصيص، السعرات الحرارية، وتقسيم الفاتورة على الطاولة.</p>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="btn-pro-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+          <span>تواصل مباشر مع المشرف</span>
+        </a>
+      </div>
+      <div class="faq-list" id="pro-faq-list"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pro-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand-lockup">
+          <span class="brand-emblem">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 23h18"/>
+              <path d="M7 23v-7a7 7 0 0 1 14 0v7"/>
+              <path d="M14 5v4"/>
+              <circle cx="14" cy="4" r="1.3"/>
+            </svg>
+          </span>
+          <span class="brand-titles">
+            <strong>مطعم وكافيه الديوان</strong>
+            <small>FINE DINING · PRO QR EDITION</small>
+          </span>
+        </div>
+        <p>مأكولات شرقية أصيلة، مشويات على الفحم، بيتزا فرن الحطب، وقهوة مختصة في قلب شارع حدة بصنعاء.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>روابط سريعة</h4>
+        <a href="#table-qr-panel">تحديد الطاولة / السفري</a>
+        <a href="#menu-section">قائمة الطعام التفاعلية</a>
+        <a href="#chef-notes">معايير المطبخ</a>
+        <a href="#pro-faq">الأسئلة الشائعة</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>الموقع وساعات العمل</h4>
+        <p>صنعاء — شارع حدة</p>
+        <p>مفتوح يومياً: 11:00 ص – 1:00 ص</p>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener">واتساب الطلبات: 967782259937+</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>مطعم وكافيه الديوان — الفئة الفاخرة Pro · جميع الحقوق محفوظة 2026</span>
+      <span>تصميم نموذج QR تفاعلي · AL-DIWAN SANAA</span>
+    </div>
+  </footer>
+
+  <!-- Sticky Bottom Ticket Summary Bar -->
+  <div class="sticky-ticket-bar" id="pro-sticky-bar" aria-live="polite">
+    <div class="sticky-info">
+      <strong id="sticky-ticket-count">0 أصناف في التذكرة</strong>
+      <div class="sticky-sub">
+        <span id="sticky-ticket-total">الإجمالي: 0 ر.ي</span>
+        <span class="sep-dot" aria-hidden="true">|</span>
+        <span id="sticky-split-preview">فردي: 0 ر.ي</span>
+      </div>
+    </div>
+    <button type="button" class="btn-pro-primary" id="btn-sticky-open-ticket">
+      <span>مراجعة التذكرة وتقسيم الفاتورة</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <line x1="19" y1="12" x2="5" y2="12"/>
+        <polyline points="12 19 5 12 12 5"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Dish Customization Modal -->
+  <div class="modal-backdrop" id="custom-backdrop" aria-hidden="true"></div>
+  <div class="custom-modal" id="custom-modal" role="dialog" aria-modal="true" aria-labelledby="custom-dish-title">
+    <div class="custom-modal-head">
+      <div class="custom-head-meta">
+        <span class="custom-tag" id="custom-dish-tag">الأكثر طلباً</span>
+        <h3 id="custom-dish-title">تخصيص الطبق</h3>
+      </div>
+      <button type="button" class="icon-close-btn" id="btn-close-custom" aria-label="إغلاق نافذة التخصيص">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="custom-modal-body">
+      <div class="custom-hero-strip">
+        <img src="../assets/images/grill.jpg" alt="" id="custom-dish-img">
+        <div class="custom-hero-info">
+          <p id="custom-dish-desc"></p>
+          <div class="custom-cal-pill" id="custom-dish-base-cal">720 سعرة</div>
+        </div>
+      </div>
+
+      <div class="custom-group">
+        <h4>1. حجم الحصة</h4>
+        <div class="option-grid" id="custom-portion-options"></div>
+      </div>
+
+      <div class="custom-group">
+        <h4>2. درجة الشواء / التحضير والتتبيل</h4>
+        <div class="option-grid" id="custom-prep-options"></div>
+      </div>
+
+      <div class="custom-group">
+        <h4>3. صوصات وإضافات اختيارية</h4>
+        <div class="addon-grid" id="custom-addons-options"></div>
+      </div>
+
+      <div class="custom-group">
+        <label for="custom-note-input" class="custom-note-label">4. ملاحظات خاصة للطبق (اختياري)</label>
+        <input type="text" id="custom-note-input" placeholder="مثال: بدون بصل، صوص جانبي، تقديم مبكر...">
+      </div>
+    </div>
+
+    <div class="custom-modal-foot">
+      <div class="custom-foot-top">
+        <div class="qty-stepper">
+          <button type="button" id="custom-qty-dec" aria-label="إنقاص الكمية">-</button>
+          <span id="custom-qty-val">1</span>
+          <button type="button" id="custom-qty-inc" aria-label="زيادة الكمية">+</button>
+        </div>
+        <div class="custom-live-readout">
+          <span id="custom-live-calories">720 سعرة إجمالاً</span>
+          <strong id="custom-live-total">4,500 ر.ي</strong>
+        </div>
+      </div>
+      <button type="button" class="btn-pro-primary btn-full" id="btn-confirm-custom">
+        <span>إضافة الطبق المخصّص إلى التذكرة</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Table QR Placard Modal -->
+  <div class="modal-backdrop" id="qr-backdrop" aria-hidden="true"></div>
+  <div class="qr-modal" id="qr-modal" role="dialog" aria-modal="true" aria-labelledby="qr-modal-title">
+    <div class="qr-modal-head">
+      <div>
+        <h3 id="qr-modal-title">ملصق QR الخاص بالطاولة</h3>
+        <small>يمسح الضيف الرمز للطلب مباشرة على نفس الطاولة</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="btn-close-qr" aria-label="إغلاق نافذة الباركود">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="qr-placard-card">
+      <span class="qr-brand-kicker">AL-DIWAN SANAA · PRO TABLE QR</span>
+      <strong class="qr-table-title" id="qr-placard-table">طاولة رقم #4</strong>
+      <span class="qr-branch-sub" id="qr-placard-branch">الصالة الرئيسية — شارع حدة</span>
+      <div class="qr-matrix-box">
+        <svg width="160" height="160" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" aria-label="رمز QR للطاولة">
+          <rect x="2" y="2" width="7" height="7"/>
+          <rect x="4" y="4" width="3" height="3"/>
+          <rect x="15" y="2" width="7" height="7"/>
+          <rect x="17" y="4" width="3" height="3"/>
+          <rect x="2" y="15" width="7" height="7"/>
+          <rect x="4" y="17" width="3" height="3"/>
+          <path d="M11 3v4M11 10v3M11 17v4"/>
+          <path d="M3 11h4M10 11h4M17 11h4"/>
+          <path d="M15 15h3v3h-3z"/>
+          <path d="M21 15v6h-4"/>
+        </svg>
+      </div>
+      <p>يتم توجيه الطلبات تلقائياً إلى المطبخ مع رقم الطاولة المختار ومشاركة تقسيم الفاتورة بين الضيوف.</p>
+      <button type="button" class="btn-pro-secondary" id="btn-print-qr">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 6 2 18 2 18 9"/>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+          <rect x="6" y="14" width="12" height="8"/>
+        </svg>
+        <span>طباعة ملصق الطاولة</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Slide-Over Ticket Drawer with Guest Bill Splitter -->
+  <div class="drawer-backdrop" id="ticket-backdrop" aria-hidden="true"></div>
+  <aside class="ticket-drawer" id="ticket-drawer" role="dialog" aria-modal="true" aria-labelledby="ticket-drawer-title">
+    <div class="ticket-head">
+      <div>
+        <h2 id="ticket-drawer-title">تذكرة الطلب والضيوف</h2>
+        <small>الفئة الفاخرة Pro · مراجعة وتقسيم الفاتورة</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="btn-close-ticket" aria-label="إغلاق التذكرة">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-fulfillment-pill">
+      <span id="drawer-mode-summary">صالة / طاولة #4 · الصالة الرئيسية — شارع حدة</span>
+      <button type="button" class="link-btn" id="btn-edit-fulfillment">تعديل</button>
+    </div>
+
+    <div class="ticket-items-scroll" id="ticket-items-list"></div>
+
+    <div class="ticket-checkout-panel">
+      <!-- Guest Bill Splitter (1-10 Guests) -->
+      <div class="bill-splitter-card" id="bill-splitter-panel">
+        <div class="splitter-top">
+          <div>
+            <strong>مقسّم الفاتورة بين الضيوف</strong>
+            <small>احتساب حصة كل ضيف من 1 إلى 10 أفراد</small>
+          </div>
+          <div class="splitter-stepper">
+            <button type="button" id="split-guest-dec" aria-label="تقليل عدد الضيوف">-</button>
+            <span id="split-guest-count">1</span>
+            <button type="button" id="split-guest-inc" aria-label="زيادة عدد الضيوف">+</button>
+          </div>
+        </div>
+        <div class="splitter-presets">
+          <button type="button" class="split-preset-btn active" data-guests="1">1</button>
+          <button type="button" class="split-preset-btn" data-guests="2">2</button>
+          <button type="button" class="split-preset-btn" data-guests="4">4</button>
+          <button type="button" class="split-preset-btn" data-guests="6">6</button>
+          <button type="button" class="split-preset-btn" data-guests="8">8</button>
+          <button type="button" class="split-preset-btn" data-guests="10">10</button>
+        </div>
+        <div class="splitter-result-row">
+          <span>نصيب الضيف الواحد:</span>
+          <strong id="split-per-guest-amount">0 ر.ي</strong>
+        </div>
+        <label class="split-checkbox">
+          <input type="checkbox" id="split-include-toggle" checked>
+          <span>إدراج تفاصيل التقسيم في رسالة واتساب</span>
+        </label>
+      </div>
+
+      <div class="drawer-inputs">
+        <input type="text" id="ticket-guest-name" placeholder="اسم الضيف الكريم (اختياري)" aria-label="اسم الضيف">
+        <input type="text" id="ticket-general-note" placeholder="ملاحظة عامة للتذكرة (توقيت التقديم، خدمة...)" aria-label="ملاحظة عامة">
+      </div>
+
+      <div class="ticket-totals">
+        <div class="total-line">
+          <span>مجموع الأصناف</span>
+          <span id="ticket-subtotal-val">0 ر.ي</span>
+        </div>
+        <div class="total-line grand">
+          <span>الإجمالي النهائي</span>
+          <strong id="ticket-grand-total-val">0 ر.ي</strong>
+        </div>
+        <div class="total-secondary" id="ticket-secondary-currency">المعادل التقريبي: 0 ر.س · $0.00</div>
+      </div>
+
+      <div class="drawer-actions-row">
+        <button type="button" class="btn-pro-outline" id="btn-copy-ticket">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span>نسخ</span>
+        </button>
+        <button type="button" class="btn-pro-primary btn-grow" id="btn-send-wa-pro">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+          <span>إرسال التذكرة عبر واتساب</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="pro-toast" id="pro-toast" role="status" aria-live="polite"></div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

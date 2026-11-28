@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>جسر العالم للشحن — الفئة الملكية VIP | محطة التجميع متعدد المناشئ والحاويات</title>
+  <meta name="description" content="محطة سلاسل الإمداد للمؤسسات — الفئة الملكية VIP: تجميع البضائع من مستودعات غوانزو وإيوو ودبي وجدة، حجز حاويات FCL 20ft و 40ft HC و LCL، تتبع البوالص، ومانيفست مبدئي قابل للطباعة والإرسال.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Enterprise Port Telemetry Strip -->
+  <div class="telemetry-strip no-print" role="region" aria-label="حالة مراكز التجميع والشحن المباشرة">
+    <div class="container telemetry-inner">
+      <div class="telemetry-node">
+        <span class="pulse-gold" aria-hidden="true"></span>
+        <span class="tele-key num-font">GUANGZHOU · YIWU</span>
+        <span class="tele-label">تجميع الصين نشط</span>
+      </div>
+      <div class="telemetry-node">
+        <span class="pulse-cyan" aria-hidden="true"></span>
+        <span class="tele-key num-font">JEBEL ALI · JEDDAH</span>
+        <span class="tele-label">موانئ إعادة التصدير جاهزة</span>
+      </div>
+      <div class="telemetry-node">
+        <span class="tele-key num-font" id="strip-container-readout">FCL 40ft HC · 0.0%</span>
+        <span class="tele-label">إشغال الحاوية النشط</span>
+      </div>
+      <div class="telemetry-node">
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="tele-wa-link num-font">VIP DESK: 967782259937</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sovereign Terminal Header -->
+  <header class="vip-header no-print" id="vip-header">
+    <div class="container vip-header-inner">
+      <a href="#top" class="vip-brand" aria-label="جسر العالم للشحن — الفئة الملكية VIP">
+        <span class="vip-crest">
+          <svg width="40" height="40" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="39" height="39" rx="7" stroke="#DFAD4A" stroke-width="1.4"/>
+            <rect x="4.5" y="4.5" width="33" height="33" rx="4.5" stroke="#DFAD4A" stroke-opacity="0.32" stroke-width="1"/>
+            <path d="M9 26.5H33L30 32H12L9 26.5Z" stroke="#DFAD4A" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M13.5 23V15L21 11L28.5 15V23" stroke="#F1F5F9" stroke-width="1.8" stroke-linejoin="round"/>
+            <line x1="21" y1="11" x2="21" y2="26.5" stroke="#DFAD4A" stroke-width="1.6"/>
+          </svg>
+        </span>
+        <span class="vip-brand-copy">
+          <strong>جسر العالم للشحن الدولي</strong>
+          <small dir="ltr">ENTERPRISE SUPPLY CHAIN TERMINAL · VIP</small>
+        </span>
+      </a>
+
+      <nav class="vip-nav" aria-label="التنقل الرئيسي">
+        <a href="#terminal">محطة التجميع والحاويات</a>
+        <a href="#tracker">تتبع البوالص</a>
+        <a href="#hubs">المراكز والأسطول</a>
+        <a href="#corridors">خطوط الشحن</a>
+      </nav>
+
+      <div class="vip-header-actions">
+        <a href="#terminal" class="allocation-pill" aria-label="إجمالي الحجم المجمع">
+          <span>المجمّع:</span>
+          <strong class="num-font" id="vip-header-cbm">0.0 CBM</strong>
+        </a>
+        <button type="button" class="btn-gold-outline" id="vip-header-manifest-btn">
+          <span>معاينة المانيفست</span>
+        </button>
+        <button type="button" class="vip-menu-btn" id="vip-menu-btn" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="vip-mobile-drawer" id="vip-mobile-drawer" hidden>
+      <a href="#terminal">محطة التجميع متعدد المناشئ</a>
+      <a href="#tracker">تتبع البوالص المباشر</a>
+      <a href="#hubs">مراكز التجميع والخدمات</a>
+      <a href="#corridors">جدول الممرات الدولية</a>
+    </div>
+  </header>
+
+  <main id="top" class="no-print">
+    <!-- Sovereign Command Hero -->
+    <section class="vip-hero">
+      <div class="container vip-hero-grid">
+        <div class="vip-hero-copy">
+          <div class="sovereign-eyebrow">
+            <span class="gold-rule" aria-hidden="true"></span>
+            <span>الفئة الملكية VIP · محطة إدارة سلاسل الإمداد والتجميع</span>
+          </div>
+
+          <h1>منظومة تجميع الشحنات <br>من <em>أربع منصات عالمية</em> في حاوية واحدة</h1>
+          <p class="vip-hero-desc">
+            صُمّمت للمستوردين الكبار والشركات: امزج الطبليات والأمتار المكعبة بين مستودعات غوانزو، إيوو، دبي جبل علي، وجدة، وحدد سعة الحاوية (<span class="num-font">20ft / 40ft HC / LCL</span>) مع حساب التكلفة الإجمالية الواصلة وإصدار مانيفست الحجز الفوري.
+          </p>
+
+          <div class="vip-hero-ctas">
+            <a href="#terminal" class="btn-gold-solid">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              <span>تشغيل محطة التجميع والحاويات</span>
+            </a>
+            <a href="#tracker" class="btn-steel-outline">
+              <span>تتبّع البوالص الجارية</span>
+            </a>
+          </div>
+
+          <div class="vip-kpi-strip">
+            <div class="vip-kpi-box">
+              <strong class="num-font">4 HUBS</strong>
+              <span>غوانزو · إيوو · جبل علي · جدة</span>
+            </div>
+            <div class="vip-kpi-box">
+              <strong class="num-font">68.0 m&sup3;</strong>
+              <span>أقصى استيعاب 40ft HC</span>
+            </div>
+            <div class="vip-kpi-box">
+              <strong class="num-font">QC + INS</strong>
+              <span>فحص الصين وتأمين بحري</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="vip-hero-viewport">
+          <img src="../assets/images/port.jpg" alt="محطة الرافعات الجسرية وميناء الحاويات الدولي" loading="eager">
+          <div class="viewport-hud">
+            <div class="hud-top">
+              <span class="hud-tag num-font">TERMINAL FEED · LIVE ALLOCATION</span>
+              <span class="hud-status">تشغيل مستمر</span>
+            </div>
+            <div class="hud-bottom">
+              <div>
+                <span>الربط الملاحي المباشر</span>
+                <strong>الصين &larr; دبي / جدة &larr; اليمن والخليج</strong>
+              </div>
+              <div class="hud-metrics-pair">
+                <span>معدل التزام الرحلات</span>
+                <strong class="num-font">98.4%</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Multi-Origin Warehouse Consolidation & Container Terminal -->
+    <section class="vip-section" id="terminal">
+      <div class="container">
+        <div class="vip-sec-head">
+          <div>
+            <span class="sec-kicker">MULTI-ORIGIN WAREHOUSE CONSOLIDATION &amp; CONTAINER TERMINAL</span>
+            <h2>محطة تجميع المستودعات وحجز الحاويات</h2>
+            <p>تحكّم بتوزيع الشحنات من أربعة مستودعات دولية واختر نوع الحاوية والخدمات اللوجستية لحساب التكلفة الواصلة ونسبة الامتلاء لحظياً.</p>
+          </div>
+
+          <div class="scenario-presets" role="group" aria-label="سيناريوهات تجميع جاهزة">
+            <button type="button" class="scenario-btn" data-scenario="china-dual">تجميع صيني (غوانزو + إيوو)</button>
+            <button type="button" class="scenario-btn active" data-scenario="multi-hub">تجميع 4 مراكز إقليمية</button>
+            <button type="button" class="scenario-btn" data-scenario="full-40hc">شحنة حاوية 40ft HC كاملة</button>
+          </div>
+        </div>
+
+        <div class="terminal-grid">
+          <!-- Left Main Console: Hubs + Container Mode + Add-Ons -->
+          <div class="terminal-controls-col">
+            <!-- 1. Multi-Origin Consolidation Hubs -->
+            <div class="steel-panel">
+              <div class="panel-header">
+                <div>
+                  <span class="step-tag num-font">STEP 01</span>
+                  <h3>تخصيص الطرود والأمتار المكعبة عبر مراكز التجميع</h3>
+                </div>
+                <span class="panel-sub-note" id="active-hubs-badge">4 مراكز نشطة</span>
+              </div>
+
+              <div class="hubs-builder-grid" id="vip-hubs-container"></div>
+            </div>
+
+            <!-- 2. Container Spec & Destination -->
+            <div class="steel-panel">
+              <div class="panel-header">
+                <div>
+                  <span class="step-tag num-font">STEP 02</span>
+                  <h3>اختيار نمط الحاوية والوجهة وقيمة البضاعة</h3>
+                </div>
+              </div>
+
+              <div class="container-mode-grid" role="radiogroup" aria-label="نوع الحاوية أو الشحن">
+                <button type="button" class="container-card" data-container="FCL_20">
+                  <div class="cc-top">
+                    <strong class="num-font">FCL 20ft</strong>
+                    <span>حاوية قياسية 20 قدم</span>
+                  </div>
+                  <div class="cc-specs num-font">28.0 CBM · 21,700 kg</div>
+                </button>
+
+                <button type="button" class="container-card active" data-container="FCL_40HC">
+                  <div class="cc-top">
+                    <strong class="num-font">FCL 40ft HC</strong>
+                    <span>حاوية مرتفعة 40 قدم</span>
+                  </div>
+                  <div class="cc-specs num-font">68.0 CBM · 26,500 kg</div>
+                </button>
+
+                <button type="button" class="container-card" data-container="LCL">
+                  <div class="cc-top">
+                    <strong class="num-font">LCL</strong>
+                    <span>تجميع مشترك بالمساحة</span>
+                  </div>
+                  <div class="cc-specs num-font">حسب CBM (W/M)</div>
+                </button>
+              </div>
+
+              <div class="terminal-inputs-2">
+                <div class="steel-field">
+                  <label for="vip-dest">ميناء أو مدينة الوصول النهائية</label>
+                  <select id="vip-dest">
+                    <option value="ميناء عدن">ميناء عدن</option>
+                    <option value="صنعاء — تخليص منفذ">صنعاء — تخليص منفذ</option>
+                    <option value="ميناء الحديدة">ميناء الحديدة</option>
+                    <option value="الرياض / جدة">الرياض / جدة</option>
+                    <option value="دبي / الخليج">دبي / الخليج</option>
+                  </select>
+                </div>
+
+                <div class="steel-field">
+                  <label for="vip-cargo-value">القيمة التقديرية للبضاعة (USD — للتأمين)</label>
+                  <input type="number" id="vip-cargo-value" class="num-font" min="500" max="5000000" step="500" value="38000">
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Enterprise Value-Added Toggles -->
+            <div class="steel-panel">
+              <div class="panel-header">
+                <div>
+                  <span class="step-tag num-font">STEP 03</span>
+                  <h3>الخدمات السيادية والاعتمادات المرافقة</h3>
+                </div>
+              </div>
+
+              <div class="addons-grid">
+                <label class="addon-toggle-card" for="toggle-customs">
+                  <input type="checkbox" id="toggle-customs" checked>
+                  <span class="addon-check-ui" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <span class="addon-copy">
+                    <strong>التخليص الجمركي والبيان الموحد</strong>
+                    <small>Customs Brokerage · مراجعة HS Code وإنجاز الفسح الجمركي</small>
+                  </span>
+                  <span class="addon-price num-font" id="price-addon-customs">+$340</span>
+                </label>
+
+                <label class="addon-toggle-card" for="toggle-qc">
+                  <input type="checkbox" id="toggle-qc" checked>
+                  <span class="addon-check-ui" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <span class="addon-copy">
+                    <strong>فحص الجودة والمطابقة في الصين</strong>
+                    <small>Quality Inspection in China · عد الكراتين وتقارير الفحص المصوّرة</small>
+                  </span>
+                  <span class="addon-price num-font" id="price-addon-qc">+$195</span>
+                </label>
+
+                <label class="addon-toggle-card" for="toggle-insurance">
+                  <input type="checkbox" id="toggle-insurance">
+                  <span class="addon-check-ui" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                  </span>
+                  <span class="addon-copy">
+                    <strong>التأمين البحري الشامل (All-Risks)</strong>
+                    <small>Marine Insurance · تغطية 0.85% من القيمة المعلنة للبضاعة</small>
+                  </span>
+                  <span class="addon-price num-font" id="price-addon-ins">+$323</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Sticky Telemetry Ledger: Container Fill % Bar & Landed Cost -->
+          <aside class="terminal-ledger-col" aria-label="مؤشر امتلاء الحاوية وتفصيل التكلفة">
+            <div class="ledger-panel">
+              <div class="ledger-top">
+                <div>
+                  <span class="ledger-kicker">CONTAINER LOAD &amp; LANDED COST</span>
+                  <h3>ملخص الحاوية والتكلفة الواصلة</h3>
+                </div>
+                <span class="container-badge num-font" id="ledger-mode-tag">40ft HC</span>
+              </div>
+
+              <!-- Container Fill % Bar -->
+              <div class="fill-gauge-card">
+                <div class="fill-gauge-head">
+                  <span>نسبة امتلاء الحاوية بالحجم (<span class="num-font">CBM</span>)</span>
+                  <strong class="num-font" id="fill-pct-label">0.0%</strong>
+                </div>
+
+                <div class="fill-bar-track" role="progressbar" id="fill-progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                  <div class="fill-bar-inner" id="fill-bar-inner" style="width: 0%;"></div>
+                </div>
+
+                <div class="fill-sub-metrics">
+                  <span>المجمع: <strong class="num-font" id="fill-cbm-ratio">0.0 / 68.0 CBM</strong></span>
+                  <span>الوزن: <strong class="num-font" id="fill-weight-ratio">0 / 26,500 kg</strong></span>
+                </div>
+
+                <div class="capacity-alert" id="capacity-alert" hidden>
+                  <span id="capacity-alert-text"></span>
+                  <button type="button" class="btn-upgrade-40hc" id="btn-upgrade-40hc" hidden>ترقية إلى 40ft HC</button>
+                </div>
+              </div>
+
+              <!-- 4 Core Telemetry Figures -->
+              <div class="mini-stats-row">
+                <div>
+                  <span>إجمالي الطبليات</span>
+                  <strong class="num-font" id="stat-total-pallets">0</strong>
+                </div>
+                <div>
+                  <span>الحجم الكلي</span>
+                  <strong class="num-font" id="stat-total-cbm">0.0 m&sup3;</strong>
+                </div>
+                <div>
+                  <span>الوزن الإجمالي</span>
+                  <strong class="num-font" id="stat-total-weight">0 kg</strong>
+                </div>
+                <div>
+                  <span>المدة التقديرية</span>
+                  <strong class="num-font" id="stat-transit-days">-</strong>
+                </div>
+              </div>
+
+              <!-- Itemized Landed Cost Ledger -->
+              <div class="cost-breakdown-list" id="cost-breakdown-list"></div>
+
+              <div class="grand-total-box">
+                <div>
+                  <span>إجمالي التكلفة اللوجستية الواصلة التقديرية</span>
+                  <small class="num-font" id="cost-per-cbm-note">$0 / CBM</small>
+                </div>
+                <strong class="num-font" id="grand-total-usd">$0</strong>
+              </div>
+
+              <!-- Client Identity for Manifest -->
+              <div class="manifest-client-fields">
+                <div class="steel-field">
+                  <label for="vip-company-name">اسم الشركة / المستورد (يظهر في المانيفست)</label>
+                  <input type="text" id="vip-company-name" placeholder="مثال: شركة المدار للاستيراد والتجارة" value="مجموعة الرواد للتجارة الدولية">
+                </div>
+                <div class="steel-field">
+                  <label for="vip-contact-phone">رقم التواصل أو مسؤول الاستيراد</label>
+                  <input type="text" id="vip-contact-phone" class="num-font" placeholder="مثال: +967 77XXXXXXX" value="770000000">
+                </div>
+              </div>
+
+              <button type="button" class="btn-gold-full" id="btn-open-manifest">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/>
+                  <line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+                <span>إصدار ومعاينة المانيفست المبدئي (Manifest)</span>
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Waybill Tracker (Enterprise Edition) -->
+    <section class="vip-section vip-section-alt" id="tracker">
+      <div class="container">
+        <div class="tracker-shell">
+          <div class="tracker-left-info">
+            <span class="sec-kicker">WAYBILL TELEMETRY &amp; CUSTOMS CHECKPOINTS</span>
+            <h2>متابعة البوالص والشحنات الجارية</h2>
+            <p>استعرض حالة البوالص التجريبية أو أدخل رقم البوليصة لفحص مراحل التخليص والنقل الأربع بشكل تفاعلي.</p>
+
+            <div class="vip-demo-chips" role="group" aria-label="بوالص تجريبية">
+              <button type="button" class="vip-chip active num-font" data-code="WB-1024">WB-1024</button>
+              <button type="button" class="vip-chip num-font" data-code="WB-2048">WB-2048</button>
+              <button type="button" class="vip-chip num-font" data-code="WB-3090">WB-3090</button>
+            </div>
+
+            <form class="vip-track-form" id="vip-track-form">
+              <input type="text" id="vip-track-input" class="num-font" value="WB-1024" aria-label="رقم بوليصة التتبع">
+              <button type="submit" id="vip-track-btn" class="btn-gold-solid-sm">فحص البوليصة</button>
+            </form>
+          </div>
+
+          <div class="tracker-right-stage" id="vip-track-result" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consolidation Hubs & Fleet Capabilities -->
+    <section class="vip-section" id="hubs">
+      <div class="container">
+        <div class="vip-sec-head">
+          <div>
+            <span class="sec-kicker">GLOBAL WAREHOUSING &amp; FLEET INFRASTRUCTURE</span>
+            <h2>مراكز التجميع الإقليمية ومنظومة النقل</h2>
+            <p>ربط فعلي بين مستودعات المنشأ في آسيا والخليج وبين أسطول النقل البحري والجوي والتخليص الجمركي.</p>
+          </div>
+        </div>
+
+        <div class="vip-services-grid" id="vip-services"></div>
+      </div>
+    </section>
+
+    <!-- Enterprise Corridors Schedule -->
+    <section class="vip-section vip-section-alt" id="corridors">
+      <div class="container">
+        <div class="vip-sec-head">
+          <div>
+            <span class="sec-kicker">REGULAR SAILING &amp; AIR CORRIDORS</span>
+            <h2>شبكة الخطوط الملاحية والبرية المعتمدة</h2>
+            <p>جدول الرحلات المنتظمة ومواعيد الإبحار والتخليص للمؤسسات والشركات التجارية.</p>
+          </div>
+        </div>
+
+        <div class="vip-routes-grid" id="vip-routes"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Printable / Copyable Pro-Forma Consolidation & Booking Manifest Modal -->
+  <div class="manifest-modal" id="vip-manifest-modal" role="dialog" aria-modal="true" aria-labelledby="manifest-title" hidden>
+    <div class="manifest-backdrop" id="manifest-backdrop"></div>
+    <div class="manifest-dialog">
+      <div class="manifest-toolbar no-print">
+        <div>
+          <span class="modal-kicker num-font">PRO-FORMA CONSOLIDATION &amp; BOOKING MANIFEST</span>
+          <h3 id="manifest-title">وثيقة التجميع والحجز المبدئي للشحنة</h3>
+        </div>
+        <button type="button" class="btn-close-modal" id="manifest-close-btn" aria-label="إغلاق نافذة المانيفست">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="manifest-sheet" id="manifest-printable-sheet"></div>
+
+      <div class="manifest-actions no-print">
+        <button type="button" class="btn-manifest-print" id="manifest-print-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"/>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+            <rect x="6" y="14" width="12" height="8"/>
+          </svg>
+          <span>طباعة الوثيقة / حفظ PDF</span>
+        </button>
+
+        <button type="button" class="btn-manifest-copy" id="manifest-copy-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span>نسخ نص المانيفست</span>
+        </button>
+
+        <button type="button" class="btn-gold-solid-sm" id="manifest-wa-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+          <span>اعتماد وإرسال عبر واتساب (الفئة الملكية VIP)</span>
+        </button>
+      </div>
+
+      <div class="manifest-status no-print" id="manifest-action-status" role="status" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <!-- Sovereign Terminal Footer -->
+  <footer class="vip-footer no-print">
+    <div class="container">
+      <div class="vip-footer-grid">
+        <div>
+          <div class="footer-crest-row">
+            <svg width="34" height="34" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+              <rect x="1.5" y="1.5" width="39" height="39" rx="7" stroke="#DFAD4A" stroke-width="1.3"/>
+              <path d="M9 26.5H33L30 32H12L9 26.5Z" stroke="#DFAD4A" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="M13.5 23V15L21 11L28.5 15V23" stroke="#F1F5F9" stroke-width="1.8" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <strong>جسر العالم للشحن الدولي — الفئة الملكية VIP</strong>
+              <small dir="ltr">ENTERPRISE SUPPLY CHAIN TERMINAL · GZ · YIWU · DXB · JED</small>
+            </div>
+          </div>
+          <p class="footer-summary">
+            منصة عمليات الشحن والتخليص المؤسسي عبر مستودعات التجميع في الصين والإمارات والسعودية، مع فحص الجودة والتأمين البحري وإصدار بوالص التجميع المعتمدة.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>قنوات كبار العملاء VIP</h4>
+          <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="num-font">واتساب العمليات المباشر: 967782259937</a>
+          <a href="tel:+967782259937" class="num-font">الهاتف التنفيذي: 0782259937</a>
+          <a href="#terminal">محطة تجميع الحاويات</a>
+        </div>
+      </div>
+
+      <div class="vip-footer-bottom">
+        <span>جميع الحقوق محفوظة &copy; 2026 جسر العالم للشحن الدولي والتخليص الجمركي</span>
+        <span>
+          صُمّم بواسطة
+          <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

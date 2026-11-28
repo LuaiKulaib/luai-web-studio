@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أكاديمية المستقبل — الفئة الفاخرة Pro | دبلومات مهنية وتقنية معتمدة</title>
+  <meta name="description" content="أكاديمية المستقبل للتدريب والتأهيل — الفئة الفاخرة Pro: دبلومات عملية في البرمجة، UI/UX، التسويق الرقمي، والإنجليزية للأعمال مع مستكشف المناهج، حاسبة الرسوم والتقسيط، وجدولة الدفعات.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Academic Announcement Strip -->
+  <div class="campus-bar">
+    <div class="container campus-bar-inner">
+      <div class="campus-bar-msg">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span>فتح باب القبول لدفعات الربع القادم — خصم التسجيل المبكر <strong class="font-num">15%</strong> متاح حالياً</span>
+      </div>
+      <div class="campus-bar-meta font-num">
+        <span>967782259937+</span>
+        <span class="bar-sep" aria-hidden="true">|</span>
+        <span>92% تطبيق عملي · حضوري وأونلاين</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modern EdTech Campus Header -->
+  <header class="pro-header" id="pro-header">
+    <div class="container pro-header-inner">
+      <a href="#top" class="brand-lockup" aria-label="أكاديمية المستقبل للتدريب والتأهيل">
+        <span class="brand-emblem">
+          <svg width="34" height="34" viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="32" height="32" rx="8" stroke="#5B4DF0"/>
+            <path d="M18 10L28 14.5L18 19L8 14.5L18 10Z" stroke="#D99116"/>
+            <path d="M12.5 17V22.5C12.5 24.4 15 26 18 26C21 26 23.5 24.4 23.5 22.5V17" stroke="#1D1B4B"/>
+            <line x1="27" y1="15" x2="27" y2="21.5" stroke="#D99116"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>أكاديمية المستقبل</strong>
+          <small class="font-num">FUTURE ACADEMY &middot; CAMPUS PRO</small>
+        </span>
+      </a>
+
+      <nav class="pro-nav" aria-label="التنقل الرئيسي">
+        <a href="#catalog">الدبلومات والمناهج</a>
+        <a href="#calculator">حاسبة الرسوم والتقسيط</a>
+        <a href="#schedule">مواعيد الدفعات</a>
+        <a href="#outcomes">مزايا التدريب</a>
+        <a href="#reserve">حجز المقعد</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="currency-switch" id="pro-currency-switch" role="group" aria-label="تبديل العملة">
+          <button type="button" class="curr-btn is-active" data-curr="USD">USD</button>
+          <button type="button" class="curr-btn" data-curr="SAR">SAR</button>
+          <button type="button" class="curr-btn" data-curr="YER">YER</button>
+        </div>
+        <a href="#reserve" class="btn-header-cta">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <span>احجز مقعدك</span>
+        </a>
+        <button type="button" class="mobile-menu-btn" id="pro-menu-btn" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="7" x2="21" y2="7"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="17" x2="21" y2="17"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="pro-mobile-drawer" hidden>
+      <a href="#catalog">الدبلومات والمناهج</a>
+      <a href="#calculator">حاسبة الرسوم والتقسيط</a>
+      <a href="#schedule">مواعيد الدفعات</a>
+      <a href="#outcomes">مزايا التدريب</a>
+      <a href="#reserve">حجز المقعد</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Modern EdTech Split Hero -->
+    <section class="hero-campus">
+      <div class="container hero-grid">
+        <div class="hero-copy-col">
+          <div class="editorial-tag">
+            <span class="tag-line" aria-hidden="true"></span>
+            <span class="font-num">MODERN EDTECH CAMPUS &middot; PRO EDITION</span>
+          </div>
+
+          <h1>
+            دبلومات مهنية وتقنية<br>
+            تؤهلك <em>لسوق العمل</em> بثقة
+          </h1>
+
+          <p class="hero-lead">
+            برامج تطبيقية مكثفة في تطوير الويب، تصميم <span class="font-num">UI/UX</span>، التسويق الرقمي، والإنجليزية للأعمال بنسبة تطبيق عملي تصل إلى <strong class="font-num">92%</strong> تحت إشراف نخبة من المدربين المعتمدين حضورياً وأونلاين.
+          </p>
+
+          <div class="hero-chips">
+            <div class="hero-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>مشاريع تخرج حقيقية من الأسبوع الأول</span>
+            </div>
+            <div class="hero-chip">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M8.21 13.89L7 22L12 19L17 22L15.79 13.88"/>
+              </svg>
+              <span>شهادة اجتياز معتمدة وملف أعمال متكامل</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#catalog" class="btn-primary-violet">
+              <span>استكشف الدبلومات والمناهج</span>
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="19" y1="12" x2="5" y2="12"/>
+                <polyline points="12 19 5 12 12 5"/>
+              </svg>
+            </a>
+            <a href="#calculator" class="btn-outline-indigo">
+              <span>حاسبة الرسوم والتقسيط</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-col">
+          <div class="hero-frame">
+            <div class="hero-img-wrap">
+              <img src="../assets/images/hero.jpg" alt="قاعة التدريب الحديثة في أكاديمية المستقبل" loading="eager">
+              <div class="hero-frame-badge">
+                <span class="badge-dot" aria-hidden="true"></span>
+                <span>تسجيل مفتوح — الدفعة القادمة</span>
+              </div>
+            </div>
+            <div class="hero-floating-card">
+              <div class="hfc-row">
+                <div>
+                  <small>نسبة التطبيق العملي</small>
+                  <strong class="font-num">92%</strong>
+                </div>
+                <div class="hfc-divider" aria-hidden="true"></div>
+                <div>
+                  <small>خريج وخريجة</small>
+                  <strong class="font-num">+4,800</strong>
+                </div>
+              </div>
+              <p class="hfc-note">تسجيلات كاملة لجميع المحاضرات ومراجعة أسبوعية لملف الأعمال</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Academy Stats Strip -->
+    <section class="stats-band" aria-label="إحصائيات الأكاديمية">
+      <div class="container">
+        <div class="stats-grid" id="pro-stats"></div>
+      </div>
+    </section>
+
+    <!-- Filterable Diploma Catalog & Syllabus Explorer -->
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow font-num">ACADEMIC PROGRAMS &middot; 04 TRACKS</span>
+          <h2>الدبلومات التدريبية والمسارات المعتمدة</h2>
+          <p>تصفّح المسارات التقنية والإبداعية والإدارية، وافتح مستكشف المنهج لاستعراض المحاور والأدوات ومشروع التخرج</p>
+        </div>
+
+        <div class="catalog-controls">
+          <div class="search-field">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="search" id="pro-search" placeholder="ابحث باسم الدبلوم أو المهارة (برمجة، Figma، إعلانات، إنجليزي)...">
+          </div>
+
+          <div class="cat-pills" id="pro-cats" role="tablist" aria-label="تصفية الدبلومات">
+            <button type="button" class="cat-pill active" data-cat="all">كافة المسارات</button>
+            <button type="button" class="cat-pill" data-cat="tech">برمجة وتقنية</button>
+            <button type="button" class="cat-pill" data-cat="design">تصميم ومونتاج</button>
+            <button type="button" class="cat-pill" data-cat="business">أعمال ولغات</button>
+          </div>
+        </div>
+
+        <div class="catalog-meta-bar">
+          <span id="pro-results-count">عرض 4 دبلومات معتمدة</span>
+          <span>انقر على "استكشف المنهج" لعرض الخطة التفصيلية والمحاور</span>
+        </div>
+
+        <div class="courses-grid" id="pro-courses-grid"></div>
+      </div>
+    </section>
+
+    <!-- Live Tuition Fee & Early-Bird / Group Installment Calculator -->
+    <section class="section calc-section" id="calculator">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow font-num">TUITION &amp; INSTALLMENT CALCULATOR</span>
+          <h2>حاسبة الرسوم والتسجيل المبكر والتقسيط</h2>
+          <p>احسب رسوم دبلومك بدقة بالعملة التي تناسبك مع تطبيق خصومات التسجيل المبكر والمجموعات وخطط السداد المرنة</p>
+        </div>
+
+        <div class="calc-layout">
+          <div class="calc-controls-card">
+            <div class="calc-group">
+              <label for="calc-course" class="calc-label">1. اختر الدبلوم المطلوب</label>
+              <select id="calc-course" class="calc-select"></select>
+            </div>
+
+            <div class="calc-group">
+              <span class="calc-label">2. نظام الدراسة والحضور</span>
+              <div class="segmented-grid" id="calc-mode-group">
+                <button type="button" class="seg-btn active" data-mode="campus">
+                  <strong>حضوري في القاعة</strong>
+                  <small>معامل مجهزة ومباشرة</small>
+                </button>
+                <button type="button" class="seg-btn" data-mode="online">
+                  <strong>أونلاين مباشر (Zoom)</strong>
+                  <small>توفير 10% في الرسوم</small>
+                </button>
+              </div>
+            </div>
+
+            <div class="calc-row-split">
+              <div class="calc-group">
+                <span class="calc-label">3. عدد المقاعد (خصم الثنائي والمجموعات)</span>
+                <div class="stepper-box">
+                  <button type="button" class="stepper-btn" id="calc-seats-dec" aria-label="تقليل المقاعد">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                  <div class="stepper-readout">
+                    <strong class="font-num" id="calc-seats-val">1</strong>
+                    <span id="calc-seats-badge">مقعد فردي</span>
+                  </div>
+                  <button type="button" class="stepper-btn" id="calc-seats-inc" aria-label="زيادة المقاعد">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="calc-group">
+                <span class="calc-label">4. منحة التسجيل المبكر</span>
+                <label class="toggle-card">
+                  <input type="checkbox" id="calc-earlybird" checked>
+                  <span class="toggle-indicator" aria-hidden="true"></span>
+                  <span class="toggle-copy">
+                    <strong>تفعيل خصم المبكرين (15%)</strong>
+                    <small>سارٍ للحجز قبل اكتمال الدفعة</small>
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <span class="calc-label">5. خطة السداد والأقساط</span>
+              <div class="plan-grid" id="calc-plan-group">
+                <button type="button" class="plan-btn active" data-plan="two">
+                  <strong>دفعتان (50% + 50%)</strong>
+                  <small>بدون فوائد أو رسوم إدارية</small>
+                </button>
+                <button type="button" class="plan-btn" data-plan="three">
+                  <strong>3 دفعات شهرية</strong>
+                  <small>40% مقدم + 30% + 30%</small>
+                </button>
+                <button type="button" class="plan-btn" data-plan="full">
+                  <strong>دفع كامل مقدماً</strong>
+                  <small>خصم إضافي فوري 5%</small>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="calc-summary-card" aria-label="ملخص الرسوم والتقسيط">
+            <div class="sum-head">
+              <div>
+                <span class="sum-tag">التقدير المالي الفوري</span>
+                <h3 id="calc-sum-course">—</h3>
+                <p id="calc-sum-meta">—</p>
+              </div>
+              <div class="sum-curr-pills" id="calc-curr-pills">
+                <button type="button" class="mini-curr active" data-curr="USD">USD</button>
+                <button type="button" class="mini-curr" data-curr="SAR">SAR</button>
+                <button type="button" class="mini-curr" data-curr="YER">YER</button>
+              </div>
+            </div>
+
+            <dl class="sum-ledger">
+              <div class="ledger-row">
+                <dt>الرسوم الأساسية</dt>
+                <dd class="font-num" id="calc-base-val">—</dd>
+              </div>
+              <div class="ledger-row ledger-save" id="calc-discount-row">
+                <dt id="calc-discount-label">إجمالي الخصومات</dt>
+                <dd class="font-num" id="calc-discount-val">—</dd>
+              </div>
+            </dl>
+
+            <div class="sum-total-box">
+              <span>الصافي النهائي المستحق</span>
+              <strong class="font-num" id="calc-total-primary">—</strong>
+              <div class="multi-curr-row font-num">
+                <span id="calc-multi-usd">—</span>
+                <span aria-hidden="true">&middot;</span>
+                <span id="calc-multi-sar">—</span>
+                <span aria-hidden="true">&middot;</span>
+                <span id="calc-multi-yer">—</span>
+              </div>
+            </div>
+
+            <div class="installment-box">
+              <h4>جدول الدفعات المعتمد</h4>
+              <div class="installment-list" id="calc-installment-list"></div>
+            </div>
+
+            <div class="sum-actions">
+              <button type="button" class="btn-primary-violet btn-full" id="calc-apply-btn">
+                <span>اعتماد الخطة وتأكيد المقعد</span>
+              </button>
+              <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="btn-outline-gold btn-full" id="calc-wa-btn">
+                <span>إرسال تفاصيل الرسوم عبر واتساب</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Cohort Schedule Picker -->
+    <section class="section" id="schedule">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow font-num">COHORT SCHEDULE PICKER</span>
+          <h2>مواعيد الدفعات واختر فترتك التدريبية</h2>
+          <p>حدد تاريخ الانطلاق والأيام والفترة المناسبة لجدولك؛ وسيتم ربط الموعد تلقائياً بطلب تسجيلك</p>
+        </div>
+
+        <div class="schedule-shell">
+          <div class="schedule-toolbar">
+            <div class="batch-tabs" id="sched-batch-tabs" role="tablist" aria-label="اختر الدفعة">
+              <button type="button" class="batch-tab active" data-batch="next-5">دفعة بداية الشهر (5 الشهر القادم)</button>
+              <button type="button" class="batch-tab" data-batch="mid-15">دفعة منتصف الشهر (15 الشهر القادم)</button>
+              <button type="button" class="batch-tab" data-batch="intensive">الدفعة المكثفة السريعة</button>
+            </div>
+
+            <div class="days-toggle" id="sched-days-group">
+              <button type="button" class="days-pill active" data-days="السبت · الاثنين · الأربعاء">السبت · الاثنين · الأربعاء</button>
+              <button type="button" class="days-pill" data-days="الأحد · الثلاثاء · الخميس">الأحد · الثلاثاء · الخميس</button>
+            </div>
+          </div>
+
+          <div class="sched-mode-strip">
+            <span>صيغة الجلسات في الجدول:</span>
+            <div class="sched-mode-pills" id="sched-mode-group">
+              <button type="button" class="s-mode-btn active" data-smode="حضوري في القاعات الذكية">حضوري في القاعات الذكية</button>
+              <button type="button" class="s-mode-btn" data-smode="أونلاين مباشر (Zoom التفاعلي)">أونلاين مباشر (Zoom)</button>
+            </div>
+          </div>
+
+          <div class="slots-grid" id="sched-slots-grid"></div>
+
+          <div class="schedule-footer-bar">
+            <div class="picked-summary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9"/>
+                <polyline points="12 7 12 12 15 14"/>
+              </svg>
+              <span>الموعد المحدد حالياً: <strong id="sched-picked-label">—</strong></span>
+            </div>
+            <button type="button" class="btn-primary-violet" id="sched-apply-btn">تثبيت الموعد في استمارة الحجز</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits & Outcomes -->
+    <section class="section outcomes-section" id="outcomes">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow font-num">CAMPUS ADVANTAGES &amp; METHODOLOGY</span>
+          <h2>لماذا تختار أكاديمية المستقبل؟</h2>
+          <p>منهجية تدريبية عملية تركز على بناء المهارة الحقيقية وملف الأعمال الجاهز للتوظيف والعمل الحر</p>
+        </div>
+
+        <div class="benefits-grid" id="pro-benefits-grid"></div>
+
+        <div class="journey-strip">
+          <div class="journey-step">
+            <span class="j-num font-num">01</span>
+            <div>
+              <strong>استشارة وتحديد مستوى</strong>
+              <p>توجيه أكاديمي لاختيار المسار الملائم لمستواك الحالي</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <span class="j-num font-num">02</span>
+            <div>
+              <strong>تطبيق عملي بنسبة <span class="font-num">92%</span></strong>
+              <p>مهام وتطبيقات أسبوعية داخل القاعات أو عبر البث المباشر</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <span class="j-num font-num">03</span>
+            <div>
+              <strong>مشروع تخرج مقيّم</strong>
+              <p>تحكيم وتقييم مباشر للمشروع وبناء <span class="font-num">Portfolio</span> احترافي</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <span class="j-num font-num">04</span>
+            <div>
+              <strong>شهادة معتمدة وتأهيل وظيفي</strong>
+              <p>توثيق الشهادة وإرشاد لفرص الشركات والعمل المستقل</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instant Seat Reservation -->
+    <section class="section reserve-section" id="reserve">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-eyebrow font-num">INSTANT SEAT RESERVATION</span>
+          <h2>حجز المقعد الفوري وإصدار التذكرة المبدئية</h2>
+          <p>أكمل بياناتك ليتم توليد تذكرة الحجز التفصيلية وإرسالها مباشرة إلى القبول والتسجيل عبر واتساب</p>
+        </div>
+
+        <div class="reserve-layout">
+          <form class="reserve-form-card" id="pro-reserve-form">
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="res-name">الاسم الكامل</label>
+                <input type="text" id="res-name" required placeholder="مثال: سارة باوزير">
+              </div>
+              <div class="form-field">
+                <label for="res-phone">رقم الواتساب</label>
+                <input type="tel" id="res-phone" required placeholder="77XXXXXXX">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="res-email">البريد الإلكتروني (اختياري)</label>
+                <input type="email" id="res-email" placeholder="name@example.com">
+              </div>
+              <div class="form-field">
+                <label for="res-level">المستوى الحالي</label>
+                <select id="res-level">
+                  <option value="مبتدئ من الصفر">مبتدئ من الصفر</option>
+                  <option value="لديه خلفية أساسية">لديه خلفية أساسية</option>
+                  <option value="متقدم / يرغب في تطوير مهاراته">متقدم / يرغب في تطوير مهاراته</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-field">
+                <label for="res-course">الدبلوم المختار</label>
+                <select id="res-course"></select>
+              </div>
+              <div class="form-field">
+                <label for="res-mode">نظام الحضور</label>
+                <select id="res-mode">
+                  <option value="حضوري في القاعة">حضوري في القاعة</option>
+                  <option value="أونلاين مباشر (Zoom)">أونلاين مباشر (Zoom)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="res-notes">ملاحظات أو استفسار إضافي (اختياري)</label>
+              <textarea id="res-notes" rows="3" placeholder="مثال: أرغب بتأكيد موعد اختبار تحديد المستوى أو الاستفسار عن خصم الأخوة..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary-violet btn-full">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+              <span>تأكيد حجز المقعد عبر واتساب (الفئة الفاخرة Pro)</span>
+            </button>
+          </form>
+
+          <aside class="ticket-card" aria-label="بطاقة ملخص الحجز">
+            <div class="ticket-top">
+              <span class="ticket-badge">بطاقة الحجز المبدئي</span>
+              <span class="font-num ticket-ref">PRO-2026</span>
+            </div>
+            <h3>ملخص خطتك التدريبية</h3>
+            <dl class="ticket-list">
+              <div class="ticket-row">
+                <dt>الدبلوم</dt>
+                <dd id="ticket-course">—</dd>
+              </div>
+              <div class="ticket-row">
+                <dt>الموعد والفترة</dt>
+                <dd id="ticket-schedule">—</dd>
+              </div>
+              <div class="ticket-row">
+                <dt>نظام الحضور</dt>
+                <dd id="ticket-mode">—</dd>
+              </div>
+              <div class="ticket-row">
+                <dt>عدد المقاعد</dt>
+                <dd id="ticket-seats" class="font-num">—</dd>
+              </div>
+              <div class="ticket-row">
+                <dt>نظام السداد</dt>
+                <dd id="ticket-plan">—</dd>
+              </div>
+              <div class="ticket-row ticket-total-row">
+                <dt>الصافي التقديري</dt>
+                <dd id="ticket-total" class="font-num">—</dd>
+              </div>
+            </dl>
+            <div class="ticket-multi font-num" id="ticket-multi">—</div>
+            <button type="button" class="btn-outline-indigo btn-full" id="res-copy-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2"/>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+              </svg>
+              <span id="res-copy-label">نسخ ملخص الحجز</span>
+            </button>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Campus Pro Footer -->
+  <footer class="pro-footer">
+    <div class="container pro-footer-grid">
+      <div class="footer-brand">
+        <strong>أكاديمية المستقبل للتدريب والتأهيل</strong>
+        <p>دبلومات مهنية وتقنية تطبيقية بنسبة <span class="font-num">92%</span> تدريب عملي — شهادات معتمدة وتأهيل لسوق العمل حضورياً وأونلاين.</p>
+      </div>
+      <div class="footer-meta">
+        <div>
+          <span>أوقات الدوام والاستشارات</span>
+          <strong>السبت – الخميس &middot; <span class="font-num">9:00 AM - 9:30 PM</span></strong>
+        </div>
+        <div>
+          <span>القبول والتسجيل المباشر</span>
+          <strong><a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="font-num">967782259937+</a> &middot; <a href="#reserve">احجز مقعدك</a></strong>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>جميع الحقوق محفوظة &copy; 2026 — أكاديمية المستقبل (الفئة الفاخرة Pro)</span>
+      <span>صُمّم بواسطة <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a></span>
+    </div>
+  </footer>
+
+  <!-- Floating Quick WhatsApp Action -->
+  <div class="pro-fab">
+    <a href="https://wa.me/967782259937?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AF%D8%A8%D9%84%D9%88%D9%85%D8%A7%D8%AA%20%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%8A%D8%A9%20%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D8%A8%D9%84%20%E2%80%94%20%D8%A7%D9%84%D9%81%D8%A6%D8%A9%20%D8%A7%D9%84%D9%81%D8%A7%D8%AE%D8%B1%D8%A9%20Pro" target="_blank" rel="noopener" class="fab-pill" aria-label="واتساب القبول والتسجيل">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+      </svg>
+      <span>استشارة القبول</span>
+    </a>
+  </div>
+
+  <!-- Interactive Curriculum & Syllabus Explorer Modal -->
+  <div class="modal-backdrop" id="syllabus-backdrop"></div>
+  <div class="syllabus-modal" id="syllabus-modal" role="dialog" aria-modal="true" aria-labelledby="syllabus-title" hidden>
+    <div class="smodal-head">
+      <div>
+        <span class="smodal-cat" id="syllabus-cat">—</span>
+        <h3 id="syllabus-title">—</h3>
+        <div class="smodal-meta" id="syllabus-meta">—</div>
+      </div>
+      <button type="button" class="smodal-close" id="syllabus-close-btn" aria-label="إغلاق مستكشف المنهج">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="smodal-body">
+      <div class="smodal-hero-row">
+        <img src="../assets/images/coding.jpg" alt="" id="syllabus-img">
+        <div class="smodal-overview">
+          <p id="syllabus-desc">—</p>
+          <div class="smodal-outcome">
+            <strong>مخرجات التخرج:</strong>
+            <span id="syllabus-outcome">—</span>
+          </div>
+          <div class="smodal-fee-pill">
+            <span>الرسوم الأساسية:</span>
+            <strong class="font-num" id="syllabus-fee">—</strong>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="smodal-subhead">الخطة التدريبية ومحاور التطبيق العملي</h4>
+      <div class="smodal-modules" id="syllabus-modules"></div>
+    </div>
+
+    <div class="smodal-foot">
+      <button type="button" class="btn-outline-indigo" id="syllabus-to-calc">حساب التقسيط والخصم</button>
+      <button type="button" class="btn-primary-violet" id="syllabus-to-reserve">حجز مقعد في هذا الدبلوم</button>
+    </div>
+  </div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

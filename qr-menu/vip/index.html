@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دار الديوان — الفئة الملكية VIP | Signature Restaurant &amp; Lounge OS</title>
+  <meta name="description" content="مطعم وكافيه الديوان — الفئة الملكية VIP. منصة إدارة الضيافة والمجالس الخاصة، تبديل الفروع (شارع حدة، حي الأصبحي، فرع الخليج)، مُكوّن الولائم والعزائم، وتذاكر المطبخ والضيوف القابلة للطباعة.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Lounge OS Telemetry Strip -->
+  <div class="vip-topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-status">
+        <span class="pulse-gold" aria-hidden="true"></span>
+        <span>AL-DIWAN SIGNATURE RESTAURANT &amp; LOUNGE OS · VIP EDITION</span>
+      </div>
+      <div class="topbar-meta">
+        <span id="vip-topbar-hours">مفتوح يومياً: 11:00 ص – 1:00 ص</span>
+        <span class="sep" aria-hidden="true">|</span>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener">كونسيرج كبار الشخصيات: 967782259937+</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Luxury Lounge Header -->
+  <header class="vip-header" id="vip-header">
+    <div class="container header-inner">
+      <a href="#vip-hero" class="vip-brand" aria-label="دار الديوان الفئة الملكية">
+        <span class="vip-crest">
+          <svg width="32" height="32" viewBox="0 0 36 36" fill="none" stroke="#DFB459" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="3" width="30" height="30" rx="6"/>
+            <polygon points="18,7 27,13 27,23 18,29 9,23 9,13"/>
+            <path d="M14 21l4-8 4 8"/>
+            <line x1="13" y1="24" x2="23" y2="24"/>
+          </svg>
+        </span>
+        <span class="brand-titles">
+          <strong id="vip-brand-name">مطعم وكافيه الديوان</strong>
+          <small>SIGNATURE LOUNGE OS · VIP</small>
+        </span>
+      </a>
+
+      <nav class="vip-nav" aria-label="التنقل الرئيسي">
+        <a href="#branch-command">الفروع</a>
+        <a href="#tasting-section">قائمة الشيف</a>
+        <a href="#majlis-scheduler">حجز المجالس</a>
+        <a href="#banquet-builder">مُكوّن الولائم</a>
+        <a href="#vip-faq">البروتوكول</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Multi-Currency Switcher -->
+        <div class="currency-pills" id="vip-currency-switcher" role="group" aria-label="تبديل العملة">
+          <button type="button" class="v-curr-btn active" data-curr="YER">YER</button>
+          <button type="button" class="v-curr-btn" data-curr="SAR">SAR</button>
+          <button type="button" class="v-curr-btn" data-curr="USD">USD</button>
+        </div>
+
+        <button type="button" class="btn-proforma-top" id="btn-open-proforma-header">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="8" y1="13" x2="16" y2="13"/>
+            <line x1="8" y1="17" x2="14" y2="17"/>
+          </svg>
+          <span>التذكرة الرسمية</span>
+        </button>
+
+        <button type="button" class="concierge-drawer-btn" id="btn-open-vip-drawer" aria-label="فتح دفتر الطلبات الملكي">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span>الطلبية</span>
+          <span class="v-cart-count" id="vip-drawer-count">0</span>
+        </button>
+
+        <button type="button" class="mobile-menu-btn" id="open-vip-mobile-nav" aria-label="فتح قائمة الجوال">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quick Multi-Branch Ribbon inside Header -->
+    <div class="header-branch-bar">
+      <div class="container branch-bar-inner">
+        <span class="branch-bar-label">الفرع النشط في النظام:</span>
+        <div class="branch-pills" id="vip-branch-pills" role="tablist" aria-label="اختيار الفرع">
+          <button type="button" class="branch-pill active" data-branch="hadda">شارع حدة</button>
+          <button type="button" class="branch-pill" data-branch="asbahi">حي الأصبحي</button>
+          <button type="button" class="branch-pill" data-branch="khaleej">فرع الخليج</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-backdrop" id="vip-mobile-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-nav-drawer" id="vip-mobile-drawer" aria-label="قائمة الجوال">
+    <div class="mobile-nav-head">
+      <div class="brand-titles">
+        <strong>دار الديوان VIP</strong>
+        <small>SIGNATURE LOUNGE OS</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="close-vip-mobile-nav" aria-label="إغلاق القائمة">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#branch-command">إدارة الفروع الثلاثة</a>
+      <a href="#tasting-section">قائمة التذوّق الفاخرة</a>
+      <a href="#majlis-scheduler">حجز البوث والمجالس الخاصة</a>
+      <a href="#banquet-builder">مُكوّن الولائم والعزائم</a>
+      <a href="#vip-faq">بروتوكول الضيافة</a>
+    </nav>
+    <div class="mobile-nav-foot">
+      <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="btn-gold-solid btn-full">
+        <span>واتساب كونسيرج VIP</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- 1. Architectural Dark Luxury Hero -->
+  <section class="vip-hero" id="vip-hero">
+    <div class="hero-ambient-glow" aria-hidden="true"></div>
+    <div class="container hero-layout">
+      <div class="hero-editorial">
+        <div class="vault-badge">
+          <span class="gold-rule" aria-hidden="true"></span>
+          <span>SIGNATURE HOSPITALITY &amp; PRIVATE MAJLIS OS</span>
+        </div>
+        <h1>دار الديوان الملكية — تجربة التذوّق، المجالس الخاصة، وهندسة الولائم</h1>
+        <p class="hero-desc">منصة تشغيل متكاملة لإدارة ضيافة كبار الشخصيات عبر ثلاثة فروع، جدولة البوثات والمجالس الخاصة، تركيب صواني الولائم بحسب عدد الضيوف، وإصدار تذاكر المطبخ والضيوف القابلة للطباعة.</p>
+
+        <div class="hero-cta-row">
+          <a href="#banquet-builder" class="btn-gold-solid">
+            <span>صمّم وليمتك الآن</span>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+          </a>
+          <a href="#majlis-scheduler" class="btn-gold-outline">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            <span>جدولة مجلس VIP</span>
+          </a>
+        </div>
+
+        <div class="hero-branch-live" id="vip-hero-branch-pill">
+          <span class="pulse-gold" aria-hidden="true"></span>
+          <span>الفرع المفعّل حالياً: شارع حدة (المقر الرئيسي · مجالس كبار الشخصيات)</span>
+        </div>
+      </div>
+
+      <div class="hero-gallery-stage">
+        <div class="hero-primary-frame">
+          <img src="../assets/images/hero.jpg" alt="المائدة الملكية في مطعم وكافيه الديوان">
+          <div class="hero-inset-frame">
+            <img src="../assets/images/grill.jpg" alt="مشويات الفحم الخاصة في الديوان">
+          </div>
+        </div>
+
+        <div class="hero-hud-card">
+          <div class="hud-cell">
+            <span>الفرع المختار</span>
+            <strong id="vip-hud-branch">فرع شارع حدة</strong>
+          </div>
+          <div class="hud-cell">
+            <span>حالة المجالس</span>
+            <strong id="vip-hud-majlis">4 أجنحة متاحة اليوم</strong>
+          </div>
+          <div class="hud-cell">
+            <span>ساعات الخدمة</span>
+            <strong id="vip-hud-hours">11:00 ص – 1:00 ص</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="vip-stats-bar" id="vip-stats-bar"></div>
+    </div>
+  </section>
+
+  <!-- 2. Multi-Branch Command Deck -->
+  <section class="branch-section" id="branch-command">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="vip-kicker">MULTI-BRANCH COMMAND CENTER</span>
+          <h2>إدارة الفروع الثلاثة في نظام واحد</h2>
+        </div>
+        <p class="section-lead">اختر الفرع المستهدف ليتم تحديث قاعات المجالس الخاصة، قدرات الضيافة، وترويسة تذكرة المطبخ والضيف فوراً.</p>
+      </div>
+      <div class="branch-command-grid" id="branch-command-grid"></div>
+    </div>
+  </section>
+
+  <!-- 3. Chef's Signature Tasting Grid -->
+  <section class="tasting-section" id="tasting-section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="vip-kicker">CHEF'S SIGNATURE TASTING GRID</span>
+          <h2>قائمة الشيف للتذوّق الفاخر</h2>
+        </div>
+        <p class="section-lead">جميع أطباق مطعم وكافيه الديوان الثمانية بتقديم ملكي مع توصيات التوليف وأحجام الضيافة.</p>
+      </div>
+
+      <div class="tasting-cat-tabs" id="tasting-cat-tabs" role="tablist" aria-label="أقسام التذوّق"></div>
+      <div class="tasting-grid" id="tasting-grid"></div>
+    </div>
+  </section>
+
+  <!-- 4. VIP Booth & Private Majlis Reservation Scheduler -->
+  <section class="majlis-section" id="majlis-scheduler">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="vip-kicker">PRIVATE MAJLIS &amp; VIP BOOTH SCHEDULER</span>
+          <h2>حجز البوثات والمجالس الخاصة</h2>
+        </div>
+        <span class="branch-context-badge" id="majlis-branch-badge">متصل بفرع: شارع حدة</span>
+      </div>
+
+      <div class="majlis-workbench">
+        <div class="majlis-config-col">
+          <div class="config-block">
+            <h3>1. اختيار الجناح أو البوث الخاص</h3>
+            <div class="majlis-space-grid" id="majlis-space-grid"></div>
+          </div>
+
+          <div class="config-row-2col">
+            <div class="config-block">
+              <label for="majlis-date" class="config-label">2. تاريخ الحجز</label>
+              <input type="date" id="majlis-date" class="vip-input">
+            </div>
+            <div class="config-block">
+              <span class="config-label">3. عدد الضيوف (2 – 24 ضيف)</span>
+              <div class="vip-stepper">
+                <button type="button" id="majlis-guest-dec" aria-label="تقليل الضيوف">-</button>
+                <span id="majlis-guest-count">6 ضيوف</span>
+                <button type="button" id="majlis-guest-inc" aria-label="زيادة الضيوف">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="config-block">
+            <h3>4. الفترة الزمنية المتاحة</h3>
+            <div class="slots-grid" id="majlis-slots-grid"></div>
+          </div>
+
+          <div class="config-block">
+            <h3>5. أسلوب التنسيق والضيافة (Setup Style)</h3>
+            <div class="setup-grid" id="majlis-setup-grid"></div>
+          </div>
+        </div>
+
+        <aside class="majlis-summary-card">
+          <span class="vip-kicker">RESERVATION DOSSIER</span>
+          <h3>ملخص حجز المجلس الخاص</h3>
+          <div class="dossier-list">
+            <div class="dossier-row">
+              <span>الفرع</span>
+              <strong id="majlis-summary-branch">فرع شارع حدة</strong>
+            </div>
+            <div class="dossier-row">
+              <span>المساحة المختارة</span>
+              <strong id="majlis-summary-space">مجلس الديوان الملكي</strong>
+            </div>
+            <div class="dossier-row">
+              <span>الموعد والفترة</span>
+              <strong id="majlis-summary-time">--</strong>
+            </div>
+            <div class="dossier-row">
+              <span>عدد الضيوف</span>
+              <strong id="majlis-summary-guests">6 ضيوف</strong>
+            </div>
+            <div class="dossier-row">
+              <span>نمط التجهيز</span>
+              <strong id="majlis-summary-setup">ضيافة عربية بالبخور ودلة القهوة</strong>
+            </div>
+          </div>
+
+          <div class="dossier-note">
+            يُثبّت الحجز في تذكرة الضيف الرسمية وتذكرة المطبخ لضمان تجهيز الجناح قبل الوصول بـ 30 دقيقة.
+          </div>
+
+          <div class="dossier-actions">
+            <button type="button" class="btn-gold-solid btn-full" id="btn-attach-majlis">
+              <span>تثبيت الحجز في طلبية الكونسيرج</span>
+            </button>
+            <button type="button" class="btn-gold-outline btn-full" id="btn-majlis-proforma">
+              <span>معاينة التذكرة الرسمية شاملة الحجز</span>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Banquet & Feast Builder (مُكوّن الولائم والعزائم) -->
+  <section class="banquet-section" id="banquet-builder">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="vip-kicker">BANQUET &amp; FEAST BUILDER</span>
+          <h2>مُكوّن الولائم والعزائم متعددة الصواني</h2>
+        </div>
+        <p class="section-lead">حدّد عدد الضيوف ليقوم النظام باحتساب التشكيلة المثالية من صواني المشاوي والدجاج والبيتزا والسلطات والمشروبات، مع إمكانية التعديل اليدوي لكل صينية.</p>
+      </div>
+
+      <div class="banquet-grid">
+        <div class="banquet-controls-col">
+          <!-- Guest Count Slider & Presets -->
+          <div class="banquet-card">
+            <div class="banquet-head-row">
+              <div>
+                <h3>1. حجم الوليمة وعدد الضيوف</h3>
+                <small>احتساب آلي لكميات الصواني والأكواب (10 إلى 150 ضيف)</small>
+              </div>
+              <span class="guest-pill-highlight" id="banquet-guest-display">30 ضيفاً</span>
+            </div>
+            <input type="range" id="banquet-guest-range" min="10" max="150" step="5" value="30" class="gold-range" aria-label="عدد ضيوف الوليمة">
+            <div class="preset-row" id="banquet-preset-btns">
+              <button type="button" class="preset-chip" data-banquet-guests="15">15 ضيف</button>
+              <button type="button" class="preset-chip active" data-banquet-guests="30">30 ضيف</button>
+              <button type="button" class="preset-chip" data-banquet-guests="50">50 ضيف</button>
+              <button type="button" class="preset-chip" data-banquet-guests="80">80 ضيف</button>
+              <button type="button" class="preset-chip" data-banquet-guests="120">120 ضيف</button>
+            </div>
+          </div>
+
+          <!-- Banquet Style Selector -->
+          <div class="banquet-card">
+            <h3>2. طابع المأدبة والتشكيلة المقترحة</h3>
+            <div class="tier-grid" id="banquet-tier-grid"></div>
+          </div>
+
+          <!-- Multi-Platter Customizer -->
+          <div class="banquet-card">
+            <div class="banquet-head-row">
+              <h3>3. الصواني والأطباق المجمّعة في الوليمة</h3>
+              <small>يمكنك تعديل عدد كل صينية يدوياً</small>
+            </div>
+            <div class="platters-list" id="banquet-platters-list"></div>
+          </div>
+
+          <!-- VIP Hospitality Services -->
+          <div class="banquet-card">
+            <h3>4. تجهيزات الضيافة والتقديم الملكية (اختياري)</h3>
+            <div class="vip-addons-grid" id="banquet-addons-grid"></div>
+          </div>
+        </div>
+
+        <aside class="banquet-summary-panel">
+          <span class="vip-kicker">FEAST ESTIMATE &amp; DISPATCH</span>
+          <h3>بيان تكلفة الوليمة المجمّعة</h3>
+
+          <div class="banquet-metrics">
+            <div class="b-metric">
+              <span>إجمالي الضيوف</span>
+              <strong id="banquet-summary-guests">30 ضيفاً</strong>
+            </div>
+            <div class="b-metric">
+              <span>مجموع الصواني والوحدات</span>
+              <strong id="banquet-summary-platters">0 وحدة</strong>
+            </div>
+            <div class="b-metric">
+              <span>متوسط تكلفة الضيف</span>
+              <strong id="banquet-summary-per-guest">0 ر.ي</strong>
+            </div>
+          </div>
+
+          <div class="banquet-total-box">
+            <span>التكلفة الإجمالية للوليمة</span>
+            <strong id="banquet-summary-total">0 ر.ي</strong>
+          </div>
+
+          <div class="banquet-cta-stack">
+            <button type="button" class="btn-gold-solid btn-full" id="btn-add-banquet-ledger">
+              <span>اعتماد الوليمة في طلبية الكونسيرج</span>
+            </button>
+            <button type="button" class="btn-gold-outline btn-full" id="btn-banquet-proforma">
+              <span>إصدار تذكرة المطبخ والضيف (Pro-Forma)</span>
+            </button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. VIP Protocol FAQ -->
+  <section class="vip-faq-section" id="vip-faq">
+    <div class="container faq-layout">
+      <div class="faq-side">
+        <span class="vip-kicker">HOSPITALITY PROTOCOL</span>
+        <h2>بروتوكول الحجوزات والولائم الملكية</h2>
+        <p>تنظيم دقيق لمواعيد الفروع، تجهيز المجالس المغلقة، وتنسيق الولائم الرسمية عبر فواتير قابلة للطباعة والاعتماد.</p>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="btn-gold-outline">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+          <span>مخاطبة مدير الضيافة VIP</span>
+        </a>
+      </div>
+      <div class="vip-faq-list" id="vip-faq-list"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="vip-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand-col">
+        <div class="vip-brand">
+          <span class="vip-crest">
+            <svg width="28" height="28" viewBox="0 0 36 36" fill="none" stroke="#DFB459" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="30" height="30" rx="6"/>
+              <polygon points="18,7 27,13 27,23 18,29 9,23 9,13"/>
+              <path d="M14 21l4-8 4 8"/>
+              <line x1="13" y1="24" x2="23" y2="24"/>
+            </svg>
+          </span>
+          <span class="brand-titles">
+            <strong>مطعم وكافيه الديوان</strong>
+            <small>SIGNATURE RESTAURANT &amp; LOUNGE OS · VIP</small>
+          </span>
+        </div>
+        <p>تجربة ضيافة فاخرة تجمع بين المشويات الشرقية على الفحم، فرن الحطب، والقهوة المختصة عبر فروع شارع حدة وحي الأصبحي وفرع الخليج.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>وحدات النظام</h4>
+        <a href="#branch-command">تبديل الفروع الثلاثة</a>
+        <a href="#tasting-section">قائمة التذوّق</a>
+        <a href="#majlis-scheduler">جدولة المجالس VIP</a>
+        <a href="#banquet-builder">مُكوّن الولائم</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>التواصل والاعتماد</h4>
+        <p>الفرع الرئيسي: صنعاء — شارع حدة</p>
+        <p>مفتوح يومياً: 11:00 ص – 1:00 ص</p>
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener">واتساب الكونسيرج: 967782259937+</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>مطعم وكافيه الديوان — الفئة الملكية VIP · جميع الحقوق محفوظة 2026</span>
+      <span>AL-DIWAN SIGNATURE LOUNGE OPERATING SYSTEM</span>
+    </div>
+  </footer>
+
+  <!-- Printable / Copyable Kitchen & Guest Pro-Forma Ticket Modal -->
+  <div class="modal-backdrop" id="proforma-backdrop" aria-hidden="true"></div>
+  <div class="proforma-modal" id="proforma-modal" role="dialog" aria-modal="true" aria-labelledby="proforma-modal-title">
+    <div class="proforma-toolbar">
+      <div class="toolbar-left">
+        <strong id="proforma-modal-title">التذكرة الرسمية للمطبخ والضيف (Pro-Forma)</strong>
+        <small id="proforma-ref-code">REF: ADW-VIP-2026-001</small>
+      </div>
+
+      <div class="ticket-mode-pills" role="tablist" aria-label="عرض التذكرة">
+        <button type="button" class="t-mode-btn active" id="ticket-view-guest" data-view="guest">تذكرة الضيف (Pro-Forma)</button>
+        <button type="button" class="t-mode-btn" id="ticket-view-kitchen" data-view="kitchen">تذكرة المطبخ (Kitchen Prep)</button>
+      </div>
+
+      <div class="toolbar-actions">
+        <button type="button" class="btn-tool" id="btn-copy-proforma">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span>نسخ التذكرة</span>
+        </button>
+        <button type="button" class="btn-tool" id="btn-print-proforma">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"/>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+            <rect x="6" y="14" width="12" height="8"/>
+          </svg>
+          <span>طباعة / PDF</span>
+        </button>
+        <button type="button" class="icon-close-btn" id="btn-close-proforma" aria-label="إغلاق نافذة التذكرة">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Cream Gallery Printable Sheet -->
+    <div class="proforma-sheet-scroll">
+      <article class="proforma-sheet" id="proforma-sheet">
+        <header class="sheet-header">
+          <div class="sheet-brand">
+            <span class="sheet-crest">
+              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" stroke="#1B1410" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="3" width="30" height="30" rx="6"/>
+                <polygon points="18,7 27,13 27,23 18,29 9,23 9,13"/>
+                <path d="M14 21l4-8 4 8"/>
+              </svg>
+            </span>
+            <div>
+              <strong>مطعم وكافيه الديوان — دار الضيافة الملكية</strong>
+              <small>AL-DIWAN SIGNATURE RESTAURANT &amp; LOUNGE OS</small>
+            </div>
+          </div>
+          <div class="sheet-meta">
+            <span class="sheet-badge" id="proforma-sheet-badge">GUEST PRO-FORMA TICKET</span>
+            <span id="proforma-date-issued">التاريخ: --</span>
+          </div>
+        </header>
+
+        <div class="sheet-client-row">
+          <div class="sheet-field">
+            <label for="proforma-guest-name">اسم الضيف / الجهة المستضيفة</label>
+            <input type="text" id="proforma-guest-name" value="ضيف دار الديوان الكريم" placeholder="اكتب اسم العميل أو المؤسسة...">
+          </div>
+          <div class="sheet-field">
+            <label for="proforma-guest-phone">رقم التواصل / الواتساب</label>
+            <input type="tel" id="proforma-guest-phone" placeholder="77xxxxxxx">
+          </div>
+        </div>
+
+        <div class="sheet-context-banner" id="proforma-context-banner"></div>
+
+        <table class="sheet-table">
+          <thead id="proforma-table-head"></thead>
+          <tbody id="proforma-table-body"></tbody>
+        </table>
+
+        <div class="sheet-totals-box" id="proforma-totals-box"></div>
+        <div class="sheet-kitchen-notes" id="proforma-kitchen-notes"></div>
+
+        <footer class="sheet-footer">
+          <p id="proforma-branch-footer">الفرع المعتمد: شارع حدة — صنعاء | ساعات العمل: 11:00 ص – 1:00 ص | واتساب الكونسيرج: 967782259937+</p>
+          <p>تُعتمد هذه التذكرة كإشعار حجز وتجهيز رسمي لدى مطبخ الديوان وصالة كبار الشخصيات.</p>
+        </footer>
+      </article>
+    </div>
+
+    <div class="proforma-modal-foot">
+      <button type="button" class="btn-gold-wa btn-full" id="btn-proforma-wa-dispatch">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+        <span>إرسال التذكرة المعتمدة لكونسيرج واتساب (الفئة الملكية VIP)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- VIP Concierge Order Ledger Slide-Over Drawer -->
+  <div class="drawer-backdrop" id="vip-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="vip-drawer" id="vip-drawer" role="dialog" aria-modal="true" aria-labelledby="vip-drawer-title">
+    <div class="vip-drawer-head">
+      <div>
+        <h2 id="vip-drawer-title">طلبية كونسيرج الديوان VIP</h2>
+        <small id="drawer-active-branch">الفرع النشط: شارع حدة</small>
+      </div>
+      <button type="button" class="icon-close-btn" id="btn-close-vip-drawer" aria-label="إغلاق دفتر الطلبية">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="drawer-majlis-block" id="drawer-majlis-block"></div>
+    <div class="vip-drawer-body" id="drawer-ledger-items"></div>
+
+    <div class="vip-drawer-foot">
+      <div class="drawer-inputs">
+        <input type="text" id="vip-ledger-client-name" placeholder="اسم الضيف أو المؤسسة" aria-label="اسم الضيف">
+        <input type="tel" id="vip-ledger-client-phone" placeholder="رقم الجوال / الواتساب" aria-label="رقم الجوال">
+      </div>
+      <input type="text" id="vip-ledger-notes" class="drawer-note-input" placeholder="توجيهات إضافية للشيف أو مسؤول الصالة..." aria-label="ملاحظات">
+
+      <div class="drawer-total-row">
+        <span>الإجمالي المستحق</span>
+        <strong id="vip-ledger-total">0 ر.ي</strong>
+      </div>
+
+      <div class="drawer-btn-pair">
+        <button type="button" class="btn-gold-outline" id="btn-drawer-to-proforma">
+          <span>تذكرة المطبخ / الطباعة</span>
+        </button>
+        <button type="button" class="btn-gold-wa" id="btn-drawer-wa-send">
+          <span>إرسال لواتساب VIP</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="vip-toast" id="vip-toast" role="status" aria-live="polite"></div>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
