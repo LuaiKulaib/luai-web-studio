@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الريان للصرافة والتحويلات — الفئة الملكية VIP | مكتب الصرف الخاص وتحويلات الشركات</title>
+  <meta name="description" content="مكتب الصرف الخاص وتحويلات الشركات والمستوردين — الفئة الملكية VIP: تسويات مورّدي الصين ودبي والرياض وأوروبا، مقارنة السبريد المؤسسي، توزيع الصرف النقدي عبر الفروع، واتفاقية تثبيت سعر الصرف القابلة للطباعة والإرسال.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Institutional FX Telemetry Strip -->
+  <div class="telemetry-strip no-print" role="region" aria-label="شريط مؤشرات مكتب الصرف المؤسسي">
+    <div class="container telemetry-inner">
+      <div class="telemetry-node">
+        <span class="pulse-gold" aria-hidden="true"></span>
+        <span class="tele-key num-font">PRIVATE FX DESK</span>
+        <span class="tele-label">غرفة تسويات الشركات نشطة</span>
+      </div>
+      <div class="telemetry-node" id="vip-telemetry-rates"></div>
+      <div class="telemetry-node">
+        <span class="tele-key emerald num-font" id="strip-savings-readout">الوفر: 0 ر.ي</span>
+        <span class="tele-label">أفضلية السبريد المؤسسي</span>
+      </div>
+      <div class="telemetry-node">
+        <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="tele-wa-link num-font">VIP DESK: 967782259937</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sovereign Institutional Header -->
+  <header class="vip-header no-print" id="vip-header">
+    <div class="container vip-header-inner">
+      <a href="#top" class="vip-brand" aria-label="الريان للصرافة والتحويلات — الفئة الملكية VIP">
+        <span class="vip-crest">
+          <svg width="40" height="40" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+            <rect x="1.5" y="1.5" width="39" height="39" rx="7" stroke="#DFB459" stroke-width="1.4"/>
+            <rect x="4.5" y="4.5" width="33" height="33" rx="4.5" stroke="#DFB459" stroke-opacity="0.32" stroke-width="1"/>
+            <path d="M10.5 16H30.5L26 11.5" stroke="#34D399" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M31.5 26H11.5L16 30.5" stroke="#DFB459" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="21" y1="8.5" x2="21" y2="33.5" stroke="#F1F5F9" stroke-opacity="0.25" stroke-width="1.1"/>
+          </svg>
+        </span>
+        <span class="vip-brand-copy">
+          <strong>الريان للصرافة والتحويلات</strong>
+          <small dir="ltr">PRIVATE FX DESK &amp; CORPORATE REMITTANCE · VIP</small>
+        </span>
+      </a>
+
+      <nav class="vip-nav" aria-label="التنقل الرئيسي">
+        <a href="#fx-desk">مكتب تسويات الشركات</a>
+        <a href="#spread-matrix">مصفوفة السبريد</a>
+        <a href="#operations">التتبع وتوزيع الفروع</a>
+        <a href="#infrastructure">الفروع والخدمات</a>
+      </nav>
+
+      <div class="vip-header-actions">
+        <a href="#fx-desk" class="savings-pill" aria-label="إجمالي الوفر المحقق">
+          <span>الوفر المؤسسي:</span>
+          <strong class="num-font" id="vip-header-savings">0 ر.ي</strong>
+        </a>
+        <button type="button" class="btn-gold-outline" id="vip-header-agreement-btn">
+          <span>اتفاقية التسوية (VIP)</span>
+        </button>
+        <button type="button" class="vip-menu-btn" id="vip-menu-btn" aria-label="فتح القائمة" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="vip-mobile-drawer" id="vip-mobile-drawer" hidden>
+      <a href="#fx-desk">مكتب تسويات الشركات والمستوردين</a>
+      <a href="#spread-matrix">مصفوفة السبريد المؤسسي</a>
+      <a href="#operations">تتبع الحوالات وتوزيع الصرف على الفروع</a>
+      <a href="#infrastructure">شبكة الفروع والخدمات</a>
+    </div>
+  </header>
+
+  <main id="top" class="no-print">
+    <!-- Institutional Command Hero -->
+    <section class="vip-hero">
+      <div class="container vip-hero-grid">
+        <div class="vip-hero-copy">
+          <div class="sovereign-eyebrow">
+            <span class="gold-rule" aria-hidden="true"></span>
+            <span>الفئة الملكية VIP · مكتب الصرف الخاص وتحويلات الشركات</span>
+          </div>
+
+          <h1>غرفة التسويات الدولية وتثبيت الصرف <em>للمستوردين والشركات</em></h1>
+          <p class="vip-hero-desc">
+            بوابة تنفيذية مخصصة لإدارة دفعات الموردين إلى الصين (<span class="num-font">RMB / USD</span>) ودبي (<span class="num-font">AED</span>) والرياض (<span class="num-font">SAR</span>) وأوروبا (<span class="num-font">EUR</span>) بأفضلية سبريد مؤسسية موثّقة مقارنة بسعر السوق الاعتيادي، مع توزيع الصرف النقدي عبر الفروع وإصدار اتفاقية تسوية قابلة للطباعة والاعتماد.
+          </p>
+
+          <div class="vip-hero-ctas">
+            <a href="#fx-desk" class="btn-gold-solid">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              <span>تشغيل مكتب تسويات الشركات</span>
+            </a>
+            <a href="#operations" class="btn-steel-outline">
+              <span>تتبع الحوالات وتوزيع الفروع</span>
+            </a>
+          </div>
+
+          <div class="vip-kpi-strip">
+            <div class="vip-kpi-box">
+              <strong class="num-font">4 DESKS</strong>
+              <span>الصين · دبي · الرياض · أوروبا</span>
+            </div>
+            <div class="vip-kpi-box">
+              <strong class="num-font emerald">DELTA FX</strong>
+              <span>توفير مباشر على السبريد</span>
+            </div>
+            <div class="vip-kpi-box">
+              <strong class="num-font">3 HUBS</strong>
+              <span>صرف موزع: صنعاء · عدن · تعز</span>
+            </div>
+            <div class="vip-kpi-box">
+              <strong class="num-font">60 MIN</strong>
+              <span>نافذة تثبيت عقد الصرف</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Institutional Desk Snapshot Visual -->
+        <div class="vip-hero-visual">
+          <div class="visual-frame">
+            <img src="../assets/images/transfer.jpg" alt="مكتب الصرف الخاص وتحويلات الشركات في الريان" loading="eager">
+            <div class="visual-scrim"></div>
+            <div class="visual-desk-overlay">
+              <div class="overlay-head">
+                <span class="overlay-kicker num-font">INSTITUTIONAL FX BOARD</span>
+                <span class="delta-badge num-font">VIP SPREAD ADVANTAGE</span>
+              </div>
+              <div class="overlay-rates-grid num-font" id="vip-hero-board"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corporate & Importer Treasury FX Desk -->
+    <section class="vip-section" id="fx-desk">
+      <div class="container">
+        <div class="vip-sec-head">
+          <div>
+            <span class="sec-kicker num-font">CORPORATE &amp; IMPORTER TREASURY FX DESK</span>
+            <h2>مكتب تسويات الموردين وتثبيت الصرف المؤسسي</h2>
+            <p>حدد شريحة حجم التسوية، وفعّل ممرات السداد المطلوبة للموردين في الصين والخليج وأوروبا لمقارنة التكلفة الاعتيادية مقابل سعر مكتب VIP الخاص والوفر المحقق.</p>
+          </div>
+
+          <div class="volume-tier-bar" id="vip-volume-tiers" role="group" aria-label="شرائح حجم التسوية المؤسسية"></div>
+        </div>
+
+        <div class="desk-layout">
+          <!-- Multi-Currency Supplier Settlement Cards -->
+          <div class="corridors-column" id="vip-supplier-corridors"></div>
+
+          <!-- Sticky Institutional Settlement Summary -->
+          <aside class="settlement-console" aria-label="ملخص تسويات الشركات">
+            <div class="console-head">
+              <span class="console-kicker num-font">TREASURY SETTLEMENT SUMMARY</span>
+              <h3>خلاصة تسوية الموردين والوفر</h3>
+            </div>
+
+            <div class="console-lines" id="vip-console-lines"></div>
+
+            <div class="console-totals">
+              <div class="total-row">
+                <span>التكلفة بسعر السوق الاعتيادي</span>
+                <strong class="num-font strike-muted" id="vip-std-total">0 ر.ي</strong>
+              </div>
+              <div class="total-row">
+                <span>تكلفة التسوية عبر مكتب VIP</span>
+                <strong class="num-font gold-val" id="vip-desk-total">0 ر.ي</strong>
+              </div>
+            </div>
+
+            <div class="emerald-delta-panel">
+              <div class="delta-top">
+                <span>إجمالي الوفر المؤسسي المحقق</span>
+                <span class="delta-bps num-font" id="vip-savings-bps">0 bps</span>
+              </div>
+              <strong class="num-font" id="vip-total-savings-yer">0 ر.ي</strong>
+              <small class="num-font" id="vip-total-savings-usd">المعادل التقريبي: $0.00</small>
+            </div>
+
+            <div class="console-identity">
+              <div class="steel-field">
+                <label for="vip-company-name">اسم الشركة / المستورد (يظهر في الاتفاقية)</label>
+                <input type="text" id="vip-company-name" value="مجموعة الأفق للتجارة والاستيراد" placeholder="أدخل اسم الشركة أو المؤسسة">
+              </div>
+              <div class="steel-field">
+                <label for="vip-contact-person">المسؤول المالي ورقم التواصل</label>
+                <input type="text" id="vip-contact-person" value="أ. طارق المقطري — 770450120" placeholder="الاسم والهاتف">
+              </div>
+              <div class="steel-field">
+                <label for="vip-settlement-purpose">مرجع الفواتير أو الغرض التجاري</label>
+                <input type="text" id="vip-settlement-purpose" value="سداد دفعات مصانع الصين ومشتريات دبي والرياض" placeholder="مثال: اعتمادات ومشتريات بضائع">
+              </div>
+            </div>
+
+            <button type="button" class="btn-gold-full" id="btn-open-agreement">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+              <span>إصدار اتفاقية التسوية وتثبيت السعر (VIP)</span>
+            </button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutional Standard vs VIP Spread Matrix -->
+    <section class="vip-section vip-section-alt" id="spread-matrix">
+      <div class="container">
+        <div class="vip-sec-head">
+          <div>
+            <span class="sec-kicker num-font">STANDARD COUNTER VS VIP CORPORATE DESK</span>
+            <h2>مقارنة أسعار السوق الاعتيادية مقابل مكتب VIP الخاص</h2>
+            <p>مصفوفة شفافة تعرض أسعار الشراء والبيع المعتمدة وفارق الوفر المباشر لشريحة كبار العملاء والشركات المختارة أعلاه.</p>
+          </div>
+        </div>
+
+        <div class="matrix-shell">
+          <table class="vip-matrix-table">
+            <thead>
+              <tr>
+                <th>العملة الأجنبية</th>
+                <th>شراء اعتيادي (ر.ي)</th>
+                <th>بيع اعتيادي (ر.ي)</th>
+                <th>بيع مكتب VIP (ر.ي)</th>
+                <th>شراء مكتب VIP (ر.ي)</th>
+                <th>أفضلية الوفر لكل وحدة</th>
+              </tr>
+            </thead>
+            <tbody id="vip-matrix-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Remittance Reference Tracker + Multi-Branch Cash Pickup Split -->
+    <section class="vip-section" id="operations">
+      <div class="container">
+        <div class="ops-split-grid">
+          <!-- Interactive Reference Tracker -->
+          <div class="ops-panel">
+            <div class="ops-head">
+              <span class="sec-kicker num-font">REMITTANCE REFERENCE TELEMETRY</span>
+              <h2>متابعة الحوالات والاعتمادات الجارية</h2>
+              <p>تحقق من مسار الحوالات التجارية والشخصية عبر أربع محطات تدقيق واعتماد بالرقم المرجعي.</p>
+            </div>
+
+            <div class="vip-demo-chips" role="group" aria-label="أرقام مرجعية تجريبية">
+              <button type="button" class="vip-chip active num-font" data-ref="RY-4091">RY-4091</button>
+              <button type="button" class="vip-chip num-font" data-ref="RY-8820">RY-8820</button>
+              <button type="button" class="vip-chip num-font" data-ref="RY-1154">RY-1154</button>
+            </div>
+
+            <form class="vip-track-form" id="vip-track-form">
+              <input type="text" id="vip-track-input" class="num-font" value="RY-4091" aria-label="الرقم المرجعي للحوالة">
+              <button type="submit" id="vip-track-btn" class="btn-gold-solid-sm">فحص المرجع</button>
+            </form>
+
+            <div class="tracker-stage" id="vip-track-result" aria-live="polite"></div>
+          </div>
+
+          <!-- Multi-Branch Cash Pickup Split -->
+          <div class="ops-panel split-panel">
+            <div class="ops-head">
+              <div class="split-title-row">
+                <div>
+                  <span class="sec-kicker num-font">MULTI-BRANCH CASH PICKUP SPLIT</span>
+                  <h2>توزيع الصرف النقدي عبر الفروع</h2>
+                </div>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="vip-split-enabled" checked>
+                  <span>إدراج في الاتفاقية</span>
+                </label>
+              </div>
+              <p>قسّم سيولة الحوالة أو الصرف النقدي بين فروع صنعاء وعدن وتعز بنسب مرنة وأكواد صرف مستقلة لكل فرع.</p>
+            </div>
+
+            <div class="split-config-row">
+              <div class="steel-field">
+                <label for="vip-split-amount">المبلغ الإجمالي الموزّع</label>
+                <input type="number" id="vip-split-amount" class="num-font" value="50000" min="100" step="any">
+              </div>
+              <div class="steel-field">
+                <label for="vip-split-currency">عملة الصرف النقدي</label>
+                <select id="vip-split-currency"></select>
+              </div>
+            </div>
+
+            <div class="split-presets" role="group" aria-label="أنماط توزيع جاهزة">
+              <button type="button" class="split-preset-btn active" data-split="50,30,20">توزيع متوازن 50 / 30 / 20</button>
+              <button type="button" class="split-preset-btn" data-split="60,25,15">تركيز صنعاء 60 / 25 / 15</button>
+              <button type="button" class="split-preset-btn" data-split="20,45,35">عدن وتعز 20 / 45 / 35</button>
+            </div>
+
+            <div class="allocation-meter">
+              <div class="meter-head">
+                <span>اكتمال التوزيع على الفروع</span>
+                <strong class="num-font" id="vip-split-total-pct">100%</strong>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" id="vip-split-meter-fill" style="width:100%;"></div>
+              </div>
+              <div class="meter-warning" id="vip-split-note" hidden>
+                <span>مجموع النسب لا يساوي 100% —</span>
+                <button type="button" class="btn-normalize-pct" id="vip-split-normalize">موازنة تلقائية إلى 100%</button>
+              </div>
+            </div>
+
+            <div class="branch-split-list" id="vip-branch-split-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Branch Network & Institutional Capabilities -->
+    <section class="vip-section vip-section-alt" id="infrastructure">
+      <div class="container">
+        <div class="vip-sec-head">
+          <div>
+            <span class="sec-kicker num-font">BRANCH DESKS &amp; TREASURY CAPABILITIES</span>
+            <h2>شبكة الفروع الرئيسية والخدمات المؤسسية</h2>
+            <p>جاهزية نقدية عالية في صنعاء وعدن وتعز مع فرق تنفيذ مخصصة للشركات والمستوردين.</p>
+          </div>
+        </div>
+
+        <div class="vip-branches-grid" id="vip-branches-grid"></div>
+        <div class="vip-services-grid" id="vip-services-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Printable / Copyable Official FX Settlement & Rate-Lock Agreement Slip Modal -->
+  <div class="agreement-modal" id="vip-agreement-modal" role="dialog" aria-modal="true" aria-labelledby="agreement-modal-title" hidden>
+    <div class="agreement-backdrop" id="agreement-backdrop"></div>
+    <div class="agreement-dialog">
+      <div class="agreement-toolbar no-print">
+        <div>
+          <span class="modal-kicker num-font">OFFICIAL FX SETTLEMENT &amp; RATE-LOCK AGREEMENT</span>
+          <h3 id="agreement-modal-title">اتفاقية التسوية وتثبيت سعر الصرف المؤسسي</h3>
+        </div>
+        <button type="button" class="btn-close-modal" id="agreement-close-btn" aria-label="إغلاق نافذة الاتفاقية">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="agreement-sheet" id="vip-agreement-sheet"></div>
+
+      <div class="agreement-actions no-print">
+        <button type="button" class="btn-agreement-print" id="agreement-print-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"/>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+            <rect x="6" y="14" width="12" height="8"/>
+          </svg>
+          <span>طباعة الاتفاقية / حفظ PDF</span>
+        </button>
+
+        <button type="button" class="btn-agreement-copy" id="agreement-copy-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span>نسخ نص الاتفاقية</span>
+        </button>
+
+        <button type="button" class="btn-gold-solid-sm" id="agreement-wa-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+          </svg>
+          <span>اعتماد وإرسال عبر واتساب (الفئة الملكية VIP)</span>
+        </button>
+      </div>
+
+      <div class="agreement-status no-print" id="agreement-action-status" role="status" aria-live="polite" hidden></div>
+    </div>
+  </div>
+
+  <!-- Institutional Footer -->
+  <footer class="vip-footer no-print">
+    <div class="container">
+      <div class="vip-footer-grid">
+        <div>
+          <div class="footer-crest-row">
+            <svg width="36" height="36" viewBox="0 0 42 42" fill="none" aria-hidden="true">
+              <rect x="1.5" y="1.5" width="39" height="39" rx="7" stroke="#DFB459" stroke-width="1.3"/>
+              <path d="M10.5 16H30.5L26 11.5" stroke="#34D399" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M31.5 26H11.5L16 30.5" stroke="#DFB459" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <strong>الريان للصرافة والتحويلات — الفئة الملكية VIP</strong>
+              <small dir="ltr">PRIVATE FX DESK &amp; CORPORATE REMITTANCE · SANAA · ADEN · TAIZ</small>
+            </div>
+          </div>
+          <p class="footer-summary">
+            مكتب الصرف المؤسسي وتسويات الموردين في الصين والإمارات والسعودية وأوروبا مع توزيع السيولة النقدية وإصدار اتفاقيات تثبيت الصرف للشركات.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>قنوات كبار العملاء VIP</h4>
+          <a href="https://wa.me/967782259937" target="_blank" rel="noopener" class="num-font">واتساب مكتب VIP المباشر: 967782259937</a>
+          <a href="#fx-desk">مكتب تسويات الشركات</a>
+          <a href="#operations">تتبع الحوالات وتوزيع الصرف على الفروع</a>
+        </div>
+      </div>
+
+      <div class="vip-footer-bottom">
+        <span>جميع الحقوق محفوظة &copy; 2026 الريان للصرافة والتحويلات المالية · الفئة الملكية VIP</span>
+        <span>
+          صُمّم بواسطة
+          <a href="https://luaikulaib.github.io/luai-web-studio/" target="_blank" rel="noopener">لؤي ويب ستوديو</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
